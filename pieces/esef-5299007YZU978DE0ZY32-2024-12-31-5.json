@@ -1,0 +1,78 @@
+{
+	"id": "esef-5299007YZU978DE0ZY32-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299007YZU978DE0ZY32/2024-12-31/ESEF/FR/0/verallia-2024-12-31-0-fr/reports/verallia-2024-12-31-0-fr.xhtml",
+		"lei": "5299007YZU978DE0ZY32",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-04-15",
+		"sha256Page": "75171c607eeb1211e5f792fca42eca924826c579b7470900e69a487cef7544d4",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2024",
+				"2023"
+			],
+			[
+				"2386",
+				"4753"
+			],
+			[
+				"-603",
+				"-1069"
+			],
+			[
+				"1289",
+				"-4700"
+			],
+			[
+				"82",
+				"-356",
+				"1273"
+			],
+			[
+				"329",
+				"-4496"
+			],
+			[
+				"191",
+				"-10",
+				"-59"
+			],
+			[
+				"82",
+				"3",
+				"16"
+			],
+			[
+				"-7",
+				"-43"
+			],
+			[
+				"322",
+				"-4539"
+			],
+			[
+				"2708",
+				"214"
+			],
+			[
+				"2728",
+				"528"
+			],
+			[
+				"-20",
+				"-314"
+			]
+		]
+	}
+}

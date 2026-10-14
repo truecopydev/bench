@@ -1,0 +1,97 @@
+{
+	"id": "esef-259400RSI902DYNUQ180-2023-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/259400RSI902DYNUQ180/2023-12-31/ESEF/PL/0/cpr-2023-12-31-pl/reports/cpr-2023-12-31-pl.xhtml",
+		"lei": "259400RSI902DYNUQ180",
+		"pays": "PL",
+		"exercice": "2023-12-31",
+		"depose": "2024-05-08",
+		"sha256Page": "8e115fe416f881cfcbcfa0941b4c2973567d7ef6efc0cc799b52619cf2cd17b0",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"44837",
+				"169507",
+				"31584",
+				"840",
+				"246768",
+				"1781",
+				"248549"
+			],
+			[
+				"-1726",
+				"-1726",
+				"-1726"
+			],
+			[
+				"44837",
+				"167781",
+				"31584",
+				"840",
+				"245042",
+				"1781",
+				"246823"
+			],
+			[
+				"0",
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"0",
+				"9157",
+				"0",
+				"0",
+				"9157",
+				"0",
+				"9157"
+			],
+			[
+				"0",
+				"0",
+				"-25066",
+				"0",
+				"-25066",
+				"0",
+				"-25066"
+			],
+			[
+				"0",
+				"9157",
+				"-25066",
+				"0",
+				"-15909",
+				"0",
+				"-15909"
+			],
+			[
+				"0",
+				"9157",
+				"-25066",
+				"0",
+				"-15909",
+				"0",
+				"-15909"
+			],
+			[
+				"44837",
+				"176938",
+				"6518",
+				"840",
+				"229133",
+				"1781",
+				"230914"
+			]
+		]
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"id": "esef-969500081CGAXB7YS433-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500081CGAXB7YS433/2025-12-31/ESEF/FR/0/mercialys-2025-12-31-1/reports/mercialys-2025-12-31-1-fr.html",
+		"lei": "969500081CGAXB7YS433",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "8cc49bf369d5fb71f3d2c5a9d16bf9722dd57a8e24eea4c01ee03000302a3edd",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"31",
+				"11470"
+			],
+			[
+				"12390",
+				"3424"
+			],
+			[
+				"81",
+				"9082",
+				"7445"
+			],
+			[
+				"81",
+				"1692018",
+				"1720595"
+			],
+			[
+				"9",
+				"143493",
+				"14784"
+			],
+			[
+				"35",
+				"32409",
+				"40315"
+			],
+			[
+				"10",
+				"32161",
+				"30604"
+			],
+			[
+				"72",
+				"1326",
+				"1700"
+			],
+			[
+				"1934348",
+				"1818867"
+			],
+			[
+				"12",
+				"27853",
+				"30766"
+			],
+			[
+				"13",
+				"27879",
+				"27048"
+			],
+			[
+				"14",
+				"435319",
+				"283653"
+			],
+			[
+				"82",
+				"7721"
+			],
+			[
+				"498772",
+				"341467"
+			],
+			[
+				"2433120",
+				"2160334"
+			]
+		]
+	}
+}

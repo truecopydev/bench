@@ -1,0 +1,100 @@
+{
+	"id": "esef-96950015FU78G84UIV14-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/96950015FU78G84UIV14/2025-12-31/ESEF/FR/0/nexans-2025-12-31-1-fr/reports/nexans-2025-12-31-1-fr.html",
+		"lei": "96950015FU78G84UIV14",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "775a407fd2c13e89ac9e2435ed78f0f7630d0203dc64f8061d1bc7d3a38b3c0a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"680",
+				"470"
+			],
+			[
+				"15",
+				"286",
+				"320"
+			],
+			[
+				"16",
+				"2076",
+				"2196"
+			],
+			[
+				"17",
+				"18",
+				"18"
+			],
+			[
+				"81",
+				"117"
+			],
+			[
+				"18",
+				"207",
+				"225"
+			],
+			[
+				"3347",
+				"3345"
+			],
+			[
+				"19",
+				"1366",
+				"1279"
+			],
+			[
+				"165",
+				"194"
+			],
+			[
+				"20",
+				"1057",
+				"1197"
+			],
+			[
+				"28",
+				"93",
+				"61"
+			],
+			[
+				"21",
+				"157",
+				"211"
+			],
+			[
+				"1634",
+				"1254"
+			],
+			[
+				"12",
+				"216",
+				"131"
+			],
+			[
+				"4688",
+				"4327"
+			],
+			[
+				"8036",
+				"7673"
+			]
+		]
+	}
+}

@@ -1,0 +1,2313 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+.dummy-selector { background-color: rgba(0, 0, 0, 0) }
+html { line-height: 1.32 }
+body { margin: 0 }
+main { display: block }
+h1 { font-size: 2em; margin: 0.67em 0 }
+h1,h2,h3,h4,h5,table { word-spacing: -1px }
+hr { height: 0; overflow: visible }
+pre { font-family: monospace, monospace; font-size: 1em }
+a { background-color: rgba(0, 0, 0, 0) }
+abbr[title] { border-bottom: none; text-decoration: dotted underline }
+b,strong { font-weight: bolder }
+code,kbd,samp { font-family: monospace, monospace; font-size: 1em }
+small { font-size: 80% }
+sub,sup { font-size: 75%; position: relative; vertical-align: baseline; line-height: 0 }
+sub { bottom: -0.25em }
+sup { top: -0.5em }
+img { border-style: none }
+button,input,optgroup,select,textarea { font-family: inherit; font-size: 100%; margin: 0; line-height: 1.41 }
+button,input { overflow: visible }
+button,select { text-transform: none }
+fieldset { padding: 0.35em 0.75em 0.625em }
+legend { color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal }
+progress { vertical-align: baseline }
+textarea { overflow: auto }
+[type="checkbox"],[type="radio"] { padding: 0 }
+details { display: block }
+summary { display: list-item }
+template { display: none }
+[hidden] { display: none }
+@font-face { font-family: Calibri }
+@font-face { font-family: "Calibri Light" }
+@font-face { font-family: "Palatino Linotype" }
+@font-face { font-family: Verdana }
+@font-face { font-family: Cambria }
+@font-face { font-family: Tahoma }
+@font-face { font-family: "Modern No. 20" }
+@font-face { font-family: "Univers 45 Light" }
+@font-face { font-family: "EYInterstate Light" }
+@font-face { font-family: "HR Times New Roman EE/ISO 8859" }
+@font-face { font-family: "Univers LT Std 45 Light" }
+@font-face { font-family: "Univers 55" }
+@font-face { font-family: "Open Sans" }
+@font-face { font-family: inherit }
+p.MsoNormal,li.MsoNormal,div.MsoNormal { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+h1 { margin: 0 0 7pt 21.6pt; text-indent: -21.6pt; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 18pt }
+h2 { margin: 13pt 0 7pt 28.8pt; text-indent: -28.8pt; page-break-after: avoid; font-size: 14pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 16pt }
+h3 { margin: 13pt 0 7pt 36pt; text-indent: -36pt; page-break-after: avoid; font-size: 12pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 14pt }
+h4 { margin: 13pt 0 7pt 43.2pt; text-indent: -43.2pt; page-break-after: avoid; font-size: 12pt; font-family: "Times New Roman", serif; font-weight: bold; font-style: italic; line-height: 14pt }
+h5 { margin: 13pt 0 7pt 50.4pt; text-indent: -50.4pt; page-break-after: avoid; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: normal; font-style: italic; line-height: 13pt }
+h6 { margin: 0 0 0 216pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: normal; line-height: 13pt }
+p.MsoHeading7,li.MsoHeading7,div.MsoHeading7 { margin: 0 0 0 252pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeading8,li.MsoHeading8,div.MsoHeading8 { margin: 0 0 0 288pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeading9,li.MsoHeading9,div.MsoHeading9 { margin: 0 0 0 324pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoIndex1,li.MsoIndex1,div.MsoIndex1 { margin: 18pt 42.55pt 0 0; page-break-after: avoid; font-size: 14pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 16pt }
+p.MsoIndex2,li.MsoIndex2,div.MsoIndex2 { margin: 0 42.55pt 0 17pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoToc1,li.MsoToc1,div.MsoToc1 { margin: 13pt 28.55pt 0 0; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc2,li.MsoToc2,div.MsoToc2 { margin: 0 28.55pt 0 -7.1pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc3,li.MsoToc3,div.MsoToc3 { margin: 0 28.55pt 0 70.9pt; text-indent: -70.9pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc4,li.MsoToc4,div.MsoToc4 { margin: 0 28.55pt 0 70.9pt; text-indent: -70.9pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoNormalIndent,li.MsoNormalIndent,div.MsoNormalIndent { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif }
+p.MsoFootnoteText,li.MsoFootnoteText,div.MsoFootnoteText { margin: 0; font-size: 9pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoCommentText,li.MsoCommentText,div.MsoCommentText { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeader,li.MsoHeader,div.MsoHeader { margin: 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif; font-style: italic; line-height: 11pt }
+p.MsoFooter,li.MsoFooter,div.MsoFooter { margin: 0; font-size: 9pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoCaption,li.MsoCaption,div.MsoCaption { margin: 0 0 13pt 28.5pt; text-indent: -28.5pt; font-size: 10pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 13pt }
+span.MsoFootnoteReference { vertical-align: super }
+span.MsoEndnoteReference { vertical-align: super }
+p.MsoEndnoteText,li.MsoEndnoteText,div.MsoEndnoteText { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif }
+p.MsoList,li.MsoList,div.MsoList { margin: 0 0 0 14.15pt; text-indent: -14.15pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoListBullet,li.MsoListBullet,div.MsoListBullet { margin: 0 0 13pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoListBullet2,li.MsoListBullet2,div.MsoListBullet2 { margin: 0 0 13pt 34pt; text-align: justify; text-indent: -17pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoTitle,li.MsoTitle,div.MsoTitle { margin: 0 0 15pt; border: none; padding: 0; font-size: 26pt; font-family: "Cambria", serif; color: rgb(23, 54, 93); letter-spacing: 0.25pt }
+p.MsoSignature,li.MsoSignature,div.MsoSignature { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoBodyText,li.MsoBodyText,div.MsoBodyText { margin: 0 0 13pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoBodyTextIndent,li.MsoBodyTextIndent,div.MsoBodyTextIndent { margin: 0 0 13pt 17pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoBodyText2,li.MsoBodyText2,div.MsoBodyText2 { margin: 0 0 6pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 2.45 }
+p.MsoBodyText3,li.MsoBodyText3,div.MsoBodyText3 { margin: 0 0 6pt 14.15pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoBodyTextIndent2,li.MsoBodyTextIndent2,div.MsoBodyTextIndent2 { margin: 0 0 6pt 14.15pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 2.45 }
+a:link,span.MsoHyperlink { color: rgb(0, 0, 255); text-decoration: underline }
+a:visited,span.MsoHyperlinkFollowed { color: rgb(149, 79, 114); text-decoration: underline }
+p.MsoDocumentMap,li.MsoDocumentMap,div.MsoDocumentMap { margin: 0; background: rgb(0, 0, 128); font-size: 11pt; font-family: "Tahoma", sans-serif; line-height: 13pt }
+p { margin-right: 0; margin-left: 0; font-size: 12pt; font-family: "Times New Roman", serif }
+pre { margin: 0; font-size: 10pt; font-family: "Courier New" }
+p.MsoCommentSubject,li.MsoCommentSubject,div.MsoCommentSubject { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 13pt }
+p.MsoAcetate,li.MsoAcetate,div.MsoAcetate { margin: 0 0 -2pt; font-size: 8pt; font-family: "Tahoma", sans-serif; line-height: 13pt }
+p.MsoNoSpacing,li.MsoNoSpacing,div.MsoNoSpacing { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoRMPane,li.MsoRMPane,div.MsoRMPane { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoListParagraph,li.MsoListParagraph,div.MsoListParagraph { margin: 0 0 0 36pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoTocHeading,li.MsoTocHeading,div.MsoTocHeading { margin: 24pt 0 0; page-break-after: avoid; font-size: 14pt; font-family: "Calibri Light", sans-serif; color: rgb(102, 33, 103); font-weight: bold; line-height: 1.41; text-align: left }
+span.Heading1Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading2Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading3Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading4Char { font-family: "Times New Roman", serif; font-weight: bold; font-style: italic }
+span.Heading5Char { font-family: "Times New Roman", serif; font-style: italic }
+span.Heading6Char { font-family: "Times New Roman", serif }
+span.Heading7Char { font-family: "Times New Roman", serif }
+span.Heading8Char { font-family: "Times New Roman", serif }
+span.Heading9Char { font-family: "Times New Roman", serif }
+span.BodyTextChar { font-family: "Times New Roman", serif }
+span.FooterChar { font-family: "Times New Roman", serif }
+span.HeaderChar { font-family: "Times New Roman", serif; font-style: italic }
+p.zreportname,li.zreportname,div.zreportname { margin: 0; text-align: center; font-size: 18pt; font-family: "Times New Roman", serif; line-height: 22pt }
+p.zcontents,li.zcontents,div.zcontents { margin: 0 0 13pt; font-size: 16pt; font-family: "Times New Roman", serif }
+p.zcompanyname,li.zcompanyname,div.zcompanyname { margin: 0 0 20pt; text-align: center; font-size: 13pt; font-family: "Times New Roman", serif; font-weight: bold }
+span.FootnoteTextChar { font-family: "Times New Roman", serif }
+p.zreportsubtitle,li.zreportsubtitle,div.zreportsubtitle { margin: 0; text-align: center; font-size: 16pt; font-family: "Times New Roman", serif; line-height: 18pt }
+span.BodyTextIndentChar { font-family: "Times New Roman", serif }
+p.Graphic,li.Graphic,div.Graphic { margin: 0; text-align: center; border: none; padding: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+span.SignatureChar { font-family: "Times New Roman", serif }
+p.zreportaddinfo,li.zreportaddinfo,div.zreportaddinfo { margin: 0; text-align: center; font-size: 10pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.zreportaddinfoit,li.zreportaddinfoit,div.zreportaddinfoit { margin: 0; text-align: center; font-size: 10pt; font-family: "Times New Roman", serif; font-style: italic; line-height: 13pt }
+p.AppendixHeading,li.AppendixHeading,div.AppendixHeading { margin: 0 0 7pt; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 18pt }
+p.Double,li.Double,div.Double { margin: 0 0 6.5pt; text-align: right; font-size: 11pt; font-family: "Times New Roman", serif; position: relative; top: -3pt; text-decoration: underline }
+p.Single,li.Single,div.Single { margin: 0; text-align: right; font-size: 11pt; font-family: "Times New Roman", serif; position: relative; top: -9pt; text-decoration: underline }
+p.Tabletext,li.Tabletext,div.Tabletext { margin: 0 0 0 7.65pt; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Denomination,li.Denomination,div.Denomination { margin: 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignWithoutBrackets,li.AlignWithoutBrackets,div.AlignWithoutBrackets { margin: 0 0 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignBrackets,li.AlignBrackets,div.AlignBrackets { margin: 0 -2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Text,li.Text,div.Text { margin: 6.5pt 0 0; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.Yours,li.Yours,div.Yours { margin: 0 0 52pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.Tablehead,li.Tablehead,div.Tablehead { margin: 6.5pt 0 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif }
+span.BodyText3Char { font-family: "Times New Roman", serif }
+span.BodyText2Char { font-family: "Times New Roman", serif }
+p.AlignWithoutTwo,li.AlignWithoutTwo,div.AlignWithoutTwo { margin: 0 5.65pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignBracketsTwo,li.AlignBracketsTwo,div.AlignBracketsTwo { margin: 0 2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignWithoutOne,li.AlignWithoutOne,div.AlignWithoutOne { margin: 0 2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Numbering,li.Numbering,div.Numbering { margin: 6.5pt 0 0 14.2pt; text-align: justify; text-indent: -14.2pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.TT,li.TT,div.TT { margin: 0; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+p.TTH,li.TTH,div.TTH { margin: 6pt 0 0; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+p.DH,li.DH,div.DH { margin: 0 0 13.05pt; border: none; padding: 0; font-size: 9.5pt; font-family: "Arial", sans-serif }
+p.Tot,li.Tot,div.Tot { margin: 0 0 -3pt; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 17pt }
+p.T1,li.T1,div.T1 { margin: 0 0 15.05pt; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+span.DocumentMapChar { font-family: "Tahoma", sans-serif; background: rgb(0, 0, 128) }
+p.ACText,li.ACText,div.ACText { margin: 6.5pt 0 0.25pt; text-align: justify; font-size: 10pt; font-family: "Times New Roman", serif; letter-spacing: -0.1pt }
+p.RunningTitle,li.RunningTitle,div.RunningTitle { margin: 0 0 0.25pt; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif; letter-spacing: -0.1pt; font-style: italic; line-height: 11pt }
+p.RNormal,li.RNormal,div.RNormal { margin: 0; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.NormalLeft0,li.NormalLeft0,div.NormalLeft0 { margin: 0; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold }
+p.TableText0,li.TableText0,div.TableText0 { margin: 0; font-size: 12pt; font-family: "Times New Roman", serif }
+span.BalloonTextChar { font-family: "Tahoma", sans-serif }
+p.MACNormal,li.MACNormal,div.MACNormal { margin: 0; text-align: justify; font-size: 10pt; font-family: "Times New Roman", serif; color: rgb(0, 0, 0) }
+p.Subhead4,li.Subhead4,div.Subhead4 { margin: 0 46.75pt 0 76.55pt; text-indent: -76.55pt; font-size: 10pt; font-family: "Univers 45 Light"; color: rgb(123, 127, 182); font-weight: bold; line-height: 13pt }
+span.CommentTextChar { font-family: "Times New Roman", serif }
+span.CommentSubjectChar { font-family: "Times New Roman", serif; font-weight: bold }
+span.T1Char { font-family: "Arial", sans-serif }
+p.Numbered1,li.Numbered1,div.Numbered1 { margin: 0 17.85pt 12pt 0; text-align: justify; font-size: 9.5pt; font-family: "Arial", sans-serif; font-weight: bold; line-height: 15pt }
+p.Title2,li.Title2,div.Title2 { margin: 0 70pt 0 0; page-break-after: avoid; font-size: 12pt; font-family: "Arial", sans-serif; line-height: 20.15pt }
+span.TitleChar { font-family: "Cambria", serif; color: rgb(23, 54, 93); letter-spacing: 0.25pt }
+p.T2,li.T2,div.T2 { margin: 0 0 18pt; text-align: justify; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15pt }
+span.TableTextChar { font-family: "Times New Roman", serif }
+p.TableUnderline,li.TableUnderline,div.TableUnderline { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif; position: relative; top: -2.5pt; line-height: 5pt }
+span.TableUnderlineChar { font-family: "Arial", sans-serif; position: relative; top: -2.5pt }
+p.ps-000-normal,li.ps-000-normal,div.ps-000-normal { margin: 0 0 6pt; font-size: 10pt; font-family: "Verdana", sans-serif; color: rgb(0, 0, 0) }
+p.ps-002-normal-italic,li.ps-002-normal-italic,div.ps-002-normal-italic { margin: 0 0 6pt; font-size: 10pt; font-family: "Verdana", sans-serif; color: rgb(0, 0, 0); font-style: italic }
+p.Bodycopy,li.Bodycopy,div.Bodycopy { margin: 1pt 0 0; font-size: 8.5pt; font-family: "Arial", sans-serif; color: rgb(0, 0, 0); line-height: 10.5pt }
+p.PH,li.PH,div.PH { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif; font-weight: bold; line-height: 15.05pt }
+p.numbtab2,li.numbtab2,div.numbtab2 { margin: 0; text-align: justify; font-size: 12pt; font-family: "Times New Roman", serif; letter-spacing: -0.15pt }
+p.Default,li.Default,div.Default { margin: 0; font-size: 12pt; font-family: "Palatino Linotype", serif; color: rgb(0, 0, 0) }
+p.TOCHeading1,li.TOCHeading1,div.TOCHeading1 { margin: 24pt 0 0 1cm; text-indent: -1cm; page-break-after: avoid; font-size: 14pt; font-family: "Cambria", serif; color: rgb(54, 95, 145); font-weight: bold; line-height: 1.41 }
+p.NoSpacing1,li.NoSpacing1,div.NoSpacing1 { margin: 0; text-align: justify; font-size: 11pt; font-family: "Palatino Linotype", serif }
+span.FootnoteTextChar1 { font-family: "Palatino Linotype", serif }
+span.DocumentMapChar1 { font-family: "Tahoma", sans-serif }
+span.NotesbodytextChar { font-family: "EYInterstate Light"; color: rgb(0, 0, 0) }
+p.Notesbodytext,li.Notesbodytext,div.Notesbodytext { margin: 0 0 6pt; font-size: 9pt; font-family: "EYInterstate Light"; color: rgb(0, 0, 0); line-height: 12pt }
+p.Tabla,li.Tabla,div.Tabla { margin: 0 0 0 7.65pt; text-indent: -7.65pt; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: bold }
+p.SenkaFS-pozitivanbroj,li.SenkaFS-pozitivanbroj,div.SenkaFS-pozitivanbroj { margin: 0 2.55pt 0.25pt 0; text-align: right; font-size: 9pt; font-family: "HR Times New Roman EE/ISO 8859", serif; letter-spacing: -0.1pt }
+p.Pa40,li.Pa40,div.Pa40 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa21,li.Pa21,div.Pa21 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.TableParagraph,li.TableParagraph,div.TableParagraph { margin: 0; font-size: 11pt; font-family: "Calibri", sans-serif }
+p.Pa18,li.Pa18,div.Pa18 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa3,li.Pa3,div.Pa3 { margin: 0; font-size: 12pt; font-family: "Univers 55" }
+span.A16 { font-family: "Univers 45 Light"; color: rgb(211, 10, 83); font-weight: bold }
+p.Pa76,li.Pa76,div.Pa76 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa14,li.Pa14,div.Pa14 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa4,li.Pa4,div.Pa4 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Naslovipoglavlja,li.Naslovipoglavlja,div.Naslovipoglavlja { margin: 0; text-align: justify; page-break-after: avoid; font-size: 14pt; font-family: "Arial", sans-serif; font-weight: bold }
+p.Bullet,li.Bullet,div.Bullet { margin: 0 0 0 36pt; text-indent: -36pt; font-size: 12pt; font-family: "Times New Roman", serif }
+p.KAMKNormal,li.KAMKNormal,div.KAMKNormal { margin: 6pt 0; font-size: 11pt; font-family: "Tahoma", sans-serif; color: rgb(0, 0, 0) }
+span.KAMKNormalChar { font-family: "Tahoma", sans-serif; color: rgb(0, 0, 0) }
+span.ListParagraphChar { font-family: "Times New Roman", serif }
+p.Biljeska2,li.Biljeska2,div.Biljeska2 { margin: 6pt 0 0 18pt; text-align: justify; text-indent: -18pt; font-size: 11pt; font-family: "Calibri", sans-serif; font-weight: bold; font-style: italic }
+span.Biljeska2Char { font-family: "Calibri", sans-serif; font-weight: bold; font-style: italic }
+span.HTMLPreformattedChar { font-family: "Courier New" }
+p.Deloitteaddress,li.Deloitteaddress,div.Deloitteaddress { margin: 0; font-size: 7pt; font-family: "Calibri", sans-serif; line-height: 8.5pt }
+p.Sponsortext,li.Sponsortext,div.Sponsortext { margin: 0; font-size: 7pt; font-family: "Calibri", sans-serif; line-height: 8.5pt }
+p.Pa11,li.Pa11,div.Pa11 { margin: 0; font-size: 12pt; font-family: "Open Sans", sans-serif }
+p.NormalTimesNewRoman,li.NormalTimesNewRoman,div.NormalTimesNewRoman { margin: 6pt 0 0 17.85pt; text-align: justify; font-size: 11pt; font-family: "Arial", sans-serif; line-height: 15pt }
+span.NormalTimesNewRoman11ptJustifiedLeft063cmLinespacingAtCharChar { font-family: "Arial", sans-serif }
+span.BodyTextIndent2Char { font-family: "Times New Roman", serif }
+span.EndnoteTextChar { font-family: "Times New Roman", serif }
+span.UnresolvedMention1 { color: rgb(96, 94, 92); background: rgb(225, 223, 221) }
+span.msoIns { text-decoration: underline; color: rgb(0, 128, 128) }
+span.msoDel { text-decoration: line-through; color: rgb(255, 0, 0) }
+.MsoPapDefault { margin-bottom: 8pt; line-height: 1.31 }
+ol { margin-bottom: 0 }
+ul { margin-bottom: 0 }
+
+
+
+body {align-content:center; background-color: #eaeaea; }
+div[class^="WordSection"]
+{ position: relative; z-index: 1; align-content:center !important; margin: 0mm auto;}
+*[style*="mso-highlight"]
+{ background-color:inherit !important;}
+.WordSection1
+{width: 163.04mm;}
+.WordSection2
+{width: 160.04mm;}
+.WordSection3
+{width: 160.04mm;}
+.WordSection4
+{width: 160.04mm;}
+.WordSection5
+{width: 160.04mm;}
+.WordSection6
+{width: 160.04mm;}
+.WordSection7
+{width: 160.04mm;}
+.WordSection8
+{width: 160.04mm;}
+.WordSection9
+{width: 160.04mm;}
+.WordSection10
+{width: 160.04mm;}
+.WordSection11
+{width: 160.04mm;}
+.WordSection12
+{width: 160.04mm;}
+.WordSection13
+{width: 160.04mm;}
+.WordSection14
+{width: 160.04mm;}
+.WordSection15
+{width: 160.04mm;}
+.WordSection16
+{width: 160.04mm;}
+.WordSection17
+{width: 160.04mm;}
+.WordSection18
+{width: 160.04mm;}
+.WordSection19
+{width: 160.04mm;}
+.WordSection20
+{width: 160.04mm;}
+.WordSection21
+{width: 160.04mm;}
+.WordSection22
+{width: 160.04mm;}
+.WordSection23
+{width: 160.04mm;}
+.WordSection24
+{width: 160.04mm;}
+.WordSection25
+{width: 160.04mm;}
+.WordSection26
+{width: 160.04mm;}
+.WordSection27
+{width: 160.04mm;}
+.WordSection28
+{width: 160.04mm;}
+.WordSection29
+{width: 160.04mm;}
+.WordSection30
+{width: 160.04mm;}
+.WordSection31
+{width: 160.04mm;}
+.WordSection32
+{width: 160.04mm;}
+.WordSection33
+{width: 160.04mm;}
+.WordSection34
+{width: 160.04mm;}
+.WordSection35
+{width: 160.04mm;}
+.WordSection36
+{width: 163.04mm;}
+.WordSection37
+{width: 160.04mm;}
+.WordSection38
+{width: 160.04mm;}
+.WordSection39
+{width: 160.04mm;}
+.WordSection40
+{width: 160.04mm;}
+.WordSection41
+{width: 160.27mm;}
+.WordSection42
+{width: 160.27mm;}
+.WordSection43
+{width: 228.60mm;}
+.WordSection44
+{width: 159.21mm;}
+.WordSection45
+{width: 159.21mm;}
+.WordSection46
+{width: 159.21mm;}
+.WordSection47
+{width: 159.21mm;}
+.WordSection48
+{width: 159.21mm;}
+.WordSection49
+{width: 159.21mm;}
+.WordSection50
+{width: 159.21mm;}
+.WordSection51
+{width: 159.21mm;}
+.WordSection52
+{width: 159.21mm;}
+.WordSection53
+{width: 159.21mm;}
+.WordSection54
+{width: 159.21mm;}
+.WordSection55
+{width: 159.21mm;}
+.WordSection56
+{width: 159.21mm;}
+.WordSection57
+{width: 159.21mm;}
+.WordSection58
+{width: 159.21mm;}
+.WordSection59
+{width: 159.21mm;}
+.WordSection60
+{width: 159.21mm;}
+.WordSection61
+{width: 159.21mm;}
+.WordSection62
+{width: 159.21mm;}
+.WordSection63
+{width: 159.21mm;}
+.WordSection64
+{width: 159.21mm;}
+.WordSection65
+{width: 159.21mm;}
+.WordSection66
+{width: 159.21mm;}
+.WordSection67
+{width: 159.21mm;}
+.WordSection68
+{width: 159.21mm;}
+.WordSection69
+{width: 159.21mm;}
+.WordSection70
+{width: 159.21mm;}
+.WordSection71
+{width: 159.21mm;}
+.WordSection72
+{width: 159.21mm;}
+.WordSection73
+{width: 159.21mm;}
+.WordSection74
+{width: 159.21mm;}
+.WordSection75
+{width: 159.21mm;}
+.WordSection76
+{width: 159.21mm;}
+.WordSection77
+{width: 159.21mm;}
+.WordSection78
+{width: 159.21mm;}
+.WordSection79
+{width: 159.21mm;}
+.WordSection80
+{width: 159.21mm;}
+.WordSection81
+{width: 159.21mm;}
+.WordSection82
+{width: 159.21mm;}
+.WordSection83
+{width: 159.21mm;}
+.WordSection84
+{width: 159.21mm;}
+.WordSection85
+{width: 159.21mm;}
+.WordSection86
+{width: 159.21mm;}
+.WordSection87
+{width: 159.21mm;}
+.WordSection88
+{width: 159.21mm;}
+.WordSection89
+{width: 246.20mm;}
+.WordSection90
+{width: 246.20mm;}
+.WordSection91
+{width: 160.04mm;}
+.WordSection92
+{width: 160.04mm;}
+.WordSection93
+{width: 160.04mm;}
+.WordSection94
+{width: 160.04mm;}
+.WordSection95
+{width: 160.04mm;}
+.WordSection96
+{width: 160.04mm;}
+.WordSection97
+{width: 160.04mm;}
+.WordSection98
+{width: 160.04mm;}
+.WordSection99
+{width: 160.04mm;}
+.WordSection100
+{width: 160.04mm;}
+.Page1
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page1 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header1
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer1
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea1
+{width: 210.03mm;}
+.Page1 table{max-width: 210.03mm !important;}
+.Page2
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page2 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header2
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer2
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea2
+{width: 210.03mm;}
+.Page2 table{max-width: 210.03mm !important;}
+.Page3
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page3 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header3
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer3
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea3
+{width: 210.03mm;}
+.Page3 table{max-width: 210.03mm !important;}
+.Page4
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page4 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header4
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer4
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea4
+{width: 210.03mm;}
+.Page4 table{max-width: 210.03mm !important;}
+.Page5
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page5 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header5
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer5
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea5
+{width: 210.03mm;}
+.Page5 table{max-width: 210.03mm !important;}
+.Page6
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page6 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header6
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer6
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea6
+{width: 210.03mm;}
+.Page6 table{max-width: 210.03mm !important;}
+.Page7
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page7 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header7
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer7
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea7
+{width: 210.03mm;}
+.Page7 table{max-width: 210.03mm !important;}
+.Page8
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page8 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header8
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer8
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea8
+{width: 210.03mm;}
+.Page8 table{max-width: 210.03mm !important;}
+.Page9
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page9 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header9
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer9
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea9
+{width: 210.03mm;}
+.Page9 table{max-width: 210.03mm !important;}
+.Page10
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page10 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header10
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer10
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea10
+{width: 210.03mm;}
+.Page10 table{max-width: 210.03mm !important;}
+.Page11
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page11 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header11
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer11
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea11
+{width: 210.03mm;}
+.Page11 table{max-width: 210.03mm !important;}
+.Page12
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page12 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header12
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer12
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea12
+{width: 210.03mm;}
+.Page12 table{max-width: 210.03mm !important;}
+.Page13
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page13 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header13
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer13
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea13
+{width: 210.03mm;}
+.Page13 table{max-width: 210.03mm !important;}
+.Page14
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page14 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header14
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer14
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea14
+{width: 210.03mm;}
+.Page14 table{max-width: 210.03mm !important;}
+.Page15
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page15 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header15
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer15
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea15
+{width: 210.03mm;}
+.Page15 table{max-width: 210.03mm !important;}
+.Page16
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page16 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header16
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer16
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea16
+{width: 210.03mm;}
+.Page16 table{max-width: 210.03mm !important;}
+.Page17
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page17 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header17
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer17
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea17
+{width: 210.03mm;}
+.Page17 table{max-width: 210.03mm !important;}
+.Page18
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page18 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header18
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer18
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea18
+{width: 210.03mm;}
+.Page18 table{max-width: 210.03mm !important;}
+.Page19
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page19 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header19
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer19
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea19
+{width: 210.03mm;}
+.Page19 table{max-width: 210.03mm !important;}
+.Page20
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page20 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header20
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer20
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea20
+{width: 210.03mm;}
+.Page20 table{max-width: 210.03mm !important;}
+.Page21
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page21 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header21
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer21
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea21
+{width: 210.03mm;}
+.Page21 table{max-width: 210.03mm !important;}
+.Page22
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page22 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header22
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer22
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea22
+{width: 210.03mm;}
+.Page22 table{max-width: 210.03mm !important;}
+.Page23
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page23 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header23
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer23
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea23
+{width: 210.03mm;}
+.Page23 table{max-width: 210.03mm !important;}
+.Page24
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page24 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header24
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer24
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea24
+{width: 210.03mm;}
+.Page24 table{max-width: 210.03mm !important;}
+.Page25
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page25 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header25
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer25
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea25
+{width: 210.03mm;}
+.Page25 table{max-width: 210.03mm !important;}
+.Page26
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page26 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header26
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer26
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea26
+{width: 210.03mm;}
+.Page26 table{max-width: 210.03mm !important;}
+.Page27
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page27 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header27
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer27
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea27
+{width: 210.03mm;}
+.Page27 table{max-width: 210.03mm !important;}
+.Page28
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page28 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header28
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer28
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea28
+{width: 210.03mm;}
+.Page28 table{max-width: 210.03mm !important;}
+.Page29
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page29 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header29
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer29
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea29
+{width: 210.03mm;}
+.Page29 table{max-width: 210.03mm !important;}
+.Page30
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page30 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header30
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer30
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea30
+{width: 210.03mm;}
+.Page30 table{max-width: 210.03mm !important;}
+.Page31
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page31 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header31
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer31
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea31
+{width: 210.03mm;}
+.Page31 table{max-width: 210.03mm !important;}
+.Page32
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page32 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header32
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer32
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea32
+{width: 210.03mm;}
+.Page32 table{max-width: 210.03mm !important;}
+.Page33
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page33 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header33
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer33
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea33
+{width: 210.03mm;}
+.Page33 table{max-width: 210.03mm !important;}
+.Page34
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page34 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header34
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer34
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea34
+{width: 210.03mm;}
+.Page34 table{max-width: 210.03mm !important;}
+.Page35
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page35 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header35
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer35
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea35
+{width: 210.03mm;}
+.Page35 table{max-width: 210.03mm !important;}
+.Page36
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page36 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header36
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer36
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea36
+{width: 210.03mm;}
+.Page36 table{max-width: 210.03mm !important;}
+.Page37
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page37 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header37
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer37
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea37
+{width: 210.03mm;}
+.Page37 table{max-width: 210.03mm !important;}
+.Page38
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page38 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header38
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer38
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea38
+{width: 210.03mm;}
+.Page38 table{max-width: 210.03mm !important;}
+.Page39
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page39 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header39
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer39
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea39
+{width: 210.03mm;}
+.Page39 table{max-width: 210.03mm !important;}
+.Page40
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page40 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header40
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer40
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea40
+{width: 210.03mm;}
+.Page40 table{max-width: 210.03mm !important;}
+.Page41
+{
+min-width: 160.27mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page41 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header41
+{min-height: 12.49mm;margin-top: 12.51mm;}
+.Footer41
+{min-height: 11.08mm;margin-bottom: 13.92mm;min-width: 160.27mm;max-width: max-content;}
+.PrintArea41
+{width: 210.26mm;}
+.Page41 table{max-width: 210.26mm !important;}
+.Page42
+{
+min-width: 160.27mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page42 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header42
+{min-height: 12.49mm;margin-top: 12.51mm;}
+.Footer42
+{min-height: 11.08mm;margin-bottom: 13.92mm;min-width: 160.27mm;max-width: max-content;}
+.PrintArea42
+{width: 210.26mm;}
+.Page42 table{max-width: 210.26mm !important;}
+.Page43
+{
+min-width: 228.60mm;min-height: 215.90mm;margin: 0;background-color: white;}
+.Page43 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header43
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer43
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 228.60mm;max-width: max-content;}
+.PrintArea43
+{width: 279.40mm;}
+.Page43 table{max-width: 279.40mm !important;}
+.Page44
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page44 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header44
+{min-height: 16.40mm;margin-top: 9.00mm;}
+.Footer44
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea44
+{width: 210.01mm;}
+.Page44 table{max-width: 210.01mm !important;}
+.Page45
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page45 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header45
+{min-height: 16.40mm;margin-top: 9.00mm;}
+.Footer45
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea45
+{width: 210.01mm;}
+.Page45 table{max-width: 210.01mm !important;}
+.Page46
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page46 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header46
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer46
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea46
+{width: 210.01mm;}
+.Page46 table{max-width: 210.01mm !important;}
+.Page47
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page47 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header47
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer47
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea47
+{width: 210.01mm;}
+.Page47 table{max-width: 210.01mm !important;}
+.Page48
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page48 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header48
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer48
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea48
+{width: 210.01mm;}
+.Page48 table{max-width: 210.01mm !important;}
+.Page49
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page49 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header49
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer49
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea49
+{width: 210.01mm;}
+.Page49 table{max-width: 210.01mm !important;}
+.Page50
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page50 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header50
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer50
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea50
+{width: 210.01mm;}
+.Page50 table{max-width: 210.01mm !important;}
+.Page51
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page51 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header51
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer51
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea51
+{width: 210.01mm;}
+.Page51 table{max-width: 210.01mm !important;}
+.Page52
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page52 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header52
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer52
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea52
+{width: 210.01mm;}
+.Page52 table{max-width: 210.01mm !important;}
+.Page53
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page53 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header53
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer53
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea53
+{width: 210.01mm;}
+.Page53 table{max-width: 210.01mm !important;}
+.Page54
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page54 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header54
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer54
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea54
+{width: 210.01mm;}
+.Page54 table{max-width: 210.01mm !important;}
+.Page55
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page55 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header55
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer55
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea55
+{width: 210.01mm;}
+.Page55 table{max-width: 210.01mm !important;}
+.Page56
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page56 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header56
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer56
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea56
+{width: 210.01mm;}
+.Page56 table{max-width: 210.01mm !important;}
+.Page57
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page57 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header57
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer57
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea57
+{width: 210.01mm;}
+.Page57 table{max-width: 210.01mm !important;}
+.Page58
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page58 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header58
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer58
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea58
+{width: 210.01mm;}
+.Page58 table{max-width: 210.01mm !important;}
+.Page59
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page59 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header59
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer59
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea59
+{width: 210.01mm;}
+.Page59 table{max-width: 210.01mm !important;}
+.Page60
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page60 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header60
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer60
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea60
+{width: 210.01mm;}
+.Page60 table{max-width: 210.01mm !important;}
+.Page61
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page61 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header61
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer61
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea61
+{width: 210.01mm;}
+.Page61 table{max-width: 210.01mm !important;}
+.Page62
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page62 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header62
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer62
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea62
+{width: 210.01mm;}
+.Page62 table{max-width: 210.01mm !important;}
+.Page63
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page63 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header63
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer63
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea63
+{width: 210.01mm;}
+.Page63 table{max-width: 210.01mm !important;}
+.Page64
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page64 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header64
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer64
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea64
+{width: 210.01mm;}
+.Page64 table{max-width: 210.01mm !important;}
+.Page65
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page65 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header65
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer65
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea65
+{width: 210.01mm;}
+.Page65 table{max-width: 210.01mm !important;}
+.Page66
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page66 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header66
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer66
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea66
+{width: 210.01mm;}
+.Page66 table{max-width: 210.01mm !important;}
+.Page67
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page67 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header67
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer67
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea67
+{width: 210.01mm;}
+.Page67 table{max-width: 210.01mm !important;}
+.Page68
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page68 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header68
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer68
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea68
+{width: 210.01mm;}
+.Page68 table{max-width: 210.01mm !important;}
+.Page69
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page69 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header69
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer69
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea69
+{width: 210.01mm;}
+.Page69 table{max-width: 210.01mm !important;}
+.Page70
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page70 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header70
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer70
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea70
+{width: 210.01mm;}
+.Page70 table{max-width: 210.01mm !important;}
+.Page71
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page71 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header71
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer71
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea71
+{width: 210.01mm;}
+.Page71 table{max-width: 210.01mm !important;}
+.Page72
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page72 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header72
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer72
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea72
+{width: 210.01mm;}
+.Page72 table{max-width: 210.01mm !important;}
+.Page73
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page73 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header73
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer73
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea73
+{width: 210.01mm;}
+.Page73 table{max-width: 210.01mm !important;}
+.Page74
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page74 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header74
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer74
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea74
+{width: 210.01mm;}
+.Page74 table{max-width: 210.01mm !important;}
+.Page75
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page75 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header75
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer75
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea75
+{width: 210.01mm;}
+.Page75 table{max-width: 210.01mm !important;}
+.Page76
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page76 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header76
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer76
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea76
+{width: 210.01mm;}
+.Page76 table{max-width: 210.01mm !important;}
+.Page77
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page77 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header77
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer77
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea77
+{width: 210.01mm;}
+.Page77 table{max-width: 210.01mm !important;}
+.Page78
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page78 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header78
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer78
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea78
+{width: 210.01mm;}
+.Page78 table{max-width: 210.01mm !important;}
+.Page79
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page79 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header79
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer79
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea79
+{width: 210.01mm;}
+.Page79 table{max-width: 210.01mm !important;}
+.Page80
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page80 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header80
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer80
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea80
+{width: 210.01mm;}
+.Page80 table{max-width: 210.01mm !important;}
+.Page81
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page81 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header81
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer81
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea81
+{width: 210.01mm;}
+.Page81 table{max-width: 210.01mm !important;}
+.Page82
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page82 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header82
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer82
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea82
+{width: 210.01mm;}
+.Page82 table{max-width: 210.01mm !important;}
+.Page83
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page83 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header83
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer83
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea83
+{width: 210.01mm;}
+.Page83 table{max-width: 210.01mm !important;}
+.Page84
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page84 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header84
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer84
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea84
+{width: 210.01mm;}
+.Page84 table{max-width: 210.01mm !important;}
+.Page85
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page85 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header85
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer85
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea85
+{width: 210.01mm;}
+.Page85 table{max-width: 210.01mm !important;}
+.Page86
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page86 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header86
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer86
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea86
+{width: 210.01mm;}
+.Page86 table{max-width: 210.01mm !important;}
+.Page87
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page87 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header87
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer87
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea87
+{width: 210.01mm;}
+.Page87 table{max-width: 210.01mm !important;}
+.Page88
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page88 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header88
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer88
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea88
+{width: 210.01mm;}
+.Page88 table{max-width: 210.01mm !important;}
+.Page89
+{
+min-width: 246.20mm;min-height: 210.01mm;margin: 0;background-color: white;}
+.Page89 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header89
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer89
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 246.20mm;max-width: max-content;}
+.PrintArea89
+{width: 297.00mm;}
+.Page89 table{max-width: 297.00mm !important;}
+.Page90
+{
+min-width: 246.20mm;min-height: 210.01mm;margin: 0;background-color: white;}
+.Page90 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header90
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer90
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 246.20mm;max-width: max-content;}
+.PrintArea90
+{width: 297.00mm;}
+.Page90 table{max-width: 297.00mm !important;}
+.Page91
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page91 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header91
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer91
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea91
+{width: 210.03mm;}
+.Page91 table{max-width: 210.03mm !important;}
+.Page92
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page92 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header92
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer92
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea92
+{width: 210.03mm;}
+.Page92 table{max-width: 210.03mm !important;}
+.Page93
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page93 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header93
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer93
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea93
+{width: 210.03mm;}
+.Page93 table{max-width: 210.03mm !important;}
+.Page94
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page94 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header94
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer94
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea94
+{width: 210.03mm;}
+.Page94 table{max-width: 210.03mm !important;}
+.Page95
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page95 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header95
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer95
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea95
+{width: 210.03mm;}
+.Page95 table{max-width: 210.03mm !important;}
+.Page96
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page96 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header96
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer96
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea96
+{width: 210.03mm;}
+.Page96 table{max-width: 210.03mm !important;}
+.Page97
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page97 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header97
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer97
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea97
+{width: 210.03mm;}
+.Page97 table{max-width: 210.03mm !important;}
+.Page98
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page98 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header98
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer98
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea98
+{width: 210.03mm;}
+.Page98 table{max-width: 210.03mm !important;}
+.Page99
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page99 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header99
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer99
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea99
+{width: 210.03mm;}
+.Page99 table{max-width: 210.03mm !important;}
+.Page100
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page100 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header100
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer100
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea100
+{width: 210.03mm;}
+.Page100 table{max-width: 210.03mm !important;}
+.PrintArea{position: relative;z-index: 0;margin-left: auto;margin-right: auto;padding: 0;margin-top: 1em;margin-bottom: 1em;overflow: hidden;}.Page{display: flex;flex-direction: column;}.Header{position: relative;display: block;}.Footer{position: relative;margin-top: auto;height: 100%;width: 100%;display: flex !important;flex-direction: column;justify-content: flex-end;}.Footer &gt; div{width: 100%;}body {background-color: #eaeaea !important;} 
+
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table class="MsoNormalTable" title="ias_1_role-210000d925dd7d-9f21-40f8-b0bc-39d9f657e6c3" style="border:solid 0pt;border-collapse:collapse;border-spacing:0;;"><tbody>
+ <tr style="height:36.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt"></td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Note</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">31.12.2024</span></b></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">31.12.2023 </span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">EUR</span></b></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">EUR</span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Assets</span></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><b><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Non-current assets</span></i></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Equipment</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">10</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OfficeEquipment" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-6-4-59e97524-ef54-48cc-b983-482d333747a7" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">183,130</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OfficeEquipment" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-6-6-b13fc18f-1663-454a-a6e5-b1134a811cad" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">166,323</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Intangible asset</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">11</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IntangibleAssetsOtherThanGoodwill" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-7-4-1eb79a60-181e-4c2a-8e6e-12d8ec459f94" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">118,368</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IntangibleAssetsOtherThanGoodwill" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-7-6-8c20c7f0-4668-46e1-b2e7-cdb897cf7cd2" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">197,756</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Right-of-use assets</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">12</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:RightofuseAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-8-4-cab4b4d3-5a96-4f9e-b2f6-dd1fa4131104" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">132,511</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:RightofuseAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-8-6-8863085c-49f3-497d-a9f9-2265c9ab291c" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">232,515</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Investment in subsidiary</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">13</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:InvestmentsInSubsidiaries" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-9-4-7604a98c-18cc-42a7-8af6-f15c8a9d8c18" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">2,538,382</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:InvestmentsInSubsidiaries" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-9-6-46e1f1f3-fb4a-44d1-9506-7676f3b9a4cf" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">2,538,382</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:13.2pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Investment in associates and
+  joint venture</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">14</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-10-4-d7b1844f-b26d-461e-9dc1-0e254b10a018" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,344,123</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:13.2pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:InvestmentsInAssociatesAccountedForUsingEquityMethod" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-10-6-c27b8a34-5ee1-4d12-891c-0ed0317f3668" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,262,599</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:28.25pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Financial assets at fair
+  value through other comprehensive income</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">15 a</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-11-4-08ba04f4-2b92-469f-b1bc-74b4ab6fc259" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">149,093</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:28.25pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-11-6-0d2d8bf7-c490-4353-a921-6ec7a648f81e" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">145,916</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Long term deposits</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">19</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:LongtermDeposits" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-12-4-20e3f5b4-e79d-4fc6-96d4-aeef90a5c804" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">33,166</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:LongtermDeposits" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-12-6-de5bbf6c-fa69-4bde-8c56-a06f37fccb57" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">33,166</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Loans given to related
+  parties</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">18</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentLoansAndReceivables" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-13-4-7ba7060a-60d2-4bd4-91e0-830e3b9b6ebb" contextRef="I2024-12-31" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentLoansAndReceivables" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-13-6-20171b20-db22-47b9-b74a-d1b37555cf2e" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">27,381</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total non-current assets</span></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-14-4-cf848b13-baae-4441-abba-a0ffea8824f7" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">4,498,773</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:NoncurrentAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-14-6-608405c1-47ad-4c99-ac64-37e89ab3a994" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">4,604,038</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.36%;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><b><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Current assets</span></i></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Trade receivables and other
+  assets</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">16</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:TradeAndOtherCurrentReceivables" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-17-4-f7c001e8-cf48-43f0-a199-8fd951dc0152" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">313,569</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:TradeAndOtherCurrentReceivables" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-17-6-e935632c-1ad5-4d41-b340-654da0526560" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">334,437</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Contract assets</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">5a</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentContractAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-18-4-b878956b-2179-4695-a5f8-b62f429211a7" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">68,000</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentContractAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-18-6-f4e41c49-6bbb-4d55-af27-b25f9f0b2ca8" contextRef="I2023-12-31" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:25.5pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Financial assets at fair
+  value through profit or loss</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">15b</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-19-4-33425206-5d59-416b-8029-a9adbe86086c" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">856,525</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:25.5pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:25.5pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentFinancialAssetsAtFairValueThroughProfitOrLossMandatorilyMeasuredAtFairValue" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-19-6-1b132219-c93a-4e24-81af-bb7ba6aee973" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">736,505</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Short-term deposits</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">19</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-20-4-9f806f11-6593-42a3-a685-13be368a1ba8" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">953,613</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ShorttermDepositsNotClassifiedAsCashEquivalents" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-20-6-28148774-c4e3-4386-a2e8-1a2a2cc42b1f" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,126,162</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.0pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Cash and cash equivalents</span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:center;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">17</span></p>
+  </td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CashAndCashEquivalents" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-21-4-d6198db5-27e1-4811-a0e7-f86cf2e9b918" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">96,887</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CashAndCashEquivalents" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-21-6-4ac2dccd-9660-4b8f-bd78-1a571c8d32a1" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">114,249</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Prepaid expenses </span></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.36%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentPrepaidExpenses" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-22-4-3764e225-51cb-4412-8a79-0d7445b7243b" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">134,907</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt"></td>
+  
+  <td style="width:16.9%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentPrepaidExpenses" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-22-6-f4d2ac28-04b3-45c3-ab69-ea8861017702" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">13,629</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total current assets</span></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-23-4-b595d2a9-8e8a-4c2a-a72f-fb481c224bc8" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">2,423,501</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:CurrentAssets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-23-6-0237b21f-0698-4593-8612-704d5e819fa8" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">2,324,982</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:16.5pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt"></td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:16.5pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">&#160;</span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">&#160;</span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:15.75pt">
+  <td style="width:47.66%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total assets</span></b></p>
+  </td>
+  
+  <td style="width:11.16%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:4.34%;padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt"></td>
+  
+  <td style="width:16.36%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Assets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-25-4-e8ac540e-7464-41fc-b199-1cb080756a6c" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">6,922,274</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:3.58%;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.75pt"></td>
+  
+  <td style="width:16.9%;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.75pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Assets" id="_Xbrld925dd7d-9f21-40f8-b0bc-39d9f657e6c3-0-25-6-3ecd1a7e-aaf9-49b5-98b7-c15ca6f12d4e" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">6,929,020</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+</tbody></table></body></html>

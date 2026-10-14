@@ -1,0 +1,68 @@
+{
+	"id": "esef-529900BIDQN2AOKV6N08-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900BIDQN2AOKV6N08/2024-12-31/ESEF/NO/0/Annual_Report_2024_Elopak_ASA_ESEF/reports/Annual Report 2024 Elopak ASA ESEF-2024-12-31--en.xhtml",
+		"lei": "529900BIDQN2AOKV6N08",
+		"pays": "NO",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "59f87debe5791e41c6903863d11b9502749e8c24b96aecfa05f5bf496ceb01d8",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"21",
+				"30383",
+				"19333"
+			],
+			[
+				"26",
+				"39782",
+				"40466"
+			],
+			[
+				"73304",
+				"87381"
+			],
+			[
+				"9",
+				"5294",
+				"6997"
+			],
+			[
+				"25952",
+				"25066"
+			],
+			[
+				"14",
+				"23312",
+				"23096"
+			],
+			[
+				"22",
+				"135756",
+				"120540"
+			],
+			[
+				"333784",
+				"322880"
+			],
+			[
+				"702759",
+				"647314"
+			],
+			[
+				"1055411",
+				"962610"
+			]
+		]
+	}
+}

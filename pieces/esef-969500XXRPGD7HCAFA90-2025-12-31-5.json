@@ -1,0 +1,91 @@
+{
+	"id": "esef-969500XXRPGD7HCAFA90-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500XXRPGD7HCAFA90/2025-12-31/ESEF/FR/0/Legrand-2025-12-31-1-FR/reports/Legrand-2025-12-31-1-FR.xhtml",
+		"lei": "969500XXRPGD7HCAFA90",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "2552f432cb2623b49970fd08a59687079d488d3119a3ab9ad4dda8bae5a62835",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"25873",
+				"26443"
+			],
+			[
+				"76297",
+				"68972"
+			],
+			[
+				"9709",
+				"9138"
+			],
+			[
+				"4103",
+				"2949"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"272",
+				"430"
+			],
+			[
+				"1872",
+				"1424"
+			],
+			[
+				"2108",
+				"1787"
+			],
+			[
+				"120234",
+				"111143"
+			],
+			[
+				"14667",
+				"13209"
+			],
+			[
+				"12269",
+				"10510"
+			],
+			[
+				"1589",
+				"2125"
+			],
+			[
+				"3349",
+				"2943"
+			],
+			[
+				"8",
+				"13"
+			],
+			[
+				"23812",
+				"20807"
+			],
+			[
+				"55694",
+				"49607"
+			],
+			[
+				"175928",
+				"160750"
+			]
+		]
+	}
+}

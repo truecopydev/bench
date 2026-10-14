@@ -1,0 +1,79 @@
+{
+	"id": "esef-9695002FT7GGI3CKKJ14-2025-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695002FT7GGI3CKKJ14/2025-12-31/ESEF/FR/0/euroapi-2025-12-31-en/reports/euroapi-2025-12-31-en.xhtml",
+		"lei": "9695002FT7GGI3CKKJ14",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "65ab2ce465d68ad04024f73940998aa5439abc75c8ce2bd4a90e60bc1737efad",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"951",
+				"18618",
+				"-19",
+				"67",
+				"-10339",
+				"9277",
+				"9277"
+			],
+			[
+				"-181",
+				"40",
+				"-141",
+				"-141"
+			],
+			[
+				"-1306",
+				"-1306",
+				"-1306"
+			],
+			[
+				"-181",
+				"-1266",
+				"-1447",
+				"-1447"
+			],
+			[
+				"5",
+				"-5"
+			],
+			[
+				"27",
+				"27",
+				"27"
+			],
+			[
+				"-1",
+				"-1",
+				"-1"
+			],
+			[
+				"2000",
+				"-20",
+				"1980",
+				"1980"
+			],
+			[
+				"956",
+				"18613",
+				"-20",
+				"-115",
+				"2000",
+				"-11598",
+				"9835",
+				"9835"
+			]
+		]
+	}
+}

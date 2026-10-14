@@ -1,0 +1,91 @@
+{
+	"id": "esef-2594003L11V38ZCVKZ09-2023-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/2594003L11V38ZCVKZ09/2023-12-31/ESEF/PL/0/esef-moc-2023-12-31-pl/reports/esef-moc-2023-12-31-pl.xhtml",
+		"lei": "2594003L11V38ZCVKZ09",
+		"pays": "PL",
+		"exercice": "2023-12-31",
+		"depose": "2024-05-28",
+		"sha256Page": "88727cdfdfaea4bd47461ed71cec27eadc585edb52e5cadf946d384d7b28c769",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"5",
+				"3463822",
+				"5218051",
+				"3988463"
+			],
+			[
+				"10",
+				"7139393",
+				"6408054",
+				"6008858"
+			],
+			[
+				"6",
+				"35598237",
+				"4951759",
+				"0"
+			],
+			[
+				"7",
+				"361176",
+				"256297",
+				"101249"
+			],
+			[
+				"9",
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"46562628",
+				"16834161",
+				"10098570"
+			],
+			[
+				"11",
+				"1724106",
+				"2505984",
+				"1448258"
+			],
+			[
+				"9",
+				"0",
+				"6865527",
+				"12454277"
+			],
+			[
+				"121",
+				"63988140",
+				"65617785",
+				"102039315"
+			],
+			[
+				"65712246",
+				"74989296",
+				"115941850"
+			],
+			[
+				"65712246",
+				"74989296",
+				"115941850"
+			],
+			[
+				"112274874",
+				"91823457",
+				"126040420"
+			]
+		]
+	}
+}

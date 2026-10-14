@@ -1,0 +1,90 @@
+{
+	"id": "esef-213800HKRFK8PNUNV581-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+		"lei": "213800HKRFK8PNUNV581",
+		"pays": "NL",
+		"exercice": "2026-03-31",
+		"depose": "2026-09-02",
+		"sha256Page": "c63ea3409381d5e700312a30e458a336912e71929248b02e9409c25573f624fe",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 30,
+		"lignes": [
+			[
+				"2026",
+				"2025"
+			],
+			[
+				"-570"
+			],
+			[
+				"8",
+				"695"
+			],
+			[
+				"8"
+			],
+			[
+				"5"
+			],
+			[
+				"13"
+			],
+			[
+				"25"
+			],
+			[
+				"25"
+			],
+			[
+				"129"
+			],
+			[
+				"21",
+				"-903"
+			],
+			[
+				"20",
+				"-5020"
+			],
+			[
+				"22"
+			],
+			[
+				"15102"
+			],
+			[
+				"11"
+			],
+			[
+				"15805"
+			],
+			[
+				"76",
+				"14"
+			],
+			[
+				"15"
+			],
+			[
+				"-268"
+			],
+			[
+				"14",
+				"-868"
+			],
+			[
+				"25",
+				"-14490"
+			]
+		]
+	}
+}

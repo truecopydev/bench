@@ -1,0 +1,59 @@
+{
+	"id": "esef-969500356FAUM2X41Q59-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500356FAUM2X41Q59/2025-12-31/ESEF/FR/0/planisware-2025-12-31-1-fr/reports/planisware-2025-12-31-1-fr.xhtml",
+		"lei": "969500356FAUM2X41Q59",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-15",
+		"sha256Page": "6d239306a8b70b0e9917a8b061dadb4a1d3d9890c8aa1e58a38875d2a7749751",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 4,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"50001",
+				"42729"
+			],
+			[
+				"-3632",
+				"154"
+			],
+			[
+				"-3632",
+				"154"
+			],
+			[
+				"9"
+			],
+			[
+				"13",
+				"12",
+				"31"
+			],
+			[
+				"-3667",
+				"66"
+			],
+			[
+				"46334",
+				"42796"
+			],
+			[
+				"46334",
+				"42796"
+			]
+		]
+	}
+}

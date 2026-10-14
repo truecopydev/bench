@@ -1,0 +1,20 @@
+{
+	"name": "truecopy-bench",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "A public table-extraction bench: published financial tables, their machine-readable truth, and what each reader makes of them",
+	"license": "MIT",
+	"engines": {
+		"node": ">=22.13.0"
+	},
+	"scripts": {
+		"rejouer": "node bin/rejouer.mjs",
+		"test": "node --test test/*.test.mjs",
+		"gate": "npm test"
+	},
+	"dependencies": {
+		"pdfjs-dist": "6.3.289",
+		"truecopy": "2.0.14"
+	}
+}

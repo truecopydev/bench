@@ -1,0 +1,122 @@
+{
+	"id": "esef-969500MMPQVHK671GT54-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500MMPQVHK671GT54/2024-12-31/ESEF/FR/0/airliquide-2024-12-31-fr/reports/airliquide-2024-12-31-fr.xhtml",
+		"lei": "969500MMPQVHK671GT54",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-03-11",
+		"sha256Page": "08966adbc41611b1ac17dc988dc5b5b447799ddabefb6abc39b2723c3c8257f6",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-3",
+				"276076",
+				"270578"
+			],
+			[
+				"-4",
+				"2339",
+				"2340"
+			],
+			[
+				"-4",
+				"-111468",
+				"-100082"
+			],
+			[
+				"-4",
+				"-50995",
+				"-51657"
+			],
+			[
+				"-4",
+				"-40452",
+				"-42214"
+			],
+			[
+				"75500",
+				"78965"
+			],
+			[
+				"-4",
+				"-24820",
+				"-25051"
+			],
+			[
+				"50680",
+				"53914"
+			],
+			[
+				"-5",
+				"2423",
+				"648"
+			],
+			[
+				"-5",
+				"-7388",
+				"-5106"
+			],
+			[
+				"45715",
+				"49456"
+			],
+			[
+				"-6",
+				"-2655",
+				"-2584"
+			],
+			[
+				"-6",
+				"154",
+				"85"
+			],
+			[
+				"-6",
+				"-1661",
+				"-1685"
+			],
+			[
+				"-7",
+				"-9718",
+				"-10865"
+			],
+			[
+				"-14",
+				"49",
+				"-7"
+			],
+			[
+				"31884",
+				"34400"
+			],
+			[
+				"1104",
+				"1339"
+			],
+			[
+				"30780",
+				"33061"
+			],
+			[
+				"-8",
+				"535",
+				"574"
+			],
+			[
+				"-8",
+				"533",
+				"572"
+			]
+		]
+	}
+}

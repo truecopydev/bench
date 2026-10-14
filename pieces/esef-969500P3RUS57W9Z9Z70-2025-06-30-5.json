@@ -1,0 +1,86 @@
+{
+	"id": "esef-969500P3RUS57W9Z9Z70-2025-06-30-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500P3RUS57W9Z9Z70/2025-06-30/ESEF/FR/0/claranova-2025-06-30-fr/reports/claranova-2025-06-30-fr.xhtml",
+		"lei": "969500P3RUS57W9Z9Z70",
+		"pays": "FR",
+		"exercice": "2025-06-30",
+		"depose": "2025-11-18",
+		"sha256Page": "9c001068fa6e585906c8d2d5af2310ba5ba3fbd7703b3265035fb70694b48c67",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"800",
+				"961"
+			],
+			[
+				"115",
+				"211"
+			],
+			[
+				"13",
+				"44"
+			],
+			[
+				"20",
+				"123"
+			],
+			[
+				"9",
+				"11"
+			],
+			[
+				"27",
+				"109"
+			],
+			[
+				"973",
+				"1459"
+			],
+			[
+				"149",
+				"2"
+			],
+			[
+				"13",
+				"157"
+			],
+			[
+				"87",
+				"120"
+			],
+			[
+				"5",
+				"58"
+			],
+			[
+				"46",
+				"121"
+			],
+			[
+				"56",
+				"368"
+			],
+			[
+				"355",
+				"826"
+			],
+			[
+				"33"
+			],
+			[
+				"1361",
+				"2284"
+			]
+		]
+	}
+}

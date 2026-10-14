@@ -1,0 +1,87 @@
+{
+	"id": "esef-9695000UMPNY21KKDO98-2022-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695000UMPNY21KKDO98/2022-12-31/ESEF/FR/0/9695000UMPNY21KKDO98-2022-12-31AR/reports/9695000UMPNY21KKDO98-2022-12-31AR.xhtml",
+		"lei": "9695000UMPNY21KKDO98",
+		"pays": "FR",
+		"exercice": "2022-12-31",
+		"depose": "2023-04-18",
+		"sha256Page": "5c5804e914cd9123bf22154d3a38101332c8d42caca67d0cf183b261dee18803",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2022",
+				"2021"
+			],
+			[
+				"32",
+				"58690",
+				"33317"
+			],
+			[
+				"44673",
+				"28556"
+			],
+			[
+				"4694",
+				"4357"
+			],
+			[
+				"12520",
+				"13767"
+			],
+			[
+				"-10426",
+				"-8364"
+			],
+			[
+				"-1210",
+				"-231"
+			],
+			[
+				"14919",
+				"17554"
+			],
+			[
+				"32",
+				"65170",
+				"55639"
+			],
+			[
+				"32",
+				"-12441",
+				"-4304"
+			],
+			[
+				"32",
+				"5961",
+				"-18018"
+			],
+			[
+				"-9801",
+				"1255"
+			],
+			[
+				"1350",
+				"-6578"
+			],
+			[
+				"-959",
+				"4941"
+			],
+			[
+				"15371",
+				"-17636"
+			]
+		]
+	}
+}

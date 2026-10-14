@@ -1,0 +1,113 @@
+{
+	"id": "esef-LAXUQCHT4FH58LRZDY46-2025-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/LAXUQCHT4FH58LRZDY46/2025-12-31/ESEF/FR/0/engie-2025-12-31-1-fr/reports/engie-2025-12-31-1-fr.xhtml",
+		"lei": "LAXUQCHT4FH58LRZDY46",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "868ee811f9e6dc38b2fc5f0159a1ff873e5d5343fda2ee8d92c3b9bb42535c36",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2435",
+				"21025",
+				"8937",
+				"4038",
+				"-200",
+				"-1557",
+				"-122",
+				"34556",
+				"6902",
+				"41458"
+			],
+			[
+				"3827",
+				"3827",
+				"921",
+				"4748"
+			],
+			[
+				"624",
+				"-726",
+				"-1818",
+				"-1919",
+				"-375",
+				"-2294"
+			],
+			[
+				"4452",
+				"-726",
+				"-1818",
+				"1908",
+				"546",
+				"2454"
+			],
+			[
+				"-6",
+				"106",
+				"100",
+				"100"
+			],
+			[
+				"-3635",
+				"-3635",
+				"-717",
+				"-4351"
+			],
+			[
+				"-86",
+				"74",
+				"-12",
+				"-12"
+			],
+			[
+				"-140",
+				"352",
+				"213",
+				"213"
+			],
+			[
+				"-183",
+				"-183",
+				"1148",
+				"966"
+			],
+			[
+				"3",
+				"3"
+			],
+			[
+				"-6",
+				"-6"
+			],
+			[
+				"4",
+				"4",
+				"2",
+				"6"
+			],
+			[
+				"2435",
+				"21019",
+				"9455",
+				"4390",
+				"-926",
+				"-3375",
+				"-48",
+				"32951",
+				"7879",
+				"40830"
+			]
+		]
+	}
+}

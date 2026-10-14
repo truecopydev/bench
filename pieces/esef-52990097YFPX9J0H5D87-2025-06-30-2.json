@@ -1,0 +1,91 @@
+{
+	"id": "esef-52990097YFPX9J0H5D87-2025-06-30-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/52990097YFPX9J0H5D87/2025-06-30/ESEF/FR/0/pernod-2025-06-30-1-fr/reports/pernod-2025-06-30-1-fr.xhtml",
+		"lei": "52990097YFPX9J0H5D87",
+		"pays": "FR",
+		"exercice": "2025-06-30",
+		"depose": "2025-09-23",
+		"sha256Page": "a81a54c37a2d7671de9ef1dd03516fe8c8532a14133310d098164f1ea9f0ae22",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"393",
+				"3052",
+				"12836",
+				"-275",
+				"-19",
+				"82",
+				"-319",
+				"15749",
+				"1048",
+				"16797"
+			],
+			[
+				"1626",
+				"-15",
+				"23",
+				"-981",
+				"653",
+				"-42",
+				"612"
+			],
+			[
+				"-2",
+				"-150",
+				"150",
+				"-2",
+				"-2"
+			],
+			[
+				"26",
+				"26",
+				"26"
+			],
+			[
+				"-67",
+				"58",
+				"-9",
+				"-9"
+			],
+			[
+				"-1182",
+				"-1182",
+				"-10",
+				"-1192"
+			],
+			[
+				"-22",
+				"-22",
+				"17",
+				"-6"
+			],
+			[
+				"-1",
+				"-1",
+				"-1"
+			],
+			[
+				"391",
+				"3052",
+				"13065",
+				"-289",
+				"4",
+				"-899",
+				"-111",
+				"15212",
+				"1014",
+				"16226"
+			]
+		]
+	}
+}

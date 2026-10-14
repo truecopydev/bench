@@ -1,0 +1,95 @@
+{
+	"id": "esef-9695009YI1863TOVDP79-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695009YI1863TOVDP79/2025-12-31/ESEF/FR/0/vicat-2025-12-31-1/reports/vicat-2025-12-31-1-fr.html",
+		"lei": "9695009YI1863TOVDP79",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "7dacd2f5130d208563ae42df83310f7e5e65c72c36c7e6e001e5491f5de82664",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"101",
+				"1137057",
+				"1158932"
+			],
+			[
+				"102",
+				"155289",
+				"158634"
+			],
+			[
+				"103",
+				"2677263",
+				"2724161"
+			],
+			[
+				"104",
+				"198231",
+				"195873"
+			],
+			[
+				"30670",
+				"30797"
+			],
+			[
+				"128827",
+				"120228"
+			],
+			[
+				"112962",
+				"103528"
+			],
+			[
+				"11",
+				"210989",
+				"225160"
+			],
+			[
+				"4651288",
+				"4717311"
+			],
+			[
+				"121",
+				"512042",
+				"542189"
+			],
+			[
+				"122",
+				"474099",
+				"463087"
+			],
+			[
+				"9119",
+				"9925"
+			],
+			[
+				"177866",
+				"144819"
+			],
+			[
+				"13",
+				"528410",
+				"535684"
+			],
+			[
+				"1701536",
+				"1695705"
+			],
+			[
+				"6352824",
+				"6413016"
+			]
+		]
+	}
+}

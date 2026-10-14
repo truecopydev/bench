@@ -1,0 +1,75 @@
+{
+	"id": "esef-969500R3AKTPEDO9EG76-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500R3AKTPEDO9EG76/2025-12-31/ESEF/FR/0/exens-2025-12-31-fr/reports/exens-2025-12-31-fr.xhtml",
+		"lei": "969500R3AKTPEDO9EG76",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-10",
+		"sha256Page": "0bd79c76754f2d192f2f3ddbe6ea072e0246e6cabfdadfcea998a39def2ee303",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"42715",
+				"30680"
+			],
+			[
+				"-532",
+				"38"
+			],
+			[
+				"133",
+				"-10"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"-399",
+				"29"
+			],
+			[
+				"70",
+				"0"
+			],
+			[
+				"-17",
+				"0"
+			],
+			[
+				"-5824",
+				"1197"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"-5771",
+				"1197"
+			],
+			[
+				"-6170",
+				"1226"
+			],
+			[
+				"36545",
+				"31906"
+			],
+			[
+				"36545",
+				"31906"
+			]
+		]
+	}
+}

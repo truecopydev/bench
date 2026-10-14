@@ -1,0 +1,118 @@
+{
+	"id": "esef-549300VGEJKB7SVUZR78-2023-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300VGEJKB7SVUZR78/2023-12-31/ESEF/FR/0/kering-2023-12-31-fr/reports/kering-2023-12-31-fr.xhtml",
+		"lei": "549300VGEJKB7SVUZR78",
+		"pays": "FR",
+		"exercice": "2023-12-31",
+		"depose": "2024-03-21",
+		"sha256Page": "98109a18b4f7c569bbfd28ac6998fbb26c5ce8be0dbcdc480db07ea20945b371",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"15212",
+				"13998"
+			],
+			[
+				"798",
+				"785"
+			],
+			[
+				"19",
+				"16010",
+				"14783"
+			],
+			[
+				"20",
+				"10026",
+				"4347"
+			],
+			[
+				"132",
+				"4511",
+				"4420"
+			],
+			[
+				"22",
+				"13"
+			],
+			[
+				"23",
+				"68",
+				"66"
+			],
+			[
+				"24",
+				"21",
+				"19"
+			],
+			[
+				"93",
+				"1776",
+				"1572"
+			],
+			[
+				"311",
+				"228"
+			],
+			[
+				"16726",
+				"10652"
+			],
+			[
+				"20",
+				"2400",
+				"2295"
+			],
+			[
+				"132",
+				"884",
+				"812"
+			],
+			[
+				"22",
+				"588",
+				"663"
+			],
+			[
+				"2200",
+				"2263"
+			],
+			[
+				"23",
+				"12",
+				"12"
+			],
+			[
+				"24",
+				"163",
+				"168"
+			],
+			[
+				"536",
+				"567"
+			],
+			[
+				"1848",
+				"1726"
+			],
+			[
+				"8631",
+				"8506"
+			],
+			[
+				"41367",
+				"33941"
+			]
+		]
+	}
+}

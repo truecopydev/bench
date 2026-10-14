@@ -1,0 +1,111 @@
+{
+	"id": "esef-969500I7C8V1LBIMSM05-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500I7C8V1LBIMSM05/2026-03-31/ESEF/FR/0/ubisoft-2026-03-31-1-fr/reports/ubisoft-2026-03-31-1-fr.xhtml",
+		"lei": "969500I7C8V1LBIMSM05",
+		"pays": "FR",
+		"exercice": "2026-03-31",
+		"depose": "2026-07-07",
+		"sha256Page": "cc03fdc84157c5ed50bd841350a810394e81df55c8f7292d3b53e46279727fd1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"104",
+				"101"
+			],
+			[
+				"7280",
+				"7127"
+			],
+			[
+				"22043",
+				"12312"
+			],
+			[
+				"-14752",
+				"-2435"
+			],
+			[
+				"14675",
+				"17105"
+			],
+			[
+				"50",
+				"-743",
+				"29"
+			],
+			[
+				"13933",
+				"17134"
+			],
+			[
+				"33",
+				"290",
+				"128"
+			],
+			[
+				"14",
+				"243",
+				"223"
+			],
+			[
+				"36",
+				"12767",
+				"17395"
+			],
+			[
+				"30",
+				"326",
+				"385"
+			],
+			[
+				"33",
+				"29",
+				"38"
+			],
+			[
+				"13654",
+				"18169"
+			],
+			[
+				"33",
+				"92"
+			],
+			[
+				"36",
+				"5180",
+				"4268"
+			],
+			[
+				"11",
+				"1302",
+				"1777"
+			],
+			[
+				"5176",
+				"4522"
+			],
+			[
+				"119",
+				"283"
+			],
+			[
+				"11870",
+				"10851"
+			],
+			[
+				"39457",
+				"46154"
+			]
+		]
+	}
+}

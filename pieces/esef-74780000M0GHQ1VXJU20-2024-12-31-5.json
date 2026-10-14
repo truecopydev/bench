@@ -1,0 +1,108 @@
+{
+	"id": "esef-74780000M0GHQ1VXJU20-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/74780000M0GHQ1VXJU20/2024-12-31/ESEF/HR/0/croatiaosiguranjedd-2024-12-31-en/reports/croatiaosiguranjedd-2024-12-31-en.xhtml",
+		"lei": "74780000M0GHQ1VXJU20",
+		"pays": "HR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "40867e005b949b8e83dde324e1d76d43ad09dbdf4c847916b5dc34433d141224",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"78296",
+				"90448",
+				"53279",
+				"78275",
+				"364136",
+				"664434"
+			],
+			[
+				"3238",
+				"3238"
+			],
+			[
+				"-583",
+				"-583"
+			],
+			[
+				"65641",
+				"65641"
+			],
+			[
+				"-11815",
+				"-11815"
+			],
+			[
+				"-16692",
+				"-16692"
+			],
+			[
+				"3001",
+				"3001"
+			],
+			[
+				"548",
+				"548"
+			],
+			[
+				"-99",
+				"-99"
+			],
+			[
+				"43239",
+				"43239"
+			],
+			[
+				"65573",
+				"65573"
+			],
+			[
+				"43239",
+				"65573",
+				"108812"
+			],
+			[
+				"4",
+				"-4"
+			],
+			[
+				"-114874",
+				"-114874"
+			],
+			[
+				"-1694",
+				"1694"
+			],
+			[
+				"305",
+				"-305"
+			],
+			[
+				"-2213",
+				"2213"
+			],
+			[
+				"398",
+				"-398"
+			],
+			[
+				"78296",
+				"90448",
+				"53283",
+				"118310",
+				"318035",
+				"658372"
+			]
+		]
+	}
+}

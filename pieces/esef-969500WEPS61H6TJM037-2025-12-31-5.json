@@ -1,0 +1,103 @@
+{
+	"id": "esef-969500WEPS61H6TJM037-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500WEPS61H6TJM037/2025-12-31/ESEF/FR/0/969500WEPS61H6TJM037-2025-12-31AR/reports/969500WEPS61H6TJM037-2025-12-31AR.xhtml",
+		"lei": "969500WEPS61H6TJM037",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-04",
+		"sha256Page": "aceecb79e6046c690f20a5b33e760398d7924a8236cc4799cbbd9e77d18c1bf1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"51",
+				"3129532",
+				"3239523"
+			],
+			[
+				"52",
+				"2151332",
+				"2336177"
+			],
+			[
+				"53",
+				"2886228",
+				"3108748"
+			],
+			[
+				"55",
+				"3533378",
+				"3617552"
+			],
+			[
+				"93",
+				"123063",
+				"111037"
+			],
+			[
+				"6",
+				"58149",
+				"64160"
+			],
+			[
+				"113",
+				"193351",
+				"144168"
+			],
+			[
+				"36",
+				"12075033",
+				"12621365"
+			],
+			[
+				"35",
+				"36226",
+				"22240"
+			],
+			[
+				"35",
+				"410527",
+				"457310"
+			],
+			[
+				"35",
+				"448934",
+				"616799"
+			],
+			[
+				"8693",
+				"21069"
+			],
+			[
+				"4749",
+				"4066"
+			],
+			[
+				"93",
+				"784793",
+				"518072"
+			],
+			[
+				"1693922",
+				"1639556"
+			],
+			[
+				"24",
+				"37915"
+			],
+			[
+				"13806870",
+				"14260921"
+			]
+		]
+	}
+}

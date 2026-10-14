@@ -1,0 +1,119 @@
+{
+	"id": "esef-5493001EZOOA66PTBR68-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5493001EZOOA66PTBR68/2025-12-31/ESEF/FR/0/atos-2025-12-31-1/reports/atos-2025-12-31-1-fr.html",
+		"lei": "5493001EZOOA66PTBR68",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "16829826f374837fdef9f6a21ed457b3f50ea71cb48d1ec3fa9cf6767b3943c9",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"19",
+				"18"
+			],
+			[
+				"1887",
+				"1887"
+			],
+			[
+				"-1290",
+				"-1354"
+			],
+			[
+				"-1404",
+				"248"
+			],
+			[
+				"-787",
+				"799"
+			],
+			[
+				"-3",
+				"0"
+			],
+			[
+				"-790",
+				"799"
+			],
+			[
+				"597",
+				"782"
+			],
+			[
+				"358",
+				"345"
+			],
+			[
+				"2263",
+				"2089"
+			],
+			[
+				"33",
+				"69"
+			],
+			[
+				"315",
+				"498"
+			],
+			[
+				"4",
+				"3"
+			],
+			[
+				"3571",
+				"3787"
+			],
+			[
+				"875",
+				"1018"
+			],
+			[
+				"101",
+				"75"
+			],
+			[
+				"373",
+				"315"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"22",
+				"17"
+			],
+			[
+				"162",
+				"207"
+			],
+			[
+				"1550",
+				"2028"
+			],
+			[
+				"3083",
+				"3660"
+			],
+			[
+				"458",
+				"0"
+			],
+			[
+				"6322",
+				"8246"
+			]
+		]
+	}
+}

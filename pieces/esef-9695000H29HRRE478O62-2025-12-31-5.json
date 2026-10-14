@@ -1,0 +1,87 @@
+{
+	"id": "esef-9695000H29HRRE478O62-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695000H29HRRE478O62/2025-12-31/ESEF/FR/0/inea-2025-12-31-1-fr/reports/inea-2025-12-31-1-fr.html",
+		"lei": "9695000H29HRRE478O62",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "443ce2f11b20f99dffa6d96258baf124b4b00d0226f61ab52e048beeae86501a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"21",
+				"1"
+			],
+			[
+				"9",
+				"2744",
+				"444"
+			],
+			[
+				"10",
+				"1128603",
+				"1158488"
+			],
+			[
+				"11",
+				"0",
+				"0"
+			],
+			[
+				"12",
+				"381",
+				"6929"
+			],
+			[
+				"18",
+				"1559",
+				"1771"
+			],
+			[
+				"1133307",
+				"1167633"
+			],
+			[
+				"12",
+				"19818",
+				"17499"
+			],
+			[
+				"12",
+				"382",
+				"2429"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"13",
+				"2650",
+				"7293"
+			],
+			[
+				"8005",
+				"2204"
+			],
+			[
+				"30856",
+				"29425"
+			],
+			[
+				"1164163",
+				"1197058"
+			]
+		]
+	}
+}

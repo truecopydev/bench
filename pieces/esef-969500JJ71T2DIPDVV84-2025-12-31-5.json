@@ -1,0 +1,100 @@
+{
+	"id": "esef-969500JJ71T2DIPDVV84-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500JJ71T2DIPDVV84/2025-12-31/ESEF/FR/0/nexity-2025-12-31-1-fr/reports/nexity-2025-12-31-fr.xhtml",
+		"lei": "969500JJ71T2DIPDVV84",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-15",
+		"sha256Page": "2f6571031cb352857f44a6bd1f906d0329058cc7a6d87d7b8460d77e43f61d97",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"7",
+				"1145660",
+				"1151694"
+			],
+			[
+				"8",
+				"92445",
+				"101567"
+			],
+			[
+				"8",
+				"734583",
+				"768081"
+			],
+			[
+				"8",
+				"95919",
+				"87864"
+			],
+			[
+				"9",
+				"61540",
+				"123376"
+			],
+			[
+				"10",
+				"47099",
+				"49227"
+			],
+			[
+				"31",
+				"121635",
+				"58613"
+			],
+			[
+				"2298881",
+				"2340422"
+			],
+			[
+				"12",
+				"1271248",
+				"1669110"
+			],
+			[
+				"13",
+				"581320",
+				"799402"
+			],
+			[
+				"31",
+				"10100",
+				"10104"
+			],
+			[
+				"14",
+				"576667",
+				"671374"
+			],
+			[
+				"22",
+				"294005",
+				"339508"
+			],
+			[
+				"23",
+				"421462",
+				"667613"
+			],
+			[
+				"3154802",
+				"4157111"
+			],
+			[
+				"5453683",
+				"6497533"
+			]
+		]
+	}
+}

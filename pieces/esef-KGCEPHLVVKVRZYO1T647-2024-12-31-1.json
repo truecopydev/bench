@@ -1,0 +1,104 @@
+{
+	"id": "esef-KGCEPHLVVKVRZYO1T647-2024-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/KGCEPHLVVKVRZYO1T647/2024-12-31/ESEF/LU/3/bnpparibasfortissanv-2024-12-31-0-en/reports/bnpparibasfortissanv-2024-12-31-0-en.xhtml",
+		"lei": "KGCEPHLVVKVRZYO1T647",
+		"pays": "LU",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "a994090027933d4e3c9249de3035de05fccad65265c8b6d0cd20a0d9ee956bf4",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"11905",
+				"500",
+				"15634",
+				"28039",
+				"52",
+				"3",
+				"-364",
+				"-309"
+			],
+			[
+				"-37",
+				"-37"
+			],
+			[
+				"12",
+				"12"
+			],
+			[
+				"-2996",
+				"-2996"
+			],
+			[
+				"11",
+				"11",
+				"-11",
+				"-11"
+			],
+			[
+				"112",
+				"-4",
+				"-25",
+				"83"
+			],
+			[
+				"3095",
+				"3095"
+			],
+			[
+				"11905",
+				"500",
+				"15719",
+				"28124",
+				"153",
+				"-1",
+				"-389",
+				"-237"
+			],
+			[
+				"-43",
+				"-43"
+			],
+			[
+				"3000",
+				"36",
+				"3036"
+			],
+			[
+				"-2832",
+				"-2832"
+			],
+			[
+				"99",
+				"-1",
+				"49",
+				"147"
+			],
+			[
+				"2919",
+				"2919"
+			],
+			[
+				"11905",
+				"3500",
+				"15799",
+				"31204",
+				"252",
+				"-2",
+				"-340",
+				"-90"
+			]
+		]
+	}
+}

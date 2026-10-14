@@ -1,0 +1,95 @@
+{
+	"id": "esef-2594007GQP5TDYY9OD45-2024-03-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/2594007GQP5TDYY9OD45/2024-03-31/ESEF/PL/0/esef-grodno-2024-03-31-pl/reports/esef-grodno-2024-03-31-pl.xhtml",
+		"lei": "2594007GQP5TDYY9OD45",
+		"pays": "PL",
+		"exercice": "2024-03-31",
+		"depose": "2024-07-30",
+		"sha256Page": "600b8fb548672f4ec3e65b0ab456c89244d214eb4646d319c306b68dcc27b94e",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"1538",
+				"16396",
+				"116163",
+				"0",
+				"134097",
+				"0",
+				"134097"
+			],
+			[
+				"0",
+				"0",
+				"22320",
+				"0",
+				"22320",
+				"0",
+				"22320"
+			],
+			[
+				"0",
+				"0",
+				"0",
+				"0",
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"0",
+				"0",
+				"22320",
+				"0",
+				"22320",
+				"0",
+				"22320"
+			],
+			[
+				"0",
+				"0",
+				"-12921",
+				"0",
+				"-12921",
+				"0",
+				"-12921"
+			],
+			[
+				"0",
+				"0",
+				"0",
+				"0",
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"0",
+				"0",
+				"9399",
+				"0",
+				"9399",
+				"0",
+				"9399"
+			],
+			[
+				"1538",
+				"16396",
+				"125562",
+				"0",
+				"143496",
+				"0",
+				"143496"
+			]
+		]
+	}
+}

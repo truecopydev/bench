@@ -1,0 +1,69 @@
+{
+	"id": "esef-984500ETP929D4755B29-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/984500ETP929D4755B29/2025-12-31/ESEF/LT/0/abtewox-2025-12-31-en/reports/abtewox-2025-12-31-en.xhtml",
+		"lei": "984500ETP929D4755B29",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-29",
+		"sha256Page": "71cac64749527a8b7213a5b1991e596102a94fec9b1144773b98c4bb6067b348",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"1267"
+			],
+			[
+				"3004453",
+				"2610523"
+			],
+			[
+				"181278978",
+				"158376990"
+			],
+			[
+				"1216016",
+				"1944708"
+			],
+			[
+				"578032"
+			],
+			[
+				"185500714",
+				"163510253"
+			],
+			[
+				"527048",
+				"432786"
+			],
+			[
+				"440674",
+				"462762"
+			],
+			[
+				"283780",
+				"235833"
+			],
+			[
+				"5982029",
+				"2718036"
+			],
+			[
+				"7233531",
+				"3849417"
+			],
+			[
+				"192734245",
+				"167359670"
+			]
+		]
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"id": "esef-7245007FC6PAJZL7QM61-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/7245007FC6PAJZL7QM61/2025-12-31/ESEF/NL/0/cab-2025-12-31-1-en/reports/cab-2025-12-31-1-en.xhtml",
+		"lei": "7245007FC6PAJZL7QM61",
+		"pays": "NL",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "954bdd4ada25c0894e6cebe0b796612c361bf6a8bd0816b2ac191209c62ca2e0",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"26",
+				"408",
+				"408"
+			],
+			[
+				"26",
+				"-160",
+				"-160"
+			],
+			[
+				"26",
+				"74080",
+				"73995"
+			],
+			[
+				"28",
+				"7036",
+				"6928"
+			],
+			[
+				"-30405",
+				"-22945"
+			],
+			[
+				"29",
+				"-277",
+				"-1481"
+			],
+			[
+				"50682",
+				"56745"
+			],
+			[
+				"30",
+				"37331",
+				"38897"
+			],
+			[
+				"33",
+				"357",
+				"481"
+			],
+			[
+				"25",
+				"29"
+			],
+			[
+				"37688",
+				"39408"
+			],
+			[
+				"30",
+				"28624",
+				"37460"
+			],
+			[
+				"32",
+				"183",
+				"786"
+			],
+			[
+				"31",
+				"1793",
+				"3141"
+			],
+			[
+				"31",
+				"25062",
+				"29037"
+			],
+			[
+				"31",
+				"10577",
+				"6948"
+			],
+			[
+				"66239",
+				"77371"
+			],
+			[
+				"154609",
+				"173524"
+			]
+		]
+	}
+}

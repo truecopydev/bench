@@ -1,0 +1,111 @@
+{
+	"id": "esef-96950091FL62XSLPHO35-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/96950091FL62XSLPHO35/2025-12-31/ESEF/FR/0/fnacdarty-2025-12-31-1-fr/reports/fnacdarty-2025-12-31-fr.xhtml",
+		"lei": "96950091FL62XSLPHO35",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-10",
+		"sha256Page": "54db623fe89fb9ae9be0825fa587bd65463e882749bb6c7a40c9b67edfe9777e",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"15",
+				"17940",
+				"20095"
+			],
+			[
+				"16",
+				"7528",
+				"6146"
+			],
+			[
+				"17",
+				"5152",
+				"5308"
+			],
+			[
+				"18",
+				"14440",
+				"15317"
+			],
+			[
+				"8",
+				"535",
+				"504"
+			],
+			[
+				"20",
+				"285",
+				"310"
+			],
+			[
+				"113",
+				"909"
+			],
+			[
+				"242",
+				"163",
+				"226"
+			],
+			[
+				"46156",
+				"48815"
+			],
+			[
+				"22",
+				"16170",
+				"16589"
+			],
+			[
+				"23",
+				"2247",
+				"2459"
+			],
+			[
+				"211",
+				"128"
+			],
+			[
+				"241",
+				"119",
+				"297"
+			],
+			[
+				"241",
+				"7758",
+				"5972"
+			],
+			[
+				"21",
+				"11037",
+				"10619"
+			],
+			[
+				"37542",
+				"36064"
+			],
+			[
+				"31",
+				"1732"
+			],
+			[
+				"85430",
+				"84879"
+			]
+		]
+	}
+}

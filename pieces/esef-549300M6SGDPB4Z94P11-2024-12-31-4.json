@@ -1,0 +1,99 @@
+{
+	"id": "esef-549300M6SGDPB4Z94P11-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300M6SGDPB4Z94P11/2024-12-31/ESEF/FR/0/ipsen-2024-12-31-fr/reports/ipsen-2024-12-31-fr.xhtml",
+		"lei": "549300M6SGDPB4Z94P11",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-04-15",
+		"sha256Page": "5d0f62a2d358862a49cd4fc8e0be51e55b4d9fba0264dbe637f2957d01e74556",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"838",
+				"1223",
+				"31000",
+				"-39",
+				"-144",
+				"3",
+				"-1075",
+				"6444",
+				"38252",
+				"-13",
+				"38239"
+			],
+			[
+				"3459",
+				"3459",
+				"14",
+				"3473"
+			],
+			[
+				"-43",
+				"1410",
+				"24",
+				"-251",
+				"1139",
+				"1139"
+			],
+			[
+				"-43",
+				"1410",
+				"24",
+				"-251",
+				"3459",
+				"4597",
+				"15",
+				"4612"
+			],
+			[
+				"6458",
+				"-13",
+				"-6444"
+			],
+			[
+				"24",
+				"271",
+				"295",
+				"295"
+			],
+			[
+				"-337",
+				"-337",
+				"-337"
+			],
+			[
+				"-996",
+				"-996",
+				"-996"
+			],
+			[
+				"6",
+				"6",
+				"6"
+			],
+			[
+				"838",
+				"1223",
+				"36447",
+				"1358",
+				"-120",
+				"-249",
+				"-1141",
+				"3459",
+				"41816",
+				"2",
+				"41818"
+			]
+		]
+	}
+}

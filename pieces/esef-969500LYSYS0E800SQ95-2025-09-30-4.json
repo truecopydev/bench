@@ -1,0 +1,110 @@
+{
+	"id": "esef-969500LYSYS0E800SQ95-2025-09-30-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500LYSYS0E800SQ95/2025-09-30/ESEF/FR/0/969500LYSYS0E800SQ95-2025-09-30-0-fr/reports/969500LYSYS0E800SQ95-2025-09-30-0-fr.xhtml",
+		"lei": "969500LYSYS0E800SQ95",
+		"pays": "FR",
+		"exercice": "2025-09-30",
+		"depose": "2026-01-08",
+		"sha256Page": "5ffdfaf82c7cf8ae03d85240c783a01bc41d420fae19d0d89b50650908a8a984",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"6150",
+				"6053"
+			],
+			[
+				"-1734",
+				"-1740"
+			],
+			[
+				"73",
+				"-3392",
+				"-3282"
+			],
+			[
+				"-1"
+			],
+			[
+				"-567",
+				"-592"
+			],
+			[
+				"-114",
+				"-111"
+			],
+			[
+				"-141",
+				"-166"
+			],
+			[
+				"-24",
+				"-36"
+			],
+			[
+				"177",
+				"126"
+			],
+			[
+				"71",
+				"177",
+				"126"
+			],
+			[
+				"74",
+				"-9",
+				"-31"
+			],
+			[
+				"168",
+				"95"
+			],
+			[
+				"75",
+				"-141",
+				"-122"
+			],
+			[
+				"75",
+				"38",
+				"17"
+			],
+			[
+				"65",
+				"-10"
+			],
+			[
+				"76",
+				"22",
+				"-36"
+			],
+			[
+				"87",
+				"-46"
+			],
+			[
+				"77"
+			],
+			[
+				"87",
+				"-46"
+			],
+			[
+				"88",
+				"-46"
+			],
+			[
+				"-1"
+			]
+		]
+	}
+}

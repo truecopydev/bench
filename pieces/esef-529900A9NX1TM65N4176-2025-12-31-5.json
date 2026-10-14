@@ -1,0 +1,83 @@
+{
+	"id": "esef-529900A9NX1TM65N4176-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900A9NX1TM65N4176/2025-12-31/ESEF/AT/0/kelag-2025-12-31-2-de/reports/kelag-2025-12-31-2-de.xhtml",
+		"lei": "529900A9NX1TM65N4176",
+		"pays": "AT",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "abac7cb232df63f75683d1ad43b45a1e70d2189ed58a27db2115e495b2f8e77c",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"1841624",
+				"1978524"
+			],
+			[
+				"102870",
+				"88688"
+			],
+			[
+				"-1117051",
+				"-1184584"
+			],
+			[
+				"-213869",
+				"-223401"
+			],
+			[
+				"-156557",
+				"-179176"
+			],
+			[
+				"-139228",
+				"-116983"
+			],
+			[
+				"111240",
+				"168295"
+			],
+			[
+				"429029",
+				"531364"
+			],
+			[
+				"10910",
+				"18802"
+			],
+			[
+				"-18572",
+				"-24829"
+			],
+			[
+				"421367",
+				"525337"
+			],
+			[
+				"-68820",
+				"-83146"
+			],
+			[
+				"352547",
+				"442191"
+			],
+			[
+				"2675",
+				"4378"
+			],
+			[
+				"349872",
+				"437813"
+			]
+		]
+	}
+}

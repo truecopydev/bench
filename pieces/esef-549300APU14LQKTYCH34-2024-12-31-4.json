@@ -1,0 +1,79 @@
+{
+	"id": "esef-549300APU14LQKTYCH34-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300APU14LQKTYCH34/2024-12-31/ESEF/NO/0/entraasa-2024-12-31-0-en/reports/entraasa-2024-12-31-0-en.xhtml",
+		"lei": "549300APU14LQKTYCH34",
+		"pays": "NO",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "897bf21b06810212a4f123ebc8f28e3ad6b16fc52d77a95f87661f7788afccb1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"182",
+				"3524",
+				"25987",
+				"1978",
+				"31671"
+			],
+			[
+				"-5449",
+				"-133",
+				"-5582"
+			],
+			[
+				"-6",
+				"-6"
+			],
+			[
+				"-455",
+				"-70",
+				"-526"
+			],
+			[
+				"-3",
+				"-3"
+			],
+			[
+				"182",
+				"3524",
+				"20074",
+				"1775",
+				"25555"
+			],
+			[
+				"13",
+				"61",
+				"75"
+			],
+			[
+				"10",
+				"10"
+			],
+			[
+				"-81",
+				"-81"
+			],
+			[
+				"-1",
+				"-1"
+			],
+			[
+				"182",
+				"3524",
+				"20096",
+				"1755",
+				"25557"
+			]
+		]
+	}
+}

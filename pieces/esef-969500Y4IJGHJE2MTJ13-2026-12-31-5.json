@@ -1,0 +1,105 @@
+{
+	"id": "esef-969500Y4IJGHJE2MTJ13-2026-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500Y4IJGHJE2MTJ13/2026-12-31/ESEF/FR/0/hermes-2025-12-31-1/reports/hermes-2025-12-31-1-fr.html",
+		"lei": "969500Y4IJGHJE2MTJ13",
+		"pays": "FR",
+		"exercice": "2026-12-31",
+		"depose": "2026-03-24",
+		"sha256Page": "92f3a22c636833a2161838a625bad475792452dda19ac0794b7959066aca5b96",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"81",
+				"180",
+				"228"
+			],
+			[
+				"82",
+				"231",
+				"237"
+			],
+			[
+				"83",
+				"2002",
+				"1786"
+			],
+			[
+				"82",
+				"3486",
+				"2980"
+			],
+			[
+				"102",
+				"1196",
+				"1050"
+			],
+			[
+				"9",
+				"227",
+				"238"
+			],
+			[
+				"73",
+				"914",
+				"929"
+			],
+			[
+				"54",
+				"176",
+				"159"
+			],
+			[
+				"8412",
+				"7608"
+			],
+			[
+				"54",
+				"2575",
+				"2797"
+			],
+			[
+				"54",
+				"418",
+				"478"
+			],
+			[
+				"54",
+				"45",
+				"28"
+			],
+			[
+				"54",
+				"370",
+				"398"
+			],
+			[
+				"11",
+				"262",
+				"132"
+			],
+			[
+				"103",
+				"12239",
+				"11642"
+			],
+			[
+				"15911",
+				"15476"
+			],
+			[
+				"24322",
+				"23084"
+			]
+		]
+	}
+}

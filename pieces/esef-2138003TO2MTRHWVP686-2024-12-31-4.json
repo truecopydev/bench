@@ -1,0 +1,44 @@
+{
+	"id": "esef-2138003TO2MTRHWVP686-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/2138003TO2MTRHWVP686/2024-12-31/ESEF/GR/0/2138003TO2MTRHWVP686-2024-12-31-en/reports/2138003TO2MTRHWVP686-2024-12-31-en.xhtml",
+		"lei": "2138003TO2MTRHWVP686",
+		"pays": "GR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "848a479b80267640589a0b3be720b9c0379add98980ea8655d109160abcd76a1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"31646",
+				"32614"
+			],
+			[
+				"825988",
+				"170523"
+			],
+			[
+				"25064",
+				"133331"
+			],
+			[
+				"802046",
+				"23673"
+			],
+			[
+				"32",
+				"827110",
+				"157004"
+			]
+		]
+	}
+}

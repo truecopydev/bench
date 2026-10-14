@@ -1,0 +1,73 @@
+{
+	"id": "esef-96950047J5JOCUPMHI30-2023-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/96950047J5JOCUPMHI30/2023-12-31/ESEF/FR/0/mrm-2023-12-31-fr/reports/mrm-2023-12-31-fr.html",
+		"lei": "96950047J5JOCUPMHI30",
+		"pays": "FR",
+		"exercice": "2023-12-31",
+		"depose": "2024-05-01",
+		"sha256Page": "e0d98c0e96edfe6796085fc2948dafe8e51bc0f7df57440af55c5b5e2c655f39",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2",
+				"2"
+			],
+			[
+				"33"
+			],
+			[
+				"235530",
+				"244867"
+			],
+			[
+				"814",
+				"2938"
+			],
+			[
+				"96",
+				"96"
+			],
+			[
+				"236441",
+				"247935"
+			],
+			[
+				"50",
+				"16"
+			],
+			[
+				"4090",
+				"4213"
+			],
+			[
+				"3716",
+				"3749"
+			],
+			[
+				"446"
+			],
+			[
+				"6049",
+				"10014"
+			],
+			[
+				"14351",
+				"17992"
+			],
+			[
+				"250792",
+				"265928"
+			]
+		]
+	}
+}

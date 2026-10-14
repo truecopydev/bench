@@ -1,0 +1,98 @@
+{
+	"id": "esef-969500ZR92SQCU9TST26-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500ZR92SQCU9TST26/2026-03-31/ESEF/FR/0/969500ZR92SQCU9TST26-2026-03-31-1-fr/reports/969500ZR92SQCU9TST26-2026-03-31-1-fr.xhtml",
+		"lei": "969500ZR92SQCU9TST26",
+		"pays": "FR",
+		"exercice": "2026-03-31",
+		"depose": "2026-06-11",
+		"sha256Page": "15a8a74275eebd295fe3aca90550daa18cbef6b9ff41d35b8c6eb33ef8548796",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"71544",
+				"71453",
+				"71425"
+			],
+			[
+				"228370",
+				"228461",
+				"228489"
+			],
+			[
+				"1059054",
+				"1279538",
+				"1179955"
+			],
+			[
+				"-31773",
+				"15325",
+				"14752"
+			],
+			[
+				"1327195",
+				"1594777",
+				"1494621"
+			],
+			[
+				"811",
+				"1327195",
+				"1594777",
+				"1494621"
+			],
+			[
+				"813",
+				"517309",
+				"375355",
+				"669074"
+			],
+			[
+				"814",
+				"121776",
+				"93878",
+				"79392"
+			],
+			[
+				"639085",
+				"469233",
+				"748466"
+			],
+			[
+				"813",
+				"102847",
+				"406226",
+				"77746"
+			],
+			[
+				"52628",
+				"189609",
+				"197143"
+			],
+			[
+				"815",
+				"159978",
+				"184501",
+				"202199"
+			],
+			[
+				"315453",
+				"780336",
+				"477088"
+			],
+			[
+				"2281733",
+				"2844346",
+				"2720174"
+			]
+		]
+	}
+}

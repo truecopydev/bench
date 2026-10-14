@@ -1,0 +1,103 @@
+{
+	"id": "esef-9695001J8OSOVX4TP939-2025-08-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695001J8OSOVX4TP939/2025-08-31/ESEF/FR/0/ovhgroupe-2025-08-31-0-fr/reports/ovhgroupe-2025-08-31-0-fr.html",
+		"lei": "9695001J8OSOVX4TP939",
+		"pays": "FR",
+		"exercice": "2025-08-31",
+		"depose": "2025-11-18",
+		"sha256Page": "b0f7cd68980137e0ff17f5948eeed02c3a8de9c1ed4ca0782fdb242f334c9fa4",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"43",
+				"9931",
+				"10846"
+			],
+			[
+				"44",
+				"-2389",
+				"-2619"
+			],
+			[
+				"45",
+				"-3822",
+				"-4014"
+			],
+			[
+				"3720",
+				"4213"
+			],
+			[
+				"46",
+				"-3431",
+				"-3544"
+			],
+			[
+				"289",
+				"669"
+			],
+			[
+				"47",
+				"1",
+				"57"
+			],
+			[
+				"47",
+				"-33",
+				"-31"
+			],
+			[
+				"257",
+				"694"
+			],
+			[
+				"-301",
+				"-537"
+			],
+			[
+				"95",
+				"102"
+			],
+			[
+				"-115",
+				"-216"
+			],
+			[
+				"48",
+				"-321",
+				"-651"
+			],
+			[
+				"-64",
+				"44"
+			],
+			[
+				"49",
+				"-39",
+				"-39"
+			],
+			[
+				"-103",
+				"4"
+			],
+			[
+				"-5",
+				"0"
+			],
+			[
+				"-5",
+				"0"
+			]
+		]
+	}
+}

@@ -1,0 +1,109 @@
+{
+	"id": "esef-254900LH0G1ZIZ78Y462-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/254900LH0G1ZIZ78Y462/2025-12-31/ESEF/FR/0/maroctelecom-2025-12-31-1/reports/maroctelecom-2025-12-31-1-fr.html",
+		"lei": "254900LH0G1ZIZ78Y462",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "253bc5a50edc2c5fba3ed1b005c9e2aad52ad0946bb1e822afcc56e74bf49ac1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"3",
+				"9094",
+				"8969",
+				"9230"
+			],
+			[
+				"4",
+				"11654",
+				"10295",
+				"7300"
+			],
+			[
+				"5",
+				"34178",
+				"31228",
+				"30492"
+			],
+			[
+				"34",
+				"1593",
+				"1578",
+				"1535"
+			],
+			[
+				"6",
+				"549",
+				"0",
+				"0"
+			],
+			[
+				"7",
+				"3201",
+				"2858",
+				"2587"
+			],
+			[
+				"8",
+				"374",
+				"357",
+				"527"
+			],
+			[
+				"60643",
+				"55285",
+				"51672"
+			],
+			[
+				"9",
+				"451",
+				"323",
+				"445"
+			],
+			[
+				"10",
+				"12554",
+				"12698",
+				"12296"
+			],
+			[
+				"11",
+				"198",
+				"89",
+				"117"
+			],
+			[
+				"12",
+				"1966",
+				"1979",
+				"1013"
+			],
+			[
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"15168",
+				"15089",
+				"13871"
+			],
+			[
+				"75811",
+				"70374",
+				"65543"
+			]
+		]
+	}
+}

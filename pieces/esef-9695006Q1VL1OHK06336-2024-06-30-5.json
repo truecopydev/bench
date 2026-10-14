@@ -1,0 +1,79 @@
+{
+	"id": "esef-9695006Q1VL1OHK06336-2024-06-30-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695006Q1VL1OHK06336/2024-06-30/ESEF/FR/0/amplitudesurgical-2024-06-30-fr/reports/amplitudesurgical-2024-06-30-fr.xhtml",
+		"lei": "9695006Q1VL1OHK06336",
+		"pays": "FR",
+		"exercice": "2024-06-30",
+		"depose": "2024-11-05",
+		"sha256Page": "21dbe1b42b0d3d0238bcc1c548188f17004df8901a2d48ea332ed7e08838979b",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"17",
+				"98796",
+				"95629"
+			],
+			[
+				"18",
+				"41460",
+				"37275"
+			],
+			[
+				"17",
+				"37286",
+				"31838"
+			],
+			[
+				"465",
+				"709"
+			],
+			[
+				"16",
+				"6593",
+				"5109"
+			],
+			[
+				"184601",
+				"170560"
+			],
+			[
+				"19",
+				"43300",
+				"37955"
+			],
+			[
+				"20",
+				"1156",
+				"1367"
+			],
+			[
+				"20",
+				"21097",
+				"18922"
+			],
+			[
+				"21",
+				"29101",
+				"37212"
+			],
+			[
+				"94654",
+				"95456"
+			],
+			[
+				"279255",
+				"266016"
+			]
+		]
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"id": "esef-529900IIODYNYAZ2ID26-2026-04-30-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900IIODYNYAZ2ID26/2026-04-30/ESEF/AT/0/zumtobelgroupag-2026-04-30-1-de/reports/zumtobelgroupag-2026-04-30-1-de.xhtml",
+		"lei": "529900IIODYNYAZ2ID26",
+		"pays": "AT",
+		"exercice": "2026-04-30",
+		"depose": "2026-07-21",
+		"sha256Page": "59f5a3cc20a04d79c54830016846e313e182f7f62692d2518ea7e0d5696dd59b",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"107867",
+				"334638",
+				"117569",
+				"-33116",
+				"32",
+				"-103021",
+				"423969",
+				"1273",
+				"425242"
+			],
+			[
+				"21",
+				"0",
+				"0",
+				"15521",
+				"0",
+				"0",
+				"0",
+				"15521",
+				"-31",
+				"15490"
+			],
+			[
+				"22",
+				"0",
+				"0",
+				"0",
+				"-2838",
+				"41",
+				"1052",
+				"-1745",
+				"-47",
+				"-1792"
+			],
+			[
+				"0",
+				"0",
+				"15521",
+				"-2838",
+				"41",
+				"1052",
+				"13776",
+				"-78",
+				"13698"
+			],
+			[
+				"0",
+				"-3018",
+				"0",
+				"0",
+				"0",
+				"0",
+				"-3018",
+				"0",
+				"-3018"
+			],
+			[
+				"0",
+				"0",
+				"-10681",
+				"0",
+				"0",
+				"0",
+				"-10681",
+				"-336",
+				"-11017"
+			],
+			[
+				"107867",
+				"331620",
+				"122409",
+				"-35954",
+				"73",
+				"-101969",
+				"424046",
+				"859",
+				"424905"
+			]
+		]
+	}
+}

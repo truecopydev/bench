@@ -1,0 +1,71 @@
+{
+	"id": "esef-5493004V6A3Z027YT216-2026-03-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5493004V6A3Z027YT216/2026-03-31/ESEF/FR/0/remycointreau-2026-03-31-1-fr/reports/remycointreau-2026-03-31-1-fr.xhtml",
+		"lei": "5493004V6A3Z027YT216",
+		"pays": "FR",
+		"exercice": "2026-03-31",
+		"depose": "2026-07-07",
+		"sha256Page": "9a33ae12116165eb7039c62dce5c2265da2411a962e15c8f4371b900c0b90c6c",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2026",
+				"2025"
+			],
+			[
+				"785",
+				"1207"
+			],
+			[
+				"-2",
+				"12"
+			],
+			[
+				"-32",
+				"10"
+			],
+			[
+				"1",
+				"-2"
+			],
+			[
+				"-119",
+				"16"
+			],
+			[
+				"-35",
+				"-44"
+			],
+			[
+				"9",
+				"11"
+			],
+			[
+				"-178",
+				"4"
+			],
+			[
+				"607",
+				"1211"
+			],
+			[
+				"609",
+				"1218"
+			],
+			[
+				"-2",
+				"-6"
+			]
+		]
+	}
+}

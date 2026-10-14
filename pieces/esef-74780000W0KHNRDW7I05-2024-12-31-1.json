@@ -1,0 +1,96 @@
+{
+	"id": "esef-74780000W0KHNRDW7I05-2024-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/74780000W0KHNRDW7I05/2024-12-31/ESEF/HR/0/dalekovoddd-2024-12-31-0-en/reports/dalekovoddd-2024-12-31-0-en.xhtml",
+		"lei": "74780000W0KHNRDW7I05",
+		"pays": "HR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "3b8f058d691fbcbe4ed7af68596a3f71a735404fb24eacc48c5bb1b3c4bd008f",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"54744",
+				"22",
+				"-1124",
+				"5759",
+				"6405",
+				"-665",
+				"601",
+				"65742"
+			],
+			[
+				"-3210",
+				"-3210"
+			],
+			[
+				"-74",
+				"-74"
+			],
+			[
+				"-74",
+				"-3210",
+				"-3284"
+			],
+			[
+				"-306",
+				"-306"
+			],
+			[
+				"30",
+				"-13497",
+				"12387",
+				"1110"
+			],
+			[
+				"-13497",
+				"12387",
+				"1110"
+			],
+			[
+				"41247",
+				"12387",
+				"22",
+				"-1124",
+				"5453",
+				"6405",
+				"-739",
+				"-1499",
+				"62152"
+			],
+			[
+				"6067",
+				"6067"
+			],
+			[
+				"92",
+				"92"
+			],
+			[
+				"92",
+				"6067",
+				"6159"
+			],
+			[
+				"41247",
+				"12387",
+				"22",
+				"-1124",
+				"5453",
+				"6405",
+				"-647",
+				"4568",
+				"68311"
+			]
+		]
+	}
+}

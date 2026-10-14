@@ -1,0 +1,1327 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root {
+  --color-text-main: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-title-h1: #00619d;
+  --color-title-h2: #00a3da;
+  --color-title-h3: #444444;
+  --color-title-h4: #666666;
+  --color-title-h5: #888888;
+  --color-title-h6: #bbbbbb;
+  --color-link: #00a3da;
+  --color-highlights: #cccccc;
+  --color-softbackground: #dddddd;
+  --color-marker: lime;
+  --color-border: #000000;
+  --color-text-different: #bbbbbb; /*  text in notes */
+
+  --fontsize-text-main: 1.4rem;
+  --fontsize-text-small: 1.2rem;
+  --fontsize-title-h1: 2.5rem;
+  --fontsize-title-h2: 2rem;
+  --fontsize-title-h3: 1.8rem;
+  --fontsize-title-h4: 1.7rem;
+  --fontsize-title-h5: 1.6rem;
+  --fontsize-title-h6: 1.4rem;
+  --fontsize-table: 1.2rem;
+  --fontsize-table-head: 1.2rem;
+  --fontsize-footnote: 1.2rem;
+  --fontsize-caption: 1.2rem;
+
+  --lineheight-text-main: 2.2rem;
+  --lineheight-text-small: 1.6rem;
+  --lineheight-title-h1: 3rem;
+  --lineheight-title-h2: 2.5rem;
+  --lineheight-title-h3: 2.5rem;
+  --lineheight-title-h4: 2.5rem;
+  --lineheight-title-h5: 1.9rem;
+  --lineheight-title-h6: 1.8rem;
+  --lineheight-table: 1.8rem;
+  --lineheight-table-head: 1.4rem;
+  --lineheight-caption: 1.3rem;
+
+  --fontfamily-text: "Verdana", Arial, Helvetica, sans-serif;
+  --fontfamily-text-italic: "Verdana", Arial, Helvetica, sans-serif;
+  --fontfamily-titles: "Verdana", Arial, Helvetica, sans-serif;
+  --fontfamily-titles-h5h6: "Verdana", Arial, Helvetica, sans-serif;
+  
+  --fontfamily-table: "Verdana", Arial, Helvetica, sans-serif;
+  --fontfamily-table-head: "Verdana", Arial, Helvetica, sans-serif;
+
+  --fontweight-regular: 400;
+  --fontweight-light: 200;
+  --fontweight-bold: 600;
+  --fontweight-bolder: 700;
+
+  --space: 25px;
+  --space-small: 15px;
+  --space-large: 45px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+/*
+  Gets rid of the annoying outline for mouse users but preserves it for keyboard users, and is ignored by browsers that don’t support :focus-visible.
+  @Link: https://twitter.com/LeaVerou/status/1045768279753666562
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*
+  Gets rid of the deleting "x" on chrome
+  @Link: https://stackoverflow.com/questions/11538192/stop-chrome-from-auto-styling-input-type-search
+*/
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.sr {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+*:focus {
+  outline: 0;
+}
+
+* {
+  -webkit-font-variant-ligatures: none !important;
+          font-variant-ligatures: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html.notes-active, html.nav-open,
+body.notes-active,
+body.nav-open {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+html.nav-open-desktop:after,
+body.nav-open-desktop:after {
+  content: "";
+  background: var(--color-white);
+  opacity: 0.4;
+  position: absolute;
+  top: 11.5rem;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+body {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-regular);
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+  color: var(--color-text-main);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  width: 100%;
+  margin: 0;
+}
+
+body.nav-open:after {
+  content: "";
+  background: var(--color-white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.superscript,
+sup,
+sub,
+.subscript,
+td span[class*='superscript'],
+td span[class*='subscript'],
+span[class*='superscript'] {
+  font-size: 60%;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  padding: 0 1px;
+  top: -0.6em;
+}
+
+span[class*='fussnoten'] span[class*='superscript'],
+span[class*='_footnote'] span[class*='superscript'] {
+  font-size: 100%;
+  top: 0.8em;
+  padding: 0;
+}
+
+sub, .subscript,
+td span[class*='subscript'] {
+  top: 0.4em;
+}
+
+b, strong,
+.ns-bold {
+  font-weight: var(--fontweight-bold);
+}
+
+span.ns-highlight {
+  color: var(--color-highlights);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fontfamily-titles);
+  font-weight: var(--fontweight-bold);
+}
+
+h5 {
+  font-family: var(--fontfamily-titles-h5h6);
+  font-weight: var(--fontweight-bold);
+}
+
+h6 {
+  font-family: var(--fontfamily-titles-h5h6);
+  font-weight: var(--fontweight-bold);
+}
+
+h1 {
+  color: var(--color-title-h1);
+  font-size: var(--fontsize-title-h1);
+  line-height: var(--lineheight-title-h1);
+}
+
+h2 {
+  color: var(--color-title-h2);
+  font-size: var(--fontsize-title-h2);
+  line-height: var(--lineheight-title-h2);
+}
+
+h3 {
+  color: var(--color-title-h3);
+  font-size: var(--fontsize-title-h3);
+  line-height: var(--lineheight-title-h3);
+}
+
+h4 {
+  color: var(--color-title-h4);
+  font-size: var(--fontsize-title-h4);
+  line-height: var(--lineheight-title-h4);
+}
+
+h5 {
+  color: var(--color-title-h5);
+  font-size: var(--fontsize-title-h5);
+  line-height: var(--lineheight-title-h5);
+}
+
+h6 {
+  color: var(--color-title-h6);
+  font-size: var(--fontsize-title-h6);
+  line-height: var(--lineheight-title-h6);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img.lazy {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+img.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
+strong {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-bold);
+}
+
+p {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-regular);
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+}
+
+img:not([src]) {
+  max-height: 0;
+}
+
+.hyphenate {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.donthyphenate {
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+.responsive-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  display: block;
+}
+
+.responsive-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-embed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ld-control,
+.ld-control * {
+  position: static;
+}
+
+.livingdocs {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body > .content {
+  max-width: 1164px;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 72px;
+}
+
+.home .content {
+  padding-top: 0;
+}
+
+.content > .content {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.livingdocs > .ns-paragraph,
+.livingdocs > .ns-img,
+.livingdocs > .ns-title-h1,
+.livingdocs > .ns-title-h2,
+.livingdocs > .ns-title-h3,
+.livingdocs > .ns-title-h4,
+.livingdocs > .ns-title-h5,
+.livingdocs > .ns-title-h6 {
+  width: 100%;
+}
+
+.ns-paragraph + *,
+.ns-img + *,
+.ns-title-h1 + *,
+.ns-title-h2 + *,
+.ns-title-h3 + *,
+.ns-title-h4 + *,
+.ns-title-h5 + *,
+.ns-title-h6 + *,
+.ns-table-wrap + *,
+.ns-article + .ns-article > *,
+.ns-img + * {
+  margin-top: var(--space);
+}
+
+.ns-paragraph + .ns-title-h2,
+.ns-paragraph + .ns-title-h1,
+.ns-paragraph + h1,
+.ns-paragraph + h2,
+.ns-article + .ns-article > h1 {
+  margin-top: var(--space-large);
+}
+
+h3 + .ns-paragraph,
+.ns-title-h3 + .ns-paragraph,
+h4 + .ns-paragraph,
+.ns-title-h4 + .ns-paragraph,
+h5 + .ns-paragraph,
+.ns-title-h5 + .ns-paragraph,
+h6 + .ns-paragraph,
+.ns-title-h6 + .ns-paragraph {
+  margin-top: 0;
+}
+
+.ns-paragraph + .ns-paragraph,
+h1 + h2,
+.ns-title-h1 + .ns-title-h2,
+h2 + h3,
+.ns-title-h2 + .ns-title-h3,
+h3 + h4,
+.ns-title-h3 + .ns-title-h4,
+h6 + h5,
+.ns-title-h6 + .ns-title-h5,
+h4 + h5,
+.ns-title-h4 + .ns-title-h5,
+.ns-title-h1 + .ns-title-h1,
+.ns-title-h2 + .ns-title-h2,
+.ns-title-h3 + .ns-title-h3,
+.ns-title-h2 + .ns-paragraph {
+  margin-top: var(--space-small);
+}
+
+.ns-article {
+  width: 100%;
+}
+
+.ns-img img {
+  width: 100%;
+}
+
+.ns-img img + * {
+  margin-top: var(--space-small);
+}
+
+.ns-img__img--mobile {
+  display: none;
+}
+
+.ns-img__caption {
+  font-size: var(--fontsize-caption);
+  line-height: var(--lineheight-caption);
+}
+
+.ns-img__caption + * {
+  margin-top: var(--space-small);
+}
+
+.ns-img--mobile .ns-img__img--desktop {
+  display: none;
+}
+
+[class*="ns-title-"] + * {
+  margin-top: 0px;
+}
+
+.ns-title-h1 + * {
+  margin-top: var(--space);
+}
+
+.ns-title-h2 + * {
+  margin-top: var(--space-small);
+}
+
+a {
+  color: var(--color-link);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nosplit {
+  overflow-x: auto;
+}
+
+.nosplit table {
+  min-width: 992px;
+}
+
+table {
+  width: 100%;
+  font-family: var(--fontfamily-table);
+}
+
+.ns-table-wrap,
+ul.ns-list-group {
+  width: 100%;
+}
+
+.ns-table-wrap {
+  overflow-x: auto;
+}
+
+table .subscript,
+table .superscript,
+table td span[class*='superscript'],
+table td span[class*='subscript'] {
+  left: 0;
+}
+
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+
+td[class*='fill-background']  {
+  background-color: var(--color-softbackground);
+} 
+
+td[class*='fill-none']  {
+  background-color: transparent;
+} 
+
+td.ns-vertical-bottom {
+  vertical-align: bottom;
+}
+
+td.ns-vertical-top {
+  vertical-align: top;
+}
+
+td.ns-vertical-center,
+td.ns-vertical-middle {
+  vertical-align: middle;
+}
+
+th, td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 4px 4px;
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-light);
+  font-size: var(--fontsize-table);
+  line-height: var(--lineheight-table);
+  position: relative;
+  width: calc(100% - 10px);
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+th p span, td p span {
+  white-space: normal;
+  display: inline;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+td[class*='line'],
+.line,
+td[class*='line_bold'],
+.line_bold,
+.line_ind
+ {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.line_bold p,
+td[class*='line_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.line_ind p,
+td[class*='line_ind'] {
+  padding-left: 1.5rem;
+}
+
+.bline,
+td[class*='bline'],
+.bline_bold,
+td[class*='bline_bold'],
+td[class*='head'] {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.bline_bold p,
+td[class*='bline_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.head p,
+td[class*='head'] {
+  position: relative;
+  font-family: var(--fontfamily-table-head);
+  font-weight: var(--fontweight-bold);
+  font-size: var(--fontsize-table-head);
+  line-height: var(--lineheight-table-head);
+}
+
+.noline,
+td[class*='noline'] {
+  border-bottom: 0;
+}
+
+.noline_bold,
+td[class*='noline_bold'] {
+  border-bottom: 0;
+}
+
+.noline_bold p,
+td[class*='noline_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.noline_ind,
+td[class*='noline_ind'] {
+  border-bottom: 0;
+}
+
+.noline_ind p,
+td[class*='noline_ind'] {
+  padding-left: 1.5rem;
+}
+
+td span[class*='bold'] {
+  font-weight: var(--fontweight-bold);
+}
+
+.title {
+  border-bottom: 0;
+}
+
+.title p {
+  font-family: var(--fontfamily-table-head);
+  font-weight: var(--fontweight-bold);
+  font-size: var(--fontsize-title-h3);
+  line-height: var(--lineheight-title-h3);
+}
+
+.ns-horizontal-right {
+  text-align: right;
+}
+
+.ns-horizontal-left {
+  text-align: left;
+}
+
+.ns-horizontal-center {
+  text-align: center;
+}
+
+.footnote,
+.ns-paragraphstyle_footnotestyles_footnote,
+span[class^='ns-paragraphstyle_footnotestyles'],
+span[class*='fussnote'],
+span[class*='footnotestyles_footnote'],
+.ns-table-footnote-item {
+  border-bottom: 0;
+  padding: 0;
+  font-size: var(--fontsize-footnote);
+}
+
+.ns-table-footnote-wrap {
+  margin-top: var(--space);
+}
+
+.ns-table-footnote-item + .ns-table-footnote-item {
+  margin-top: 5px;
+  display: flex;
+}
+
+.ns-table-footnote-item .ns-characterstyle_tablestyles_superscript {
+  width: 20px;
+  display: inline-block;
+}
+
+.ns-table-footnote-item span + span {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
+
+.blue {
+  color: var(--color-highlights);
+}
+
+.blue p {
+  color: var(--color-highlights);
+}
+
+.italic {
+  font-family: var(--fontfamily-text-italic);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.italic p {
+  font-family: var(--fontfamily-text-italic);
+  font-style: italic;
+  font-weight: 400;
+}
+
+span[class*='_bold'],
+.bold {
+  font-weight: 700;
+}
+
+.note {
+  font-size: var(--fontsize-text-small);
+  line-height: var(--lineheight-text-small);
+  color: var(--color-text-different);
+  font-weight: var(--fontweight-bold);
+  cursor: pointer;
+}
+
+.ns-paragraph {
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+}
+
+.ns-paragraph--small {
+  font-size: var(--fontsize-text-small);
+  line-height: var(--lineheight-text-small);
+}
+
+.ns-temp-highlight {
+  background: var(--color-marker);
+}
+
+ul.ns-list-group {
+  display: block;
+  padding-left: var(--space);
+}
+
+@media print {
+  body > .content {
+    display: block;
+  }
+}
+table {.srl-table-PL_statement-col1 { width: 52% } .srl-table-PL_statement-col2 { width: 12% } .srl-table-PL_statement-col3 { width: 12% } .srl-table-PL_statement-col4 { width: 12% } .srl-table-PL_statement-col5 { width: 12% } }
+table {.srl-table-Portfolio_summary_p3-col1 { width: 70% } .srl-table-Portfolio_summary_p3-col2 { width: 15% } .srl-table-Portfolio_summary_p3-col3 { width: 15% } }
+table {.srl-table-Balance_sheet-col1 { width: 70% } .srl-table-Balance_sheet-col2 { width: 15% } .srl-table-Balance_sheet-col3 { width: 15% } }
+table {.srl-table-57117333-9215-4d25-a9ac-3739456a8b35-col1 { width: 53% } .srl-table-57117333-9215-4d25-a9ac-3739456a8b35-col2 { width: 47% } }
+table {.srl-table-8c00a7c8-0385-4d73-b1de-c2ae3933e10a-col1 { width: 54% } .srl-table-8c00a7c8-0385-4d73-b1de-c2ae3933e10a-col2 { width: 46% } }
+table {.srl-table-2e4ad6aa-718f-4c9a-ae60-910fa6f9ad38-col1 { width: 2% } .srl-table-2e4ad6aa-718f-4c9a-ae60-910fa6f9ad38-col2 { width: 93% } .srl-table-2e4ad6aa-718f-4c9a-ae60-910fa6f9ad38-col3 { width: 5% } }
+table {.srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col1 { width: 15% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col2 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col3 { width: 9% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col4 { width: 5% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col5 { width: 5% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col6 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col7 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col8 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col9 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col10 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col11 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col12 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col13 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col14 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col15 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col16 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col17 { width: 5% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col18 { width: 5% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col19 { width: 4% } .srl-table-628a484e-efa3-4659-8373-53e6780cd20f-col20 { width: 4% } }
+table {.srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col1 { width: 15% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col2 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col3 { width: 10% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col4 { width: 5% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col5 { width: 5% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col6 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col7 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col8 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col9 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col10 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col11 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col12 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col13 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col14 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col15 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col16 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col17 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col18 { width: 5% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col19 { width: 4% } .srl-table-6508c0b9-da27-4910-87d7-f1b62cb84e0d-col20 { width: 4% } }
+table {.srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col1 { width: 17% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col2 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col3 { width: 9% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col4 { width: 5% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col5 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col6 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col7 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col8 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col9 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col10 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col11 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col12 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col13 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col14 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col15 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col16 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col17 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col18 { width: 5% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col19 { width: 4% } .srl-table-9213e7f8-bd7c-466d-b761-b81c1826776e-col20 { width: 4% } }
+table {.srl-table-fcfcf041-ad78-497a-83c0-d1229d9779d9-col1 { width: 80% } .srl-table-fcfcf041-ad78-497a-83c0-d1229d9779d9-col2 { width: 20% } }
+table {.srl-table-966da72b-2401-4429-8249-03f2efc12432-col1 { width: 80% } .srl-table-966da72b-2401-4429-8249-03f2efc12432-col2 { width: 20% } }
+table {.srl-table-6a04da71-4a66-45ed-a6b3-7afb05b09e19-col1 { width: 80% } .srl-table-6a04da71-4a66-45ed-a6b3-7afb05b09e19-col2 { width: 20% } }
+table {.srl-table-11501167-c147-4627-83c5-7794234113bc-col1 { width: 20% } .srl-table-11501167-c147-4627-83c5-7794234113bc-col2 { width: 20% } .srl-table-11501167-c147-4627-83c5-7794234113bc-col3 { width: 20% } .srl-table-11501167-c147-4627-83c5-7794234113bc-col4 { width: 20% } .srl-table-11501167-c147-4627-83c5-7794234113bc-col5 { width: 20% } }
+table {.srl-table-00454896-cfb1-4243-a011-2fdff9f9a288-col1 { width: 22% } .srl-table-00454896-cfb1-4243-a011-2fdff9f9a288-col2 { width: 26% } .srl-table-00454896-cfb1-4243-a011-2fdff9f9a288-col3 { width: 26% } .srl-table-00454896-cfb1-4243-a011-2fdff9f9a288-col4 { width: 26% } }
+table {.srl-table-a294cb55-a244-44e6-a8dc-983e7c3b93f5-col1 { width: 32% } .srl-table-a294cb55-a244-44e6-a8dc-983e7c3b93f5-col2 { width: 31% } .srl-table-a294cb55-a244-44e6-a8dc-983e7c3b93f5-col3 { width: 37% } }
+table {.srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col1 { width: 40% } .srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col2 { width: 12% } .srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col3 { width: 12% } .srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col4 { width: 12% } .srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col5 { width: 12% } .srl-table-f2f7c0ec-468a-404a-8171-1418346b9984-col6 { width: 12% } }
+table {.srl-table-09e75104-66e2-4454-913a-c80d3752f47c-col1 { width: 85% } .srl-table-09e75104-66e2-4454-913a-c80d3752f47c-col2 { width: 15% } }
+table {.srl-table-385c3b06-54c8-4824-9779-6998176bd9c3-col1 { width: 55% } .srl-table-385c3b06-54c8-4824-9779-6998176bd9c3-col2 { width: 15% } .srl-table-385c3b06-54c8-4824-9779-6998176bd9c3-col3 { width: 15% } .srl-table-385c3b06-54c8-4824-9779-6998176bd9c3-col4 { width: 15% } }
+table {.srl-table-2f1b8182-a568-4d80-bbad-e9b95f958ac4-col1 { width: 64% } .srl-table-2f1b8182-a568-4d80-bbad-e9b95f958ac4-col2 { width: 12% } .srl-table-2f1b8182-a568-4d80-bbad-e9b95f958ac4-col3 { width: 12% } .srl-table-2f1b8182-a568-4d80-bbad-e9b95f958ac4-col4 { width: 12% } }
+table {.srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col1 { width: 40% } .srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col2 { width: 12% } .srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col3 { width: 12% } .srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col4 { width: 12% } .srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col5 { width: 12% } .srl-table-77f395a0-73c9-4166-ae9c-f1937214a229-col6 { width: 12% } }
+table {.srl-table-Top_13_table-col1 { width: 11% } .srl-table-Top_13_table-col2 { width: 7% } .srl-table-Top_13_table-col3 { width: 9% } .srl-table-Top_13_table-col4 { width: 8% } .srl-table-Top_13_table-col5 { width: 9% } .srl-table-Top_13_table-col6 { width: 8% } .srl-table-Top_13_table-col7 { width: 8% } .srl-table-Top_13_table-col8 { width: 8% } .srl-table-Top_13_table-col9 { width: 8% } .srl-table-Top_13_table-col10 { width: 9% } .srl-table-Top_13_table-col11 { width: 7% } .srl-table-Top_13_table-col12 { width: 8% } }
+table {.srl-table-Portfolio_performance-col1 { width: 70% } .srl-table-Portfolio_performance-col2 { width: 15% } .srl-table-Portfolio_performance-col3 { width: 15% } }
+table {.srl-table-l-f-l_rental_growth-col1 { width: 70% } .srl-table-l-f-l_rental_growth-col2 { width: 15% } .srl-table-l-f-l_rental_growth-col3 { width: 15% } }
+table {.srl-table-MainenanceCAPEX_area-col1 { width: 70% } .srl-table-MainenanceCAPEX_area-col2 { width: 15% } .srl-table-MainenanceCAPEX_area-col3 { width: 15% } }
+table {.srl-table-MainenanceCAPEX_million-col1 { width: 70% } .srl-table-MainenanceCAPEX_million-col2 { width: 15% } .srl-table-MainenanceCAPEX_million-col3 { width: 15% } }
+table {.srl-table-Vacancy-col1 { width: 70% } .srl-table-Vacancy-col2 { width: 15% } .srl-table-Vacancy-col3 { width: 15% } }
+table {.srl-table-EBITDA_Rental-col1 { width: 52% } .srl-table-EBITDA_Rental-col2 { width: 12% } .srl-table-EBITDA_Rental-col3 { width: 12% } .srl-table-EBITDA_Rental-col4 { width: 12% } .srl-table-EBITDA_Rental-col5 { width: 12% } }
+table {.srl-table-EBITDA_Total-col1 { width: 52% } .srl-table-EBITDA_Total-col2 { width: 12% } .srl-table-EBITDA_Total-col3 { width: 12% } .srl-table-EBITDA_Total-col4 { width: 12% } .srl-table-EBITDA_Total-col5 { width: 12% } }
+table {.srl-table-FFO_1-col1 { width: 52% } .srl-table-FFO_1-col2 { width: 12% } .srl-table-FFO_1-col3 { width: 12% } .srl-table-FFO_1-col4 { width: 12% } .srl-table-FFO_1-col5 { width: 12% } }
+table {.srl-table-FFO_2-col1 { width: 52% } .srl-table-FFO_2-col2 { width: 12% } .srl-table-FFO_2-col3 { width: 12% } .srl-table-FFO_2-col4 { width: 12% } .srl-table-FFO_2-col5 { width: 12% } }
+table {.srl-table-Financial_positions_MR-col1 { width: 70% } .srl-table-Financial_positions_MR-col2 { width: 15% } .srl-table-Financial_positions_MR-col3 { width: 15% } }
+table {.srl-table-EPRA_LTV_CY-col1 { width: 52% } .srl-table-EPRA_LTV_CY-col2 { width: 16% } .srl-table-EPRA_LTV_CY-col3 { width: 16% } .srl-table-EPRA_LTV_CY-col4 { width: 16% } }
+table {.srl-table-EPRA_LTV_PY-col1 { width: 52% } .srl-table-EPRA_LTV_PY-col2 { width: 16% } .srl-table-EPRA_LTV_PY-col3 { width: 16% } .srl-table-EPRA_LTV_PY-col4 { width: 16% } }
+table {.srl-table-EPRA_LTV_NET-col1 { width: 70% } .srl-table-EPRA_LTV_NET-col2 { width: 15% } .srl-table-EPRA_LTV_NET-col3 { width: 15% } }
+table {.srl-table-5f03cc9c-b680-41a6-a544-e0af008d5fc8-col1 { width: 25% } .srl-table-5f03cc9c-b680-41a6-a544-e0af008d5fc8-col2 { width: 25% } .srl-table-5f03cc9c-b680-41a6-a544-e0af008d5fc8-col3 { width: 25% } .srl-table-5f03cc9c-b680-41a6-a544-e0af008d5fc8-col4 { width: 25% } }
+table {.srl-table-94282428-b101-4c64-8b93-bd8941e7f018-col1 { width: 25% } .srl-table-94282428-b101-4c64-8b93-bd8941e7f018-col2 { width: 25% } .srl-table-94282428-b101-4c64-8b93-bd8941e7f018-col3 { width: 25% } .srl-table-94282428-b101-4c64-8b93-bd8941e7f018-col4 { width: 25% } }
+table {.srl-table-777bdf18-d91f-4e8f-993a-6a801fd1fdf0-col1 { width: 29% } .srl-table-777bdf18-d91f-4e8f-993a-6a801fd1fdf0-col2 { width: 18% } .srl-table-777bdf18-d91f-4e8f-993a-6a801fd1fdf0-col3 { width: 18% } .srl-table-777bdf18-d91f-4e8f-993a-6a801fd1fdf0-col4 { width: 18% } .srl-table-777bdf18-d91f-4e8f-993a-6a801fd1fdf0-col5 { width: 17% } }
+table {.srl-table-98fa972c-5f12-489b-9f0e-c34ffc66ae9f-col1 { width: 64% } .srl-table-98fa972c-5f12-489b-9f0e-c34ffc66ae9f-col2 { width: 18% } .srl-table-98fa972c-5f12-489b-9f0e-c34ffc66ae9f-col3 { width: 18% } }
+table {.srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col1 { width: 16% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col2 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col3 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col4 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col5 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col6 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col7 { width: 12% } .srl-table-05bb6187-6eed-4e95-b6ad-6478267e172b-col8 { width: 12% } }
+table {.srl-table-764a7df3-9833-496f-86f2-1fb9acd0dcb1-col1 { width: 48% } .srl-table-764a7df3-9833-496f-86f2-1fb9acd0dcb1-col2 { width: 32% } .srl-table-764a7df3-9833-496f-86f2-1fb9acd0dcb1-col3 { width: 10% } .srl-table-764a7df3-9833-496f-86f2-1fb9acd0dcb1-col4 { width: 10% } }
+table {.srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col1 { width: 15% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col2 { width: 14% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col3 { width: 14% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col4 { width: 14% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col5 { width: 14% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col6 { width: 14% } .srl-table-75fcd238-a8b4-4e72-9c58-6fe678695842-col7 { width: 15% } }
+table {.srl-table-BS_assets-col1 { width: 52% } .srl-table-BS_assets-col2 { width: 16% } .srl-table-BS_assets-col3 { width: 16% } .srl-table-BS_assets-col4 { width: 16% } }
+table {.srl-table-BS_liabilities_and_equity-col1 { width: 52% } .srl-table-BS_liabilities_and_equity-col2 { width: 16% } .srl-table-BS_liabilities_and_equity-col3 { width: 16% } .srl-table-BS_liabilities_and_equity-col4 { width: 16% } }
+table {.srl-table-Profit_and_loss-col1 { width: 52% } .srl-table-Profit_and_loss-col2 { width: 16% } .srl-table-Profit_and_loss-col3 { width: 16% } .srl-table-Profit_and_loss-col4 { width: 16% } }
+table {.srl-table-Comprehensive_income-col1 { width: 52% } .srl-table-Comprehensive_income-col2 { width: 16% } .srl-table-Comprehensive_income-col3 { width: 16% } .srl-table-Comprehensive_income-col4 { width: 16% } }
+table {.srl-table-Statement_of_cashflows-col1 { width: 52% } .srl-table-Statement_of_cashflows-col2 { width: 16% } .srl-table-Statement_of_cashflows-col3 { width: 16% } .srl-table-Statement_of_cashflows-col4 { width: 16% } }
+table {.srl-table-Changes_in_equity_CY-col1 { width: 17% } .srl-table-Changes_in_equity_CY-col2 { width: 6% } .srl-table-Changes_in_equity_CY-col3 { width: 8% } .srl-table-Changes_in_equity_CY-col4 { width: 8% } .srl-table-Changes_in_equity_CY-col5 { width: 6% } .srl-table-Changes_in_equity_CY-col6 { width: 6% } .srl-table-Changes_in_equity_CY-col7 { width: 8% } .srl-table-Changes_in_equity_CY-col8 { width: 8% } .srl-table-Changes_in_equity_CY-col9 { width: 9% } .srl-table-Changes_in_equity_CY-col10 { width: 8% } .srl-table-Changes_in_equity_CY-col11 { width: 8% } .srl-table-Changes_in_equity_CY-col12 { width: 8% } }
+table {.srl-table-Changes_in_equity_PY-col1 { width: 19% } .srl-table-Changes_in_equity_PY-col2 { width: 6% } .srl-table-Changes_in_equity_PY-col3 { width: 8% } .srl-table-Changes_in_equity_PY-col4 { width: 7% } .srl-table-Changes_in_equity_PY-col5 { width: 9% } .srl-table-Changes_in_equity_PY-col6 { width: 8% } .srl-table-Changes_in_equity_PY-col7 { width: 9% } .srl-table-Changes_in_equity_PY-col8 { width: 9% } .srl-table-Changes_in_equity_PY-col9 { width: 9% } .srl-table-Changes_in_equity_PY-col10 { width: 7% } .srl-table-Changes_in_equity_PY-col11 { width: 9% } }
+table {.srl-table-4fdff087-ea2e-4a70-ab8e-df9a636a3bdc-col1 { width: 28% } .srl-table-4fdff087-ea2e-4a70-ab8e-df9a636a3bdc-col2 { width: 34% } .srl-table-4fdff087-ea2e-4a70-ab8e-df9a636a3bdc-col3 { width: 19% } .srl-table-4fdff087-ea2e-4a70-ab8e-df9a636a3bdc-col4 { width: 19% } }
+table {.srl-table-090e11ac-b43e-4658-bd46-b902fcb1a5ed-col1 { width: 29% } .srl-table-090e11ac-b43e-4658-bd46-b902fcb1a5ed-col2 { width: 45% } .srl-table-090e11ac-b43e-4658-bd46-b902fcb1a5ed-col3 { width: 13% } .srl-table-090e11ac-b43e-4658-bd46-b902fcb1a5ed-col4 { width: 13% } }
+table {.srl-table-N5_-_Deal_1-col1 { width: 83% } .srl-table-N5_-_Deal_1-col2 { width: 17% } }
+table {.srl-table-N5_-_Deal_3-col1 { width: 83% } .srl-table-N5_-_Deal_3-col2 { width: 17% } }
+table {.srl-table-N5_-_Deal_4-col1 { width: 83% } .srl-table-N5_-_Deal_4-col2 { width: 17% } }
+table {.srl-table-N6_-_IP_RF_residential-col1 { width: 70% } .srl-table-N6_-_IP_RF_residential-col2 { width: 15% } .srl-table-N6_-_IP_RF_residential-col3 { width: 15% } }
+table {.srl-table-N6_-_IP_para_residential_1_CY-col1 { width: 44% } .srl-table-N6_-_IP_para_residential_1_CY-col2 { width: 10% } .srl-table-N6_-_IP_para_residential_1_CY-col3 { width: 11% } .srl-table-N6_-_IP_para_residential_1_CY-col4 { width: 9% } .srl-table-N6_-_IP_para_residential_1_CY-col5 { width: 8% } .srl-table-N6_-_IP_para_residential_1_CY-col6 { width: 8% } .srl-table-N6_-_IP_para_residential_1_CY-col7 { width: 10% } }
+table {.srl-table-N6_-_IP_para_residential_1_PY-col1 { width: 44% } .srl-table-N6_-_IP_para_residential_1_PY-col2 { width: 10% } .srl-table-N6_-_IP_para_residential_1_PY-col3 { width: 11% } .srl-table-N6_-_IP_para_residential_1_PY-col4 { width: 9% } .srl-table-N6_-_IP_para_residential_1_PY-col5 { width: 8% } .srl-table-N6_-_IP_para_residential_1_PY-col6 { width: 8% } .srl-table-N6_-_IP_para_residential_1_PY-col7 { width: 10% } }
+table {.srl-table-N6_-_IP_sensi_residential_CY-col1 { width: 61% } .srl-table-N6_-_IP_sensi_residential_CY-col2 { width: 13% } .srl-table-N6_-_IP_sensi_residential_CY-col3 { width: 13% } .srl-table-N6_-_IP_sensi_residential_CY-col4 { width: 13% } }
+table {.srl-table-N6_-_IP_sensi_residential_PY-col1 { width: 61% } .srl-table-N6_-_IP_sensi_residential_PY-col2 { width: 13% } .srl-table-N6_-_IP_sensi_residential_PY-col3 { width: 13% } .srl-table-N6_-_IP_sensi_residential_PY-col4 { width: 13% } }
+table {.srl-table-N6_-_IP_RF_project-col1 { width: 70% } .srl-table-N6_-_IP_RF_project-col2 { width: 15% } .srl-table-N6_-_IP_RF_project-col3 { width: 15% } }
+table {.srl-table-N6_-_IP_para_project-col1 { width: 70% } .srl-table-N6_-_IP_para_project-col2 { width: 15% } .srl-table-N6_-_IP_para_project-col3 { width: 15% } }
+table {.srl-table-N6_-_IP_sensi_project_CY-col1 { width: 52% } .srl-table-N6_-_IP_sensi_project_CY-col2 { width: 8% } .srl-table-N6_-_IP_sensi_project_CY-col3 { width: 8% } .srl-table-N6_-_IP_sensi_project_CY-col4 { width: 8% } .srl-table-N6_-_IP_sensi_project_CY-col5 { width: 8% } .srl-table-N6_-_IP_sensi_project_CY-col6 { width: 8% } .srl-table-N6_-_IP_sensi_project_CY-col7 { width: 8% } }
+table {.srl-table-N6_-_IP_sensi_project_PY-col1 { width: 52% } .srl-table-N6_-_IP_sensi_project_PY-col2 { width: 8% } .srl-table-N6_-_IP_sensi_project_PY-col3 { width: 8% } .srl-table-N6_-_IP_sensi_project_PY-col4 { width: 8% } .srl-table-N6_-_IP_sensi_project_PY-col5 { width: 8% } .srl-table-N6_-_IP_sensi_project_PY-col6 { width: 8% } .srl-table-N6_-_IP_sensi_project_PY-col7 { width: 8% } }
+table {.srl-table-N6_-_IP_profit_and_loss-col1 { width: 70% } .srl-table-N6_-_IP_profit_and_loss-col2 { width: 15% } .srl-table-N6_-_IP_profit_and_loss-col3 { width: 15% } }
+table {.srl-table-N8_-_EQ_RF-col1 { width: 74% } .srl-table-N8_-_EQ_RF-col2 { width: 13% } .srl-table-N8_-_EQ_RF-col3 { width: 13% } }
+table {.srl-table-N8_-_EQ_RF_Accentro-col1 { width: 74% } .srl-table-N8_-_EQ_RF_Accentro-col2 { width: 13% } .srl-table-N8_-_EQ_RF_Accentro-col3 { width: 13% } }
+table {.srl-table-N8_-_EQ_FS_Accentro-col1 { width: 83% } .srl-table-N8_-_EQ_FS_Accentro-col2 { width: 17% } }
+table {.srl-table-N8_-_EQ_MAP_RF-col1 { width: 74% } .srl-table-N8_-_EQ_MAP_RF-col2 { width: 13% } .srl-table-N8_-_EQ_MAP_RF-col3 { width: 13% } }
+table {.srl-table-N8_-_EQ_JV_Minor-col1 { width: 74% } .srl-table-N8_-_EQ_JV_Minor-col2 { width: 13% } .srl-table-N8_-_EQ_JV_Minor-col3 { width: 13% } }
+table {.srl-table-N9_-_PPE-col1 { width: 74% } .srl-table-N9_-_PPE-col2 { width: 13% } .srl-table-N9_-_PPE-col3 { width: 13% } }
+table {.srl-table-N10_-_Other_financial_assets-col1 { width: 74% } .srl-table-N10_-_Other_financial_assets-col2 { width: 13% } .srl-table-N10_-_Other_financial_assets-col3 { width: 13% } }
+table {.srl-table-N12_-_Contract_ass_and_liab-col1 { width: 74% } .srl-table-N12_-_Contract_ass_and_liab-col2 { width: 13% } .srl-table-N12_-_Contract_ass_and_liab-col3 { width: 13% } }
+table {.srl-table-N15_-_Contract_assets_RF-col1 { width: 74% } .srl-table-N15_-_Contract_assets_RF-col2 { width: 13% } .srl-table-N15_-_Contract_assets_RF-col3 { width: 13% } }
+table {.srl-table-N15_-_Contract_liabilities_RF-col1 { width: 74% } .srl-table-N15_-_Contract_liabilities_RF-col2 { width: 13% } .srl-table-N15_-_Contract_liabilities_RF-col3 { width: 13% } }
+table {.srl-table-N15_-_Inventories-col1 { width: 74% } .srl-table-N15_-_Inventories-col2 { width: 13% } .srl-table-N15_-_Inventories-col3 { width: 13% } }
+table {.srl-table-T15_-_Inventories_Roll_forward-col1 { width: 74% } .srl-table-T15_-_Inventories_Roll_forward-col2 { width: 13% } .srl-table-T15_-_Inventories_Roll_forward-col3 { width: 13% } }
+table {.srl-table-N15_-_Other_Receivables-col1 { width: 74% } .srl-table-N15_-_Other_Receivables-col2 { width: 13% } .srl-table-N15_-_Other_Receivables-col3 { width: 13% } }
+table {.srl-table-N16_-_disposal_group_A-col1 { width: 74% } .srl-table-N16_-_disposal_group_A-col2 { width: 13% } .srl-table-N16_-_disposal_group_A-col3 { width: 13% } }
+table {.srl-table-N16_-_disposal_group_A_IP-col1 { width: 74% } .srl-table-N16_-_disposal_group_A_IP-col2 { width: 13% } .srl-table-N16_-_disposal_group_A_IP-col3 { width: 13% } }
+table {.srl-table-N16_-_disposal_group_B-col1 { width: 83% } .srl-table-N16_-_disposal_group_B-col2 { width: 17% } }
+table {.srl-table-N16_-_disposal_group_B_IP-col1 { width: 83% } .srl-table-N16_-_disposal_group_B_IP-col2 { width: 17% } }
+table {.srl-table-N17_-_Equity_RF_shares-col1 { width: 74% } .srl-table-N17_-_Equity_RF_shares-col2 { width: 13% } .srl-table-N17_-_Equity_RF_shares-col3 { width: 13% } }
+table {.srl-table-N17_-_Equity_RF_share_premium-col1 { width: 74% } .srl-table-N17_-_Equity_RF_share_premium-col2 { width: 13% } .srl-table-N17_-_Equity_RF_share_premium-col3 { width: 13% } }
+table {.srl-table-N17_-_Equity_NCI_Breakdown-col1 { width: 74% } .srl-table-N17_-_Equity_NCI_Breakdown-col2 { width: 13% } .srl-table-N17_-_Equity_NCI_Breakdown-col3 { width: 13% } }
+table {.srl-table-N17_-_Equity_NCI_BS-col1 { width: 74% } .srl-table-N17_-_Equity_NCI_BS-col2 { width: 13% } .srl-table-N17_-_Equity_NCI_BS-col3 { width: 13% } }
+table {.srl-table-N17_-_Equity_NCI_PnL-col1 { width: 74% } .srl-table-N17_-_Equity_NCI_PnL-col2 { width: 13% } .srl-table-N17_-_Equity_NCI_PnL-col3 { width: 13% } }
+table {.srl-table-N17_-_Equity_NCI_CF-col1 { width: 74% } .srl-table-N17_-_Equity_NCI_CF-col2 { width: 13% } .srl-table-N17_-_Equity_NCI_CF-col3 { width: 13% } }
+table {.srl-table-N18_-_Bonds-col1 { width: 74% } .srl-table-N18_-_Bonds-col2 { width: 13% } .srl-table-N18_-_Bonds-col3 { width: 13% } }
+table {.srl-table-N19_-_Other_loans-col1 { width: 52% } .srl-table-N19_-_Other_loans-col2 { width: 12% } .srl-table-N19_-_Other_loans-col3 { width: 12% } .srl-table-N19_-_Other_loans-col4 { width: 12% } .srl-table-N19_-_Other_loans-col5 { width: 12% } }
+table {.srl-table-N21_-_Other_payables-col1 { width: 74% } .srl-table-N21_-_Other_payables-col2 { width: 13% } .srl-table-N21_-_Other_payables-col3 { width: 13% } }
+table {.srl-table-N23_-_Tax_Expense-col1 { width: 74% } .srl-table-N23_-_Tax_Expense-col2 { width: 13% } .srl-table-N23_-_Tax_Expense-col3 { width: 13% } }
+table {.srl-table-N23_-_Tax_DT_BS_Breakdown-col1 { width: 74% } .srl-table-N23_-_Tax_DT_BS_Breakdown-col2 { width: 13% } .srl-table-N23_-_Tax_DT_BS_Breakdown-col3 { width: 13% } }
+table {.srl-table-N23_-_Tax_DT_BS_Changes-col1 { width: 74% } .srl-table-N23_-_Tax_DT_BS_Changes-col2 { width: 13% } .srl-table-N23_-_Tax_DT_BS_Changes-col3 { width: 13% } }
+table {.srl-table-N23_-_Tax_Rate_Reconciliation-col1 { width: 74% } .srl-table-N23_-_Tax_Rate_Reconciliation-col2 { width: 13% } .srl-table-N23_-_Tax_Rate_Reconciliation-col3 { width: 13% } }
+table {.srl-table-N24_-_Rev_Breakdown-col1 { width: 74% } .srl-table-N24_-_Rev_Breakdown-col2 { width: 13% } .srl-table-N24_-_Rev_Breakdown-col3 { width: 13% } }
+table {.srl-table-N24_-_Rev_by_Segment_CY-col1 { width: 52% } .srl-table-N24_-_Rev_by_Segment_CY-col2 { width: 8% } .srl-table-N24_-_Rev_by_Segment_CY-col3 { width: 8% } .srl-table-N24_-_Rev_by_Segment_CY-col4 { width: 8% } .srl-table-N24_-_Rev_by_Segment_CY-col5 { width: 8% } .srl-table-N24_-_Rev_by_Segment_CY-col6 { width: 8% } .srl-table-N24_-_Rev_by_Segment_CY-col7 { width: 8% } }
+table {.srl-table-N24_-_Rev_by_Segment_PY-col1 { width: 52% } .srl-table-N24_-_Rev_by_Segment_PY-col2 { width: 8% } .srl-table-N24_-_Rev_by_Segment_PY-col3 { width: 8% } .srl-table-N24_-_Rev_by_Segment_PY-col4 { width: 8% } .srl-table-N24_-_Rev_by_Segment_PY-col5 { width: 8% } .srl-table-N24_-_Rev_by_Segment_PY-col6 { width: 8% } .srl-table-N24_-_Rev_by_Segment_PY-col7 { width: 8% } }
+table {.srl-table-N24_-_Contract_balances-col1 { width: 74% } .srl-table-N24_-_Contract_balances-col2 { width: 13% } .srl-table-N24_-_Contract_balances-col3 { width: 13% } }
+table {.srl-table-N25_-_Cost_of_operations-col1 { width: 74% } .srl-table-N25_-_Cost_of_operations-col2 { width: 13% } .srl-table-N25_-_Cost_of_operations-col3 { width: 13% } }
+table {.srl-table-N26_-_General_and_adm_exp-col1 { width: 74% } .srl-table-N26_-_General_and_adm_exp-col2 { width: 13% } .srl-table-N26_-_General_and_adm_exp-col3 { width: 13% } }
+table {.srl-table-N28_-_Other_expenses-col1 { width: 74% } .srl-table-N28_-_Other_expenses-col2 { width: 13% } .srl-table-N28_-_Other_expenses-col3 { width: 13% } }
+table {.srl-table-N29_-_Other_income-col1 { width: 74% } .srl-table-N29_-_Other_income-col2 { width: 13% } .srl-table-N29_-_Other_income-col3 { width: 13% } }
+table {.srl-table-N29_-_Net_finance_cost-col1 { width: 74% } .srl-table-N29_-_Net_finance_cost-col2 { width: 13% } .srl-table-N29_-_Net_finance_cost-col3 { width: 13% } }
+table {.srl-table-N30_-_Lease_RF_CY-col1 { width: 61% } .srl-table-N30_-_Lease_RF_CY-col2 { width: 13% } .srl-table-N30_-_Lease_RF_CY-col3 { width: 13% } .srl-table-N30_-_Lease_RF_CY-col4 { width: 13% } }
+table {.srl-table-N30_-_Lease_RF_PY-col1 { width: 61% } .srl-table-N30_-_Lease_RF_PY-col2 { width: 13% } .srl-table-N30_-_Lease_RF_PY-col3 { width: 13% } .srl-table-N30_-_Lease_RF_PY-col4 { width: 13% } }
+table {.srl-table-N30_-_Lease_Expense-col1 { width: 74% } .srl-table-N30_-_Lease_Expense-col2 { width: 13% } .srl-table-N30_-_Lease_Expense-col3 { width: 13% } }
+table {.srl-table-N30_-_Lease_Expected_Payments-col1 { width: 74% } .srl-table-N30_-_Lease_Expected_Payments-col2 { width: 13% } .srl-table-N30_-_Lease_Expected_Payments-col3 { width: 13% } }
+table {.srl-table-N30_-_Lease_Lessor-col1 { width: 74% } .srl-table-N30_-_Lease_Lessor-col2 { width: 13% } .srl-table-N30_-_Lease_Lessor-col3 { width: 13% } }
+table {.srl-table-N31_-_FI_BS_category-col1 { width: 46% } .srl-table-N31_-_FI_BS_category-col2 { width: 28% } .srl-table-N31_-_FI_BS_category-col3 { width: 13% } .srl-table-N31_-_FI_BS_category-col4 { width: 13% } }
+table {.srl-table-N31_-_FI_Gross_and_net_BS_CY-col1 { width: 39% } .srl-table-N31_-_FI_Gross_and_net_BS_CY-col2 { width: 19% } .srl-table-N31_-_FI_Gross_and_net_BS_CY-col3 { width: 21% } .srl-table-N31_-_FI_Gross_and_net_BS_CY-col4 { width: 21% } }
+table {.srl-table-N31_-_FI_Gross_and_net_BS_PY-col1 { width: 39% } .srl-table-N31_-_FI_Gross_and_net_BS_PY-col2 { width: 19% } .srl-table-N31_-_FI_Gross_and_net_BS_PY-col3 { width: 21% } .srl-table-N31_-_FI_Gross_and_net_BS_PY-col4 { width: 21% } }
+table {.srl-table-N31_-_FI_Ageing_CY-col1 { width: 46% } .srl-table-N31_-_FI_Ageing_CY-col2 { width: 28% } .srl-table-N31_-_FI_Ageing_CY-col3 { width: 13% } .srl-table-N31_-_FI_Ageing_CY-col4 { width: 13% } }
+table {.srl-table-N31_-_FI_Ageing_PY-col1 { width: 46% } .srl-table-N31_-_FI_Ageing_PY-col2 { width: 28% } .srl-table-N31_-_FI_Ageing_PY-col3 { width: 13% } .srl-table-N31_-_FI_Ageing_PY-col4 { width: 13% } }
+table {.srl-table-N31_-_FI_Allowance_RF-col1 { width: 52% } .srl-table-N31_-_FI_Allowance_RF-col2 { width: 24% } .srl-table-N31_-_FI_Allowance_RF-col3 { width: 24% } }
+table {.srl-table-N31_-_FI_Allowance_by_category-col1 { width: 52% } .srl-table-N31_-_FI_Allowance_by_category-col2 { width: 24% } .srl-table-N31_-_FI_Allowance_by_category-col3 { width: 24% } }
+table {.srl-table-N31_-_FI_Market_risk-col1 { width: 52% } .srl-table-N31_-_FI_Market_risk-col2 { width: 24% } .srl-table-N31_-_FI_Market_risk-col3 { width: 24% } }
+table {.srl-table-N31_-_FI_Liquidity_risk_CY-col1 { width: 44% } .srl-table-N31_-_FI_Liquidity_risk_CY-col2 { width: 10% } .srl-table-N31_-_FI_Liquidity_risk_CY-col3 { width: 11% } .srl-table-N31_-_FI_Liquidity_risk_CY-col4 { width: 9% } .srl-table-N31_-_FI_Liquidity_risk_CY-col5 { width: 8% } .srl-table-N31_-_FI_Liquidity_risk_CY-col6 { width: 8% } .srl-table-N31_-_FI_Liquidity_risk_CY-col7 { width: 10% } }
+table {.srl-table-N31_-_FI_Liquidity_risk_PY-col1 { width: 44% } .srl-table-N31_-_FI_Liquidity_risk_PY-col2 { width: 10% } .srl-table-N31_-_FI_Liquidity_risk_PY-col3 { width: 11% } .srl-table-N31_-_FI_Liquidity_risk_PY-col4 { width: 9% } .srl-table-N31_-_FI_Liquidity_risk_PY-col5 { width: 8% } .srl-table-N31_-_FI_Liquidity_risk_PY-col6 { width: 8% } .srl-table-N31_-_FI_Liquidity_risk_PY-col7 { width: 10% } }
+table {.srl-table-N31_-_FI_Fair_Value_CY-col1 { width: 20% } .srl-table-N31_-_FI_Fair_Value_CY-col2 { width: 11% } .srl-table-N31_-_FI_Fair_Value_CY-col3 { width: 10% } .srl-table-N31_-_FI_Fair_Value_CY-col4 { width: 12% } .srl-table-N31_-_FI_Fair_Value_CY-col5 { width: 11% } .srl-table-N31_-_FI_Fair_Value_CY-col6 { width: 12% } .srl-table-N31_-_FI_Fair_Value_CY-col7 { width: 12% } .srl-table-N31_-_FI_Fair_Value_CY-col8 { width: 12% } }
+table {.srl-table-N31_-_FI_Fair_Value_PY-col1 { width: 20% } .srl-table-N31_-_FI_Fair_Value_PY-col2 { width: 11% } .srl-table-N31_-_FI_Fair_Value_PY-col3 { width: 10% } .srl-table-N31_-_FI_Fair_Value_PY-col4 { width: 12% } .srl-table-N31_-_FI_Fair_Value_PY-col5 { width: 11% } .srl-table-N31_-_FI_Fair_Value_PY-col6 { width: 12% } .srl-table-N31_-_FI_Fair_Value_PY-col7 { width: 12% } .srl-table-N31_-_FI_Fair_Value_PY-col8 { width: 12% } }
+table {.srl-table-N31_-_CF_Movement_CY-col1 { width: 52% } .srl-table-N31_-_CF_Movement_CY-col2 { width: 12% } .srl-table-N31_-_CF_Movement_CY-col3 { width: 12% } .srl-table-N31_-_CF_Movement_CY-col4 { width: 12% } .srl-table-N31_-_CF_Movement_CY-col5 { width: 12% } }
+table {.srl-table-N31_-_CF_Movement_PY-col1 { width: 43% } .srl-table-N31_-_CF_Movement_PY-col2 { width: 10% } .srl-table-N31_-_CF_Movement_PY-col3 { width: 11% } .srl-table-N31_-_CF_Movement_PY-col4 { width: 13% } .srl-table-N31_-_CF_Movement_PY-col5 { width: 13% } .srl-table-N31_-_CF_Movement_PY-col6 { width: 10% } }
+table {.srl-table-N31_-_FI_Net_result_CY-col1 { width: 35% } .srl-table-N31_-_FI_Net_result_CY-col2 { width: 13% } .srl-table-N31_-_FI_Net_result_CY-col3 { width: 13% } .srl-table-N31_-_FI_Net_result_CY-col4 { width: 13% } .srl-table-N31_-_FI_Net_result_CY-col5 { width: 13% } .srl-table-N31_-_FI_Net_result_CY-col6 { width: 13% } }
+table {.srl-table-N31_-_FI_Net_result_PY-col1 { width: 35% } .srl-table-N31_-_FI_Net_result_PY-col2 { width: 13% } .srl-table-N31_-_FI_Net_result_PY-col3 { width: 13% } .srl-table-N31_-_FI_Net_result_PY-col4 { width: 13% } .srl-table-N31_-_FI_Net_result_PY-col5 { width: 13% } .srl-table-N31_-_FI_Net_result_PY-col6 { width: 13% } }
+table {.srl-table-N31_-_FI_derivatives-col1 { width: 52% } .srl-table-N31_-_FI_derivatives-col2 { width: 12% } .srl-table-N31_-_FI_derivatives-col3 { width: 12% } .srl-table-N31_-_FI_derivatives-col4 { width: 12% } .srl-table-N31_-_FI_derivatives-col5 { width: 12% } }
+table {.srl-table-N32_-_RP_BS-col1 { width: 52% } .srl-table-N32_-_RP_BS-col2 { width: 12% } .srl-table-N32_-_RP_BS-col3 { width: 12% } .srl-table-N32_-_RP_BS-col4 { width: 12% } .srl-table-N32_-_RP_BS-col5 { width: 12% } }
+table {.srl-table-N32_-_RP_BS_PY-col1 { width: 52% } .srl-table-N32_-_RP_BS_PY-col2 { width: 12% } .srl-table-N32_-_RP_BS_PY-col3 { width: 12% } .srl-table-N32_-_RP_BS_PY-col4 { width: 12% } .srl-table-N32_-_RP_BS_PY-col5 { width: 12% } }
+table {.srl-table-N32_-_RP_PnL-col1 { width: 43% } .srl-table-N32_-_RP_PnL-col2 { width: 10% } .srl-table-N32_-_RP_PnL-col3 { width: 11% } .srl-table-N32_-_RP_PnL-col4 { width: 13% } .srl-table-N32_-_RP_PnL-col5 { width: 13% } .srl-table-N32_-_RP_PnL-col6 { width: 10% } }
+table {.srl-table-N32_-_RP_PnL_PY-col1 { width: 43% } .srl-table-N32_-_RP_PnL_PY-col2 { width: 10% } .srl-table-N32_-_RP_PnL_PY-col3 { width: 11% } .srl-table-N32_-_RP_PnL_PY-col4 { width: 13% } .srl-table-N32_-_RP_PnL_PY-col5 { width: 13% } .srl-table-N32_-_RP_PnL_PY-col6 { width: 10% } }
+table {.srl-table-N32_-_RP_KMP-col1 { width: 74% } .srl-table-N32_-_RP_KMP-col2 { width: 13% } .srl-table-N32_-_RP_KMP-col3 { width: 13% } }
+table {.srl-table-N32_-_RP_directors_benefits-col1 { width: 74% } .srl-table-N32_-_RP_directors_benefits-col2 { width: 13% } .srl-table-N32_-_RP_directors_benefits-col3 { width: 13% } }
+table {.srl-table-N32_-_RP_management_benefits-col1 { width: 74% } .srl-table-N32_-_RP_management_benefits-col2 { width: 13% } .srl-table-N32_-_RP_management_benefits-col3 { width: 13% } }
+table {.srl-table-N33_-_Audit_fees-col1 { width: 74% } .srl-table-N33_-_Audit_fees-col2 { width: 13% } .srl-table-N33_-_Audit_fees-col3 { width: 13% } }
+table {.srl-table-N34_-_Segment_CY-col1 { width: 44% } .srl-table-N34_-_Segment_CY-col2 { width: 10% } .srl-table-N34_-_Segment_CY-col3 { width: 11% } .srl-table-N34_-_Segment_CY-col4 { width: 9% } .srl-table-N34_-_Segment_CY-col5 { width: 8% } .srl-table-N34_-_Segment_CY-col6 { width: 8% } .srl-table-N34_-_Segment_CY-col7 { width: 10% } }
+table {.srl-table-N34_-_Segment_PY-col1 { width: 44% } .srl-table-N34_-_Segment_PY-col2 { width: 10% } .srl-table-N34_-_Segment_PY-col3 { width: 11% } .srl-table-N34_-_Segment_PY-col4 { width: 9% } .srl-table-N34_-_Segment_PY-col5 { width: 8% } .srl-table-N34_-_Segment_PY-col6 { width: 8% } .srl-table-N34_-_Segment_PY-col7 { width: 10% } }
+table {.srl-table-N35_-_EPS_Earnings-col1 { width: 74% } .srl-table-N35_-_EPS_Earnings-col2 { width: 13% } .srl-table-N35_-_EPS_Earnings-col3 { width: 13% } }
+table {.srl-table-N35_-_EPS_Shares-col1 { width: 74% } .srl-table-N35_-_EPS_Shares-col2 { width: 13% } .srl-table-N35_-_EPS_Shares-col3 { width: 13% } }
+table {.srl-table-N35_-_EPS_EPS-col1 { width: 74% } .srl-table-N35_-_EPS_EPS-col2 { width: 13% } .srl-table-N35_-_EPS_EPS-col3 { width: 13% } }
+table {.srl-table-adb9387e-cc00-4133-894c-12ad43d10b8d-col1 { width: 25% } .srl-table-adb9387e-cc00-4133-894c-12ad43d10b8d-col2 { width: 25% } .srl-table-adb9387e-cc00-4133-894c-12ad43d10b8d-col3 { width: 25% } .srl-table-adb9387e-cc00-4133-894c-12ad43d10b8d-col4 { width: 25% } }
+table {.srl-table-ef4fb3f2-3ac2-4a23-9b37-15b9d6ca3ebb-col1 { width: 25% } .srl-table-ef4fb3f2-3ac2-4a23-9b37-15b9d6ca3ebb-col2 { width: 25% } .srl-table-ef4fb3f2-3ac2-4a23-9b37-15b9d6ca3ebb-col3 { width: 25% } .srl-table-ef4fb3f2-3ac2-4a23-9b37-15b9d6ca3ebb-col4 { width: 25% } }
+table {.srl-table-List_of_Shareholdings-col1 { width: 8% } .srl-table-List_of_Shareholdings-col2 { width: 48% } .srl-table-List_of_Shareholdings-col3 { width: 5% } .srl-table-List_of_Shareholdings-col4 { width: 13% } .srl-table-List_of_Shareholdings-col5 { width: 13% } .srl-table-List_of_Shareholdings-col6 { width: 13% } }
+table {.srl-table-List_of_Shareholdings2-col1 { width: 6% } .srl-table-List_of_Shareholdings2-col2 { width: 53% } .srl-table-List_of_Shareholdings2-col3 { width: 19% } .srl-table-List_of_Shareholdings2-col4 { width: 11% } .srl-table-List_of_Shareholdings2-col5 { width: 11% } }
+table {.srl-table-List_of_Shareholdings3-col1 { width: 6% } .srl-table-List_of_Shareholdings3-col2 { width: 53% } .srl-table-List_of_Shareholdings3-col3 { width: 19% } .srl-table-List_of_Shareholdings3-col4 { width: 11% } .srl-table-List_of_Shareholdings3-col5 { width: 11% } }
+table {.srl-table-List_of_Shareholdings4-col1 { width: 6% } .srl-table-List_of_Shareholdings4-col2 { width: 53% } .srl-table-List_of_Shareholdings4-col3 { width: 19% } .srl-table-List_of_Shareholdings4-col4 { width: 11% } .srl-table-List_of_Shareholdings4-col5 { width: 11% } }
+table {.srl-table-Aktiven_SA-col1 { width: 52% } .srl-table-Aktiven_SA-col2 { width: 16% } .srl-table-Aktiven_SA-col3 { width: 16% } .srl-table-Aktiven_SA-col4 { width: 16% } }
+table {.srl-table-Passiven_SA-col1 { width: 52% } .srl-table-Passiven_SA-col2 { width: 16% } .srl-table-Passiven_SA-col3 { width: 16% } .srl-table-Passiven_SA-col4 { width: 16% } }
+table {.srl-table-PL_SA-col1 { width: 52% } .srl-table-PL_SA-col2 { width: 16% } .srl-table-PL_SA-col3 { width: 16% } .srl-table-PL_SA-col4 { width: 16% } }
+table {.srl-table-Note_3_2020-col1 { width: 70% } .srl-table-Note_3_2020-col2 { width: 15% } .srl-table-Note_3_2020-col3 { width: 15% } }
+table {.srl-table-Note_3_2020_2-col1 { width: 70% } .srl-table-Note_3_2020_2-col2 { width: 15% } .srl-table-Note_3_2020_2-col3 { width: 15% } }
+table {.srl-table-Note_4.1_2020-col1 { width: 70% } .srl-table-Note_4.1_2020-col2 { width: 15% } .srl-table-Note_4.1_2020-col3 { width: 15% } }
+table {.srl-table-Note_4.1_2-col1 { width: 55% } .srl-table-Note_4.1_2-col2 { width: 23% } .srl-table-Note_4.1_2-col3 { width: 11% } .srl-table-Note_4.1_2-col4 { width: 11% } }
+table {.srl-table-Note_4.2_2020-col1 { width: 70% } .srl-table-Note_4.2_2020-col2 { width: 15% } .srl-table-Note_4.2_2020-col3 { width: 15% } }
+table {.srl-table-Note_4.3_2020-col1 { width: 70% } .srl-table-Note_4.3_2020-col2 { width: 15% } .srl-table-Note_4.3_2020-col3 { width: 15% } }
+table {.srl-table-Note_4.4-col1 { width: 70% } .srl-table-Note_4.4-col2 { width: 15% } .srl-table-Note_4.4-col3 { width: 15% } }
+table {.srl-table-Note_5.1-col1 { width: 74% } .srl-table-Note_5.1-col2 { width: 13% } .srl-table-Note_5.1-col3 { width: 13% } }
+table {.srl-table-Note_5.2-col1 { width: 74% } .srl-table-Note_5.2-col2 { width: 13% } .srl-table-Note_5.2-col3 { width: 13% } }
+table {.srl-table-Note_5.3-col1 { width: 74% } .srl-table-Note_5.3-col2 { width: 13% } .srl-table-Note_5.3-col3 { width: 13% } }
+table {.srl-table-Note_7.1-col1 { width: 74% } .srl-table-Note_7.1-col2 { width: 13% } .srl-table-Note_7.1-col3 { width: 13% } }
+table {.srl-table-Note_7.2-col1 { width: 74% } .srl-table-Note_7.2-col2 { width: 13% } .srl-table-Note_7.2-col3 { width: 13% } }
+table {.srl-table-Note_7.4-col1 { width: 44% } .srl-table-Note_7.4-col2 { width: 14% } .srl-table-Note_7.4-col3 { width: 14% } .srl-table-Note_7.4-col4 { width: 14% } .srl-table-Note_7.4-col5 { width: 14% } }
+table {.srl-table-Note_8.2-col1 { width: 74% } .srl-table-Note_8.2-col2 { width: 13% } .srl-table-Note_8.2-col3 { width: 13% } }
+table {.srl-table-Note_9.1-col1 { width: 35% } .srl-table-Note_9.1-col2 { width: 13% } .srl-table-Note_9.1-col3 { width: 13% } .srl-table-Note_9.1-col4 { width: 13% } .srl-table-Note_9.1-col5 { width: 13% } .srl-table-Note_9.1-col6 { width: 13% } }
+table {.srl-table-Note_9.3-col1 { width: 74% } .srl-table-Note_9.3-col2 { width: 13% } .srl-table-Note_9.3-col3 { width: 13% } }
+table {.srl-table-Note_9.4-col1 { width: 74% } .srl-table-Note_9.4-col2 { width: 13% } .srl-table-Note_9.4-col3 { width: 13% } }
+table {.srl-table-Note_9.5-col1 { width: 74% } .srl-table-Note_9.5-col2 { width: 13% } .srl-table-Note_9.5-col3 { width: 13% } }
+table {.srl-table-Note_10-col1 { width: 74% } .srl-table-Note_10-col2 { width: 13% } .srl-table-Note_10-col3 { width: 13% } }
+table {.srl-table-Note_11-col1 { width: 74% } .srl-table-Note_11-col2 { width: 13% } .srl-table-Note_11-col3 { width: 13% } }
+table {.srl-table-Note_13-col1 { width: 74% } .srl-table-Note_13-col2 { width: 13% } .srl-table-Note_13-col3 { width: 13% } }
+table {.srl-table-Note_13_2-col1 { width: 74% } .srl-table-Note_13_2-col2 { width: 13% } .srl-table-Note_13_2-col3 { width: 13% } }
+table {.srl-table-9be9018e-f052-4082-8ce7-3f5dd7cf8815-col1 { width: 25% } .srl-table-9be9018e-f052-4082-8ce7-3f5dd7cf8815-col2 { width: 25% } .srl-table-9be9018e-f052-4082-8ce7-3f5dd7cf8815-col3 { width: 25% } .srl-table-9be9018e-f052-4082-8ce7-3f5dd7cf8815-col4 { width: 25% } }
+table {.srl-table-bcac6bc3-7226-4fee-bcc0-0b0430ed00d0-col1 { width: 25% } .srl-table-bcac6bc3-7226-4fee-bcc0-0b0430ed00d0-col2 { width: 25% } .srl-table-bcac6bc3-7226-4fee-bcc0-0b0430ed00d0-col3 { width: 25% } .srl-table-bcac6bc3-7226-4fee-bcc0-0b0430ed00d0-col4 { width: 25% } }
+table {.srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col1 { width: 11% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col2 { width: 13% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col3 { width: 9% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col4 { width: 18% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col5 { width: 10% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col6 { width: 11% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col7 { width: 10% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col8 { width: 11% } .srl-table-595f8b46-54ce-4add-8cb0-598d4c1d54a7-col9 { width: 7% } }
+table {.srl-table-991845e5-5550-441e-a287-015969bafb9a-col1 { width: 11% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col2 { width: 13% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col3 { width: 9% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col4 { width: 18% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col5 { width: 10% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col6 { width: 11% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col7 { width: 10% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col8 { width: 11% } .srl-table-991845e5-5550-441e-a287-015969bafb9a-col9 { width: 7% } }
+table {.srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col1 { width: 11% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col2 { width: 13% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col3 { width: 9% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col4 { width: 18% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col5 { width: 10% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col6 { width: 11% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col7 { width: 10% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col8 { width: 11% } .srl-table-cabf6bd7-b95b-4372-bafa-ca074fa12789-col9 { width: 7% } }
+table {.srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col1 { width: 11% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col2 { width: 13% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col3 { width: 9% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col4 { width: 18% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col5 { width: 10% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col6 { width: 11% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col7 { width: 10% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col8 { width: 11% } .srl-table-ba7c7b4c-5dfe-4fc5-bd84-9b59e3f59106-col9 { width: 7% } }
+table {.srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col1 { width: 12% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col2 { width: 13% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col3 { width: 18% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col4 { width: 8% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col5 { width: 10% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col6 { width: 11% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col7 { width: 10% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col8 { width: 11% } .srl-table-8d319fb2-e62b-43a3-a340-12bf9f168bf7-col9 { width: 7% } }
+table {.srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col1 { width: 11% } .srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col2 { width: 14% } .srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col3 { width: 13% } .srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col4 { width: 18% } .srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col5 { width: 22% } .srl-table-dcd74a42-27ce-4f89-9e9f-71e92fa83661-col6 { width: 22% } }
+table {.srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col1 { width: 7% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col2 { width: 14% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col3 { width: 13% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col4 { width: 18% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col5 { width: 12% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col6 { width: 4% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col7 { width: 4% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col8 { width: 4% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col9 { width: 12% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col10 { width: 4% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col11 { width: 4% } .srl-table-61f09d9c-6dbf-4863-aafa-145a2fb44f64-col12 { width: 4% } }
+table {.srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col1 { width: 9% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col2 { width: 14% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col3 { width: 13% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col4 { width: 18% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col5 { width: 19% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col6 { width: 4% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col7 { width: 19% } .srl-table-3430af5b-3b40-4a9e-bd25-53e508ad12d9-col8 { width: 4% } }
+table {.srl-table-4c9fc9be-1c66-41a4-aa2f-fae4d01216ee-col1 { width: 16% } .srl-table-4c9fc9be-1c66-41a4-aa2f-fae4d01216ee-col2 { width: 21% } .srl-table-4c9fc9be-1c66-41a4-aa2f-fae4d01216ee-col3 { width: 21% } .srl-table-4c9fc9be-1c66-41a4-aa2f-fae4d01216ee-col4 { width: 21% } .srl-table-4c9fc9be-1c66-41a4-aa2f-fae4d01216ee-col5 { width: 21% } }
+table {.srl-table-be4bfa08-1283-4092-b660-5b4f376d4513-col1 { width: 33% } .srl-table-be4bfa08-1283-4092-b660-5b4f376d4513-col2 { width: 67% } }
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table id="cash-flow">
+                <colgroup>
+                  <col class="srl-table-Statement_of_cashflows-col1"> <col class="srl-table-Statement_of_cashflows-col2"> <col class="srl-table-Statement_of_cashflows-col3"> <col class="srl-table-Statement_of_cashflows-col4"> </colgroup>
+                <tr>
+                  <td class="srl-head_top srl-horizontal-left"></td>
+                  <td class="srl-head_top srl-horizontal-right"></td>
+                  <td class="srl-head_top srl-background srl-horizontal-right"></td>
+                  <td class="srl-head_top srl-horizontal-right"></td>
+                </tr>
+                <tr>
+                  <td class="srl-head srl-horizontal-left">In EUR thousand</td>
+                  <td class="srl-head srl-horizontal-right">Note</td>
+                  <td class="srl-head srl-background srl-horizontal-right">2024</td>
+                  <td class="srl-head srl-horizontal-right">2023</td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Cash flows from operating activities</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="srl-bline_bold srl-background srl-horizontal-right"></td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Profit (loss ) for the year</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-1">792,720</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-2">1,809,834</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">Adjustments for:</td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-background srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Depreciation</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForDepreciationExpense" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-3">8,547</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForDepreciationExpense" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-4">10,348</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Profit from disposal of portfolio</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="adlergrp:AdjustmentsForGainsLossesOnDisposalsOfInvestmentProperties" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-5">-</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="adlergrp:AdjustmentsForGainsLossesOnDisposalsOfInvestmentProperties" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-6">439</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Change in fair value of investment properties</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">6</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForGainsLossesOnFairValueAdjustmentInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-7">483,177</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForGainsLossesOnFairValueAdjustmentInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-8">1,172,738</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Profit from selling portfolio</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="adlergrp:AdjustmentsForGainsLossesOnSellingOfInvestmentProperties" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-9">449</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="adlergrp:AdjustmentsForGainsLossesOnSellingOfInvestmentProperties" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-10">-</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Non-cash other income and expense</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:OtherAdjustmentsForNoncashItems" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-11">198,900</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:OtherAdjustmentsForNoncashItems" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-12">63,174</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Non-cash income from at-equity valued investment associates</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">8</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-13">-</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-14">5,108</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Net finance costs / (income)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">29</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:AdjustmentsForFinanceIncomeCost" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-15">1,670,785</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:AdjustmentsForFinanceIncomeCost" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-16">496,858</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Income tax expense</td>
+                  <td class="srl-horizontal-right">23</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:AdjustmentsForIncomeTaxExpense" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" sign="-" id="mms-10146-17">2,749</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:AdjustmentsForIncomeTaxExpense" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-18">156,123</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Changes in net working capital</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:OtherAdjustmentsToReconcileProfitLoss" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-19">118,737</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:OtherAdjustmentsToReconcileProfitLoss" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-20">112,238</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline srl-horizontal-left">Income tax paid</td>
+                  <td class="srl-bline srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-21">96,612</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-bline srl-horizontal-right">(<ix:nonfraction name="ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-22">20,627</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Net cash from operating activities</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:CashFlowsFromUsedInOperatingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" sign="-" id="mms-10146-23">168,514</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">(<ix:nonfraction name="ifrs-full:CashFlowsFromUsedInOperatingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-24">126,559</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">Cash flows from investing activities</td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-background srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Purchase of and CapEx on investment properties</td>
+                  <td class="srl-horizontal-right">6</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PurchaseOfInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-25">44,630</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PurchaseOfInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-26">55,114</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Proceeds from investment property disposal and/or portfolio share deal</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromSalesOfInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-27">41,561</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromSalesOfInvestmentProperty" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-28">175,032</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Purchase of and CapEx on property, plant and equipment</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-29">1,988</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-30">2,351</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Interest received</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:InterestReceivedClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-31">9,827</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:InterestReceivedClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-32">6,683</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Proceeds from sale of fixed assets</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-33">305</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-34">3,533</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Repayment of long-term loans</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToRelatedParties" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-35">-</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashReceiptsFromRepaymentOfAdvancesAndLoansMadeToRelatedParties" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-36">12,300</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Disposal of shareholder loans in connection with a share deal</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="adlergrp:DisposalOfShareholderLoansInConnectionWithAShareDeal" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-37">-</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="adlergrp:DisposalOfShareholderLoansInConnectionWithAShareDeal" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-38">6,709</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Disposal of subsidiaries, net of cash disposed</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromDisposalOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleAndDiscontinuedOperations" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-39">13,494</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromDisposalOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleAndDiscontinuedOperations" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-40">-</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline srl-horizontal-left">Change in short-term restricted bank deposits, net</td>
+                  <td class="srl-bline srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashFlowsFromUsedInDecreaseIncreaseInRestrictedCashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-41">15,639</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashFlowsFromUsedInDecreaseIncreaseInRestrictedCashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-42">7,782</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Net cash from (used in) investing activities</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashFlowsFromUsedInInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-43">34,208</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashFlowsFromUsedInInvestingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-44">154,574</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">Cash flows from financing activities</td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-background srl-horizontal-right"></td>
+                  <td class="srl-line_bold srl-horizontal-right"></td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Acquisition of non-controlling interests</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PaymentsFromChangesInOwnershipInterestsInSubsidiaries" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-45">532</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PaymentsFromChangesInOwnershipInterestsInSubsidiaries" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-46">28,800</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Repayment of bonds</td>
+                  <td class="srl-horizontal-right">18/31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfBondsNotesAndDebentures" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-47">620,215</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfBondsNotesAndDebentures" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-48">970,454</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Long-term loans received</td>
+                  <td class="srl-horizontal-right">19/31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromNoncurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-49">776,778</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromNoncurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-50">1,051,096</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Repayment of long-term loans</td>
+                  <td class="srl-horizontal-right">19/31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfNoncurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-51">12,530</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfNoncurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-52">268,532</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Proceeds from issuance of corporate bonds, net</td>
+                  <td class="srl-horizontal-right">18/31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-53">130,745</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:ProceedsFromIssueOfBondsNotesAndDebentures" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-54">196,464</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Repayment of short-term loans</td>
+                  <td class="srl-horizontal-right">19/31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfCurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-55">24,455</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:RepaymentsOfCurrentBorrowings" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-56">24,500</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Interest paid</td>
+                  <td class="srl-horizontal-right">31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:InterestPaidClassifiedAsFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-57">146,711</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:InterestPaidClassifiedAsFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-58">119,619</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Payment of lease liabilities</td>
+                  <td class="srl-horizontal-right">30</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-59">4,397</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-60">8,232</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Transaction costs</td>
+                  <td class="srl-horizontal-right">31F</td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="adlergrp:PrepaymentPenaltyAndOtherBorrowingRelatedCosts" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-61">64,718</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">(<ix:nonfraction name="adlergrp:PrepaymentPenaltyAndOtherBorrowingRelatedCosts" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-62">32,947</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-horizontal-left">Payment from settlement of derivatives</td>
+                  <td class="srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-background srl-horizontal-right">(<ix:nonfraction name="ifrs-full:PaymentsOfOtherEquityInstruments" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-63">3,869</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:PaymentsOfOtherEquityInstruments" format="ixt:fixed-zero" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-64">-</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Net cash from (used in) financing activities</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashFlowsFromUsedInFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" id="mms-10146-65">30,096</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">(<ix:nonfraction name="ifrs-full:CashFlowsFromUsedInFinancingActivities" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-66">205,524</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Change in cash and cash equivalents during the year</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">(<ix:nonfraction name="adlergrp:IncreaseDecreaseInCashAndCashEquivalentsWithoutCashInAssetHeldForSalesAndDisposalGroup" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" sign="-" id="mms-10146-67">104,210</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">(<ix:nonfraction name="adlergrp:IncreaseDecreaseInCashAndCashEquivalentsWithoutCashInAssetHeldForSalesAndDisposalGroup" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" sign="-" id="mms-10146-68">177,509</ix:nonfraction>)</td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Changes in the carrying amount of cash and cash equivalents that are presented among assets held-for-sale as part of a disposal group</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">(<ix:nonfraction name="adlergrp:IncreaseDecreaseInCashAndCashEquivalentsInAssetHeldForSalesAndDisposalGroup" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2024-01-01-2024-12-31-c-3" sign="-" id="mms-10146-69">26,219</ix:nonfraction>)</td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <ix:nonfraction name="adlergrp:IncreaseDecreaseInCashAndCashEquivalentsInAssetHeldForSalesAndDisposalGroup" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="D2023-01-01-2023-12-31-c-4" id="mms-10146-70">167,943</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Cash and cash equivalents at the beginning of the year</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="E2023-12-31-c-2" id="mms-10146-71">377,419</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="E2022-12-31-c-5" id="mms-10146-72">386,985</ix:nonfraction>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">Cash and cash equivalents at the end of the year</td>
+                  <td class="srl-bline_bold srl-horizontal-right"></td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-background srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="E2024-12-31-c-1" id="mms-10146-73">246,990</ix:nonfraction>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <ix:nonfraction name="ifrs-full:CashAndCashEquivalents" format="ixt:num-dot-decimal" decimals="-3" scale="3" unitRef="EUR" contextRef="E2023-12-31-c-2" id="mms-10146-74">377,419</ix:nonfraction>
+                  </td>
+                </tr>
+              </table></body></html>

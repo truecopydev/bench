@@ -1,0 +1,77 @@
+{
+	"id": "esef-5299009A2CSKJBWWKY81-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299009A2CSKJBWWKY81/2025-12-31/ESEF/AT/1/rathag-2025-12-31-3-de/reports/rathag-2025-12-31-3-de.xhtml",
+		"lei": "5299009A2CSKJBWWKY81",
+		"pays": "AT",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-27",
+		"sha256Page": "ddb90589abc64c6c0fbf104cc03f9cb4009e2c6d59f44e31c66ce60a7ebe741d",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-8824",
+				"-1392"
+			],
+			[
+				"-15",
+				"75",
+				"-13"
+			],
+			[
+				"-18",
+				"-17",
+				"3"
+			],
+			[
+				"58",
+				"-10"
+			],
+			[
+				"-825",
+				"-404"
+			],
+			[
+				"-825",
+				"-404"
+			],
+			[
+				"-767",
+				"-414"
+			],
+			[
+				"-14",
+				"-767",
+				"-414"
+			],
+			[
+				"-14",
+				"0",
+				"0"
+			],
+			[
+				"-9591",
+				"-1806"
+			],
+			[
+				"-14",
+				"-9591",
+				"-1806"
+			],
+			[
+				"-14",
+				"0",
+				"0"
+			]
+		]
+	}
+}

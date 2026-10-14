@@ -1,0 +1,127 @@
+{
+	"id": "esef-213800O3Z6ZSDBAKG321-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/213800O3Z6ZSDBAKG321/2024-12-31/ESEF/HR/1/granoliogroup-2024-12-31-0-en/reports/granoliogroup-2024-12-31-0-en.xhtml",
+		"lei": "213800O3Z6ZSDBAKG321",
+		"pays": "HR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "74b5d6aff8fae500b2eba8d7c51fb2746c18f9f476c64a1c275d46c2108e03df",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2024",
+				"2023"
+			],
+			[
+				"5",
+				"94415",
+				"86733"
+			],
+			[
+				"6",
+				"6690",
+				"3975"
+			],
+			[
+				"101105",
+				"90708"
+			],
+			[
+				"-14",
+				"-470"
+			],
+			[
+				"7",
+				"-78649",
+				"-73729"
+			],
+			[
+				"8",
+				"-8666",
+				"-6955"
+			],
+			[
+				"-3554",
+				"-3318"
+			],
+			[
+				"10",
+				"-1538",
+				"-1256"
+			],
+			[
+				"9",
+				"-5",
+				"-3"
+			],
+			[
+				"11",
+				"-1474",
+				"-1116"
+			],
+			[
+				"-93900",
+				"-86847"
+			],
+			[
+				"7205",
+				"3861"
+			],
+			[
+				"12",
+				"522",
+				"61"
+			],
+			[
+				"12",
+				"-1514",
+				"-848"
+			],
+			[
+				"-992",
+				"-787"
+			],
+			[
+				"6213",
+				"3074"
+			],
+			[
+				"13",
+				"-623",
+				"-633"
+			],
+			[
+				"5590",
+				"2442"
+			],
+			[
+				"5590",
+				"2442"
+			],
+			[
+				"4181",
+				"1892"
+			],
+			[
+				"24",
+				"1409",
+				"550"
+			],
+			[
+				"34",
+				"219",
+				"99"
+			]
+		]
+	}
+}

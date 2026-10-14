@@ -1,0 +1,111 @@
+{
+	"id": "esef-529900ZAXBMQDIWPNB72-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900ZAXBMQDIWPNB72/2026-03-31/ESEF/AT/0/voestalpineag-2026-03-31-1-de/reports/voestalpineag-2026-03-31-1-de.xhtml",
+		"lei": "529900ZAXBMQDIWPNB72",
+		"pays": "AT",
+		"exercice": "2026-03-31",
+		"depose": "2026-06-11",
+		"sha256Page": "6c3cdf603a218effc696b81967cdf7914a2ba0976bc337d0e9f3548354b1ad55",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"3243",
+				"3243"
+			],
+			[
+				"6550",
+				"6553"
+			],
+			[
+				"-2146",
+				"-2146"
+			],
+			[
+				"-1995",
+				"-1918"
+			],
+			[
+				"66596",
+				"70071"
+			],
+			[
+				"72248",
+				"75803"
+			],
+			[
+				"2399",
+				"2203"
+			],
+			[
+				"74647",
+				"78006"
+			],
+			[
+				"8947",
+				"8166"
+			],
+			[
+				"628",
+				"670"
+			],
+			[
+				"983",
+				"1440"
+			],
+			[
+				"19115",
+				"15240"
+			],
+			[
+				"29673",
+				"25516"
+			],
+			[
+				"9675",
+				"10280"
+			],
+			[
+				"892",
+				"1281"
+			],
+			[
+				"8437",
+				"9638"
+			],
+			[
+				"26724",
+				"26690"
+			],
+			[
+				"7295",
+				"8523"
+			],
+			[
+				"53023",
+				"56412"
+			],
+			[
+				"0",
+				"88"
+			],
+			[
+				"53023",
+				"56500"
+			],
+			[
+				"157343",
+				"160022"
+			]
+		]
+	}
+}

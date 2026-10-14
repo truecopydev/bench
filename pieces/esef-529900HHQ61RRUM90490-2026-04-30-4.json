@@ -1,0 +1,81 @@
+{
+	"id": "esef-529900HHQ61RRUM90490-2026-04-30-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900HHQ61RRUM90490/2026-04-30/ESEF/DK/0/HarboesBryggeri-2026-04-30-1-da/reports/HarboesBryggeri-2026-04-30-1-da.xhtml",
+		"lei": "529900HHQ61RRUM90490",
+		"pays": "DK",
+		"exercice": "2026-04-30",
+		"depose": "2026-09-08",
+		"sha256Page": "4391497d00175f6e7293135cf8d64f64969bdace12454e87930028bb455eb18d",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"3",
+				"1741760",
+				"1822588"
+			],
+			[
+				"4",
+				"-1379525",
+				"-1466556"
+			],
+			[
+				"362235",
+				"356032"
+			],
+			[
+				"8",
+				"12859",
+				"15851"
+			],
+			[
+				"-210513",
+				"-211238"
+			],
+			[
+				"-108698",
+				"-90693"
+			],
+			[
+				"-7231",
+				"-6184"
+			],
+			[
+				"48652",
+				"63768"
+			],
+			[
+				"9",
+				"256",
+				"1875"
+			],
+			[
+				"10",
+				"-11170",
+				"-9497"
+			],
+			[
+				"37738",
+				"56146"
+			],
+			[
+				"11",
+				"-10710",
+				"-11350"
+			],
+			[
+				"27028",
+				"44796"
+			]
+		]
+	}
+}

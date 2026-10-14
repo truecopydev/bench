@@ -1,0 +1,3194 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+.dummy-selector { background-color: rgba(0, 0, 0, 0) }
+html { line-height: 1.32 }
+body { margin: 0 }
+main { display: block }
+h1 { font-size: 2em; margin: 0.67em 0 }
+h1,h2,h3,h4,h5,table { word-spacing: -1px }
+hr { height: 0; overflow: visible }
+pre { font-family: monospace, monospace; font-size: 1em }
+a { background-color: rgba(0, 0, 0, 0) }
+abbr[title] { border-bottom: none; text-decoration: dotted underline }
+b,strong { font-weight: bolder }
+code,kbd,samp { font-family: monospace, monospace; font-size: 1em }
+small { font-size: 80% }
+sub,sup { font-size: 75%; position: relative; vertical-align: baseline; line-height: 0 }
+sub { bottom: -0.25em }
+sup { top: -0.5em }
+img { border-style: none }
+button,input,optgroup,select,textarea { font-family: inherit; font-size: 100%; margin: 0; line-height: 1.41 }
+button,input { overflow: visible }
+button,select { text-transform: none }
+fieldset { padding: 0.35em 0.75em 0.625em }
+legend { color: inherit; display: table; max-width: 100%; padding: 0; white-space: normal }
+progress { vertical-align: baseline }
+textarea { overflow: auto }
+[type="checkbox"],[type="radio"] { padding: 0 }
+details { display: block }
+summary { display: list-item }
+template { display: none }
+[hidden] { display: none }
+@font-face { font-family: Calibri }
+@font-face { font-family: "Calibri Light" }
+@font-face { font-family: "Palatino Linotype" }
+@font-face { font-family: Verdana }
+@font-face { font-family: Cambria }
+@font-face { font-family: Tahoma }
+@font-face { font-family: "Modern No. 20" }
+@font-face { font-family: "Univers 45 Light" }
+@font-face { font-family: "EYInterstate Light" }
+@font-face { font-family: "HR Times New Roman EE/ISO 8859" }
+@font-face { font-family: "Univers LT Std 45 Light" }
+@font-face { font-family: "Univers 55" }
+@font-face { font-family: "Open Sans" }
+@font-face { font-family: inherit }
+p.MsoNormal,li.MsoNormal,div.MsoNormal { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+h1 { margin: 0 0 7pt 21.6pt; text-indent: -21.6pt; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 18pt }
+h2 { margin: 13pt 0 7pt 28.8pt; text-indent: -28.8pt; page-break-after: avoid; font-size: 14pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 16pt }
+h3 { margin: 13pt 0 7pt 36pt; text-indent: -36pt; page-break-after: avoid; font-size: 12pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 14pt }
+h4 { margin: 13pt 0 7pt 43.2pt; text-indent: -43.2pt; page-break-after: avoid; font-size: 12pt; font-family: "Times New Roman", serif; font-weight: bold; font-style: italic; line-height: 14pt }
+h5 { margin: 13pt 0 7pt 50.4pt; text-indent: -50.4pt; page-break-after: avoid; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: normal; font-style: italic; line-height: 13pt }
+h6 { margin: 0 0 0 216pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: normal; line-height: 13pt }
+p.MsoHeading7,li.MsoHeading7,div.MsoHeading7 { margin: 0 0 0 252pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeading8,li.MsoHeading8,div.MsoHeading8 { margin: 0 0 0 288pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeading9,li.MsoHeading9,div.MsoHeading9 { margin: 0 0 0 324pt; text-indent: -18pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoIndex1,li.MsoIndex1,div.MsoIndex1 { margin: 18pt 42.55pt 0 0; page-break-after: avoid; font-size: 14pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 16pt }
+p.MsoIndex2,li.MsoIndex2,div.MsoIndex2 { margin: 0 42.55pt 0 17pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoToc1,li.MsoToc1,div.MsoToc1 { margin: 13pt 28.55pt 0 0; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc2,li.MsoToc2,div.MsoToc2 { margin: 0 28.55pt 0 -7.1pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc3,li.MsoToc3,div.MsoToc3 { margin: 0 28.55pt 0 70.9pt; text-indent: -70.9pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoToc4,li.MsoToc4,div.MsoToc4 { margin: 0 28.55pt 0 70.9pt; text-indent: -70.9pt; font-size: 12pt; font-family: "Palatino Linotype", serif; text-align: left }
+p.MsoNormalIndent,li.MsoNormalIndent,div.MsoNormalIndent { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif }
+p.MsoFootnoteText,li.MsoFootnoteText,div.MsoFootnoteText { margin: 0; font-size: 9pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoCommentText,li.MsoCommentText,div.MsoCommentText { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoHeader,li.MsoHeader,div.MsoHeader { margin: 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif; font-style: italic; line-height: 11pt }
+p.MsoFooter,li.MsoFooter,div.MsoFooter { margin: 0; font-size: 9pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoCaption,li.MsoCaption,div.MsoCaption { margin: 0 0 13pt 28.5pt; text-indent: -28.5pt; font-size: 10pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 13pt }
+span.MsoFootnoteReference { vertical-align: super }
+span.MsoEndnoteReference { vertical-align: super }
+p.MsoEndnoteText,li.MsoEndnoteText,div.MsoEndnoteText { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif }
+p.MsoList,li.MsoList,div.MsoList { margin: 0 0 0 14.15pt; text-indent: -14.15pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoListBullet,li.MsoListBullet,div.MsoListBullet { margin: 0 0 13pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoListBullet2,li.MsoListBullet2,div.MsoListBullet2 { margin: 0 0 13pt 34pt; text-align: justify; text-indent: -17pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoTitle,li.MsoTitle,div.MsoTitle { margin: 0 0 15pt; border: none; padding: 0; font-size: 26pt; font-family: "Cambria", serif; color: rgb(23, 54, 93); letter-spacing: 0.25pt }
+p.MsoSignature,li.MsoSignature,div.MsoSignature { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoBodyText,li.MsoBodyText,div.MsoBodyText { margin: 0 0 13pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoBodyTextIndent,li.MsoBodyTextIndent,div.MsoBodyTextIndent { margin: 0 0 13pt 17pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoBodyText2,li.MsoBodyText2,div.MsoBodyText2 { margin: 0 0 6pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 2.45 }
+p.MsoBodyText3,li.MsoBodyText3,div.MsoBodyText3 { margin: 0 0 6pt 14.15pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoBodyTextIndent2,li.MsoBodyTextIndent2,div.MsoBodyTextIndent2 { margin: 0 0 6pt 14.15pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 2.45 }
+a:link,span.MsoHyperlink { color: rgb(0, 0, 255); text-decoration: underline }
+a:visited,span.MsoHyperlinkFollowed { color: rgb(149, 79, 114); text-decoration: underline }
+p.MsoDocumentMap,li.MsoDocumentMap,div.MsoDocumentMap { margin: 0; background: rgb(0, 0, 128); font-size: 11pt; font-family: "Tahoma", sans-serif; line-height: 13pt }
+p { margin-right: 0; margin-left: 0; font-size: 12pt; font-family: "Times New Roman", serif }
+pre { margin: 0; font-size: 10pt; font-family: "Courier New" }
+p.MsoCommentSubject,li.MsoCommentSubject,div.MsoCommentSubject { margin: 0; font-size: 10pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 13pt }
+p.MsoAcetate,li.MsoAcetate,div.MsoAcetate { margin: 0 0 -2pt; font-size: 8pt; font-family: "Tahoma", sans-serif; line-height: 13pt }
+p.MsoNoSpacing,li.MsoNoSpacing,div.MsoNoSpacing { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoRMPane,li.MsoRMPane,div.MsoRMPane { margin: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+p.MsoListParagraph,li.MsoListParagraph,div.MsoListParagraph { margin: 0 0 0 36pt; font-size: 11pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.MsoTocHeading,li.MsoTocHeading,div.MsoTocHeading { margin: 24pt 0 0; page-break-after: avoid; font-size: 14pt; font-family: "Calibri Light", sans-serif; color: rgb(102, 33, 103); font-weight: bold; line-height: 1.41; text-align: left }
+span.Heading1Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading2Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading3Char { font-family: "Times New Roman", serif; font-weight: bold }
+span.Heading4Char { font-family: "Times New Roman", serif; font-weight: bold; font-style: italic }
+span.Heading5Char { font-family: "Times New Roman", serif; font-style: italic }
+span.Heading6Char { font-family: "Times New Roman", serif }
+span.Heading7Char { font-family: "Times New Roman", serif }
+span.Heading8Char { font-family: "Times New Roman", serif }
+span.Heading9Char { font-family: "Times New Roman", serif }
+span.BodyTextChar { font-family: "Times New Roman", serif }
+span.FooterChar { font-family: "Times New Roman", serif }
+span.HeaderChar { font-family: "Times New Roman", serif; font-style: italic }
+p.zreportname,li.zreportname,div.zreportname { margin: 0; text-align: center; font-size: 18pt; font-family: "Times New Roman", serif; line-height: 22pt }
+p.zcontents,li.zcontents,div.zcontents { margin: 0 0 13pt; font-size: 16pt; font-family: "Times New Roman", serif }
+p.zcompanyname,li.zcompanyname,div.zcompanyname { margin: 0 0 20pt; text-align: center; font-size: 13pt; font-family: "Times New Roman", serif; font-weight: bold }
+span.FootnoteTextChar { font-family: "Times New Roman", serif }
+p.zreportsubtitle,li.zreportsubtitle,div.zreportsubtitle { margin: 0; text-align: center; font-size: 16pt; font-family: "Times New Roman", serif; line-height: 18pt }
+span.BodyTextIndentChar { font-family: "Times New Roman", serif }
+p.Graphic,li.Graphic,div.Graphic { margin: 0; text-align: center; border: none; padding: 0; font-size: 11pt; font-family: "Times New Roman", serif }
+span.SignatureChar { font-family: "Times New Roman", serif }
+p.zreportaddinfo,li.zreportaddinfo,div.zreportaddinfo { margin: 0; text-align: center; font-size: 10pt; font-family: "Times New Roman", serif; line-height: 13pt }
+p.zreportaddinfoit,li.zreportaddinfoit,div.zreportaddinfoit { margin: 0; text-align: center; font-size: 10pt; font-family: "Times New Roman", serif; font-style: italic; line-height: 13pt }
+p.AppendixHeading,li.AppendixHeading,div.AppendixHeading { margin: 0 0 7pt; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold; line-height: 18pt }
+p.Double,li.Double,div.Double { margin: 0 0 6.5pt; text-align: right; font-size: 11pt; font-family: "Times New Roman", serif; position: relative; top: -3pt; text-decoration: underline }
+p.Single,li.Single,div.Single { margin: 0; text-align: right; font-size: 11pt; font-family: "Times New Roman", serif; position: relative; top: -9pt; text-decoration: underline }
+p.Tabletext,li.Tabletext,div.Tabletext { margin: 0 0 0 7.65pt; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Denomination,li.Denomination,div.Denomination { margin: 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignWithoutBrackets,li.AlignWithoutBrackets,div.AlignWithoutBrackets { margin: 0 0 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignBrackets,li.AlignBrackets,div.AlignBrackets { margin: 0 -2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Text,li.Text,div.Text { margin: 6.5pt 0 0; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.Yours,li.Yours,div.Yours { margin: 0 0 52pt; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.Tablehead,li.Tablehead,div.Tablehead { margin: 6.5pt 0 0; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif }
+span.BodyText3Char { font-family: "Times New Roman", serif }
+span.BodyText2Char { font-family: "Times New Roman", serif }
+p.AlignWithoutTwo,li.AlignWithoutTwo,div.AlignWithoutTwo { margin: 0 5.65pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignBracketsTwo,li.AlignBracketsTwo,div.AlignBracketsTwo { margin: 0 2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.AlignWithoutOne,li.AlignWithoutOne,div.AlignWithoutOne { margin: 0 2.85pt 0 7.65pt; text-align: right; text-indent: -7.65pt; font-size: 9pt; font-family: "Times New Roman", serif }
+p.Numbering,li.Numbering,div.Numbering { margin: 6.5pt 0 0 14.2pt; text-align: justify; text-indent: -14.2pt; font-size: 11pt; font-family: "Times New Roman", serif }
+p.TT,li.TT,div.TT { margin: 0; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+p.TTH,li.TTH,div.TTH { margin: 6pt 0 0; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+p.DH,li.DH,div.DH { margin: 0 0 13.05pt; border: none; padding: 0; font-size: 9.5pt; font-family: "Arial", sans-serif }
+p.Tot,li.Tot,div.Tot { margin: 0 0 -3pt; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 17pt }
+p.T1,li.T1,div.T1 { margin: 0 0 15.05pt; page-break-after: avoid; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15.05pt }
+span.DocumentMapChar { font-family: "Tahoma", sans-serif; background: rgb(0, 0, 128) }
+p.ACText,li.ACText,div.ACText { margin: 6.5pt 0 0.25pt; text-align: justify; font-size: 10pt; font-family: "Times New Roman", serif; letter-spacing: -0.1pt }
+p.RunningTitle,li.RunningTitle,div.RunningTitle { margin: 0 0 0.25pt; text-align: right; font-size: 9pt; font-family: "Times New Roman", serif; letter-spacing: -0.1pt; font-style: italic; line-height: 11pt }
+p.RNormal,li.RNormal,div.RNormal { margin: 0; text-align: justify; font-size: 11pt; font-family: "Times New Roman", serif }
+p.NormalLeft0,li.NormalLeft0,div.NormalLeft0 { margin: 0; page-break-before: always; page-break-after: avoid; font-size: 16pt; font-family: "Times New Roman", serif; font-weight: bold }
+p.TableText0,li.TableText0,div.TableText0 { margin: 0; font-size: 12pt; font-family: "Times New Roman", serif }
+span.BalloonTextChar { font-family: "Tahoma", sans-serif }
+p.MACNormal,li.MACNormal,div.MACNormal { margin: 0; text-align: justify; font-size: 10pt; font-family: "Times New Roman", serif; color: rgb(0, 0, 0) }
+p.Subhead4,li.Subhead4,div.Subhead4 { margin: 0 46.75pt 0 76.55pt; text-indent: -76.55pt; font-size: 10pt; font-family: "Univers 45 Light"; color: rgb(123, 127, 182); font-weight: bold; line-height: 13pt }
+span.CommentTextChar { font-family: "Times New Roman", serif }
+span.CommentSubjectChar { font-family: "Times New Roman", serif; font-weight: bold }
+span.T1Char { font-family: "Arial", sans-serif }
+p.Numbered1,li.Numbered1,div.Numbered1 { margin: 0 17.85pt 12pt 0; text-align: justify; font-size: 9.5pt; font-family: "Arial", sans-serif; font-weight: bold; line-height: 15pt }
+p.Title2,li.Title2,div.Title2 { margin: 0 70pt 0 0; page-break-after: avoid; font-size: 12pt; font-family: "Arial", sans-serif; line-height: 20.15pt }
+span.TitleChar { font-family: "Cambria", serif; color: rgb(23, 54, 93); letter-spacing: 0.25pt }
+p.T2,li.T2,div.T2 { margin: 0 0 18pt; text-align: justify; font-size: 9.5pt; font-family: "Arial", sans-serif; line-height: 15pt }
+span.TableTextChar { font-family: "Times New Roman", serif }
+p.TableUnderline,li.TableUnderline,div.TableUnderline { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif; position: relative; top: -2.5pt; line-height: 5pt }
+span.TableUnderlineChar { font-family: "Arial", sans-serif; position: relative; top: -2.5pt }
+p.ps-000-normal,li.ps-000-normal,div.ps-000-normal { margin: 0 0 6pt; font-size: 10pt; font-family: "Verdana", sans-serif; color: rgb(0, 0, 0) }
+p.ps-002-normal-italic,li.ps-002-normal-italic,div.ps-002-normal-italic { margin: 0 0 6pt; font-size: 10pt; font-family: "Verdana", sans-serif; color: rgb(0, 0, 0); font-style: italic }
+p.Bodycopy,li.Bodycopy,div.Bodycopy { margin: 1pt 0 0; font-size: 8.5pt; font-family: "Arial", sans-serif; color: rgb(0, 0, 0); line-height: 10.5pt }
+p.PH,li.PH,div.PH { margin: 0; font-size: 9.5pt; font-family: "Arial", sans-serif; font-weight: bold; line-height: 15.05pt }
+p.numbtab2,li.numbtab2,div.numbtab2 { margin: 0; text-align: justify; font-size: 12pt; font-family: "Times New Roman", serif; letter-spacing: -0.15pt }
+p.Default,li.Default,div.Default { margin: 0; font-size: 12pt; font-family: "Palatino Linotype", serif; color: rgb(0, 0, 0) }
+p.TOCHeading1,li.TOCHeading1,div.TOCHeading1 { margin: 24pt 0 0 1cm; text-indent: -1cm; page-break-after: avoid; font-size: 14pt; font-family: "Cambria", serif; color: rgb(54, 95, 145); font-weight: bold; line-height: 1.41 }
+p.NoSpacing1,li.NoSpacing1,div.NoSpacing1 { margin: 0; text-align: justify; font-size: 11pt; font-family: "Palatino Linotype", serif }
+span.FootnoteTextChar1 { font-family: "Palatino Linotype", serif }
+span.DocumentMapChar1 { font-family: "Tahoma", sans-serif }
+span.NotesbodytextChar { font-family: "EYInterstate Light"; color: rgb(0, 0, 0) }
+p.Notesbodytext,li.Notesbodytext,div.Notesbodytext { margin: 0 0 6pt; font-size: 9pt; font-family: "EYInterstate Light"; color: rgb(0, 0, 0); line-height: 12pt }
+p.Tabla,li.Tabla,div.Tabla { margin: 0 0 0 7.65pt; text-indent: -7.65pt; font-size: 11pt; font-family: "Times New Roman", serif; font-weight: bold }
+p.SenkaFS-pozitivanbroj,li.SenkaFS-pozitivanbroj,div.SenkaFS-pozitivanbroj { margin: 0 2.55pt 0.25pt 0; text-align: right; font-size: 9pt; font-family: "HR Times New Roman EE/ISO 8859", serif; letter-spacing: -0.1pt }
+p.Pa40,li.Pa40,div.Pa40 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa21,li.Pa21,div.Pa21 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.TableParagraph,li.TableParagraph,div.TableParagraph { margin: 0; font-size: 11pt; font-family: "Calibri", sans-serif }
+p.Pa18,li.Pa18,div.Pa18 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa3,li.Pa3,div.Pa3 { margin: 0; font-size: 12pt; font-family: "Univers 55" }
+span.A16 { font-family: "Univers 45 Light"; color: rgb(211, 10, 83); font-weight: bold }
+p.Pa76,li.Pa76,div.Pa76 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa14,li.Pa14,div.Pa14 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Pa4,li.Pa4,div.Pa4 { margin: 0; font-size: 12pt; font-family: "Univers LT Std 45 Light" }
+p.Naslovipoglavlja,li.Naslovipoglavlja,div.Naslovipoglavlja { margin: 0; text-align: justify; page-break-after: avoid; font-size: 14pt; font-family: "Arial", sans-serif; font-weight: bold }
+p.Bullet,li.Bullet,div.Bullet { margin: 0 0 0 36pt; text-indent: -36pt; font-size: 12pt; font-family: "Times New Roman", serif }
+p.KAMKNormal,li.KAMKNormal,div.KAMKNormal { margin: 6pt 0; font-size: 11pt; font-family: "Tahoma", sans-serif; color: rgb(0, 0, 0) }
+span.KAMKNormalChar { font-family: "Tahoma", sans-serif; color: rgb(0, 0, 0) }
+span.ListParagraphChar { font-family: "Times New Roman", serif }
+p.Biljeska2,li.Biljeska2,div.Biljeska2 { margin: 6pt 0 0 18pt; text-align: justify; text-indent: -18pt; font-size: 11pt; font-family: "Calibri", sans-serif; font-weight: bold; font-style: italic }
+span.Biljeska2Char { font-family: "Calibri", sans-serif; font-weight: bold; font-style: italic }
+span.HTMLPreformattedChar { font-family: "Courier New" }
+p.Deloitteaddress,li.Deloitteaddress,div.Deloitteaddress { margin: 0; font-size: 7pt; font-family: "Calibri", sans-serif; line-height: 8.5pt }
+p.Sponsortext,li.Sponsortext,div.Sponsortext { margin: 0; font-size: 7pt; font-family: "Calibri", sans-serif; line-height: 8.5pt }
+p.Pa11,li.Pa11,div.Pa11 { margin: 0; font-size: 12pt; font-family: "Open Sans", sans-serif }
+p.NormalTimesNewRoman,li.NormalTimesNewRoman,div.NormalTimesNewRoman { margin: 6pt 0 0 17.85pt; text-align: justify; font-size: 11pt; font-family: "Arial", sans-serif; line-height: 15pt }
+span.NormalTimesNewRoman11ptJustifiedLeft063cmLinespacingAtCharChar { font-family: "Arial", sans-serif }
+span.BodyTextIndent2Char { font-family: "Times New Roman", serif }
+span.EndnoteTextChar { font-family: "Times New Roman", serif }
+span.UnresolvedMention1 { color: rgb(96, 94, 92); background: rgb(225, 223, 221) }
+span.msoIns { text-decoration: underline; color: rgb(0, 128, 128) }
+span.msoDel { text-decoration: line-through; color: rgb(255, 0, 0) }
+.MsoPapDefault { margin-bottom: 8pt; line-height: 1.31 }
+ol { margin-bottom: 0 }
+ul { margin-bottom: 0 }
+
+
+
+body {align-content:center; background-color: #eaeaea; }
+div[class^="WordSection"]
+{ position: relative; z-index: 1; align-content:center !important; margin: 0mm auto;}
+*[style*="mso-highlight"]
+{ background-color:inherit !important;}
+.WordSection1
+{width: 163.04mm;}
+.WordSection2
+{width: 160.04mm;}
+.WordSection3
+{width: 160.04mm;}
+.WordSection4
+{width: 160.04mm;}
+.WordSection5
+{width: 160.04mm;}
+.WordSection6
+{width: 160.04mm;}
+.WordSection7
+{width: 160.04mm;}
+.WordSection8
+{width: 160.04mm;}
+.WordSection9
+{width: 160.04mm;}
+.WordSection10
+{width: 160.04mm;}
+.WordSection11
+{width: 160.04mm;}
+.WordSection12
+{width: 160.04mm;}
+.WordSection13
+{width: 160.04mm;}
+.WordSection14
+{width: 160.04mm;}
+.WordSection15
+{width: 160.04mm;}
+.WordSection16
+{width: 160.04mm;}
+.WordSection17
+{width: 160.04mm;}
+.WordSection18
+{width: 160.04mm;}
+.WordSection19
+{width: 160.04mm;}
+.WordSection20
+{width: 160.04mm;}
+.WordSection21
+{width: 160.04mm;}
+.WordSection22
+{width: 160.04mm;}
+.WordSection23
+{width: 160.04mm;}
+.WordSection24
+{width: 160.04mm;}
+.WordSection25
+{width: 160.04mm;}
+.WordSection26
+{width: 160.04mm;}
+.WordSection27
+{width: 160.04mm;}
+.WordSection28
+{width: 160.04mm;}
+.WordSection29
+{width: 160.04mm;}
+.WordSection30
+{width: 160.04mm;}
+.WordSection31
+{width: 160.04mm;}
+.WordSection32
+{width: 160.04mm;}
+.WordSection33
+{width: 160.04mm;}
+.WordSection34
+{width: 160.04mm;}
+.WordSection35
+{width: 160.04mm;}
+.WordSection36
+{width: 163.04mm;}
+.WordSection37
+{width: 160.04mm;}
+.WordSection38
+{width: 160.04mm;}
+.WordSection39
+{width: 160.04mm;}
+.WordSection40
+{width: 160.04mm;}
+.WordSection41
+{width: 160.27mm;}
+.WordSection42
+{width: 160.27mm;}
+.WordSection43
+{width: 228.60mm;}
+.WordSection44
+{width: 159.21mm;}
+.WordSection45
+{width: 159.21mm;}
+.WordSection46
+{width: 159.21mm;}
+.WordSection47
+{width: 159.21mm;}
+.WordSection48
+{width: 159.21mm;}
+.WordSection49
+{width: 159.21mm;}
+.WordSection50
+{width: 159.21mm;}
+.WordSection51
+{width: 159.21mm;}
+.WordSection52
+{width: 159.21mm;}
+.WordSection53
+{width: 159.21mm;}
+.WordSection54
+{width: 159.21mm;}
+.WordSection55
+{width: 159.21mm;}
+.WordSection56
+{width: 159.21mm;}
+.WordSection57
+{width: 159.21mm;}
+.WordSection58
+{width: 159.21mm;}
+.WordSection59
+{width: 159.21mm;}
+.WordSection60
+{width: 159.21mm;}
+.WordSection61
+{width: 159.21mm;}
+.WordSection62
+{width: 159.21mm;}
+.WordSection63
+{width: 159.21mm;}
+.WordSection64
+{width: 159.21mm;}
+.WordSection65
+{width: 159.21mm;}
+.WordSection66
+{width: 159.21mm;}
+.WordSection67
+{width: 159.21mm;}
+.WordSection68
+{width: 159.21mm;}
+.WordSection69
+{width: 159.21mm;}
+.WordSection70
+{width: 159.21mm;}
+.WordSection71
+{width: 159.21mm;}
+.WordSection72
+{width: 159.21mm;}
+.WordSection73
+{width: 159.21mm;}
+.WordSection74
+{width: 159.21mm;}
+.WordSection75
+{width: 159.21mm;}
+.WordSection76
+{width: 159.21mm;}
+.WordSection77
+{width: 159.21mm;}
+.WordSection78
+{width: 159.21mm;}
+.WordSection79
+{width: 159.21mm;}
+.WordSection80
+{width: 159.21mm;}
+.WordSection81
+{width: 159.21mm;}
+.WordSection82
+{width: 159.21mm;}
+.WordSection83
+{width: 159.21mm;}
+.WordSection84
+{width: 159.21mm;}
+.WordSection85
+{width: 159.21mm;}
+.WordSection86
+{width: 159.21mm;}
+.WordSection87
+{width: 159.21mm;}
+.WordSection88
+{width: 159.21mm;}
+.WordSection89
+{width: 246.20mm;}
+.WordSection90
+{width: 246.20mm;}
+.WordSection91
+{width: 160.04mm;}
+.WordSection92
+{width: 160.04mm;}
+.WordSection93
+{width: 160.04mm;}
+.WordSection94
+{width: 160.04mm;}
+.WordSection95
+{width: 160.04mm;}
+.WordSection96
+{width: 160.04mm;}
+.WordSection97
+{width: 160.04mm;}
+.WordSection98
+{width: 160.04mm;}
+.WordSection99
+{width: 160.04mm;}
+.WordSection100
+{width: 160.04mm;}
+.Page1
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page1 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header1
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer1
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea1
+{width: 210.03mm;}
+.Page1 table{max-width: 210.03mm !important;}
+.Page2
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page2 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header2
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer2
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea2
+{width: 210.03mm;}
+.Page2 table{max-width: 210.03mm !important;}
+.Page3
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page3 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header3
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer3
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea3
+{width: 210.03mm;}
+.Page3 table{max-width: 210.03mm !important;}
+.Page4
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page4 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header4
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer4
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea4
+{width: 210.03mm;}
+.Page4 table{max-width: 210.03mm !important;}
+.Page5
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page5 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header5
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer5
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea5
+{width: 210.03mm;}
+.Page5 table{max-width: 210.03mm !important;}
+.Page6
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page6 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header6
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer6
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea6
+{width: 210.03mm;}
+.Page6 table{max-width: 210.03mm !important;}
+.Page7
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page7 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header7
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer7
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea7
+{width: 210.03mm;}
+.Page7 table{max-width: 210.03mm !important;}
+.Page8
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page8 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header8
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer8
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea8
+{width: 210.03mm;}
+.Page8 table{max-width: 210.03mm !important;}
+.Page9
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page9 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header9
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer9
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea9
+{width: 210.03mm;}
+.Page9 table{max-width: 210.03mm !important;}
+.Page10
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page10 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header10
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer10
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea10
+{width: 210.03mm;}
+.Page10 table{max-width: 210.03mm !important;}
+.Page11
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page11 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header11
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer11
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea11
+{width: 210.03mm;}
+.Page11 table{max-width: 210.03mm !important;}
+.Page12
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page12 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header12
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer12
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea12
+{width: 210.03mm;}
+.Page12 table{max-width: 210.03mm !important;}
+.Page13
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page13 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header13
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer13
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea13
+{width: 210.03mm;}
+.Page13 table{max-width: 210.03mm !important;}
+.Page14
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page14 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header14
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer14
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea14
+{width: 210.03mm;}
+.Page14 table{max-width: 210.03mm !important;}
+.Page15
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page15 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header15
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer15
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea15
+{width: 210.03mm;}
+.Page15 table{max-width: 210.03mm !important;}
+.Page16
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page16 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header16
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer16
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea16
+{width: 210.03mm;}
+.Page16 table{max-width: 210.03mm !important;}
+.Page17
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page17 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header17
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer17
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea17
+{width: 210.03mm;}
+.Page17 table{max-width: 210.03mm !important;}
+.Page18
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page18 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header18
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer18
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea18
+{width: 210.03mm;}
+.Page18 table{max-width: 210.03mm !important;}
+.Page19
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page19 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header19
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer19
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea19
+{width: 210.03mm;}
+.Page19 table{max-width: 210.03mm !important;}
+.Page20
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page20 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header20
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer20
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea20
+{width: 210.03mm;}
+.Page20 table{max-width: 210.03mm !important;}
+.Page21
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page21 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header21
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer21
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea21
+{width: 210.03mm;}
+.Page21 table{max-width: 210.03mm !important;}
+.Page22
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page22 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header22
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer22
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea22
+{width: 210.03mm;}
+.Page22 table{max-width: 210.03mm !important;}
+.Page23
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page23 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header23
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer23
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea23
+{width: 210.03mm;}
+.Page23 table{max-width: 210.03mm !important;}
+.Page24
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page24 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header24
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer24
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea24
+{width: 210.03mm;}
+.Page24 table{max-width: 210.03mm !important;}
+.Page25
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page25 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header25
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer25
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea25
+{width: 210.03mm;}
+.Page25 table{max-width: 210.03mm !important;}
+.Page26
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page26 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header26
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer26
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea26
+{width: 210.03mm;}
+.Page26 table{max-width: 210.03mm !important;}
+.Page27
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page27 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header27
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer27
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea27
+{width: 210.03mm;}
+.Page27 table{max-width: 210.03mm !important;}
+.Page28
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page28 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header28
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer28
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea28
+{width: 210.03mm;}
+.Page28 table{max-width: 210.03mm !important;}
+.Page29
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page29 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header29
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer29
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea29
+{width: 210.03mm;}
+.Page29 table{max-width: 210.03mm !important;}
+.Page30
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page30 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header30
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer30
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea30
+{width: 210.03mm;}
+.Page30 table{max-width: 210.03mm !important;}
+.Page31
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page31 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header31
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer31
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea31
+{width: 210.03mm;}
+.Page31 table{max-width: 210.03mm !important;}
+.Page32
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page32 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header32
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer32
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea32
+{width: 210.03mm;}
+.Page32 table{max-width: 210.03mm !important;}
+.Page33
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page33 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header33
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer33
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea33
+{width: 210.03mm;}
+.Page33 table{max-width: 210.03mm !important;}
+.Page34
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page34 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header34
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer34
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea34
+{width: 210.03mm;}
+.Page34 table{max-width: 210.03mm !important;}
+.Page35
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page35 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header35
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer35
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea35
+{width: 210.03mm;}
+.Page35 table{max-width: 210.03mm !important;}
+.Page36
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page36 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header36
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer36
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea36
+{width: 210.03mm;}
+.Page36 table{max-width: 210.03mm !important;}
+.Page37
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page37 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header37
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer37
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea37
+{width: 210.03mm;}
+.Page37 table{max-width: 210.03mm !important;}
+.Page38
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page38 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header38
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer38
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea38
+{width: 210.03mm;}
+.Page38 table{max-width: 210.03mm !important;}
+.Page39
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page39 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header39
+{min-height: 0.00mm;margin-top: 15.40mm;}
+.Footer39
+{min-height: 0.00mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea39
+{width: 210.03mm;}
+.Page39 table{max-width: 210.03mm !important;}
+.Page40
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page40 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header40
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer40
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea40
+{width: 210.03mm;}
+.Page40 table{max-width: 210.03mm !important;}
+.Page41
+{
+min-width: 160.27mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page41 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header41
+{min-height: 12.49mm;margin-top: 12.51mm;}
+.Footer41
+{min-height: 11.08mm;margin-bottom: 13.92mm;min-width: 160.27mm;max-width: max-content;}
+.PrintArea41
+{width: 210.26mm;}
+.Page41 table{max-width: 210.26mm !important;}
+.Page42
+{
+min-width: 160.27mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page42 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header42
+{min-height: 12.49mm;margin-top: 12.51mm;}
+.Footer42
+{min-height: 11.08mm;margin-bottom: 13.92mm;min-width: 160.27mm;max-width: max-content;}
+.PrintArea42
+{width: 210.26mm;}
+.Page42 table{max-width: 210.26mm !important;}
+.Page43
+{
+min-width: 228.60mm;min-height: 215.90mm;margin: 0;background-color: white;}
+.Page43 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header43
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer43
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 228.60mm;max-width: max-content;}
+.PrintArea43
+{width: 279.40mm;}
+.Page43 table{max-width: 279.40mm !important;}
+.Page44
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page44 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header44
+{min-height: 16.40mm;margin-top: 9.00mm;}
+.Footer44
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea44
+{width: 210.01mm;}
+.Page44 table{max-width: 210.01mm !important;}
+.Page45
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page45 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header45
+{min-height: 16.40mm;margin-top: 9.00mm;}
+.Footer45
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea45
+{width: 210.01mm;}
+.Page45 table{max-width: 210.01mm !important;}
+.Page46
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page46 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header46
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer46
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea46
+{width: 210.01mm;}
+.Page46 table{max-width: 210.01mm !important;}
+.Page47
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page47 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header47
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer47
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea47
+{width: 210.01mm;}
+.Page47 table{max-width: 210.01mm !important;}
+.Page48
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page48 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header48
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer48
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea48
+{width: 210.01mm;}
+.Page48 table{max-width: 210.01mm !important;}
+.Page49
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page49 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header49
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer49
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea49
+{width: 210.01mm;}
+.Page49 table{max-width: 210.01mm !important;}
+.Page50
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page50 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header50
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer50
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea50
+{width: 210.01mm;}
+.Page50 table{max-width: 210.01mm !important;}
+.Page51
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page51 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header51
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer51
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea51
+{width: 210.01mm;}
+.Page51 table{max-width: 210.01mm !important;}
+.Page52
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page52 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header52
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer52
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea52
+{width: 210.01mm;}
+.Page52 table{max-width: 210.01mm !important;}
+.Page53
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page53 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header53
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer53
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea53
+{width: 210.01mm;}
+.Page53 table{max-width: 210.01mm !important;}
+.Page54
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page54 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header54
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer54
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea54
+{width: 210.01mm;}
+.Page54 table{max-width: 210.01mm !important;}
+.Page55
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page55 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header55
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer55
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea55
+{width: 210.01mm;}
+.Page55 table{max-width: 210.01mm !important;}
+.Page56
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page56 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header56
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer56
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea56
+{width: 210.01mm;}
+.Page56 table{max-width: 210.01mm !important;}
+.Page57
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page57 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header57
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer57
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea57
+{width: 210.01mm;}
+.Page57 table{max-width: 210.01mm !important;}
+.Page58
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page58 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header58
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer58
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea58
+{width: 210.01mm;}
+.Page58 table{max-width: 210.01mm !important;}
+.Page59
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page59 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header59
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer59
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea59
+{width: 210.01mm;}
+.Page59 table{max-width: 210.01mm !important;}
+.Page60
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page60 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header60
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer60
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea60
+{width: 210.01mm;}
+.Page60 table{max-width: 210.01mm !important;}
+.Page61
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page61 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header61
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer61
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea61
+{width: 210.01mm;}
+.Page61 table{max-width: 210.01mm !important;}
+.Page62
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page62 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header62
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer62
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea62
+{width: 210.01mm;}
+.Page62 table{max-width: 210.01mm !important;}
+.Page63
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page63 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header63
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer63
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea63
+{width: 210.01mm;}
+.Page63 table{max-width: 210.01mm !important;}
+.Page64
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page64 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header64
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer64
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea64
+{width: 210.01mm;}
+.Page64 table{max-width: 210.01mm !important;}
+.Page65
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page65 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header65
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer65
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea65
+{width: 210.01mm;}
+.Page65 table{max-width: 210.01mm !important;}
+.Page66
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page66 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header66
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer66
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea66
+{width: 210.01mm;}
+.Page66 table{max-width: 210.01mm !important;}
+.Page67
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page67 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header67
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer67
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea67
+{width: 210.01mm;}
+.Page67 table{max-width: 210.01mm !important;}
+.Page68
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page68 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header68
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer68
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea68
+{width: 210.01mm;}
+.Page68 table{max-width: 210.01mm !important;}
+.Page69
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page69 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header69
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer69
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea69
+{width: 210.01mm;}
+.Page69 table{max-width: 210.01mm !important;}
+.Page70
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page70 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header70
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer70
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea70
+{width: 210.01mm;}
+.Page70 table{max-width: 210.01mm !important;}
+.Page71
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page71 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header71
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer71
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea71
+{width: 210.01mm;}
+.Page71 table{max-width: 210.01mm !important;}
+.Page72
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page72 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header72
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer72
+{min-height: 0.02mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea72
+{width: 210.01mm;}
+.Page72 table{max-width: 210.01mm !important;}
+.Page73
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page73 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header73
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer73
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea73
+{width: 210.01mm;}
+.Page73 table{max-width: 210.01mm !important;}
+.Page74
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page74 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header74
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer74
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea74
+{width: 210.01mm;}
+.Page74 table{max-width: 210.01mm !important;}
+.Page75
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page75 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header75
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer75
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea75
+{width: 210.01mm;}
+.Page75 table{max-width: 210.01mm !important;}
+.Page76
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page76 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header76
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer76
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea76
+{width: 210.01mm;}
+.Page76 table{max-width: 210.01mm !important;}
+.Page77
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page77 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header77
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer77
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea77
+{width: 210.01mm;}
+.Page77 table{max-width: 210.01mm !important;}
+.Page78
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page78 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header78
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer78
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea78
+{width: 210.01mm;}
+.Page78 table{max-width: 210.01mm !important;}
+.Page79
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page79 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header79
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer79
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea79
+{width: 210.01mm;}
+.Page79 table{max-width: 210.01mm !important;}
+.Page80
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page80 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header80
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer80
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea80
+{width: 210.01mm;}
+.Page80 table{max-width: 210.01mm !important;}
+.Page81
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page81 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header81
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer81
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea81
+{width: 210.01mm;}
+.Page81 table{max-width: 210.01mm !important;}
+.Page82
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page82 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header82
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer82
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea82
+{width: 210.01mm;}
+.Page82 table{max-width: 210.01mm !important;}
+.Page83
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page83 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header83
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer83
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea83
+{width: 210.01mm;}
+.Page83 table{max-width: 210.01mm !important;}
+.Page84
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page84 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header84
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer84
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea84
+{width: 210.01mm;}
+.Page84 table{max-width: 210.01mm !important;}
+.Page85
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page85 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header85
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer85
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea85
+{width: 210.01mm;}
+.Page85 table{max-width: 210.01mm !important;}
+.Page86
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page86 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header86
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer86
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea86
+{width: 210.01mm;}
+.Page86 table{max-width: 210.01mm !important;}
+.Page87
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page87 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header87
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer87
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea87
+{width: 210.01mm;}
+.Page87 table{max-width: 210.01mm !important;}
+.Page88
+{
+min-width: 159.21mm;min-height: 297.00mm;margin: 0;background-color: white;}
+.Page88 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header88
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer88
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 159.21mm;max-width: max-content;}
+.PrintArea88
+{width: 210.01mm;}
+.Page88 table{max-width: 210.01mm !important;}
+.Page89
+{
+min-width: 246.20mm;min-height: 210.01mm;margin: 0;background-color: white;}
+.Page89 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header89
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer89
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 246.20mm;max-width: max-content;}
+.PrintArea89
+{width: 297.00mm;}
+.Page89 table{max-width: 297.00mm !important;}
+.Page90
+{
+min-width: 246.20mm;min-height: 210.01mm;margin: 0;background-color: white;}
+.Page90 &gt; div:not(.textbox){
+margin-left: 25.40mm;margin-right: 25.40mm;}
+.Header90
+{min-height: 12.91mm;margin-top: 12.49mm;}
+.Footer90
+{min-height: 12.91mm;margin-bottom: 12.49mm;min-width: 246.20mm;max-width: max-content;}
+.PrintArea90
+{width: 297.00mm;}
+.Page90 table{max-width: 297.00mm !important;}
+.Page91
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page91 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header91
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer91
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea91
+{width: 210.03mm;}
+.Page91 table{max-width: 210.03mm !important;}
+.Page92
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page92 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header92
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer92
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea92
+{width: 210.03mm;}
+.Page92 table{max-width: 210.03mm !important;}
+.Page93
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page93 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header93
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer93
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea93
+{width: 210.03mm;}
+.Page93 table{max-width: 210.03mm !important;}
+.Page94
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page94 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header94
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer94
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea94
+{width: 210.03mm;}
+.Page94 table{max-width: 210.03mm !important;}
+.Page95
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page95 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header95
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer95
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea95
+{width: 210.03mm;}
+.Page95 table{max-width: 210.03mm !important;}
+.Page96
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page96 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header96
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer96
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea96
+{width: 210.03mm;}
+.Page96 table{max-width: 210.03mm !important;}
+.Page97
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page97 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header97
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer97
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea97
+{width: 210.03mm;}
+.Page97 table{max-width: 210.03mm !important;}
+.Page98
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page98 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header98
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer98
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea98
+{width: 210.03mm;}
+.Page98 table{max-width: 210.03mm !important;}
+.Page99
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page99 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header99
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer99
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea99
+{width: 210.03mm;}
+.Page99 table{max-width: 210.03mm !important;}
+.Page100
+{
+min-width: 160.04mm;min-height: 297.04mm;margin: 0;background-color: white;}
+.Page100 &gt; div:not(.textbox){
+margin-left: 24.99mm;margin-right: 24.99mm;}
+.Header100
+{min-height: 9.60mm;margin-top: 15.40mm;}
+.Footer100
+{min-height: 14.80mm;margin-bottom: 10.20mm;min-width: 160.04mm;max-width: max-content;}
+.PrintArea100
+{width: 210.03mm;}
+.Page100 table{max-width: 210.03mm !important;}
+.PrintArea{position: relative;z-index: 0;margin-left: auto;margin-right: auto;padding: 0;margin-top: 1em;margin-bottom: 1em;overflow: hidden;}.Page{display: flex;flex-direction: column;}.Header{position: relative;display: block;}.Footer{position: relative;margin-top: auto;height: 100%;width: 100%;display: flex !important;flex-direction: column;justify-content: flex-end;}.Footer &gt; div{width: 100%;}body {background-color: #eaeaea !important;} 
+
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table class="MsoNormalTable" title="ias_1_role-610000b0ae7629-0ea2-427f-b450-635ed8e670a3" style="border:solid 0pt;border-collapse:collapse;border-spacing:0;"><tbody>
+ <tr style="height:37.0pt">
+  <td style="vertical-align:bottom;width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:37.0pt"></td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:37.0pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Issued
+  capital</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Share
+  premium</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Legal
+  reserves</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Own
+  shares</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Other
+  reserves</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Reserves
+  – fair value </span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Accumulated
+  profit (loss)</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:37.0pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">Total</span><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="vertical-align:bottom;width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">EUR</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="vertical-align:bottom;width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:70.6pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:49.4pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:60.05pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt"></td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:60.0pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:60.05pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt"></td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">As at 1 January 2023</span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="width:70.6pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-3-a7ab7aaa-b29d-4455-8fad-57479b3c176d" contextRef="I2022-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">3,076,316</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-4-2f5bcc2f-f461-4d38-90fe-02741a631185" contextRef="I2022-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,839,562</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-5-fd28d1d5-af81-4f4a-a92d-3351cced80cb" contextRef="I2022-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">18,714</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-6-345b5043-ea7e-479c-8731-1fd018a9cc29" contextRef="I2022-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">18,409</ix:nonfraction>)</span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-7-ac103e37-9b7d-4ab7-8cda-9fa83e3759a8" contextRef="I2022-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">815,878</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-8-a13ee9cb-e609-462e-9c3e-63a79b0a9114" contextRef="I2022-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">70,169</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-9-12c7409d-606e-40fc-a655-3e21763780f6" contextRef="I2022-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">16,893</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-4-10-6d8c6475-b277-413a-8f35-c58a509322a3" contextRef="I2022-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">5,819,123</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.55pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.55pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.55pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:70.6pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:2.85pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:2.85pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Current year profit</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:2.85pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-3-fb625d8f-7df3-4213-9a97-b32ca4ad57cd" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-4-e238157c-afa3-4f25-b143-9dffb920a5ea" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-5-a5e3750a-bf51-4309-86ff-37a551d812c6" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-6-8baff669-2d39-44f4-b097-9738509422f7" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-7-3993863e-aed6-415a-a841-83c55550d712" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-8-87d5e49e-eb5c-4a11-a810-e9f835b082b0" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-9-a99120e2-6266-47b2-8a08-7401961cb613" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">136,203</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:2.85pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-6-10-4c53edcd-7485-43d6-8326-5feb3dcd1195" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">136,203</ix:nonfraction></span></span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Other comprehensive income (Note 15)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-3-bb30bf74-c78f-4481-bca8-e348b056fb4e" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-4-5d72ef14-4c98-4ff1-ae99-1454667f71ac" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-5-da4d476e-2f0d-48e6-826d-4be2ef5d1090" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-6-a83adda4-dc87-4f1a-8856-8e51fd684071" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-7-8e2e493e-1e2b-4e95-a8bf-e6b7c4f77774" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-8-5153bc64-a2b4-4209-98c1-d071a61a4390" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">91,872</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-9-98687004-ac0f-4c7f-8e3d-59e2bd2401e9" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-7-10-f7f2a4f1-d046-49a7-88a5-bed9cd750241" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">91,872</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total other comprehensive income</span></i><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-3-31e8c4dc-e9c4-450f-a9c2-00e96e8c4918" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-4-bddb7d6e-9da2-454c-92d9-83c322182aec" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-5-10ac68bd-9769-4ebe-bafd-f18d6ad04b7c" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-6-51b68041-e52d-4ea5-be20-3afe60a697c8" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-7-105b6a57-8bf0-4c51-9d73-5f293606c30a" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-8-645c9fb5-4bcc-454a-baf4-5759691921f1" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">91,872</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-9-57e9cabb-dc3a-40f2-8b15-6889cfe5cd42" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">136,203</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-8-10-ad5494dc-0f9c-4504-9c68-250a592d0642" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">228,075</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Other equity movements</span></i><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:13.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">- share based
+  payments (Note 20b)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:13.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-3-ae7302be-078e-4902-8d54-d8545fad7ff7" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-4-0e75b310-69fb-410f-98db-3cda6d87893a" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,271</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-5-decc1ff0-7955-42fe-a5a8-2f84efcd0273" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-6-dcf94f13-4703-40b7-94bf-082a963a740b" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">5,182</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-7-fe0c7aaf-f254-4b13-b9b6-f195ee98b2da" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-8-28d0cc76-4f8b-40d1-95ad-868df1eb15e2" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-9-4ddd335f-6bf2-45a1-a474-3652e84b6323" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">8,446</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-10-10-4c7ee9a4-e562-4a67-b26f-d0f212079801" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">1,993</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">- acquisition
+  of own shares (Note 20b)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-3-854093d0-4ce8-42c9-a4c5-06910344d142" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-4-6b8fb886-1f1e-41c5-a934-5f5e6f4dd3a6" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-5-b54327a5-ed25-4946-bd82-0978a8723c9d" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-6-6301f457-8b03-42cb-ab3d-034162e9bc51" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">17,256</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-7-3f62f17a-1315-42d3-a01b-1076a69e97aa" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-8-0394817a-b073-41c7-a21d-a292ee4a9c98" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-9-e42d48cd-f632-4537-bf5d-8a39c0fae4ca" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:PurchaseOfTreasuryShares" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-11-10-bbeafc33-0b9c-4e26-aa43-7016cb3b91a0" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">17,256</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">-
+  reconciliation of issued share capital with the Companies Act (EUR) (Note
+  20a)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.65pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-3-edb3e7bf-014b-4383-bbfa-a8ab67c69042" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-4-967e8331-ba25-4853-8973-b7721819411c" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-5-2f1ceff8-59f8-4592-ae1a-993d839b3bd5" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-6-9aec318c-52b0-48fe-af96-cc288afb9f6e" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-7-88550f46-d942-46b8-89f3-cc883f3606f6" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-8-f0ab3839-a35e-430e-9e47-dc87b6f84b48" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-9-7c779d63-af81-4570-b9b5-ad42ec5ec933" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:3.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:ReductionOfIssuedCapital" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-12-10-3c34ffc7-2245-4a19-baa8-2936b2ffcb0d" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:4.35pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:4.35pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total other equity movements</span></i><i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:4.35pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-3-360749d6-2154-4506-ade2-503615afcfc1" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">1</ix:nonfraction>)</span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-4-5a5e9139-0c6a-47bf-bbfb-5c9efdb4be1a" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,271</ix:nonfraction></span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-5-29ff9700-bea8-4a9d-a859-26c6b3980a7f" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-6-615187b6-4d07-4215-8f35-ecf4e1cdb948" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">12,074</ix:nonfraction>)</span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-7-dff1d1d1-bb62-48e9-8d57-b497015235dd" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-8-2055e522-9c53-42dd-b5a9-b3910f8a9ab7" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-9-a756bbb7-23a8-4fa2-90d8-cd09f7a78f98" contextRef="D2023-01-01-2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">8,446</ix:nonfraction>)</span></span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:4.35pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-13-10-1c047a12-4cb4-4e66-950c-9a1847eed6bf" contextRef="D2023-01-01-2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">19,250</ix:nonfraction>)</span></span></i><b><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="width:70.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">&#160;</span></b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;">&#160;</span></b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:17.65pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">As at 31 December 2023</span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt"></td>
+  
+  <td style="width:70.6pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-3-52845094-4747-427d-b716-217416188d5e" contextRef="I2023-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">3,076,315</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-4-f4172d2f-e633-4530-9b13-019ce4471d1c" contextRef="I2023-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,840,833</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-5-9f118e76-a506-4fec-9064-3011d0253f15" contextRef="I2023-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">18,714</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-6-dbbea74f-155e-40f4-ac81-a09f85859ae2" contextRef="I2023-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">30,483</ix:nonfraction>)</span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-7-4113f75a-f4cb-4d8f-a5ce-cfe0b8e91cbd" contextRef="I2023-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">815,878</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-8-7f993f05-f3d9-4c7a-a6c1-e46079efd355" contextRef="I2023-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">162,041</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-9-2b0d4ff1-01b4-4e8e-89ad-2868d89cd6a1" contextRef="I2023-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">144,650</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:17.65pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-15-10-3e3a1c57-8de5-49f9-b5d0-e0ec430d8f33" contextRef="I2023-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">6,027,948</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:3.55pt">
+  <td style="vertical-align:bottom;width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.55pt"></td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:3.55pt"></td>
+  
+  <td style="width:70.6pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.55pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Current year profit</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-3-0e06a6b5-0920-4ecd-88f8-beb3eb7bfb37" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-4-8eab077a-edc4-4951-8ecc-19966621ac20" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-5-78a471f2-8b7e-469b-8c39-63cd876b4053" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-6-55e653ea-43f7-41da-8529-d21a5be2ec4f" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-7-7d39f523-483e-4b3c-979a-f55f715f9a45" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-8-063d8c9b-1d67-4f6e-9a2a-56b8c2f56fb3" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-9-e70c5fec-e34f-4cff-b92a-2df56500c4fc" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">38,461</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ProfitLoss" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-17-10-7b1348ba-f59c-4a9e-a8de-0092b7214330" contextRef="D2024-01-01-2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">38,461</ix:nonfraction></span></span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Other comprehensive income (Note 15)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-3-397f9d76-b499-4ee0-a5e7-93143651184a" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-4-3bc1e6a9-85ba-4270-a2c4-f8b5b2c0418b" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-5-c7ffc265-b578-41be-9096-0a9ebd3ea7e4" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-6-ab3e8726-f1b9-49bd-8f64-bd4785a2fd62" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-7-482d0f95-51c9-4102-9244-9a6b40124a5c" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-8-9e3a1ab3-7d19-4f93-988a-195ea54b6406" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-9-cae5c09a-9935-4c1e-bf26-9c2b306f8a9c" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-18-10-de4f729d-a5ce-48e1-a339-844f16c43b4f" contextRef="D2024-01-01-2024-12-31" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total other comprehensive income</span></i><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-3-8fec3ea8-fca4-4040-ae4b-6e1cbf4a016e" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-4-a6596aca-ae89-4d41-b6de-5a7f71e65fa6" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-5-0157bd72-8340-44b6-822a-7d09a2a4cda9" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-6-eccfc01b-ae4e-4334-83b6-b41e8946c7b3" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-7-cd88d875-af3a-47b3-b2ff-1ebc34381ad3" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-8-9cd1f8ff-ee17-45e3-b26c-7b3bcd25d6e5" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-9-3a701cd9-3508-4ccf-a480-19f2fbdaa851" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">38,461</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:ComprehensiveIncome" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-19-10-72636dbf-1de5-4e02-a588-7552da60aaf1" contextRef="D2024-01-01-2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">38,461</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Other equity movements</span></i><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt"></td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">-
+  distribution of profit for dividend payment (Note 20c)</span><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-3-1583da8b-e183-48cc-bde2-6677c66ed2a9" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-4-59be86af-c7b3-4b17-a805-b6928878fa09" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-5-2f29cdb4-f4e7-4b86-b082-44ca7b8d2506" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-6-772b9f99-0ca5-46f4-a19b-977618572270" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-7-a0a58152-4996-4f16-a633-678743a5e8d9" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-8-9c6ab3d5-8d5a-4100-95b7-9f16f5dd8f62" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-9-e86879d7-8ba7-454c-9f17-c489fe9d32c3" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">115,893</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughSharebasedPaymentTransactions" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-21-10-da2ce607-0827-47a4-b2a6-eacf737c8766" contextRef="D2024-01-01-2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">115,893</ix:nonfraction>)</span></span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><i><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">Total other equity movements</span></i><i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></i></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-3-1f4c8601-9ec1-44f9-b58c-14d92fec5c00" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:49.4pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-4-a9357b9c-35cd-4484-b6a3-e31094cb13bd" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-5-58b66b80-bee2-49ed-aabc-6723179e5fb7" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-6-62f436f8-c161-4b31-8374-f28b00e358c4" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-7-98f30b65-2fd3-4a6b-b477-5ba1fa5aa05e" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-8-1db435fc-9fa3-4a5a-bd19-c4776038558f" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:fixed-zero" decimals="0" scale="0">-</ix:nonfraction></span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-9-1c29a0a4-126c-44d2-a95e-5d94765a5832" contextRef="D2024-01-01-2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">115,893</ix:nonfraction>)</span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><i><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-22-10-6a0c5b65-7e39-44c7-a0ea-b0058340c705" contextRef="D2024-01-01-2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">115,893</ix:nonfraction>)</span></span></i><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:12.3pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="line-height:normal"><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:70.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:12.3pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><span style="font-size:8.5pt;font-family:
+  &quot;Arial&quot;,sans-serif;color:red;">&#160;</span><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;"></span></p>
+  </td>
+  
+ </tr>
+ <tr style="height:18.6pt">
+  <td style="width:191.4pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="line-height:normal"><b><span style="font-size:8.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black;
+  ">As at 31 December 2024</span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="vertical-align:bottom;width:14.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt"></td>
+  
+  <td style="width:70.6pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-3-d51257a2-9367-4e3a-984f-929872a8a8b9" contextRef="I2024-12-31_ComponentsOfEquityAxis_IssuedCapitalMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">3,076,315</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:49.4pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-4-ae7c0c71-3951-4446-8613-79cc1a1235c8" contextRef="I2024-12-31_ComponentsOfEquityAxis_SharePremiumMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">1,840,833</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-5-a06dd6a3-3a44-4a38-adce-147fb9449950" contextRef="I2024-12-31_ComponentsOfEquityAxis_StatutoryReserveMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">18,714</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span>(<ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-6-403038cd-91f9-44ca-b753-b6845939c39a" contextRef="I2024-12-31_ComponentsOfEquityAxis_TreasurySharesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0" sign="-">30,483</ix:nonfraction>)</span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-7-7ff78676-379a-4dd4-ae2a-7e0171884c7e" contextRef="I2024-12-31_ComponentsOfEquityAxis_OtherReservesMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">815,878</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-8-3e5d2349-fb8e-47f7-8bfa-abee458b9796" contextRef="I2024-12-31_ComponentsOfEquityAxis_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">162,041</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.0pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-9-17f3fcfb-1b97-4a03-9b0a-2b0ff774d984" contextRef="I2024-12-31_ComponentsOfEquityAxis_RetainedEarningsMember" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">67,218</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+  <td style="width:60.05pt;border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.6pt">
+  <p class="MsoNormal" style="text-align:right;line-height:normal"><b><span style="font-size:8.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;"><span><ix:nonfraction name="ifrs-full:Equity" id="_Xbrlb0ae7629-0ea2-427f-b450-635ed8e670a3-0-24-10-32d83871-8a5a-4795-9345-9c95f57e837e" contextRef="I2024-12-31" unitRef="EUR" format="ixt:num-dot-decimal" decimals="0" scale="0">5,950,516</ix:nonfraction></span></span></b><b><span style="font-size:9.5pt;
+  font-family:&quot;Arial&quot;,sans-serif;color:black;
+  "></span></b></p>
+  </td>
+  
+ </tr>
+</tbody></table></body></html>

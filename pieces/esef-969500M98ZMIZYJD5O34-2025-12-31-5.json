@@ -1,0 +1,108 @@
+{
+	"id": "esef-969500M98ZMIZYJD5O34-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500M98ZMIZYJD5O34/2025-12-31/ESEF/FR/0/wendelgroup-2025-12-31-1-fr/reports/wendelgroup-2025-12-31-fr.xhtml",
+		"lei": "969500M98ZMIZYJD5O34",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "33866c95fd4b7befa58d0b05e9faa3f77be64647892959d85df5f2b1efdf4fff",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025"
+			],
+			[
+				"75679",
+				"71329"
+			],
+			[
+				"7",
+				"2149",
+				"2034"
+			],
+			[
+				"7",
+				"77828",
+				"73363"
+			],
+			[
+				"121",
+				"233"
+			],
+			[
+				"-68894",
+				"-65039"
+			],
+			[
+				"874",
+				"219"
+			],
+			[
+				"-1225",
+				"-1200"
+			],
+			[
+				"-467",
+				"-133"
+			],
+			[
+				"8237",
+				"7443"
+			],
+			[
+				"865",
+				"1541"
+			],
+			[
+				"-2623",
+				"-2752"
+			],
+			[
+				"-1758",
+				"-1211"
+			],
+			[
+				"-643",
+				"-513"
+			],
+			[
+				"-2871",
+				"-2649"
+			],
+			[
+				"214",
+				"179"
+			],
+			[
+				"3179",
+				"3248"
+			],
+			[
+				"268",
+				"6651"
+			],
+			[
+				"3447",
+				"9899"
+			],
+			[
+				"4965",
+				"6960"
+			],
+			[
+				"-1518",
+				"2939"
+			]
+		]
+	}
+}

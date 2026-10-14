@@ -1,0 +1,49 @@
+{
+	"id": "esef-391200ZCN16YSPNKID89-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/391200ZCN16YSPNKID89/2024-12-31/ESEF/MT/0/391200ZCN16YSPNKID89-2024-12-31-0-en/reports/391200ZCN16YSPNKID89-2024-12-31-0-en.html",
+		"lei": "391200ZCN16YSPNKID89",
+		"pays": "MT",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "f10e287f6956e5d875c4d1ef41fadc3a62d9034073488f253c97a92dba555302",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"250000",
+				"17750000",
+				"14799920",
+				"2938013",
+				"-17531725",
+				"-4780225",
+				"13425983"
+			],
+			[
+				"4614814",
+				"4614814"
+			],
+			[
+				"-133623",
+				"-133623"
+			],
+			[
+				"250000",
+				"17750000",
+				"14799920",
+				"2938013",
+				"-12916911",
+				"-4913848",
+				"17907174"
+			]
+		]
+	}
+}

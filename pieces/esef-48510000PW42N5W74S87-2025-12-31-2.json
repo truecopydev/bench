@@ -1,0 +1,47 @@
+{
+	"id": "esef-48510000PW42N5W74S87-2025-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/48510000PW42N5W74S87/2025-12-31/ESEF/LT/0/abrokiskiosuris-2025-12-31-en/reports/abrokiskiosuris-2025-12-31-en.xhtml",
+		"lei": "48510000PW42N5W74S87",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "48bd50f7d19e7b216744bccaec166395fc61810c54ecb0f199f4a8fcc15835ce",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"17194",
+				"22841",
+				"16342",
+				"21302"
+			],
+			[
+				"17194",
+				"22841",
+				"16342",
+				"21302"
+			],
+			[
+				"17194",
+				"22841",
+				"16342",
+				"21302"
+			],
+			[
+				"17194",
+				"22841",
+				"16342",
+				"21302"
+			]
+		]
+	}
+}

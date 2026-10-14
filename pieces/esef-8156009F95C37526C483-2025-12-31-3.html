@@ -1,0 +1,694 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+       
+
+:root {
+
+	/* ======= report ======= */
+
+	
+	/* ======= paragraph ======= */
+	/* default document font - Word is 12pt */
+	--doc-font-family:Avenir, sans-serif;
+	--doc-font-size:12pt;
+	--doc-font-style:normal;
+	--doc-line-height:1.5;
+	
+	--doc-font-color:black;
+	--doc-font-letter-spacing: initial;
+	
+	/* ======= section ======= */
+	--background:whitesmoke;			/* outside of page */
+	--page-width: 210mm;				/* A4 width */
+	--page-height: unset;				/* A4 height is 297mm */
+	
+	/* default 1 inch margins of Word */
+	/*
+	--page-padding-block-start:25.4mm;
+	--page-padding-block-end:25.4mm;
+	--page-padding-inline-start:25.4mm;
+	--page-padding-inline-end:25.4mm;
+	*/
+
+	--page-padding-block-start:20mm;
+	--page-padding-block-end:20mm;
+	--page-padding-inline-start:20mm;
+	--page-padding-inline-end:20mm;
+	
+
+	/* separate pages by a space */
+	--page-margin-block:33pt;
+	--page-border-block:1px solid black;
+	--page-border-inline:1px solid black;
+		
+	/* ======= subsection ======= */
+
+	/* ======= list ======= */
+	
+	/* ======= table ======= */
+	--table-margin-inline-start:0pt;
+	--table-margin-inline-end:auto;
+	--table-margin-block-start:0.25em;
+	--table-margin-block-end:0.25em;
+
+    --table-outline:0px lightgrey solid;
+    --table-font-family:Avenir, sans-serif;
+	--table-font-size:10pt;
+	--table-font-style:normal;
+	--table-font-color:black;
+	--table-font-letter-spacing: -0.75pt;
+	--table-line-height: 1;
+	--border-collapse:collapse;
+	
+	/* table data */
+	--table-cell-alignment:inherit;
+	--table-cell-vertical-alignmnet:middle;
+	--table-cell-padding-inline-start:2pt;
+	--table-cell-padding-inline-end:2pt;
+	--table-cell-padding-block-start:2pt;
+	--table-cell-padding-block-end:2pt;
+	--table-vertical-align:inherit;
+	
+	/* table paragraph */
+	--table-para-margin:0pt;
+	--table-para-padding:0pt;
+
+	/* ======= paragraph ======= */
+	--para-white-space:normal;
+	--para-overflow:break-word;
+	
+	/* ======= footnotes ====== */
+	--footnote-text-color:black;
+	--footnote-font:normal 12pt Avenir, sans-serif;	
+	--footnote-background:mistyrose;
+	--footnote-top:50%;
+	--footnote-height:40%;
+	--footnote-width:50%;
+	--footnote-before:'[';
+	--footnote-after:']';
+	
+
+	/* ======= table of contents ========= */
+	--toc-display-type:block;			/* set to none to disable */
+	--toc-level-display:block;			/* set to block to show expanded children */
+	--toc-background:#cfcfcf;
+
+	/* markers */
+	--toc-before-marker:'▶ ';
+	/* --toc-after-marker:' ▼'; */
+	
+	/* --toc-closed-caption:'▶ '; */	/* Marker and title of closed contents */
+	/* --toc-open-caption:'▼ '; */		/* Marker and title of open contents */
+
+	/* default toc font */	
+	--toc-level-font:normal 14pt Avenir, sans-serif;
+	--toc-level-font-color:var(--doc-font-color);
+
+	/* content level settings - below top level - only 3 supported */
+	/*
+     --toc-level1-font: normal 18pt Verdana, sans-serif;
+     --toc-level1-font-color: green;
+     --toc-level2-display:none;
+
+     --toc-level2-font: normal 16pt Avenir, sans-serif;
+     --toc-level2-font-color: blue;
+     --toc-level2-display:none;
+
+     --toc-level3-font: normal 12pt Avenir, sans-serif;
+     --toc-level3-font-color: red;
+     --toc-level3-display:none;
+    */
+}
+
+/* Remove default margins of the browser */
+body,h1,h2,h3,h4,p,li,figure,figcaption,blockquote,dl,dd,ol,ul {
+  margin:0;
+  padding:0;
+  font-size: unset;
+  font-weight: normal;
+}
+
+/* rest the margins of lists */
+ol, ul {
+  margin-inline-start: 15pt;
+  list-style: none;
+}
+
+body {
+	/* background */
+	background-color: var(--background);
+}
+
+.report {
+	/* centre page on screen */
+	margin: auto;
+	
+	/* choose a sans serif font if nothing specified */
+	font-family:var(--doc-font-family,Avenir, sans-serif);
+	font-size:var(--doc-font-size,12pt);
+	font-style:var(--doc-font-style,normal);
+	line-height:var(--doc-line-height,1.5);
+	
+	color: var(--doc-font-color);
+	/* decrease spacing */
+	letter-spacing:var(--doc-font-letter-spacing, initial);
+	
+}
+/* top level toc settings */
+div.ubp-toc {
+	font: var(--toc-level-font);
+	color: var(--toc-level-font-color);
+}
+
+div.ubp-toc ul {
+	padding: 0;
+}
+/* link colours in toc */
+div.ubp-toc a:link {
+	color: inherit;
+	text-decoration-line: none;
+}
+
+div.ubp-toc a:visited {
+	color: inherit;
+	text-decoration-line: none;
+}
+/* tab for contents control - both open and closed */
+div.ubp-toc-closed, div.ubp-toc-open {
+	background: var(--toc-background);
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
+	border-bottom-right-radius: 10px;
+	margin-inline-start: 10px;
+	margin-inline-end: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/* open TOC style - default is invisble */
+div.ubp-toc-open {
+	visibility: collapse;
+	z-index: 200;
+}
+/* style to enable TOC when clicked */
+div.ubp-toc-open:target {
+	visibility: visible;
+}
+/* text in content tab */
+span.ubp-tocheader-closed::before {
+	content: var(--toc-closed-caption, '▶ ');
+}
+
+span.ubp-tocheader-open::before {
+	content: var(--toc-open-caption, '▼ ');
+}
+/* sub menu indicator */
+li.ubp-toc-submenu&gt;a::before, div.ubp-toc-submenu&gt;a::before {
+	content: var(--toc-before-marker, '▶ ');
+}
+/* sub menu indicator */
+li.ubp-toc-submenu&gt;a::after, div.ubp-toc-submenu&gt;a::after {
+	content: var(--toc-after-marker, '');
+}
+/* toc content pane */
+div.ubp-toc-contents {
+	background: var(--toc-background);
+	position: fixed;
+	top: 75px;
+	left: 10px;
+	box-shadow: 5px 5px 5px 5px grey;
+	width: 60%;
+	height: 60%;
+	min-width: 40%;
+	min-height: 40%;
+	padding: 20px;
+	border-radius: 20px;
+	overflow: auto;
+}
+
+.ubp-toc-section-container {
+	font: var(--toc-level1-font, var(--toc-level-font));
+	color: var(--toc-level1-font-color, var(--toc-level-font-color));
+	padding-left: 20px;
+	margin: 0;
+}
+
+.ubp-toc-submenu {
+	display: var(--toc-display-type);
+}
+
+.ubp-toc-section {
+	display: var(--toc-display-type);
+}
+
+.ubp-toc-subsection {
+	display: var(--toc-display-type);
+}
+
+.ubp-toc-submenu:hover &gt; div, .ubp-toc-submenu:hover &gt; ul {
+	display: block;
+}
+
+.ubp-toc-subsection-container {
+	display: var(--toc-level-display);
+	font: var(--toc-level-font);
+	color: var(--toc-level-font-color);
+	list-style-type: none;
+}
+
+.ubp-toc-subsection {
+	margin-left: 30px;
+}
+
+.ubp-toc-level2 {
+	display: var(--toc-level2-display, var(--toc-level-display));
+	font: var(--toc-level2-font, var(--toc-level-font));
+	color: var(--toc-level2-font-color, var(--toc-level-font));
+}
+
+.ubp-toc-level3 {
+	display: var(--toc-level3-display, var(--toc-level-display));
+	font: var(--toc-level3-font, var(--toc-level-font));
+	color: var(--toc-level3-font-color, var(--toc-level-font));
+}
+
+img {
+	/* do not let images go wider that the page */
+	max-width: 100%;
+	display:block;
+}
+
+div.heading&gt;p {
+	text-align:start;
+}
+
+table {
+	/* table auto placement - if table goes outside page margins then centre it */
+	/*
+		
+	*/
+	
+	/* --table-margin-calc: max(min(var(--page-extent) - var(--W), var(--I,0pt)), min(20pt - var(--page-padding-inline-start),var(--page-extent) /2 - var(--W) /2)); */
+	 --table-margin-calc:min(calc(var(--page-extent) + var(--page-padding-inline-start)  - 15pt - var(--W)),var(--I,0pt));
+	margin-inline-start:var(--table-margin-calc, var(--I, 0pt));
+	margin-inline-end:auto; 
+	margin-block-start: var(--table-margin-block-start, 0.25em);
+	margin-block-end: var(--table-margin-block-end, 0.25em);
+    outline: var(--table-outline, 1px lightgrey solid);
+    border-collapse: var(--table-border-collapse, collapse);
+	line-height:var(--table-line-height,1);
+	
+}
+
+tbody {
+	/* align table headers to  default */
+	vertical-align:var(--table-vertical-align, inherit);
+	font-family:var(--table-font-family,inherit);
+	font-size:var(--table-font-size,inherit);
+	font-style:var(--table-font-style,inherit);
+	
+}
+td {
+	text-align:var(--table-cell-alignment,inherit);
+	padding-inline-start:var(--table-cell-padding-inline-start,2pt);
+	padding-inline-end:var(--table-cell-padding-inline-end,2pt);
+	padding-block-start:var(--table-cell-padding-block-start,2pt);
+	padding-block-end:var(--table-cell-padding-block-end,2pt);
+}
+
+td p {
+	margin: var(--table-para-margin,0pt);
+	padding: var(--table-para-padding,0pt);
+}
+
+p {
+	white-space:var(--para-white-space,normal);
+	overflow-wrap:var(--para-overflow,break-word);
+	text-indent:unset;
+}
+
+
+th:empty::before, td:empty::before {
+	content: ' ';
+	visibility: hidden
+}
+
+
+/* section is basic chapter/page */
+.section {
+	/* assume A4 */
+	width: var(--page-width,210mm);
+	/* set section to minimum A4 page */
+	min-height:var(--page-height,297mm);
+	/* page background */
+	background-color: white;
+	/* set page contents to A4 width */
+	box-sizing: border-box;
+	/* set the inner page margins */
+	padding-block-start: var(--page-padding-block-start, 25.4mm);
+	padding-block-end: var(--page-padding-block-end, 25.4mm);
+	padding-inline-start: var(--page-padding-inline-start, 25.4mm);
+	padding-inline-end: var(--page-padding-inline-end, 25.4mm);
+	/* set the page spacing */
+	margin:var(--page-margin-block,33pt) auto;
+	/* page border */
+	border-block:var(--page-border-block,1px solid black);
+	border-inline:var(--page-border-inline,1px solid black);
+	
+	/* page extent is the usable width of the page between the margins */
+    --page-extent:calc(var(--page-width, 100%) - var(--page-padding-inline-start,0pt) - var(--page-padding-inline-end, 0pt));	
+}
+
+div.heading {
+	/* unset this value as it is often wrong */
+	/* line-height: unset;*/
+	/* add a margin above heading */
+	margin-top: 10pt;
+	/* add some space between the heading and the content */
+	margin-bottom: 10pt;
+}
+
+div.section&gt;div.heading {
+	/* add extra margin above the section heading to fit in the page number */
+	margin-top: 10pt;
+	/* add extra space between the section heading and the content */
+	margin-bottom: 10pt;
+}
+
+/* media styles */
+/* for print, hide toc and margins and report header */
+@media print {
+	.ubp-toc {
+		display:none;
+	}
+	.section {
+		margin:0;
+	}
+	.report&gt;.heading {
+		display:none;
+	}
+}
+
+@media screen {
+	.ubp-toc {
+		display: var(--toc-display-type);
+	}
+	.section {
+		/* separate pages by a space */
+		margin:33pt auto;
+		/* page border */
+		border:1px solid black;
+	}
+}
+
+.footnote {
+	color:unset;
+	outline:none;
+	text-decoration:unset;
+}
+
+.footnoteRef {
+	color:var(--footnote-text-color,black);
+	font-size:1em;
+	unicode-bidi:isolate;
+	font-size:0.6em;
+	vertical-align:super;
+}
+
+.footnoteRef::before {
+	content:var(--footnote-before);
+}
+
+.footnoteRef::after {
+	content:var(--footnote-after);
+}
+
+.footnoteNum {
+	text-indent:-20pt;
+	display:inline-block;
+}
+
+.footnoteDef {
+	margin-inline-start:20pt;
+}
+
+.footnote:target {
+	position: fixed;
+	padding: 2em;
+	text-decoration:none;
+	font:var(--footnote-font,--doc-font);
+	color:var(--footnote-text-color,black);
+	background: var(--footnote-background,mistyrose);
+	top: var(--footnote-top,50%);
+	left: 50%; /* calc(50% - var(--footnote-width, 50%) / 2); */
+	max-height: var(--footnote-height,40%);
+	max-width:var(--footnote-width,50%);
+	overflow:auto;
+	border-radius:10px;
+	box-shadow: 5px 5px 5px 5px grey;
+	cursor:alias;
+}
+
+/* hide footnote refs in table of contents */
+.ubp-toclink.footnoteRef {
+	display:none;
+}
+       
+
+
+.report {
+--majorHAnsi:Aptos Display, Calibri Light, sans-serif;
+--minorHAnsi:Aptos, Calibri, sans-serif;
+--majorBidi:Times New Roman, serif;
+--minorBidi:Arial, sans-serif;
+
+font-size:11pt;
+font-family:Times New Roman,Aptos, Calibri, sans-serif;
+}
+*[class~='DefaultParagraphFont'], .DefaultParagraphFont {
+   --ubp-style-id:DefaultParagraphFont;
+   --ubp-style-name:Default Paragraph Font;
+   --ubp-style-type:character;
+   --ubp-style-basedon:ubp-root-character;
+}
+*[class~='Normal'], .Normal {
+   --ubp-style-id:Normal;
+   --ubp-style-name:Normal;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:ubp-root-paragraph;
+}
+summary[data-type='mappedgridblock'][class~='TableNormal'], table[class~='TableNormal'] {
+   --ubp-style-id:TableNormal;
+   --ubp-style-name:Normal Table;
+   --ubp-style-type:table;
+   --ubp-style-basedon:ubp-root-paragraph;
+}
+*[class~='Heading3'], .Heading3 {
+   --ubp-style-id:Heading3;
+   --ubp-style-name:heading 3;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+   --ubp-style-headerlevel:2;
+    text-align:justify;
+}
+*[class~='Heading4'], .Heading4 {
+   --ubp-style-id:Heading4;
+   --ubp-style-name:heading 4;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+   --ubp-style-headerlevel:3;
+}
+*[class~='NoList'], .NoList {
+   --ubp-style-id:NoList;
+   --ubp-style-name:No List;
+   --ubp-style-type:numbering;
+}
+*[class~='ABLOCKPARA'], .ABLOCKPARA {
+   --ubp-style-id:ABLOCKPARA;
+   --ubp-style-name:A BLOCK PARA;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    text-align:justify;
+}
+*[class~='Heading3Char'], .Heading3Char {
+   --ubp-style-id:Heading3Char;
+   --ubp-style-name:Heading 3 Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:11.0pt;
+}
+*[class~='Heading4Char'], .Heading4Char {
+   --ubp-style-id:Heading4Char;
+   --ubp-style-name:Heading 4 Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+    font-weight:bold;
+    color:#000080;
+    font-size:11.0pt;
+}
+*[class~='BodyText3'], .BodyText3 {
+   --ubp-style-id:BodyText3;
+   --ubp-style-name:Body Text 3;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    text-align:justify;
+}
+*[class~='BodyText3Char'], .BodyText3Char {
+   --ubp-style-id:BodyText3Char;
+   --ubp-style-name:Body Text 3 Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+    font-size:11.0pt;
+}
+*[class~='BodyText'], .BodyText {
+   --ubp-style-id:BodyText;
+   --ubp-style-name:Body Text;
+   --ubp-style-type:paragraph;
+   --ubp-style-aliases:"Corpo del testo";
+   --ubp-style-basedon:Normal;
+    text-align:justify;
+}
+*[class~='BodyTextChar'], .BodyTextChar {
+   --ubp-style-id:BodyTextChar;
+   --ubp-style-name:Body Text Char;
+   --ubp-style-type:character;
+   --ubp-style-aliases:"Corpo del testo Char";
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+}
+*[class~='PageNumber'], .PageNumber {
+   --ubp-style-id:PageNumber;
+   --ubp-style-name:page number;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+}
+*[class~='Footer'], .Footer {
+   --ubp-style-id:Footer;
+   --ubp-style-name:footer;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+}
+*[class~='FooterChar'], .FooterChar {
+   --ubp-style-id:FooterChar;
+   --ubp-style-name:Footer Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-size:11.0pt;
+}
+*[class~='BodyTextIndent'], .BodyTextIndent {
+   --ubp-style-id:BodyTextIndent;
+   --ubp-style-name:Body Text Indent;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    margin-inline-start:28.35pt;
+    text-align:justify;
+}
+*[class~='BodyTextIndentChar'], .BodyTextIndentChar {
+   --ubp-style-id:BodyTextIndentChar;
+   --ubp-style-name:Body Text Indent Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+    font-size:11.0pt;
+}
+*[class~='Title'], .Title {
+   --ubp-style-id:Title;
+   --ubp-style-name:Title;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    text-align:center;
+}
+*[class~='TitleChar'], .TitleChar {
+   --ubp-style-id:TitleChar;
+   --ubp-style-name:Title Char;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+    font-family:Arial;
+    font-weight:bold;
+    color:#000080;
+    font-size:14.0pt;
+}
+*[class~='NormalWeb'], .NormalWeb {
+   --ubp-style-id:NormalWeb;
+   --ubp-style-name:Normal (Web);
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+}
+*[class~='Testots'], .Testots {
+   --ubp-style-id:Testots;
+   --ubp-style-name:Testo.ts;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    margin-block-end:6.5pt;
+    margin-block-start:6.5pt;
+    line-height:1.08;
+    text-align:justify;
+}
+*[class~='ListParagraph'], .ListParagraph {
+   --ubp-style-id:ListParagraph;
+   --ubp-style-name:List Paragraph;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+    margin-block-end:10.0pt;
+    line-height:1.5;
+    margin-inline-start:36.0pt;
+    text-align:justify;
+}
+*[class~='Default'], .Default {
+   --ubp-style-id:Default;
+   --ubp-style-name:Default;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:ubp-root-paragraph;
+}
+*[class~='Hyperlink'], .Hyperlink {
+   --ubp-style-id:Hyperlink;
+   --ubp-style-name:Hyperlink;
+   --ubp-style-type:character;
+   --ubp-style-basedon:ubp-root-character;
+    color:#0000FF;
+    text-decoration-line:underline;
+    text-decoration-style:solid;
+}
+*[class~='FootnoteText'], .FootnoteText {
+   --ubp-style-id:FootnoteText;
+   --ubp-style-name:footnote text;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Normal;
+}
+*[class~='FootnoteTextChar1'], .FootnoteTextChar1 {
+   --ubp-style-id:FootnoteTextChar1;
+   --ubp-style-name:Footnote Text Char1;
+   --ubp-style-type:character;
+   --ubp-style-basedon:DefaultParagraphFont;
+}
+*[class~='FootnoteReference'], .FootnoteReference {
+   --ubp-style-id:FootnoteReference;
+   --ubp-style-name:footnote reference;
+   --ubp-style-type:character;
+   --ubp-style-basedon:ubp-root-character;
+    vertical-align:super;
+    font-size:0.6em;
+}
+*[class~='CM63'], .CM63 {
+   --ubp-style-id:CM63;
+   --ubp-style-name:CM63;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Default;
+    margin-block-end:12.25pt;
+}
+*[class~='CM71'], .CM71 {
+   --ubp-style-id:CM71;
+   --ubp-style-name:CM71;
+   --ubp-style-type:paragraph;
+   --ubp-style-basedon:Default;
+    margin-block-end:28.65pt;
+}
+       
+div.grid-container div { background-color: white; color: black; text-decoration: none; direction: ltr; text-transform: none; text-indent: 0; letter-spacing: 0; word-spacing: 0; white-space: normal; unicode-bidi: normal; background-image: none; text-shadow: none; list-style-image: none; list-style-type: none; padding: 1px 5px; border: 0px solid silver; margin: 0; border-collapse: collapse; font-style: normal; font-family: sans-serif; font-variant: normal; font-weight: normal; font-size: 10pt; /*text-align: right;*/ table-layout: fixed; word-wrap: break-word; overflow-wrap: break-word; } .excelDefaults .colHeader { background-color: silver; font-weight: bold; border: 1px solid black; text-align: center; padding: 1px 5px; } .excelDefaults .rowHeader { background-color: silver; font-weight: bold; border: 1px solid black; text-align: right; padding: 1px 5px; } .grid-container { display: grid; grid-gap: 0px; width: auto; grid-auto-rows: minmax(20px, auto); } .grid-container div { padding: 3px; } /* div.ubp-monetary, div.ubp-pure { text-align: right; } */ div.ubp-error { background-color:orange !important; } div.rtl { direction: rtl; } .excelDefaults .style_91 { vertical-align: bottom; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_8f { vertical-align: bottom; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_92 { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_93 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_90 { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_94 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_95 { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_96 { text-align: start; vertical-align: bottom; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_97 { vertical-align: bottom; color:; font-family: Verdana; font-size: 10pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_98 { vertical-align: bottom; text-decoration: underline; color:rgb(0,0,255); font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; text-color: #0000ff; text-color: rgba(0xff, 0xff, 0x00, 0x00); } .excelDefaults .style_07 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_05 { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_12 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_14 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_70 { text-align: center; vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: none; border-color:black black black black; } .excelDefaults .style_1b { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_19 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_35 { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_38 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_2b { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_0f { text-align: start; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_1d { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_34 { text-align: start; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_37 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_31 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_46 { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_47 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_4a { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_41 { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_59 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_4b { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_48 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_43 { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_5a { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_44 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_40 { text-align: start; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_42 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_45 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_1a { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_08 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_20 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_36 { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_39 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_32 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_02 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_3a { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_33 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_30 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_69 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_03 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_0c { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_0a { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_06 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 2pt; border-color:black black black black; } .excelDefaults .style_0b { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 2pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_11 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 2pt; border-color:black black black black; } .excelDefaults .style_21 { text-align: start; vertical-align: bottom; font-weight: bold; color:rgb(0,0,0); font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_25 { vertical-align: bottom; font-weight: bold; color:rgb(0,0,0); font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_22 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_23 { text-align: start; vertical-align: bottom; font-weight: bold; color:rgb(0,0,0); font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_26 { vertical-align: bottom; font-weight: bold; color:rgb(0,0,0); font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_24 { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_2d { text-align: start; vertical-align: bottom; font-weight: bold; color:rgb(0,0,0); font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_2e { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_2f { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_2c { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; } .excelDefaults .style_1e { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_4c { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: none; border-color:black black black black; } .excelDefaults .style_15 { text-align: center; vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: none; border-color:black black black black; } .excelDefaults .style_13 { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 2pt; border-bottom: solid 2pt; border-color:black black black black; } .excelDefaults .style_56 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 2pt; border-bottom: solid 2pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_4d { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_57 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_4e { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_49 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_0e { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 2pt; border-color:black black black black; } .excelDefaults .style_4f { vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 2pt; border-color:black black black black; } .excelDefaults .style_58 { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 8pt; border-left: none; border-right: none; border-top: solid 3pt; border-bottom: solid 3pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_18 { text-align: start; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_17 { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_1f { vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_0d { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_10 { text-align: start; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_09 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_f8 { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_5b { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_6b { text-align: end; vertical-align: bottom; font-style: italic; color:; font-family: Arial; font-size: 8pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_66 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_71 { text-align: center; vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_5c { text-align: center; vertical-align: middle; word-wrap: break-word; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_114 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_ed { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_140 { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_f9 { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_67 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_11a { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_f1 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_5d { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_117 { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_f2 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_f3 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_fe { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_115 { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_11d { text-align: center; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_f4 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_116 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_f5 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_11e { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_12e { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_5e { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_5f { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_60 { text-align: center; vertical-align: middle; word-wrap: break-word; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_61 { text-align: start; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_133 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_134 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_62 { vertical-align: bottom; color:; font-family: Times New Roman; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_f6 { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_135 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_118 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_113 { text-align: center; vertical-align: middle; word-wrap: break-word; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_11c { text-align: center; vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_136 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_63 { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_119 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_f7 { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_64 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_11b { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_72 { vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_11f { text-align: center; vertical-align: middle; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_104 { vertical-align: middle; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_120 { text-align: center; vertical-align: middle; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_12f { vertical-align: bottom; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_74 { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_121 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_128 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_13d { vertical-align: bottom; font-style: italic; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_13e { text-align: center; vertical-align: bottom; font-style: italic; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_13f { text-align: end; vertical-align: bottom; font-style: italic; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_db { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_122 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_106 { vertical-align: middle; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_125 { text-align: center; vertical-align: middle; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_130 { text-align: end; vertical-align: middle; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_105 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_124 { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_107 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_126 { text-align: center; vertical-align: bottom; color:; font-family: Verdana; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_fd { text-align: end; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_85 { text-align: end; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_127 { text-align: center; vertical-align: bottom; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_68 { vertical-align: bottom; color:; font-family: Arial; font-size: 8pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_129 { vertical-align: middle; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_12a { text-align: center; vertical-align: middle; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_108 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_12c { text-align: center; vertical-align: middle; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_83 { text-align: end; vertical-align: middle; font-weight: bold; color:; font-family: Verdana; font-size: 7pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_10c { vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_12d { text-align: center; vertical-align: middle; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_103 { text-align: end; vertical-align: middle; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_fa { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_76 { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_12b { text-align: center; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; background-color: #ffffff; background-color: rgba(0xff, 0xff, 0xff, 0xff); } .excelDefaults .style_7d { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_7c { text-align: center; vertical-align: middle; word-wrap: break-word; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_101 { text-align: start; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_110 { text-align: end; vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; } .excelDefaults .style_131 { text-align: start; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_111 { text-align: end; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_6a { text-align: start; vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_7b { vertical-align: bottom; font-weight: bold; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_100 { text-align: start; vertical-align: bottom; color:; font-family: Arial; font-size: 8pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_00 { vertical-align: bottom; color:; font-family: Arial; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_c2 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c4 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) rgb(0,0,0) rgb(0,0,0) rgb(0,0,0); background-color: #d8d8d8; background-color: rgba(0xd8, 0xff, 0xd8, 0xd8); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_d6 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) rgb(0,0,0) rgb(0,0,0) rgb(0,0,0); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c5 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) rgb(0,0,0) rgb(0,0,0) rgb(0,0,0); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c6 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) rgb(0,0,0) rgb(0,0,0) rgb(0,0,0); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c3 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c7 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c8 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) black black rgb(0,0,0); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_c9 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: none; border-top: solid 1pt; border-bottom: solid 1pt; border-color:rgb(0,0,0) black rgb(0,0,0) rgb(0,0,0); background-color: #d8d8d8; background-color: rgba(0xd8, 0xff, 0xd8, 0xd8); text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_d8 { vertical-align: bottom; text-decoration: underline; color:rgb(0,0,255); font-family: Arial; font-size: 10pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; text-color: #0000ff; text-color: rgba(0xff, 0xff, 0x00, 0x00); } .excelDefaults .style_d7 { vertical-align: bottom; color:rgb(0,0,0); font-family: Calibri; font-size: 11pt; border-left: solid 1pt; border-right: solid 1pt; border-top: solid 1pt; border-bottom: solid 1pt; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); } .excelDefaults .style_a3 { vertical-align: bottom; color:; font-family: Tahoma; font-size: 14pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_a0 { vertical-align: bottom; color:; font-family: Tahoma; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_cc { vertical-align: bottom; color:; font-family: Tahoma; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_cd { vertical-align: bottom; color:; font-family: Tahoma; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; } .excelDefaults .style_e9 { vertical-align: bottom; color:rgb(0,0,0); font-family: Tahoma; font-size: 10pt; border-left: none; border-right: none; border-top: none; border-bottom: none; border-color:black black black black; text-color: #000000; text-color: rgba(0x00, 0xff, 0x00, 0x00); }
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table style="width:100%;" id="RENDICONTO_1" title="RENDICONTO" class="excelDefaults"><col style="width:7%;"><col style="width:53%;"><col style="width:7%;"><col style="width:15%;"><col style="width:15%;"><tbody><tr><!--H9--><td></td><td class="style_f8"></td><td class="style_03"></td><td class="style_5b"></td><td class="style_6b"></td></tr><tr><!--H10--><td></td><td class="style_66">RENDICONTO FINANZIARIO</td><td class="style_71">Note</td><td class="style_71">31 dic. 2025</td><td class="style_71">31 dic. 2024</td></tr><tr><!--H11--><td></td><td class="style_72"></td><td class="style_11f"></td><td></td><td></td></tr><tr><!--H12--><td></td><td class="style_104">ATTIVITA' OPERATIVA</td><td class="style_120"></td><td class="style_12f"></td><td class="style_12f"></td></tr><tr><!--H13--><td></td><td class="style_74">Utile (perdita) dell'esercizio</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R020_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R020_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProfitLoss" contextRef="ctx_0" format="ixt:num-comma-decimal">17.754</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R020_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R020_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProfitLoss" contextRef="ctx_2" format="ixt:num-comma-decimal">6.856</ix:nonfraction></td></tr><tr><!--H14--><td></td><td class="style_74">Svalutazioni di partecipazioni</td><td class="style_121">11</td><td id="Z_RENDICONTO_Y_R030_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R030_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForUndistributedProfitsOfInvestmentsAccountedForUsingEquityMethod" contextRef="ctx_0" format="ixt:num-comma-decimal">808</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R030_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R030_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForUndistributedProfitsOfInvestmentsAccountedForUsingEquityMethod" contextRef="ctx_2" format="ixt:num-comma-decimal">950</ix:nonfraction>)</td></tr><tr><!--H15--><td></td><td class="style_74">Svalutazioni (rivalutazioni) di crediti finanziari</td><td class="style_121">12</td><td id="Z_RENDICONTO_Y_R040_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R040_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossTradeAndOtherReceivables" contextRef="ctx_0" format="ixt:num-comma-decimal">14</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R040_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R040_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossTradeAndOtherReceivables" contextRef="ctx_2" format="ixt:num-comma-decimal">21</ix:nonfraction></td></tr><tr><!--H16--><td></td><td class="style_74">Oneri finanziari</td><td class="style_121">13</td><td id="Z_RENDICONTO_Y_R050_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R050_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForFinanceCosts" contextRef="ctx_0" format="ixt:num-comma-decimal">6.916</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R050_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R050_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForFinanceCosts" contextRef="ctx_2" format="ixt:num-comma-decimal">7.921</ix:nonfraction></td></tr><tr><!--H17--><td></td><td class="style_74">Proventi finanziari</td><td class="style_121">13</td><td id="Z_RENDICONTO_Y_R060_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R060_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForFinanceIncome" contextRef="ctx_0" format="ixt:num-comma-decimal">475</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R060_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R060_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForFinanceIncome" contextRef="ctx_2" format="ixt:num-comma-decimal">616</ix:nonfraction>)</td></tr><tr><!--H18--><td></td><td class="style_74">Imposte sul reddito</td><td class="style_121">14</td><td id="Z_RENDICONTO_Y_R070_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R070_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForIncomeTaxExpense" contextRef="ctx_0" format="ixt:num-comma-decimal">833</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R070_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R070_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForIncomeTaxExpense" contextRef="ctx_2" format="ixt:num-comma-decimal">749</ix:nonfraction></td></tr><tr><!--H19--><td></td><td class="style_74">Ammortamenti e svalutazioni</td><td class="style_121">9</td><td id="Z_RENDICONTO_Y_R080_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R080_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense" contextRef="ctx_0" format="ixt:num-comma-decimal">5.985</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R080_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R080_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense" contextRef="ctx_2" format="ixt:num-comma-decimal">7.424</ix:nonfraction></td></tr><tr><!--H20--><td></td><td class="style_74">Accantonamenti (rilasci) e altre componenti operative non monetarie</td><td class="style_128">8-10</td><td id="Z_RENDICONTO_Y_R090_X_C010" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R090_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:AccantonamentiRilasciEAltreComponentiOperativeNonMonetarie" contextRef="ctx_0" format="ixt:num-comma-decimal">276</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R090_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R090_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:AccantonamentiRilasciEAltreComponentiOperativeNonMonetarie" contextRef="ctx_2" format="ixt:num-comma-decimal">370</ix:nonfraction></td></tr><tr><!--H22--><td></td><td class="style_74">Svalutazione rimanenze (Utilizzo) fondo svalutazione rimanenze</td><td class="style_121">3</td><td id="Z_RENDICONTO_Y_R110_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R110_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossInventories" contextRef="ctx_0" format="ixt:num-comma-decimal">291</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R110_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R110_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossInventories" contextRef="ctx_2" format="ixt:num-comma-decimal">506</ix:nonfraction></td></tr><tr><!--H23--><td></td><td class="style_74">Plusvalenza da cessione partecipazioni</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R120_X_C010" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R120_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets" contextRef="ctx_0" format="ixt:num-comma-decimal">5.763</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R120_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R120_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets" contextRef="ctx_2" format="ixt:num-comma-decimal">3.458</ix:nonfraction>)</td></tr><tr><!--H24--><td></td><td class="style_74">Decremento (incremento) delle rimanenze</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R130_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R130_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForDecreaseIncreaseInInventories" contextRef="ctx_0" format="ixt:num-comma-decimal">1.533</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R130_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R130_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForDecreaseIncreaseInInventories" contextRef="ctx_2" format="ixt:num-comma-decimal">531</ix:nonfraction></td></tr><tr><!--H25--><td></td><td class="style_74">Decremento (incremento) delle attività correnti</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R140_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R140_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:AdjustmentsForDecreaseIncreaseInOtherCurrentAssets" contextRef="ctx_0" format="ixt:num-comma-decimal">2.249</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R140_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R140_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:AdjustmentsForDecreaseIncreaseInOtherCurrentAssets" contextRef="ctx_2" format="ixt:num-comma-decimal">999</ix:nonfraction>)</td></tr><tr><!--G26--><td class="style_03"></td><td class="style_13d">di cui non ricorrenti</td><td class="style_13e"></td><td id="Z_RENDICONTO_Y_R600_X_C010" class="ubp-fact ubp-monetary style_13f"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R600_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:DiCuiNonRicorrenti" contextRef="ctx_0" format="ixt:fixed-zero">0</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R600_X_C020" class="ubp-fact ubp-monetary style_13f"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R600_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:DiCuiNonRicorrenti" contextRef="ctx_2" format="ixt:fixed-zero">0</ix:nonfraction></td></tr><tr><!--H27--><td></td><td class="style_74">Incremento (decremento) delle passività correnti</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R150_X_C010" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R150_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities" contextRef="ctx_0" format="ixt:num-comma-decimal">126</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R150_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R150_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities" contextRef="ctx_2" format="ixt:num-comma-decimal">346</ix:nonfraction>)</td></tr><tr><!--H28--><td></td><td class="style_db">Decremento (incremento) delle attività e passività non correnti non finanziarie</td><td class="style_122"></td><td id="Z_RENDICONTO_Y_R160_X_C010" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R160_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:DecrementoIncrementoDelleAttivitaEPassivitaNonCorrentiNonFinanziarie" contextRef="ctx_0" format="ixt:num-comma-decimal">1.043</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R160_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R160_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:DecrementoIncrementoDelleAttivitaEPassivitaNonCorrentiNonFinanziarie" contextRef="ctx_2" format="ixt:num-comma-decimal">3.189</ix:nonfraction>)</td></tr><tr><!--H29--><td></td><td class="style_106">Flusso monetario generato (assorbito) dall'attività operativa</td><td class="style_125"></td><td id="Z_RENDICONTO_Y_R170_X_C010" class="ubp-fact ubp-monetary style_130"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R170_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashFlowsFromUsedInOperations" contextRef="ctx_0" format="ixt:num-comma-decimal">27.084</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R170_X_C020" class="ubp-fact ubp-monetary style_130"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R170_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashFlowsFromUsedInOperations" contextRef="ctx_2" format="ixt:num-comma-decimal">14.820</ix:nonfraction></td></tr><tr><!--H31--><td></td><td class="style_74">Oneri finanziari corrisposti</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R190_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R190_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:InterestPaidClassifiedAsOperatingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">6.579</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R190_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R190_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:InterestPaidClassifiedAsOperatingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">8.119</ix:nonfraction>)</td></tr><tr><!--H33--><td></td><td class="style_74">Imposte sul reddito corrisposte</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R210_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R210_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">874</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R210_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R210_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:IncomeTaxesPaidRefundClassifiedAsOperatingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">2.986</ix:nonfraction>)</td></tr><tr><!--H34--><td></td><td class="style_106">Flusso monetario netto generato (assorbito) dall'attività operativa</td><td class="style_125"></td><td id="Z_RENDICONTO_Y_R220_X_C010" class="ubp-fact ubp-monetary style_130"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R220_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashFlowsFromUsedInOperatingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">19.631</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R220_X_C020" class="ubp-fact ubp-monetary style_130"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R220_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashFlowsFromUsedInOperatingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">3.715</ix:nonfraction></td></tr><tr><!--H37--><td></td><td class="style_74"></td><td class="style_121"></td><td class="style_f9"></td><td class="style_f9"></td></tr><tr><!--H38--><td></td><td class="style_104">ATTIVITA' DI INVESTIMENTO</td><td class="style_120"></td><td class="style_12f"></td><td class="style_12f"></td></tr><tr><!--H40--><td></td><td class="style_74">(Investimenti) disinvestimenti di attività materiali ed immateriali</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R280_X_C010" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R280_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:InvestimentiDisinvestimentiDiAttivitaMaterialiEdImmateriali" contextRef="ctx_0" format="ixt:num-comma-decimal">4.263</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R280_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R280_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:InvestimentiDisinvestimentiDiAttivitaMaterialiEdImmateriali" contextRef="ctx_2" format="ixt:num-comma-decimal">2.958</ix:nonfraction>)</td></tr><tr><!--H41--><td></td><td class="style_74">(Investimenti) disinvestimenti di partecipazioni</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R290_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R290_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:InvestimentiDisinvestimentiDiPartecipazioni" contextRef="ctx_0" format="ixt:num-comma-decimal">13.252</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R290_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R290_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:InvestimentiDisinvestimentiDiPartecipazioni" contextRef="ctx_2" format="ixt:num-comma-decimal">139</ix:nonfraction>)</td></tr><tr><!--H42--><td></td><td class="style_74">Decremento (incremento) delle altre attività finanziarie</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R300_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R300_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:DecrementoIncrementoDelleAltreAttivitaNonCorrenti" contextRef="ctx_0" format="ixt:fixed-zero">0</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R300_X_C020" class="ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R300_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="bastogi:DecrementoIncrementoDelleAltreAttivitaNonCorrenti" contextRef="ctx_2" format="ixt:num-comma-decimal">150</ix:nonfraction>)</td></tr><tr><!--H43--><td></td><td class="style_74">Incasso corrispettivi relativi ad attività di investimento cedute in precedenti esercizi</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R310_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R310_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProceedsFromSalesOfInvestmentProperty" contextRef="ctx_0" format="ixt:num-comma-decimal">1.883</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R310_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R310_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProceedsFromSalesOfInvestmentProperty" contextRef="ctx_2" format="ixt:fixed-zero">0</ix:nonfraction></td></tr><tr><!--H46--><td></td><td class="style_74">Incasso dividendi</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R340_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R340_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:DividendsReceivedClassifiedAsInvestingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">1.137</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R340_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R340_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:DividendsReceivedClassifiedAsInvestingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">925</ix:nonfraction></td></tr><tr><!--H47--><td></td><td class="style_106">Flusso monetario netto generato (assorbito) dall'attività di investimento</td><td class="style_125"></td><td id="Z_RENDICONTO_Y_R350_X_C010" class="ubp-fact ubp-monetary style_130"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R350_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashFlowsFromUsedInInvestingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">12.009</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R350_X_C020" class="ubp-fact ubp-monetary style_130">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R350_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:CashFlowsFromUsedInInvestingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">2.322</ix:nonfraction>)</td></tr><tr><!--H49--><td></td><td class="style_74"></td><td class="style_121"></td><td class="style_f9"></td><td class="style_f9"></td></tr><tr><!--H50--><td></td><td class="style_104">ATTIVITA' DI FINANZIAMENTO</td><td class="style_120"></td><td class="style_12f"></td><td class="style_12f"></td></tr><tr><!--H51--><td></td><td class="style_74">Incremento debiti verso banche</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R390_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R390_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">3.230</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R390_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R390_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:ProceedsFromBorrowingsClassifiedAsFinancingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">21.396</ix:nonfraction></td></tr><tr><!--H52--><td></td><td class="style_74">Rimborso debiti verso banche</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R400_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R400_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">12.316</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R400_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R400_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:RepaymentsOfBorrowingsClassifiedAsFinancingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">24.558</ix:nonfraction>)</td></tr><tr><!--H53--><td></td><td class="style_74">Rimborso passività da leasing</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R590_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R590_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">6.759</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R590_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R590_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">4.531</ix:nonfraction>)</td></tr><tr><!--H54--><td></td><td class="style_74">Incremento (decremento) delle altre passività finanziarie</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R580_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R580_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities" contextRef="ctx_0" format="ixt:fixed-zero">0</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R580_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R580_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities" contextRef="ctx_2" format="ixt:fixed-zero">0</ix:nonfraction></td></tr><tr><!--H57--><td></td><td class="style_74">Riacquisto azioni proprie da parte di controllata</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R430_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R430_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:RiacquistoAzioniProprieDaParteDiControllata" contextRef="ctx_0" format="ixt:fixed-zero">0</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R430_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R430_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:RiacquistoAzioniProprieDaParteDiControllata" contextRef="ctx_2" format="ixt:fixed-zero">0</ix:nonfraction></td></tr><tr><!--H59--><td></td><td class="style_74">Cessioni azioni proprie</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R450_X_C010" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R450_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:PagamentoDividendiAiSociDiMinoranzaDaControllata" contextRef="ctx_0" format="ixt:fixed-zero">0</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R450_X_C020" class="ubp-fact ubp-monetary style_f9"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R450_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="bastogi:PagamentoDividendiAiSociDiMinoranzaDaControllata" contextRef="ctx_2" format="ixt:fixed-zero">0</ix:nonfraction></td></tr><tr><!--H60--><td></td><td class="style_74">Pagamento dividendi</td><td class="style_121"></td><td id="Z_RENDICONTO_Y_R460_X_C010" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R460_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:DividendsPaidClassifiedAsFinancingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">757</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R460_X_C020" class="ubp-negated ubp-fact ubp-monetary style_f9">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R460_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:DividendsPaidClassifiedAsFinancingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">501</ix:nonfraction>)</td></tr><tr><!--H61--><td></td><td class="style_74"></td><td class="style_121"></td><td class="style_f9"></td><td class="style_f9"></td></tr><tr><!--H62--><td></td><td class="style_106">Flusso monetario netto generato (assorbito) dall'attività di finanziamento</td><td class="style_125"></td><td id="Z_RENDICONTO_Y_R480_X_C010" class="ubp-fact ubp-monetary style_130">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R480_X_C010" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:CashFlowsFromUsedInFinancingActivities" contextRef="ctx_0" format="ixt:num-comma-decimal">16.602</ix:nonfraction>)</td><td id="Z_RENDICONTO_Y_R480_X_C020" class="ubp-fact ubp-monetary style_130">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R480_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:CashFlowsFromUsedInFinancingActivities" contextRef="ctx_2" format="ixt:num-comma-decimal">8.194</ix:nonfraction>)</td></tr><tr><!--H65--><td></td><td class="style_74"></td><td class="style_121"></td><td class="style_f9"></td><td class="style_f9"></td></tr><tr><!--H66--><td></td><td class="style_105">Incremento/(decremento) del periodo delle disponibilità liquide nette</td><td class="style_124"></td><td id="Z_RENDICONTO_Y_R520_X_C010" class="ubp-fact ubp-monetary style_107"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R520_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:IncreaseDecreaseInCashAndCashEquivalents" contextRef="ctx_0" format="ixt:num-comma-decimal">15.038</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R520_X_C020" class="ubp-fact ubp-monetary style_107">(<ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R520_X_C020" unitRef="uEUR" decimals="-3" scale="3" sign="-" name="ifrs-full:IncreaseDecreaseInCashAndCashEquivalents" contextRef="ctx_2" format="ixt:num-comma-decimal">6.801</ix:nonfraction>)</td></tr><tr><!--H68--><td></td><td class="style_74"></td><td class="style_121"></td><td class="style_f9"></td><td class="style_f9"></td></tr><tr><!--H69--><td></td><td class="style_105">Disponibilità liquide nette all'inizio dell'esercizio</td><td class="style_124"></td><td id="Z_RENDICONTO_Y_R550_X_C010" class="ubp-fact ubp-monetary style_107"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R550_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashAndCashEquivalents" contextRef="ctx_4" format="ixt:num-comma-decimal">11.659</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R550_X_C020" class="ubp-fact ubp-monetary style_107"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R550_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashAndCashEquivalents" contextRef="ctx_5" format="ixt:num-comma-decimal">18.460</ix:nonfraction></td></tr><tr><!--H70--><td></td><td class="style_0f"></td><td class="style_126"></td><td class="style_fd"></td><td class="style_85"></td></tr><tr><!--H71--><td></td><td class="style_105">Disponibilità liquide nette alla fine dell'esercizio</td><td class="style_124"></td><td id="Z_RENDICONTO_Y_R570_X_C010" class="ubp-fact ubp-monetary style_107"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R570_X_C010" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashAndCashEquivalents" contextRef="ctx_1" format="ixt:num-comma-decimal">26.697</ix:nonfraction></td><td id="Z_RENDICONTO_Y_R570_X_C020" class="ubp-fact ubp-monetary style_107"><ix:nonfraction id="Table_RENDICONTO_Z_RENDICONTO_Y_R570_X_C020" unitRef="uEUR" decimals="-3" scale="3" name="ifrs-full:CashAndCashEquivalents" contextRef="ctx_4" format="ixt:num-comma-decimal">11.659</ix:nonfraction></td></tr><tr><!--H72--><td></td><td class="style_0f"></td><td class="style_127"></td><td class="style_07"></td><td></td></tr><tr><!--H73--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H74--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H75--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H76--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H77--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H78--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H79--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H80--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H81--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H82--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H83--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H84--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H85--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H86--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H87--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H88--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H89--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H90--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H91--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H92--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H93--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H94--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H95--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H96--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H97--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H98--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H99--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H100--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H101--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr><tr><!--H102--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr><tr><!--H103--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H104--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H105--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H106--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H107--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr><tr><!--H108--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr><tr><!--H109--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H110--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H111--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H112--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H113--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H114--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H115--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H116--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H117--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H118--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H119--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H120--><td></td><td class="style_0f"></td><td></td><td class="style_07"></td><td></td></tr><tr><!--H121--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr><tr><!--H122--><td></td><td class="style_0d"></td><td></td><td class="style_08"></td><td></td></tr></tbody></table></body></html>

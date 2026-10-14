@@ -1,0 +1,119 @@
+{
+	"id": "esef-5493006IH2N2WMIBB742-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5493006IH2N2WMIBB742/2025-12-31/ESEF/FR/0/valeo-2025-12-31-1-fr/reports/valeo-2025-12-31-1-fr.xhtml",
+		"lei": "5493006IH2N2WMIBB742",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "5c09ef3d031ae87ef6b0dfd2c5677d34caa5c0513bd1c5140f2817bcc987507c",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"51",
+				"20903",
+				"21492"
+			],
+			[
+				"53",
+				"-16674",
+				"-17411"
+			],
+			[
+				"-2273",
+				"-2127"
+			],
+			[
+				"-275",
+				"-296"
+			],
+			[
+				"-704",
+				"-739"
+			],
+			[
+				"977",
+				"919"
+			],
+			[
+				"47",
+				"43"
+			],
+			[
+				"-20",
+				"12"
+			],
+			[
+				"55",
+				"957",
+				"931"
+			],
+			[
+				"46",
+				"43"
+			],
+			[
+				"-168",
+				"-313"
+			],
+			[
+				"789",
+				"618"
+			],
+			[
+				"92",
+				"-256",
+				"-251"
+			],
+			[
+				"92",
+				"-73",
+				"-34"
+			],
+			[
+				"460",
+				"333"
+			],
+			[
+				"101",
+				"-205",
+				"-99"
+			],
+			[
+				"255",
+				"234"
+			],
+			[
+				"200",
+				"162"
+			],
+			[
+				"55",
+				"72"
+			],
+			[
+				"112",
+				"82",
+				"67"
+			],
+			[
+				"112",
+				"81",
+				"66"
+			]
+		]
+	}
+}

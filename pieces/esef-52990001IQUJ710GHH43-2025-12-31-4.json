@@ -1,0 +1,47 @@
+{
+	"id": "esef-52990001IQUJ710GHH43-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/52990001IQUJ710GHH43/2025-12-31/ESEF/LT/0/invaldainvl-2025-12-31-0-en/reports/invaldainvl-2025-12-31-0-en.xhtml",
+		"lei": "52990001IQUJ710GHH43",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "753701a6108be47260edf80c9aeb621f17f3b849e136498c16e2017b6b43b599",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024",
+				"2025",
+				"2024"
+			],
+			[
+				"47104",
+				"44384",
+				"47104",
+				"44384"
+			],
+			[
+				"47104",
+				"44384",
+				"47104",
+				"44384"
+			],
+			[
+				"47104",
+				"44384",
+				"47104",
+				"44384"
+			]
+		]
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"id": "esef-984500D9LC6F3BB9F323-2023-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/984500D9LC6F3BB9F323/2023-12-31/ESEF/LV/0/asstorentholding-2023-12-31-en/reports/asstorentholding-2023-12-31-en.xhtml",
+		"lei": "984500D9LC6F3BB9F323",
+		"pays": "LV",
+		"exercice": "2023-12-31",
+		"depose": "2024-07-09",
+		"sha256Page": "bcfac32166ce9cc3461fb9bc3d1c38e25e721f6ae47dad945c230ba05ee4c272",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"150000",
+				"-48136",
+				"26774",
+				"11985211",
+				"12113849"
+			],
+			[
+				"4774540",
+				"4774540"
+			],
+			[
+				"16335",
+				"16335"
+			],
+			[
+				"12000000",
+				"-11847371",
+				"152629"
+			],
+			[
+				"6000000",
+				"6000000"
+			],
+			[
+				"18150000",
+				"-31801",
+				"26774",
+				"4912380",
+				"23057353"
+			],
+			[
+				"4781063",
+				"4781063"
+			],
+			[
+				"-47192",
+				"40419028",
+				"40371836"
+			],
+			[
+				"-2398470",
+				"-2398470"
+			],
+			[
+				"18150000",
+				"-78993",
+				"40419028",
+				"26774",
+				"7294973",
+				"65811782"
+			]
+		]
+	}
+}

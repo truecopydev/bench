@@ -1,0 +1,97 @@
+{
+	"id": "esef-969500MGFIKUGLTC9742-2026-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500MGFIKUGLTC9742/2026-12-31/ESEF/FR/0/rubis-2025-12-31-1-fr/reports/rubis-2025-12-31-1-fr.xhtml",
+		"lei": "969500MGFIKUGLTC9742",
+		"pays": "FR",
+		"exercice": "2026-12-31",
+		"depose": "2026-04-29",
+		"sha256Page": "a676f8a9584d26891fb28e9d812aa18cd698c5ec0b00dc4a01c55a44b116ba10",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"48",
+				"297",
+				"8832"
+			],
+			[
+				"48",
+				"-5170",
+				"-25027"
+			],
+			[
+				"1629",
+				"-796"
+			],
+			[
+				"1493394",
+				"1303894"
+			],
+			[
+				"-1514615",
+				"-1328075"
+			],
+			[
+				"-48407",
+				"-41993"
+			],
+			[
+				"-78378",
+				"-97384"
+			],
+			[
+				"-220714",
+				"-282284"
+			],
+			[
+				"-12897",
+				"-12269"
+			],
+			[
+				"-6796",
+				"-2827"
+			],
+			[
+				"-2396",
+				"1065"
+			],
+			[
+				"-22423",
+				"9714"
+			],
+			[
+				"80414",
+				"86688"
+			],
+			[
+				"676373",
+				"589685"
+			],
+			[
+				"80414",
+				"86688"
+			],
+			[
+				"756787",
+				"676373"
+			],
+			[
+				"-1922464",
+				"-1968679"
+			],
+			[
+				"-1165677",
+				"-1292306"
+			]
+		]
+	}
+}

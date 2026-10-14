@@ -1,0 +1,47 @@
+{
+	"id": "esef-549300IK1L5VA3B6XF18-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300IK1L5VA3B6XF18/2025-12-31/ESEF/BE/0/549300IK1L5VA3B6XF18-2025-12-31-1-fr/reports/549300IK1L5VA3B6XF18-2025-12-31-1-fr.xhtml",
+		"lei": "549300IK1L5VA3B6XF18",
+		"pays": "BE",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "8119d73c027a0fdf5f90c5743e4918f5d00cde200e26a0c3790928a1d8a6bcd1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-1688",
+				"-302"
+			],
+			[
+				"-56",
+				"-57"
+			],
+			[
+				"-56",
+				"-57"
+			],
+			[
+				"-1744",
+				"-360"
+			],
+			[
+				"-1792",
+				"-452"
+			],
+			[
+				"47",
+				"93"
+			]
+		]
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"id": "esef-9695000KELLFSASOM232-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695000KELLFSASOM232/2025-12-31/ESEF/FR/0/9695000KELLFSASOM232-2025-12-31-1-FR/reports/9695000KELLFSASOM232-2025-12-31-1-FR.xhtml",
+		"lei": "9695000KELLFSASOM232",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-15",
+		"sha256Page": "ec5fe8ba13975ecc783cc88856ce6cd164062f64a970f9752d852951de4b20ef",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"15763",
+				"22248"
+			],
+			[
+				"11",
+				"4577",
+				"4577"
+			],
+			[
+				"12",
+				"560",
+				"369"
+			],
+			[
+				"14",
+				"2855",
+				"2568"
+			],
+			[
+				"15",
+				"6794",
+				"8006"
+			],
+			[
+				"17",
+				"64"
+			],
+			[
+				"16",
+				"978",
+				"6664"
+			],
+			[
+				"19",
+				"0",
+				"1"
+			],
+			[
+				"18",
+				"1"
+			],
+			[
+				"51747",
+				"63162"
+			],
+			[
+				"20",
+				"7221",
+				"10501"
+			],
+			[
+				"21",
+				"5605",
+				"4906"
+			],
+			[
+				"23",
+				"6210",
+				"4074"
+			],
+			[
+				"22",
+				"9730",
+				"10077"
+			],
+			[
+				"24",
+				"22980",
+				"33604"
+			],
+			[
+				"67510",
+				"85410"
+			]
+		]
+	}
+}

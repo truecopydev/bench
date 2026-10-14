@@ -1,0 +1,99 @@
+{
+	"id": "esef-5299002NFQKOBT1E8569-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299002NFQKOBT1E8569/2026-03-31/ESEF/AT/0/docoag-2026-03-31-1-de/reports/docoag-2026-03-31-1-de.xhtml",
+		"lei": "5299002NFQKOBT1E8569",
+		"pays": "AT",
+		"exercice": "2026-03-31",
+		"depose": "2026-06-11",
+		"sha256Page": "18e255674b060126b5e39f8d9ba13698ecb9dde533c53b14a5529942a6c3d87f",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"246159",
+				"229812"
+			],
+			[
+				"977",
+				"1956"
+			],
+			[
+				"-96863",
+				"-94862"
+			],
+			[
+				"-86005",
+				"-77981"
+			],
+			[
+				"-34341",
+				"-32852"
+			],
+			[
+				"138",
+				"166"
+			],
+			[
+				"30063",
+				"26239"
+			],
+			[
+				"-8835",
+				"-7878"
+			],
+			[
+				"21228",
+				"18360"
+			],
+			[
+				"3653",
+				"1992"
+			],
+			[
+				"-2296",
+				"-2386"
+			],
+			[
+				"-3215",
+				"-2702"
+			],
+			[
+				"-323",
+				"-38"
+			],
+			[
+				"-2181",
+				"-3133"
+			],
+			[
+				"19047",
+				"15227"
+			],
+			[
+				"-5315",
+				"-3649"
+			],
+			[
+				"13732",
+				"11578"
+			],
+			[
+				"3155",
+				"2335"
+			],
+			[
+				"10577",
+				"9243"
+			]
+		]
+	}
+}

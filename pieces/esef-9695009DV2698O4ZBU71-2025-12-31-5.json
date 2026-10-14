@@ -1,0 +1,91 @@
+{
+	"id": "esef-9695009DV2698O4ZBU71-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695009DV2698O4ZBU71/2025-12-31/ESEF/FR/0/maisonsdumonde-2025-12-31-1-fr/reports/maisonsdumonde-2025-12-31-1-fr.html",
+		"lei": "9695009DV2698O4ZBU71",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-07-07",
+		"sha256Page": "f99ee92661fd2991ff1c18e1eb6752c03cc057983f1aeef5a09ef83501caccdd",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"14",
+				"246027"
+			],
+			[
+				"15",
+				"190682",
+				"248357"
+			],
+			[
+				"16",
+				"86958",
+				"135670"
+			],
+			[
+				"17",
+				"451527",
+				"518950"
+			],
+			[
+				"18",
+				"18046",
+				"13027"
+			],
+			[
+				"19",
+				"6942",
+				"8014"
+			],
+			[
+				"21",
+				"580"
+			],
+			[
+				"754155",
+				"1170625"
+			],
+			[
+				"20",
+				"181806",
+				"199737"
+			],
+			[
+				"20",
+				"47533",
+				"58446"
+			],
+			[
+				"7079",
+				"4960"
+			],
+			[
+				"21",
+				"8862"
+			],
+			[
+				"23",
+				"96083",
+				"90501"
+			],
+			[
+				"332501",
+				"362506"
+			],
+			[
+				"1086656",
+				"1533131"
+			]
+		]
+	}
+}

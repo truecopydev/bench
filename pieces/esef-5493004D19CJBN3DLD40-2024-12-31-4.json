@@ -1,0 +1,41 @@
+{
+	"id": "esef-5493004D19CJBN3DLD40-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5493004D19CJBN3DLD40/2024-12-31/ESEF/NO/0/bwenergyltd-2024-12-31-en/reports/bwenergyltd-2024-12-31-en.xhtml",
+		"lei": "5493004D19CJBN3DLD40",
+		"pays": "NO",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "89e800c328dc58ca8528b8586e1e0040640173e18ea799434b9b2ebbe18c7863",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2024",
+				"2023"
+			],
+			[
+				"1659",
+				"810"
+			],
+			[
+				"-28"
+			],
+			[
+				"-28"
+			],
+			[
+				"1631",
+				"810"
+			]
+		]
+	}
+}

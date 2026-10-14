@@ -1,0 +1,120 @@
+{
+	"id": "esef-969500LENY69X51OOT31-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500LENY69X51OOT31/2024-12-31/ESEF/FR/0/veolia-2024-12-31-1-fr/reports/veolia-2024-12-31-1-fr.xhtml",
+		"lei": "969500LENY69X51OOT31",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-04-15",
+		"sha256Page": "d0572fee6a552fcb6fb94d85ee55647a217b0d055dedf9a1d681d6cd220e4917",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"1334",
+				"1445"
+			],
+			[
+				"-37",
+				"22"
+			],
+			[
+				"11",
+				"-8"
+			],
+			[
+				"-26",
+				"15"
+			],
+			[
+				"1"
+			],
+			[
+				"1"
+			],
+			[
+				"2"
+			],
+			[
+				"-26",
+				"16"
+			],
+			[
+				"-12",
+				"6"
+			],
+			[
+				"-12",
+				"6"
+			],
+			[
+				"66",
+				"51"
+			],
+			[
+				"-22",
+				"-12"
+			],
+			[
+				"44",
+				"39"
+			],
+			[
+				"-529",
+				"366"
+			],
+			[
+				"-529",
+				"366"
+			],
+			[
+				"-59",
+				"-67"
+			],
+			[
+				"1",
+				"-1"
+			],
+			[
+				"-58",
+				"-68"
+			],
+			[
+				"-556",
+				"343"
+			],
+			[
+				"-67",
+				"6"
+			],
+			[
+				"22",
+				"5"
+			],
+			[
+				"-582",
+				"359"
+			],
+			[
+				"753",
+				"1804"
+			],
+			[
+				"399",
+				"1465"
+			],
+			[
+				"354",
+				"339"
+			]
+		]
+	}
+}

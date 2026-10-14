@@ -1,0 +1,99 @@
+{
+	"id": "esef-25940046BHY41BKNKJ92-2023-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/25940046BHY41BKNKJ92/2023-12-31/ESEF/EE/0/cityservicese-2023-12-31-en/reports/cityservicese-2023-12-31-en.xhtml",
+		"lei": "25940046BHY41BKNKJ92",
+		"pays": "EE",
+		"exercice": "2023-12-31",
+		"depose": "2024-07-09",
+		"sha256Page": "392fa0ed051ba1b44a95b0ad301706329c27e299efe53beb6612743f08797634",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"9483",
+				"21067",
+				"-3249",
+				"948",
+				"-8865",
+				"19384",
+				"492",
+				"19876"
+			],
+			[
+				"-4660",
+				"-4660",
+				"-516",
+				"-5176"
+			],
+			[
+				"3157",
+				"3157",
+				"162",
+				"3319"
+			],
+			[
+				"3157",
+				"-4660",
+				"-1503",
+				"-354",
+				"-1857"
+			],
+			[
+				"92",
+				"-92"
+			],
+			[
+				"9483",
+				"21067",
+				"948",
+				"-13525",
+				"-92",
+				"17881",
+				"138",
+				"18019"
+			],
+			[
+				"5874",
+				"5874",
+				"38",
+				"5912"
+			],
+			[
+				"5874",
+				"5874",
+				"38",
+				"5912"
+			],
+			[
+				"-12577",
+				"-948",
+				"13525"
+			],
+			[
+				"14"
+			],
+			[
+				"92",
+				"92",
+				"92"
+			],
+			[
+				"9483",
+				"8490",
+				"5874",
+				"23847",
+				"176",
+				"24023"
+			]
+		]
+	}
+}

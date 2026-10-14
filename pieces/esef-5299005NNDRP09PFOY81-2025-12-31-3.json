@@ -1,0 +1,73 @@
+{
+	"id": "esef-5299005NNDRP09PFOY81-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299005NNDRP09PFOY81/2025-12-31/ESEF/LT/0/abvilkyskiupienine-2025-12-31-en/reports/abvilkykipienin-2025-12-31-en.xhtml",
+		"lei": "5299005NNDRP09PFOY81",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "e1530d2e8a2ed9a383b468c7734caf393583f5bfec853078ee15a689c9bc4d3d",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024",
+				"2025",
+				"2024"
+			],
+			[
+				"10941",
+				"25669",
+				"17233",
+				"16359"
+			],
+			[
+				"1787",
+				"268"
+			],
+			[
+				"-33",
+				"-303",
+				"-10",
+				"-51"
+			],
+			[
+				"-33",
+				"1484",
+				"-10",
+				"217"
+			],
+			[
+				"10908",
+				"27153",
+				"17223",
+				"16576"
+			],
+			[
+				"10903",
+				"27138",
+				"17223",
+				"16576"
+			],
+			[
+				"5",
+				"15"
+			],
+			[
+				"10908",
+				"27153",
+				"17223",
+				"16576"
+			]
+		]
+	}
+}

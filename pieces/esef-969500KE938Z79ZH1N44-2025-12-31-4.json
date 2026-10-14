@@ -1,0 +1,107 @@
+{
+	"id": "esef-969500KE938Z79ZH1N44-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500KE938Z79ZH1N44/2025-12-31/ESEF/FR/0/voltalia-2025-12-31-2-fr/reports/voltalia-2025-12-31-fr.xhtml",
+		"lei": "969500KE938Z79ZH1N44",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "c427c797d3ba17d8846ecbf10108872bd7c0734f51ed27f4633939a9d6d2503d",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"7",
+				"79491",
+				"79491"
+			],
+			[
+				"7",
+				"64617",
+				"70742"
+			],
+			[
+				"7",
+				"582532",
+				"528406"
+			],
+			[
+				"7",
+				"2422516",
+				"2383990"
+			],
+			[
+				"2",
+				"10587",
+				"17549"
+			],
+			[
+				"10",
+				"41430",
+				"30323"
+			],
+			[
+				"31216",
+				"21877"
+			],
+			[
+				"6",
+				"1314",
+				"6156"
+			],
+			[
+				"3233703",
+				"3138534"
+			],
+			[
+				"13",
+				"13807",
+				"31152"
+			],
+			[
+				"13",
+				"248417",
+				"226047"
+			],
+			[
+				"13",
+				"182478",
+				"172665"
+			],
+			[
+				"10",
+				"64619",
+				"30869"
+			],
+			[
+				"957",
+				"1548"
+			],
+			[
+				"8",
+				"314686",
+				"360192"
+			],
+			[
+				"824964",
+				"822473"
+			],
+			[
+				"14",
+				"128238"
+			],
+			[
+				"4186905",
+				"3961006"
+			]
+		]
+	}
+}

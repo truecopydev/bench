@@ -1,0 +1,104 @@
+{
+	"id": "esef-2594003WC65THEMYJH09-2024-03-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/2594003WC65THEMYJH09/2024-03-31/ESEF/PL/0/fte-2024-03-31-pl/reports/fte-2024-03-31-pl.xhtml",
+		"lei": "2594003WC65THEMYJH09",
+		"pays": "PL",
+		"exercice": "2024-03-31",
+		"depose": "2024-07-04",
+		"sha256Page": "02da639d88ceb243f688ac5aa753a70a44b441ee584d2aca73b6bae66fe8b84a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"111",
+				"1030669",
+				"1598422"
+			],
+			[
+				"112",
+				"720965",
+				"1090474"
+			],
+			[
+				"309704",
+				"507948"
+			],
+			[
+				"113",
+				"17394",
+				"42544"
+			],
+			[
+				"230292",
+				"338133"
+			],
+			[
+				"86452",
+				"104314"
+			],
+			[
+				"114",
+				"12821",
+				"9619"
+			],
+			[
+				"-2467",
+				"98426"
+			],
+			[
+				"115",
+				"12051",
+				"1190"
+			],
+			[
+				"116",
+				"23670",
+				"26162"
+			],
+			[
+				"362",
+				"1384",
+				"-408"
+			],
+			[
+				"383",
+				"-1946",
+				"-4982"
+			],
+			[
+				"-14648",
+				"68064"
+			],
+			[
+				"13",
+				"46131",
+				"-19578"
+			],
+			[
+				"-60779",
+				"87642"
+			],
+			[
+				"-60779",
+				"87642"
+			],
+			[
+				"-171",
+				"-506"
+			],
+			[
+				"-60608",
+				"88148"
+			]
+		]
+	}
+}

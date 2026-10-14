@@ -1,0 +1,2262 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-variant-ligatures:none !important;font-variant-ligatures:none !important}*{margin:0}html{-webkit-text-size-adjust:100%;font-size:62.5%}img,picture,video,canvas,svg{display:block;max-width:100%;height:auto;line-height:0}input,button,textarea,select{font:inherit}body{margin:0;font-family:var(--body-font-family);font-weight:var(--body-font-weight);font-size:var(--body-font-size);line-height:var(--body-line-height);color:var(--body-color);background-color:var(--body-background-color);overflow-x:hidden;overflow-y:scroll;overflow-scrolling:touch;width:100%}main{display:block}h1,h2,h3,h4,h5,h6,p{font-size:inherit;line-height:inherit;font-weight:inherit}:focus:not(:focus-visible){outline:none}*:focus{outline:0}table{border-spacing:0;width:100%}img:not([src]){max-height:0}body>.content{max-width:1164px;width:90%;margin-left:auto;margin-right:auto;padding:150px 0 72px}.superscript,sup,sub,.subscript,*[class*=superscript],*[class*=subscript],.srl-table-footnote-id{font-size:80%;line-height:0;vertical-align:baseline;position:relative;padding:0 1px;top:-0.6em}sub,.subscript,*[class*=subscript]{top:.4em}b,strong,[class*=bold]{font-weight:var(--font-weight-bold)}.srl-horizontal-right{text-align:right}.srl-horizontal-left{text-align:left}.srl-horizontal-center{text-align:center}.srl-title-h1{font-family:var(--h1-font-family, inherit);font-size:var(--h1-font-size, inherit);font-weight:var(--h1-font-weight, inherit);line-height:var(--h1-line-height, inherit);color:var(--h1-color, inherit);margin-top:var(--space-large);margin-bottom:var(--space)}.srl-title-h2{font-family:var(--h2-font-family, inherit);font-size:var(--h2-font-size, inherit);font-weight:var(--h2-font-weight, inherit);line-height:var(--h2-line-height, inherit);color:var(--h2-color, inherit);margin-top:var(--space-large);margin-bottom:var(--space)}.srl-title-h3{font-family:var(--h3-font-family, inherit);font-size:var(--h3-font-size, inherit);font-weight:var(--h3-font-weight, inherit);line-height:var(--h3-line-height, inherit);color:var(--h3-color, inherit);margin-top:var(--space);margin-bottom:0}.srl-title-h4{font-family:var(--h4-font-family, inherit);font-size:var(--h4-font-size, inherit);font-weight:var(--h4-font-weight, inherit);line-height:var(--h4-line-height, inherit);color:var(--h4-color, inherit);margin-top:var(--space);margin-bottom:0}.srl-title-h5{font-family:var(--h5-font-family, inherit);font-size:var(--h5-font-size, inherit);font-weight:var(--h5-font-weight, inherit);line-height:var(--h5-line-height, inherit);color:var(--h5-color, inherit);margin-top:var(--space);margin-bottom:0}.srl-title-h6{font-family:var(--h6-font-family, inherit);font-size:var(--h6-font-size, inherit);font-weight:var(--h6-font-weight, inherit);line-height:var(--h6-line-height, inherit);color:var(--h6-color, inherit);margin-top:var(--space);margin-bottom:0}.srl-paragraph{margin-bottom:var(--space-small)}a{color:var(--link-color);cursor:pointer;text-decoration:var(--link-text-decoration)}td,th{--padding-x: var(--table-padding-x);--padding-y: var(--table-padding-y);padding:var(--padding-x) var(--padding-y);font-family:var(--table-font-family);font-size:var(--table-font-size, inherit);line-height:var(--table-line-height, inherit);font-weight:var(--table-font-weight);border-bottom:1px solid var(--table-border-color);-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;vertical-align:baseline}th{--padding-x: var(--table-head-padding-x);--padding-y: var(--table-head-padding-y)}td.srl-vertical-bottom{vertical-align:bottom}td.srl-vertical-top{vertical-align:top}td.srl-vertical-center,td.srl-vertical-middle{vertical-align:middle}td[class*=fill-background]{background-color:#ddd}td[class*=fill-none]{background-color:rgba(0,0,0,0)}[class*=head],.head{font-size:var(--table-head-font-size);line-height:var(--table-head-line-height);font-weight:var(--table-head-font-weight)}[class*=head],[class*=bline]{border-bottom:2px solid var(--table-border-color)}[class*=noline]{border-bottom:0 !important}*:is(td,th)[class*=ind]{padding-left:1.5rem}.srl-table-wrap{overflow-x:auto;margin-bottom:var(--space)}.srl-table-wrap:has(+*:is(.srl-table-footnote-item,.srl-table-footnote-wrap,.srl-footnote)),table:has(+*:is(.srl-table-footnote-item,.srl-table-footnote-wrap,.srl-footnote)){margin-bottom:var(--space-small)}.footnote,.srl-footnote,.srl-paragraphstyle_footnotestyles_footnote,span[class^=srl-paragraphstyle_footnotestyles],span[class*=fussnote],span[class*=footnotestyles_footnote],.srl-table-footnote-item{font-size:var(--footnote-font-size);line-height:var(--footnote-line-height);margin-bottom:var(--space-small)}.srl-footnote:has(+.srl-footnote),.srl-table-footnote-item:has(+.srl-table-footnote-item){margin-bottom:0}.srl-img__img{margin-top:var(--space-large);margin-bottom:var(--space-large)}.srl-list-group{display:block;padding-left:var(--space);margin-bottom:var(--space)}.srl-indention-small{padding-left:var(--space)}.srl-indention-medium{padding-left:calc(2*var(--space))}.srl-indention-large{padding-left:calc(3*var(--space))}li.srl-indention-small{padding-left:unset;margin-left:var(--space)}li.srl-indention-medium{padding-left:unset;margin-left:calc(2*var(--space))}li.srl-indention-large{padding-left:unset;margin-left:calc(4*var(--space))}.srl-font-size-small{font-size:var(--text-font-size-small)}.srl-font-size-medium{font-size:var(--body-font-size)}.srl-font-size-large{font-size:var(--text-font-size-large)}.srl-width-narrow{width:30%}.srl-width-normal{width:70%}.srl-width-wide{width:100%}.srl-margin-left-small{margin-left:var(--space)}.srl-margin-left-medium{margin-left:calc(2*var(--space))}.srl-margin-left-large{margin-left:calc(4*var(--space))}.srl-margin-bottom-small{margin-bottom:var(--space)}.srl-margin-bottom-medium{margin-bottom:calc(2*var(--space))}.srl-margin-bottom-large{margin-bottom:calc(4*var(--space))}.srl-margin-right-small{margin-right:var(--space)}.srl-margin-right-medium{margin-right:calc(2*var(--space))}.srl-margin-right-large{margin-right:calc(4*var(--space))}.srl-margin-top-small{margin-top:var(--space)}.srl-margin-top-medium{margin-top:calc(2*var(--space))}.srl-margin-top-large{margin-top:calc(4*var(--space))}:root{--body-font-family:var(--font-family-text);--body-font-size:1.4rem;--body-line-height:2.2rem;--body-font-weight:var(--font-weight-regular);--body-color:#000000;--body-background-color:#ffffff;--h1-font-family:var(--font-family-titles);--h1-font-size:2.5rem;--h1-line-height:3rem;--h1-font-weight:var(--font-weight-bold);--h1-color:#00619d;--h2-font-family:var(--font-family-titles);--h2-font-size:2rem;--h2-line-height:2.5rem;--h2-font-weight:var(--font-weight-bold);--h2-color:#00a3da;--h3-font-family:var(--font-family-titles);--h3-font-size:1.8rem;--h3-line-height:2.5rem;--h3-font-weight:var(--font-weight-bold);--h3-color:#444444;--h4-font-family:var(--font-family-titles);--h4-font-size:1.7rem;--h4-line-height:2.5rem;--h4-font-weight:var(--font-weight-bold);--h4-color:#666666;--h5-font-family:var(--font-family-titles);--h5-font-size:1.6rem;--h5-line-height:1.9rem;--h5-font-weight:var(--font-weight-bold);--h5-color:#888888;--h6-font-family:var(--font-family-titles);--h6-font-size:1.4rem;--h6-line-height:1.8rem;--h6-font-weight:var(--font-weight-bold);--h6-color:#888888;--link-color:#00a3da;--link-text-decoration:none;--table-font-family:var(--font-family-text);--table-font-size:1.2rem;--table-line-height:1.8rem;--table-font-weight:var(--font-weight-regular);--table-padding-x:4px;--table-padding-y:4px;--table-border-color:#000000;--table-head-font-family:var(--font-family-text);--table-head-font-size:1.2rem;--table-head-line-height:1.4rem;--table-head-font-weight:var(--font-weight-bold);--table-head-padding-x:4px;--table-head-padding-y:4px;--footnote-font-size:1.2rem;--footnote-line-height:2.2rem;--font-family-text:"Verdana", Arial, Helvetica, sans-serif;--font-family-titles:"Verdana", Arial, Helvetica, sans-serif;--space:25px;--space-small:15px;--space-large:45px;--font-weight-light:200;--font-weight-regular:400;--font-weight-bold:600;--font-weight-bolder:700;--text-font-size-small:1.2rem;--text-font-size-medium:1.4rem;--text-font-size-large:2rem}
+
+table {.srl-table-KeyFig-col1 { width: 50% } .srl-table-KeyFig-col2 { width: 1% } .srl-table-KeyFig-col3 { width: 12% } .srl-table-KeyFig-col4 { width: 1% } .srl-table-KeyFig-col5 { width: 12% } .srl-table-KeyFig-col6 { width: 12% } .srl-table-KeyFig-col7 { width: 12% } }
+table {.srl-table-9bb9508b-fd6f-4ac0-a719-05d5e314d9f0-col1 { width: 66% } .srl-table-9bb9508b-fd6f-4ac0-a719-05d5e314d9f0-col2 { width: 1% } .srl-table-9bb9508b-fd6f-4ac0-a719-05d5e314d9f0-col3 { width: 16% } .srl-table-9bb9508b-fd6f-4ac0-a719-05d5e314d9f0-col4 { width: 1% } .srl-table-9bb9508b-fd6f-4ac0-a719-05d5e314d9f0-col5 { width: 16% } }
+table {.srl-table-a8d9893c-b0dc-458a-b2ef-1e4b6c9ab713-col1 { width: 32% } .srl-table-a8d9893c-b0dc-458a-b2ef-1e4b6c9ab713-col2 { width: 68% } }
+table {.srl-table-46278d99-8467-4e9c-8a98-c6208715e46f-col1 { width: 28% } .srl-table-46278d99-8467-4e9c-8a98-c6208715e46f-col2 { width: 1% } .srl-table-46278d99-8467-4e9c-8a98-c6208715e46f-col3 { width: 71% } }
+table {.srl-table-KLB_Sales-col1 { width: 55% } .srl-table-KLB_Sales-col2 { width: 1% } .srl-table-KLB_Sales-col3 { width: 14% } .srl-table-KLB_Sales-col4 { width: 1% } .srl-table-KLB_Sales-col5 { width: 14% } .srl-table-KLB_Sales-col6 { width: 1% } .srl-table-KLB_Sales-col7 { width: 14% } }
+table {.srl-table-KLB_ETC-col1 { width: 55% } .srl-table-KLB_ETC-col2 { width: 1% } .srl-table-KLB_ETC-col3 { width: 14% } .srl-table-KLB_ETC-col4 { width: 1% } .srl-table-KLB_ETC-col5 { width: 14% } .srl-table-KLB_ETC-col6 { width: 1% } .srl-table-KLB_ETC-col7 { width: 14% } }
+table {.srl-table-KLB_IMS-col1 { width: 55% } .srl-table-KLB_IMS-col2 { width: 1% } .srl-table-KLB_IMS-col3 { width: 14% } .srl-table-KLB_IMS-col4 { width: 1% } .srl-table-KLB_IMS-col5 { width: 14% } .srl-table-KLB_IMS-col6 { width: 1% } .srl-table-KLB_IMS-col7 { width: 14% } }
+table {.srl-table-46ae9a5e-6ae9-4001-8d01-e4fb4354da99-col1 { width: 61% } .srl-table-46ae9a5e-6ae9-4001-8d01-e4fb4354da99-col2 { width: 1% } .srl-table-46ae9a5e-6ae9-4001-8d01-e4fb4354da99-col3 { width: 38% } }
+table {.srl-table-26129d86-4361-4944-baea-b2224baa89d4-col1 { width: 49% } .srl-table-26129d86-4361-4944-baea-b2224baa89d4-col2 { width: 1% } .srl-table-26129d86-4361-4944-baea-b2224baa89d4-col3 { width: 50% } }
+table {.srl-table-e331d012-6854-4c00-8bee-5773b6d9779c-col1 { width: 34% } .srl-table-e331d012-6854-4c00-8bee-5773b6d9779c-col2 { width: 2% } .srl-table-e331d012-6854-4c00-8bee-5773b6d9779c-col3 { width: 64% } }
+table {.srl-table-d48c2bdb-df9a-4e9e-9207-7f0bed04a1ab-col1 { width: 100% } }
+table {.srl-table-054168b1-7ec1-4b06-814f-0edeae640272-col1 { width: 100% } }
+table {.srl-table-07f5ad64-9947-4b70-9045-3f81af25c9e1-col1 { width: 22% } .srl-table-07f5ad64-9947-4b70-9045-3f81af25c9e1-col2 { width: 1% } .srl-table-07f5ad64-9947-4b70-9045-3f81af25c9e1-col3 { width: 38% } .srl-table-07f5ad64-9947-4b70-9045-3f81af25c9e1-col4 { width: 1% } .srl-table-07f5ad64-9947-4b70-9045-3f81af25c9e1-col5 { width: 38% } }
+table {.srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col1 { width: 25% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col2 { width: 1% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col3 { width: 10% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col4 { width: 1% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col5 { width: 31% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col6 { width: 1% } .srl-table-f00dbd78-b940-4b1c-872c-9d3f63bfba7f-col7 { width: 31% } }
+table {.srl-table-4b07420a-8e01-4a65-8ffb-05d0d300f93c-col1 { width: 93% } .srl-table-4b07420a-8e01-4a65-8ffb-05d0d300f93c-col2 { width: 1% } .srl-table-4b07420a-8e01-4a65-8ffb-05d0d300f93c-col3 { width: 6% } }
+table {.srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col1 { width: 41% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col2 { width: 1% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col3 { width: 11% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col4 { width: 1% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col5 { width: 10% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col6 { width: 1% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col7 { width: 11% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col8 { width: 1% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col9 { width: 11% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col10 { width: 1% } .srl-table-e3723427-fa1f-4484-8814-a6041cbf7911-col11 { width: 11% } }
+table {.srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col1 { width: 35% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col2 { width: 1% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col3 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col4 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col5 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col6 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col7 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col8 { width: 1% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col9 { width: 9% } .srl-table-4f562ee3-f4b5-42ab-a521-209277e9e98c-col10 { width: 9% } }
+table {.srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col1 { width: 35% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col2 { width: 1% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col3 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col4 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col5 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col6 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col7 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col8 { width: 1% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col9 { width: 9% } .srl-table-5044a15a-bc9d-4e55-bea0-b676e1116755-col10 { width: 9% } }
+table {.srl-table-Meldebogen_1-col1 { width: 19% } .srl-table-Meldebogen_1-col2 { width: 1% } .srl-table-Meldebogen_1-col3 { width: 4% } .srl-table-Meldebogen_1-col4 { width: 0% } .srl-table-Meldebogen_1-col5 { width: 6% } .srl-table-Meldebogen_1-col6 { width: 6% } .srl-table-Meldebogen_1-col7 { width: 6% } .srl-table-Meldebogen_1-col8 { width: 14% } .srl-table-Meldebogen_1-col9 { width: 2% } .srl-table-Meldebogen_1-col10 { width: 4% } .srl-table-Meldebogen_1-col11 { width: 3% } .srl-table-Meldebogen_1-col12 { width: 4% } .srl-table-Meldebogen_1-col13 { width: 4% } .srl-table-Meldebogen_1-col14 { width: 4% } .srl-table-Meldebogen_1-col15 { width: 1% } .srl-table-Meldebogen_1-col16 { width: 4% } .srl-table-Meldebogen_1-col17 { width: 4% } .srl-table-Meldebogen_1-col18 { width: 4% } .srl-table-Meldebogen_1-col19 { width: 5% } .srl-table-Meldebogen_1-col20 { width: 5% } }
+table {.srl-table-Umsatz_Meldebogen_2-col1 { width: 21% } .srl-table-Umsatz_Meldebogen_2-col2 { width: 1% } .srl-table-Umsatz_Meldebogen_2-col3 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col4 { width: 0% } .srl-table-Umsatz_Meldebogen_2-col5 { width: 6% } .srl-table-Umsatz_Meldebogen_2-col6 { width: 6% } .srl-table-Umsatz_Meldebogen_2-col7 { width: 6% } .srl-table-Umsatz_Meldebogen_2-col8 { width: 14% } .srl-table-Umsatz_Meldebogen_2-col9 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col10 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col11 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col12 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col13 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col14 { width: 4% } .srl-table-Umsatz_Meldebogen_2-col15 { width: 1% } .srl-table-Umsatz_Meldebogen_2-col16 { width: 6% } .srl-table-Umsatz_Meldebogen_2-col17 { width: 5% } .srl-table-Umsatz_Meldebogen_2-col18 { width: 6% } }
+table {.srl-table-CapEx_Meldebogen_2-col1 { width: 21% } .srl-table-CapEx_Meldebogen_2-col2 { width: 1% } .srl-table-CapEx_Meldebogen_2-col3 { width: 4% } .srl-table-CapEx_Meldebogen_2-col4 { width: 0% } .srl-table-CapEx_Meldebogen_2-col5 { width: 6% } .srl-table-CapEx_Meldebogen_2-col6 { width: 6% } .srl-table-CapEx_Meldebogen_2-col7 { width: 6% } .srl-table-CapEx_Meldebogen_2-col8 { width: 14% } .srl-table-CapEx_Meldebogen_2-col9 { width: 4% } .srl-table-CapEx_Meldebogen_2-col10 { width: 4% } .srl-table-CapEx_Meldebogen_2-col11 { width: 4% } .srl-table-CapEx_Meldebogen_2-col12 { width: 4% } .srl-table-CapEx_Meldebogen_2-col13 { width: 4% } .srl-table-CapEx_Meldebogen_2-col14 { width: 4% } .srl-table-CapEx_Meldebogen_2-col15 { width: 1% } .srl-table-CapEx_Meldebogen_2-col16 { width: 6% } .srl-table-CapEx_Meldebogen_2-col17 { width: 5% } .srl-table-CapEx_Meldebogen_2-col18 { width: 6% } }
+table {.srl-table-OpEx_Meldebogen_2-col1 { width: 21% } .srl-table-OpEx_Meldebogen_2-col2 { width: 1% } .srl-table-OpEx_Meldebogen_2-col3 { width: 4% } .srl-table-OpEx_Meldebogen_2-col4 { width: 0% } .srl-table-OpEx_Meldebogen_2-col5 { width: 6% } .srl-table-OpEx_Meldebogen_2-col6 { width: 6% } .srl-table-OpEx_Meldebogen_2-col7 { width: 6% } .srl-table-OpEx_Meldebogen_2-col8 { width: 14% } .srl-table-OpEx_Meldebogen_2-col9 { width: 4% } .srl-table-OpEx_Meldebogen_2-col10 { width: 4% } .srl-table-OpEx_Meldebogen_2-col11 { width: 4% } .srl-table-OpEx_Meldebogen_2-col12 { width: 4% } .srl-table-OpEx_Meldebogen_2-col13 { width: 4% } .srl-table-OpEx_Meldebogen_2-col14 { width: 4% } .srl-table-OpEx_Meldebogen_2-col15 { width: 1% } .srl-table-OpEx_Meldebogen_2-col16 { width: 6% } .srl-table-OpEx_Meldebogen_2-col17 { width: 5% } .srl-table-OpEx_Meldebogen_2-col18 { width: 6% } }
+table {.srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col1 { width: 25% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col2 { width: 1% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col3 { width: 10% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col4 { width: 1% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col5 { width: 31% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col6 { width: 1% } .srl-table-4e6833e4-9988-4090-ab31-6bb9b5915b92-col7 { width: 31% } }
+table {.srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col1 { width: 25% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col2 { width: 1% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col3 { width: 10% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col4 { width: 1% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col5 { width: 31% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col6 { width: 1% } .srl-table-6e1d62bb-338b-4fb3-b7e0-a7be684b5cee-col7 { width: 31% } }
+table {.srl-table-E1-4-34-col1 { width: 35% } .srl-table-E1-4-34-col2 { width: 1% } .srl-table-E1-4-34-col3 { width: 12% } .srl-table-E1-4-34-col4 { width: 1% } .srl-table-E1-4-34-col5 { width: 12% } .srl-table-E1-4-34-col6 { width: 1% } .srl-table-E1-4-34-col7 { width: 12% } .srl-table-E1-4-34-col8 { width: 1% } .srl-table-E1-4-34-col9 { width: 12% } .srl-table-E1-4-34-col10 { width: 1% } .srl-table-E1-4-34-col11 { width: 12% } }
+table {.srl-table-E1-5-37-38-col1 { width: 64% } .srl-table-E1-5-37-38-col2 { width: 1% } .srl-table-E1-5-37-38-col3 { width: 17% } .srl-table-E1-5-37-38-col4 { width: 1% } .srl-table-E1-5-37-38-col5 { width: 17% } }
+table {.srl-table-E1-5-AR38-col1 { width: 64% } .srl-table-E1-5-AR38-col2 { width: 1% } .srl-table-E1-5-AR38-col3 { width: 17% } .srl-table-E1-5-AR38-col4 { width: 1% } .srl-table-E1-5-AR38-col5 { width: 17% } }
+table {.srl-table-E1-6-44-52_neu-col1 { width: 30% } .srl-table-E1-6-44-52_neu-col2 { width: 1% } .srl-table-E1-6-44-52_neu-col3 { width: 9% } .srl-table-E1-6-44-52_neu-col4 { width: 1% } .srl-table-E1-6-44-52_neu-col5 { width: 9% } .srl-table-E1-6-44-52_neu-col6 { width: 1% } .srl-table-E1-6-44-52_neu-col7 { width: 9% } .srl-table-E1-6-44-52_neu-col8 { width: 1% } .srl-table-E1-6-44-52_neu-col9 { width: 9% } .srl-table-E1-6-44-52_neu-col10 { width: 1% } .srl-table-E1-6-44-52_neu-col11 { width: 9% } .srl-table-E1-6-44-52_neu-col12 { width: 1% } .srl-table-E1-6-44-52_neu-col13 { width: 9% } .srl-table-E1-6-44-52_neu-col14 { width: 1% } .srl-table-E1-6-44-52_neu-col15 { width: 9% } }
+table {.srl-table-E1-6-53-55-col1 { width: 64% } .srl-table-E1-6-53-55-col2 { width: 1% } .srl-table-E1-6-53-55-col3 { width: 17% } .srl-table-E1-6-53-55-col4 { width: 1% } .srl-table-E1-6-53-55-col5 { width: 17% } }
+table {.srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col1 { width: 25% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col2 { width: 1% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col3 { width: 11% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col4 { width: 1% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col5 { width: 31% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col6 { width: 1% } .srl-table-404724a4-248c-47a9-b10f-ff734b021c04-col7 { width: 30% } }
+table {.srl-table-d0f11e51-6109-4960-a548-9a2e0b75cb1c-col1 { width: 100% } }
+table {.srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col1 { width: 25% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col2 { width: 1% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col3 { width: 10% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col4 { width: 1% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col5 { width: 31% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col6 { width: 1% } .srl-table-ea108b56-3c3f-4300-a0e4-109b24b9d8da-col7 { width: 31% } }
+table {.srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col1 { width: 25% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col2 { width: 1% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col3 { width: 10% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col4 { width: 1% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col5 { width: 31% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col6 { width: 1% } .srl-table-a0641267-f1f5-489a-b4ee-f07aee94e3c7-col7 { width: 31% } }
+table {.srl-table-6a85f429-760e-4cef-a629-690a517a0402-col1 { width: 25% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col2 { width: 1% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col3 { width: 10% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col4 { width: 1% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col5 { width: 31% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col6 { width: 1% } .srl-table-6a85f429-760e-4cef-a629-690a517a0402-col7 { width: 31% } }
+table {.srl-table-4c6b44e8-ebae-4d2d-a743-e89e31e27ea2-col1 { width: 52% } .srl-table-4c6b44e8-ebae-4d2d-a743-e89e31e27ea2-col2 { width: 1% } .srl-table-4c6b44e8-ebae-4d2d-a743-e89e31e27ea2-col3 { width: 23% } .srl-table-4c6b44e8-ebae-4d2d-a743-e89e31e27ea2-col4 { width: 1% } .srl-table-4c6b44e8-ebae-4d2d-a743-e89e31e27ea2-col5 { width: 23% } }
+table {.srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col1 { width: 25% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col2 { width: 1% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col3 { width: 10% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col4 { width: 1% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col5 { width: 31% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col6 { width: 1% } .srl-table-f29812b0-b1da-40b3-9397-ccae665580bc-col7 { width: 31% } }
+table {.srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col1 { width: 25% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col2 { width: 1% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col3 { width: 10% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col4 { width: 1% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col5 { width: 31% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col6 { width: 1% } .srl-table-ba6b7496-bbd5-4c82-a1f3-5d626ad964d2-col7 { width: 31% } }
+table {.srl-table-S1-6-A-col1 { width: 64% } .srl-table-S1-6-A-col2 { width: 1% } .srl-table-S1-6-A-col3 { width: 17% } .srl-table-S1-6-A-col4 { width: 1% } .srl-table-S1-6-A-col5 { width: 17% } }
+table {.srl-table-S1-6-B-col1 { width: 64% } .srl-table-S1-6-B-col2 { width: 1% } .srl-table-S1-6-B-col3 { width: 17% } .srl-table-S1-6-B-col4 { width: 1% } .srl-table-S1-6-B-col5 { width: 17% } }
+table {.srl-table-S1-6-C_b-col1 { width: 35% } .srl-table-S1-6-C_b-col2 { width: 1% } .srl-table-S1-6-C_b-col3 { width: 12% } .srl-table-S1-6-C_b-col4 { width: 1% } .srl-table-S1-6-C_b-col5 { width: 12% } .srl-table-S1-6-C_b-col6 { width: 1% } .srl-table-S1-6-C_b-col7 { width: 12% } .srl-table-S1-6-C_b-col8 { width: 1% } .srl-table-S1-6-C_b-col9 { width: 12% } .srl-table-S1-6-C_b-col10 { width: 1% } .srl-table-S1-6-C_b-col11 { width: 12% } }
+table {.srl-table-S1-6-C_a-col1 { width: 35% } .srl-table-S1-6-C_a-col2 { width: 1% } .srl-table-S1-6-C_a-col3 { width: 12% } .srl-table-S1-6-C_a-col4 { width: 1% } .srl-table-S1-6-C_a-col5 { width: 12% } .srl-table-S1-6-C_a-col6 { width: 1% } .srl-table-S1-6-C_a-col7 { width: 12% } .srl-table-S1-6-C_a-col8 { width: 1% } .srl-table-S1-6-C_a-col9 { width: 12% } .srl-table-S1-6-C_a-col10 { width: 1% } .srl-table-S1-6-C_a-col11 { width: 12% } }
+table {.srl-table-S1-6-D_b-col1 { width: 40% } .srl-table-S1-6-D_b-col2 { width: 1% } .srl-table-S1-6-D_b-col3 { width: 14% } .srl-table-S1-6-D_b-col4 { width: 1% } .srl-table-S1-6-D_b-col5 { width: 14% } .srl-table-S1-6-D_b-col6 { width: 1% } .srl-table-S1-6-D_b-col7 { width: 14% } .srl-table-S1-6-D_b-col8 { width: 1% } .srl-table-S1-6-D_b-col9 { width: 14% } }
+table {.srl-table-S1-6-D_a-col1 { width: 40% } .srl-table-S1-6-D_a-col2 { width: 1% } .srl-table-S1-6-D_a-col3 { width: 14% } .srl-table-S1-6-D_a-col4 { width: 1% } .srl-table-S1-6-D_a-col5 { width: 14% } .srl-table-S1-6-D_a-col6 { width: 1% } .srl-table-S1-6-D_a-col7 { width: 14% } .srl-table-S1-6-D_a-col8 { width: 1% } .srl-table-S1-6-D_a-col9 { width: 14% } }
+table {.srl-table-S1-6-E-col1 { width: 64% } .srl-table-S1-6-E-col2 { width: 1% } .srl-table-S1-6-E-col3 { width: 17% } .srl-table-S1-6-E-col4 { width: 1% } .srl-table-S1-6-E-col5 { width: 17% } }
+table {.srl-table-S1-7-col1 { width: 64% } .srl-table-S1-7-col2 { width: 1% } .srl-table-S1-7-col3 { width: 17% } .srl-table-S1-7-col4 { width: 1% } .srl-table-S1-7-col5 { width: 17% } }
+table {.srl-table-S1-8_1_b-col1 { width: 14% } .srl-table-S1-8_1_b-col2 { width: 1% } .srl-table-S1-8_1_b-col3 { width: 28% } .srl-table-S1-8_1_b-col4 { width: 28% } .srl-table-S1-8_1_b-col5 { width: 1% } .srl-table-S1-8_1_b-col6 { width: 28% } }
+table {.srl-table-S1-8_1_a-col1 { width: 14% } .srl-table-S1-8_1_a-col2 { width: 1% } .srl-table-S1-8_1_a-col3 { width: 28% } .srl-table-S1-8_1_a-col4 { width: 28% } .srl-table-S1-8_1_a-col5 { width: 1% } .srl-table-S1-8_1_a-col6 { width: 28% } }
+table {.srl-table-S1-8_2-col1 { width: 64% } .srl-table-S1-8_2-col2 { width: 1% } .srl-table-S1-8_2-col3 { width: 17% } .srl-table-S1-8_2-col4 { width: 1% } .srl-table-S1-8_2-col5 { width: 17% } }
+table {.srl-table-S1-9_1_b-col1 { width: 30% } .srl-table-S1-9_1_b-col2 { width: 1% } .srl-table-S1-9_1_b-col3 { width: 17% } .srl-table-S1-9_1_b-col4 { width: 17% } .srl-table-S1-9_1_b-col5 { width: 1% } .srl-table-S1-9_1_b-col6 { width: 17% } .srl-table-S1-9_1_b-col7 { width: 17% } }
+table {.srl-table-S1-9_1_a-col1 { width: 30% } .srl-table-S1-9_1_a-col2 { width: 1% } .srl-table-S1-9_1_a-col3 { width: 17% } .srl-table-S1-9_1_a-col4 { width: 17% } .srl-table-S1-9_1_a-col5 { width: 1% } .srl-table-S1-9_1_a-col6 { width: 17% } .srl-table-S1-9_1_a-col7 { width: 17% } }
+table {.srl-table-S1-9_2_b-col1 { width: 23% } .srl-table-S1-9_2_b-col2 { width: 1% } .srl-table-S1-9_2_b-col3 { width: 11% } .srl-table-S1-9_2_b-col4 { width: 11% } .srl-table-S1-9_2_b-col5 { width: 1% } .srl-table-S1-9_2_b-col6 { width: 13% } .srl-table-S1-9_2_b-col7 { width: 13% } .srl-table-S1-9_2_b-col8 { width: 1% } .srl-table-S1-9_2_b-col9 { width: 13% } .srl-table-S1-9_2_b-col10 { width: 13% } }
+table {.srl-table-S1-9_2_a-col1 { width: 23% } .srl-table-S1-9_2_a-col2 { width: 1% } .srl-table-S1-9_2_a-col3 { width: 11% } .srl-table-S1-9_2_a-col4 { width: 11% } .srl-table-S1-9_2_a-col5 { width: 1% } .srl-table-S1-9_2_a-col6 { width: 13% } .srl-table-S1-9_2_a-col7 { width: 13% } .srl-table-S1-9_2_a-col8 { width: 1% } .srl-table-S1-9_2_a-col9 { width: 13% } .srl-table-S1-9_2_a-col10 { width: 13% } }
+table {.srl-table-S1-12-col1 { width: 64% } .srl-table-S1-12-col2 { width: 1% } .srl-table-S1-12-col3 { width: 17% } .srl-table-S1-12-col4 { width: 1% } .srl-table-S1-12-col5 { width: 17% } }
+table {.srl-table-S1-14-col1 { width: 64% } .srl-table-S1-14-col2 { width: 1% } .srl-table-S1-14-col3 { width: 17% } .srl-table-S1-14-col4 { width: 1% } .srl-table-S1-14-col5 { width: 17% } }
+table {.srl-table-S1-16-col1 { width: 64% } .srl-table-S1-16-col2 { width: 1% } .srl-table-S1-16-col3 { width: 17% } .srl-table-S1-16-col4 { width: 1% } .srl-table-S1-16-col5 { width: 17% } }
+table {.srl-table-S1-17-col1 { width: 64% } .srl-table-S1-17-col2 { width: 1% } .srl-table-S1-17-col3 { width: 17% } .srl-table-S1-17-col4 { width: 1% } .srl-table-S1-17-col5 { width: 17% } }
+table {.srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col1 { width: 25% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col2 { width: 1% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col3 { width: 10% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col4 { width: 1% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col5 { width: 31% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col6 { width: 1% } .srl-table-1dfc2ec4-bb8c-4fea-93e8-b45fce418549-col7 { width: 31% } }
+table {.srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col1 { width: 25% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col2 { width: 1% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col3 { width: 10% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col4 { width: 1% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col5 { width: 31% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col6 { width: 1% } .srl-table-071ef291-a19e-4bd1-8ca2-35ef01c51bdb-col7 { width: 31% } }
+table {.srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col1 { width: 25% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col2 { width: 1% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col3 { width: 10% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col4 { width: 1% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col5 { width: 31% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col6 { width: 1% } .srl-table-09921b63-d70e-45ae-beda-749b91cac26e-col7 { width: 31% } }
+table {.srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col1 { width: 25% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col2 { width: 1% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col3 { width: 10% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col4 { width: 1% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col5 { width: 31% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col6 { width: 1% } .srl-table-ae9b8650-f691-4dca-924b-1c048ebef56d-col7 { width: 31% } }
+table {.srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col1 { width: 25% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col2 { width: 1% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col3 { width: 10% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col4 { width: 1% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col5 { width: 31% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col6 { width: 1% } .srl-table-e402900c-f31a-4e59-9381-f3098ac27a1f-col7 { width: 31% } }
+table {.srl-table-G1-5-col1 { width: 70% } .srl-table-G1-5-col2 { width: 1% } .srl-table-G1-5-col3 { width: 14% } .srl-table-G1-5-col4 { width: 1% } .srl-table-G1-5-col5 { width: 14% } }
+table {.srl-table-G1-6-33ac-col1 { width: 64% } .srl-table-G1-6-33ac-col2 { width: 1% } .srl-table-G1-6-33ac-col3 { width: 17% } .srl-table-G1-6-33ac-col4 { width: 1% } .srl-table-G1-6-33ac-col5 { width: 17% } }
+table {.srl-table-G1-6-33-col1 { width: 64% } .srl-table-G1-6-33-col2 { width: 1% } .srl-table-G1-6-33-col3 { width: 17% } .srl-table-G1-6-33-col4 { width: 1% } .srl-table-G1-6-33-col5 { width: 17% } }
+table {.srl-table-PL-col1 { width: 64% } .srl-table-PL-col2 { width: 1% } .srl-table-PL-col3 { width: 11% } .srl-table-PL-col4 { width: 1% } .srl-table-PL-col5 { width: 11% } .srl-table-PL-col6 { width: 1% } .srl-table-PL-col7 { width: 11% } }
+table {.srl-table-BS-col1 { width: 64% } .srl-table-BS-col2 { width: 1% } .srl-table-BS-col3 { width: 11% } .srl-table-BS-col4 { width: 1% } .srl-table-BS-col5 { width: 11% } .srl-table-BS-col6 { width: 1% } .srl-table-BS-col7 { width: 11% } }
+table {.srl-table-EQ-col1 { width: 29% } .srl-table-EQ-col2 { width: 1% } .srl-table-EQ-col3 { width: 8% } .srl-table-EQ-col4 { width: 1% } .srl-table-EQ-col5 { width: 9% } .srl-table-EQ-col6 { width: 1% } .srl-table-EQ-col7 { width: 9% } .srl-table-EQ-col8 { width: 1% } .srl-table-EQ-col9 { width: 9% } .srl-table-EQ-col10 { width: 1% } .srl-table-EQ-col11 { width: 10% } .srl-table-EQ-col12 { width: 1% } .srl-table-EQ-col13 { width: 10% } .srl-table-EQ-col14 { width: 1% } .srl-table-EQ-col15 { width: 9% } }
+table {.srl-table-CF-col1 { width: 64% } .srl-table-CF-col2 { width: 1% } .srl-table-CF-col3 { width: 11% } .srl-table-CF-col4 { width: 1% } .srl-table-CF-col5 { width: 11% } .srl-table-CF-col6 { width: 1% } .srl-table-CF-col7 { width: 11% } }
+table {.srl-table-SEGM-col1 { width: 32% } .srl-table-SEGM-col2 { width: 1% } .srl-table-SEGM-col3 { width: 11% } .srl-table-SEGM-col4 { width: 11% } .srl-table-SEGM-col5 { width: 11% } .srl-table-SEGM-col6 { width: 1% } .srl-table-SEGM-col7 { width: 11% } .srl-table-SEGM-col8 { width: 11% } .srl-table-SEGM-col9 { width: 11% } }
+table {.srl-table-SEGM_BS-col1 { width: 32% } .srl-table-SEGM_BS-col2 { width: 1% } .srl-table-SEGM_BS-col3 { width: 11% } .srl-table-SEGM_BS-col4 { width: 11% } .srl-table-SEGM_BS-col5 { width: 11% } .srl-table-SEGM_BS-col6 { width: 1% } .srl-table-SEGM_BS-col7 { width: 11% } .srl-table-SEGM_BS-col8 { width: 11% } .srl-table-SEGM_BS-col9 { width: 11% } }
+table {.srl-table-REV_REG-col1 { width: 30% } .srl-table-REV_REG-col2 { width: 1% } .srl-table-REV_REG-col3 { width: 17% } .srl-table-REV_REG-col4 { width: 17% } .srl-table-REV_REG-col5 { width: 1% } .srl-table-REV_REG-col6 { width: 17% } .srl-table-REV_REG-col7 { width: 17% } }
+table {.srl-table-OOINC-col1 { width: 64% } .srl-table-OOINC-col2 { width: 1% } .srl-table-OOINC-col3 { width: 17% } .srl-table-OOINC-col4 { width: 1% } .srl-table-OOINC-col5 { width: 17% } }
+table {.srl-table-BV_WIP-col1 { width: 64% } .srl-table-BV_WIP-col2 { width: 1% } .srl-table-BV_WIP-col3 { width: 17% } .srl-table-BV_WIP-col4 { width: 1% } .srl-table-BV_WIP-col5 { width: 17% } }
+table {.srl-table-MAT-col1 { width: 64% } .srl-table-MAT-col2 { width: 1% } .srl-table-MAT-col3 { width: 17% } .srl-table-MAT-col4 { width: 1% } .srl-table-MAT-col5 { width: 17% } }
+table {.srl-table-STAFF-col1 { width: 64% } .srl-table-STAFF-col2 { width: 1% } .srl-table-STAFF-col3 { width: 17% } .srl-table-STAFF-col4 { width: 1% } .srl-table-STAFF-col5 { width: 17% } }
+table {.srl-table-OPEX-col1 { width: 64% } .srl-table-OPEX-col2 { width: 1% } .srl-table-OPEX-col3 { width: 17% } .srl-table-OPEX-col4 { width: 1% } .srl-table-OPEX-col5 { width: 17% } }
+table {.srl-table-DEPR-col1 { width: 64% } .srl-table-DEPR-col2 { width: 1% } .srl-table-DEPR-col3 { width: 17% } .srl-table-DEPR-col4 { width: 1% } .srl-table-DEPR-col5 { width: 17% } }
+table {.srl-table-FIN_Res-col1 { width: 64% } .srl-table-FIN_Res-col2 { width: 1% } .srl-table-FIN_Res-col3 { width: 17% } .srl-table-FIN_Res-col4 { width: 1% } .srl-table-FIN_Res-col5 { width: 17% } }
+table {.srl-table-TAX_PL-col1 { width: 64% } .srl-table-TAX_PL-col2 { width: 1% } .srl-table-TAX_PL-col3 { width: 17% } .srl-table-TAX_PL-col4 { width: 1% } .srl-table-TAX_PL-col5 { width: 17% } }
+table {.srl-table-TAX_PL_DETAIL-col1 { width: 64% } .srl-table-TAX_PL_DETAIL-col2 { width: 1% } .srl-table-TAX_PL_DETAIL-col3 { width: 17% } .srl-table-TAX_PL_DETAIL-col4 { width: 1% } .srl-table-TAX_PL_DETAIL-col5 { width: 17% } }
+table {.srl-table-OCI-col1 { width: 32% } .srl-table-OCI-col2 { width: 1% } .srl-table-OCI-col3 { width: 11% } .srl-table-OCI-col4 { width: 11% } .srl-table-OCI-col5 { width: 11% } .srl-table-OCI-col6 { width: 1% } .srl-table-OCI-col7 { width: 11% } .srl-table-OCI-col8 { width: 11% } .srl-table-OCI-col9 { width: 11% } }
+table {.srl-table-SAV-col1 { width: 29% } .srl-table-SAV-col2 { width: 1% } .srl-table-SAV-col3 { width: 8% } .srl-table-SAV-col4 { width: 1% } .srl-table-SAV-col5 { width: 9% } .srl-table-SAV-col6 { width: 1% } .srl-table-SAV-col7 { width: 9% } .srl-table-SAV-col8 { width: 1% } .srl-table-SAV-col9 { width: 9% } .srl-table-SAV-col10 { width: 1% } .srl-table-SAV-col11 { width: 11% } .srl-table-SAV-col12 { width: 1% } .srl-table-SAV-col13 { width: 9% } .srl-table-SAV-col14 { width: 1% } .srl-table-SAV-col15 { width: 9% } }
+table {.srl-table-SAV_PY-col1 { width: 29% } .srl-table-SAV_PY-col2 { width: 1% } .srl-table-SAV_PY-col3 { width: 8% } .srl-table-SAV_PY-col4 { width: 1% } .srl-table-SAV_PY-col5 { width: 9% } .srl-table-SAV_PY-col6 { width: 1% } .srl-table-SAV_PY-col7 { width: 9% } .srl-table-SAV_PY-col8 { width: 1% } .srl-table-SAV_PY-col9 { width: 9% } .srl-table-SAV_PY-col10 { width: 1% } .srl-table-SAV_PY-col11 { width: 11% } .srl-table-SAV_PY-col12 { width: 1% } .srl-table-SAV_PY-col13 { width: 9% } .srl-table-SAV_PY-col14 { width: 1% } .srl-table-SAV_PY-col15 { width: 9% } }
+table {.srl-table-IAV-col1 { width: 35% } .srl-table-IAV-col2 { width: 1% } .srl-table-IAV-col3 { width: 12% } .srl-table-IAV-col4 { width: 1% } .srl-table-IAV-col5 { width: 12% } .srl-table-IAV-col6 { width: 1% } .srl-table-IAV-col7 { width: 12% } .srl-table-IAV-col8 { width: 1% } .srl-table-IAV-col9 { width: 12% } .srl-table-IAV-col10 { width: 1% } .srl-table-IAV-col11 { width: 12% } }
+table {.srl-table-IAV_PY-col1 { width: 35% } .srl-table-IAV_PY-col2 { width: 1% } .srl-table-IAV_PY-col3 { width: 12% } .srl-table-IAV_PY-col4 { width: 1% } .srl-table-IAV_PY-col5 { width: 12% } .srl-table-IAV_PY-col6 { width: 1% } .srl-table-IAV_PY-col7 { width: 12% } .srl-table-IAV_PY-col8 { width: 1% } .srl-table-IAV_PY-col9 { width: 12% } .srl-table-IAV_PY-col10 { width: 1% } .srl-table-IAV_PY-col11 { width: 12% } }
+table {.srl-table-GOODWILL-col1 { width: 64% } .srl-table-GOODWILL-col2 { width: 1% } .srl-table-GOODWILL-col3 { width: 17% } .srl-table-GOODWILL-col4 { width: 1% } .srl-table-GOODWILL-col5 { width: 17% } }
+table {.srl-table-IT_PARAM-col1 { width: 64% } .srl-table-IT_PARAM-col2 { width: 1% } .srl-table-IT_PARAM-col3 { width: 17% } .srl-table-IT_PARAM-col4 { width: 1% } .srl-table-IT_PARAM-col5 { width: 17% } }
+table {.srl-table-IT_Result-col1 { width: 28% } .srl-table-IT_Result-col2 { width: 1% } .srl-table-IT_Result-col3 { width: 11% } .srl-table-IT_Result-col4 { width: 1% } .srl-table-IT_Result-col5 { width: 11% } .srl-table-IT_Result-col6 { width: 1% } .srl-table-IT_Result-col7 { width: 11% } .srl-table-IT_Result-col8 { width: 1% } .srl-table-IT_Result-col9 { width: 11% } .srl-table-IT_Result-col10 { width: 1% } .srl-table-IT_Result-col11 { width: 11% } .srl-table-IT_Result-col12 { width: 1% } .srl-table-IT_Result-col13 { width: 11% } }
+table {.srl-table-IT_Result_PY-col1 { width: 28% } .srl-table-IT_Result_PY-col2 { width: 1% } .srl-table-IT_Result_PY-col3 { width: 11% } .srl-table-IT_Result_PY-col4 { width: 1% } .srl-table-IT_Result_PY-col5 { width: 11% } .srl-table-IT_Result_PY-col6 { width: 1% } .srl-table-IT_Result_PY-col7 { width: 11% } .srl-table-IT_Result_PY-col8 { width: 1% } .srl-table-IT_Result_PY-col9 { width: 11% } .srl-table-IT_Result_PY-col10 { width: 1% } .srl-table-IT_Result_PY-col11 { width: 11% } .srl-table-IT_Result_PY-col12 { width: 1% } .srl-table-IT_Result_PY-col13 { width: 11% } }
+table {.srl-table-SEN-col1 { width: 28% } .srl-table-SEN-col2 { width: 1% } .srl-table-SEN-col3 { width: 15% } .srl-table-SEN-col4 { width: 1% } .srl-table-SEN-col5 { width: 13% } .srl-table-SEN-col6 { width: 1% } .srl-table-SEN-col7 { width: 13% } .srl-table-SEN-col8 { width: 1% } .srl-table-SEN-col9 { width: 13% } .srl-table-SEN-col10 { width: 1% } .srl-table-SEN-col11 { width: 13% } }
+table {.srl-table-SEN_PY-col1 { width: 28% } .srl-table-SEN_PY-col2 { width: 1% } .srl-table-SEN_PY-col3 { width: 15% } .srl-table-SEN_PY-col4 { width: 1% } .srl-table-SEN_PY-col5 { width: 13% } .srl-table-SEN_PY-col6 { width: 1% } .srl-table-SEN_PY-col7 { width: 13% } .srl-table-SEN_PY-col8 { width: 1% } .srl-table-SEN_PY-col9 { width: 13% } .srl-table-SEN_PY-col10 { width: 1% } .srl-table-SEN_PY-col11 { width: 13% } }
+table {.srl-table-AS-col1 { width: 64% } .srl-table-AS-col2 { width: 1% } .srl-table-AS-col3 { width: 17% } .srl-table-AS-col4 { width: 1% } .srl-table-AS-col5 { width: 17% } }
+table {.srl-table-AS_4199_FI-col1 { width: 64% } .srl-table-AS_4199_FI-col2 { width: 1% } .srl-table-AS_4199_FI-col3 { width: 17% } .srl-table-AS_4199_FI-col4 { width: 1% } .srl-table-AS_4199_FI-col5 { width: 17% } }
+table {.srl-table-AS_4198_FI-col1 { width: 64% } .srl-table-AS_4198_FI-col2 { width: 1% } .srl-table-AS_4198_FI-col3 { width: 17% } .srl-table-AS_4198_FI-col4 { width: 1% } .srl-table-AS_4198_FI-col5 { width: 17% } }
+table {.srl-table-AS_4199-col1 { width: 64% } .srl-table-AS_4199-col2 { width: 1% } .srl-table-AS_4199-col3 { width: 17% } .srl-table-AS_4199-col4 { width: 1% } .srl-table-AS_4199-col5 { width: 17% } }
+table {.srl-table-GU_4193_FI-col1 { width: 64% } .srl-table-GU_4193_FI-col2 { width: 1% } .srl-table-GU_4193_FI-col3 { width: 17% } .srl-table-GU_4193_FI-col4 { width: 1% } .srl-table-GU_4193_FI-col5 { width: 17% } }
+table {.srl-table-GU_4193-col1 { width: 64% } .srl-table-GU_4193-col2 { width: 1% } .srl-table-GU_4193-col3 { width: 17% } .srl-table-GU_4193-col4 { width: 1% } .srl-table-GU_4193-col5 { width: 17% } }
+table {.srl-table-GU_4256_FI-col1 { width: 64% } .srl-table-GU_4256_FI-col2 { width: 1% } .srl-table-GU_4256_FI-col3 { width: 17% } .srl-table-GU_4256_FI-col4 { width: 1% } .srl-table-GU_4256_FI-col5 { width: 17% } }
+table {.srl-table-GU_4256-col1 { width: 64% } .srl-table-GU_4256-col2 { width: 1% } .srl-table-GU_4256-col3 { width: 17% } .srl-table-GU_4256-col4 { width: 1% } .srl-table-GU_4256-col5 { width: 17% } }
+table {.srl-table-GU_4197_FI-col1 { width: 64% } .srl-table-GU_4197_FI-col2 { width: 1% } .srl-table-GU_4197_FI-col3 { width: 17% } .srl-table-GU_4197_FI-col4 { width: 1% } .srl-table-GU_4197_FI-col5 { width: 17% } }
+table {.srl-table-GU_4197-col1 { width: 64% } .srl-table-GU_4197-col2 { width: 1% } .srl-table-GU_4197-col3 { width: 17% } .srl-table-GU_4197-col4 { width: 1% } .srl-table-GU_4197-col5 { width: 17% } }
+table {.srl-table-FI-col1 { width: 47% } .srl-table-FI-col2 { width: 1% } .srl-table-FI-col3 { width: 10% } .srl-table-FI-col4 { width: 1% } .srl-table-FI-col5 { width: 10% } .srl-table-FI-col6 { width: 10% } .srl-table-FI-col7 { width: 1% } .srl-table-FI-col8 { width: 10% } .srl-table-FI-col9 { width: 10% } }
+table {.srl-table-FI_PL-col1 { width: 64% } .srl-table-FI_PL-col2 { width: 1% } .srl-table-FI_PL-col3 { width: 17% } .srl-table-FI_PL-col4 { width: 1% } .srl-table-FI_PL-col5 { width: 17% } }
+table {.srl-table-FI_Albertina-col1 { width: 64% } .srl-table-FI_Albertina-col2 { width: 1% } .srl-table-FI_Albertina-col3 { width: 17% } .srl-table-FI_Albertina-col4 { width: 1% } .srl-table-FI_Albertina-col5 { width: 17% } }
+table {.srl-table-OTH_LTA-col1 { width: 64% } .srl-table-OTH_LTA-col2 { width: 1% } .srl-table-OTH_LTA-col3 { width: 17% } .srl-table-OTH_LTA-col4 { width: 1% } .srl-table-OTH_LTA-col5 { width: 17% } }
+table {.srl-table-DEF_TAXES-col1 { width: 64% } .srl-table-DEF_TAXES-col2 { width: 1% } .srl-table-DEF_TAXES-col3 { width: 17% } .srl-table-DEF_TAXES-col4 { width: 1% } .srl-table-DEF_TAXES-col5 { width: 17% } }
+table {.srl-table-DTA-DTL-col1 { width: 27% } .srl-table-DTA-DTL-col2 { width: 1% } .srl-table-DTA-DTL-col3 { width: 9% } .srl-table-DTA-DTL-col4 { width: 1% } .srl-table-DTA-DTL-col5 { width: 9% } .srl-table-DTA-DTL-col6 { width: 1% } .srl-table-DTA-DTL-col7 { width: 10% } .srl-table-DTA-DTL-col8 { width: 1% } .srl-table-DTA-DTL-col9 { width: 10% } .srl-table-DTA-DTL-col10 { width: 1% } .srl-table-DTA-DTL-col11 { width: 11% } .srl-table-DTA-DTL-col12 { width: 1% } .srl-table-DTA-DTL-col13 { width: 9% } .srl-table-DTA-DTL-col14 { width: 1% } .srl-table-DTA-DTL-col15 { width: 8% } }
+table {.srl-table-DTA-DTL_PY-col1 { width: 27% } .srl-table-DTA-DTL_PY-col2 { width: 1% } .srl-table-DTA-DTL_PY-col3 { width: 9% } .srl-table-DTA-DTL_PY-col4 { width: 1% } .srl-table-DTA-DTL_PY-col5 { width: 9% } .srl-table-DTA-DTL_PY-col6 { width: 1% } .srl-table-DTA-DTL_PY-col7 { width: 10% } .srl-table-DTA-DTL_PY-col8 { width: 1% } .srl-table-DTA-DTL_PY-col9 { width: 10% } .srl-table-DTA-DTL_PY-col10 { width: 1% } .srl-table-DTA-DTL_PY-col11 { width: 11% } .srl-table-DTA-DTL_PY-col12 { width: 1% } .srl-table-DTA-DTL_PY-col13 { width: 9% } .srl-table-DTA-DTL_PY-col14 { width: 1% } .srl-table-DTA-DTL_PY-col15 { width: 8% } }
+table {.srl-table-INVENT-col1 { width: 64% } .srl-table-INVENT-col2 { width: 1% } .srl-table-INVENT-col3 { width: 17% } .srl-table-INVENT-col4 { width: 1% } .srl-table-INVENT-col5 { width: 17% } }
+table {.srl-table-ST_REC-col1 { width: 64% } .srl-table-ST_REC-col2 { width: 1% } .srl-table-ST_REC-col3 { width: 17% } .srl-table-ST_REC-col4 { width: 1% } .srl-table-ST_REC-col5 { width: 17% } }
+table {.srl-table-BAD_DEBT-col1 { width: 32% } .srl-table-BAD_DEBT-col2 { width: 1% } .srl-table-BAD_DEBT-col3 { width: 11% } .srl-table-BAD_DEBT-col4 { width: 11% } .srl-table-BAD_DEBT-col5 { width: 11% } .srl-table-BAD_DEBT-col6 { width: 1% } .srl-table-BAD_DEBT-col7 { width: 11% } .srl-table-BAD_DEBT-col8 { width: 11% } .srl-table-BAD_DEBT-col9 { width: 11% } }
+table {.srl-table-DueDate_Rec-col1 { width: 64% } .srl-table-DueDate_Rec-col2 { width: 1% } .srl-table-DueDate_Rec-col3 { width: 17% } .srl-table-DueDate_Rec-col4 { width: 1% } .srl-table-DueDate_Rec-col5 { width: 17% } }
+table {.srl-table-IFRS15-col1 { width: 64% } .srl-table-IFRS15-col2 { width: 1% } .srl-table-IFRS15-col3 { width: 17% } .srl-table-IFRS15-col4 { width: 1% } .srl-table-IFRS15-col5 { width: 17% } }
+table {.srl-table-IFRS15_REV-col1 { width: 64% } .srl-table-IFRS15_REV-col2 { width: 1% } .srl-table-IFRS15_REV-col3 { width: 17% } .srl-table-IFRS15_REV-col4 { width: 1% } .srl-table-IFRS15_REV-col5 { width: 17% } }
+table {.srl-table-CASH-col1 { width: 64% } .srl-table-CASH-col2 { width: 1% } .srl-table-CASH-col3 { width: 17% } .srl-table-CASH-col4 { width: 1% } .srl-table-CASH-col5 { width: 17% } }
+table {.srl-table-IFRS5-col1 { width: 64% } .srl-table-IFRS5-col2 { width: 1% } .srl-table-IFRS5-col3 { width: 17% } .srl-table-IFRS5-col4 { width: 1% } .srl-table-IFRS5-col5 { width: 17% } }
+table {.srl-table-FinL_OV-col1 { width: 64% } .srl-table-FinL_OV-col2 { width: 1% } .srl-table-FinL_OV-col3 { width: 17% } .srl-table-FinL_OV-col4 { width: 1% } .srl-table-FinL_OV-col5 { width: 17% } }
+table {.srl-table-FinL_Dev-col1 { width: 28% } .srl-table-FinL_Dev-col2 { width: 1% } .srl-table-FinL_Dev-col3 { width: 9% } .srl-table-FinL_Dev-col4 { width: 1% } .srl-table-FinL_Dev-col5 { width: 9% } .srl-table-FinL_Dev-col6 { width: 1% } .srl-table-FinL_Dev-col7 { width: 9% } .srl-table-FinL_Dev-col8 { width: 1% } .srl-table-FinL_Dev-col9 { width: 9% } .srl-table-FinL_Dev-col10 { width: 1% } .srl-table-FinL_Dev-col11 { width: 9% } .srl-table-FinL_Dev-col12 { width: 1% } .srl-table-FinL_Dev-col13 { width: 11% } .srl-table-FinL_Dev-col14 { width: 1% } .srl-table-FinL_Dev-col15 { width: 9% } }
+table {.srl-table-FinL_Dev_PY-col1 { width: 28% } .srl-table-FinL_Dev_PY-col2 { width: 1% } .srl-table-FinL_Dev_PY-col3 { width: 9% } .srl-table-FinL_Dev_PY-col4 { width: 1% } .srl-table-FinL_Dev_PY-col5 { width: 9% } .srl-table-FinL_Dev_PY-col6 { width: 1% } .srl-table-FinL_Dev_PY-col7 { width: 9% } .srl-table-FinL_Dev_PY-col8 { width: 1% } .srl-table-FinL_Dev_PY-col9 { width: 9% } .srl-table-FinL_Dev_PY-col10 { width: 1% } .srl-table-FinL_Dev_PY-col11 { width: 9% } .srl-table-FinL_Dev_PY-col12 { width: 1% } .srl-table-FinL_Dev_PY-col13 { width: 11% } .srl-table-FinL_Dev_PY-col14 { width: 1% } .srl-table-FinL_Dev_PY-col15 { width: 9% } }
+table {.srl-table-SSD_Info-col1 { width: 46% } .srl-table-SSD_Info-col2 { width: 1% } .srl-table-SSD_Info-col3 { width: 17% } .srl-table-SSD_Info-col4 { width: 1% } .srl-table-SSD_Info-col5 { width: 17% } .srl-table-SSD_Info-col6 { width: 1% } .srl-table-SSD_Info-col7 { width: 17% } }
+table {.srl-table-FinL_CF-col1 { width: 28% } .srl-table-FinL_CF-col2 { width: 1% } .srl-table-FinL_CF-col3 { width: 11% } .srl-table-FinL_CF-col4 { width: 1% } .srl-table-FinL_CF-col5 { width: 11% } .srl-table-FinL_CF-col6 { width: 1% } .srl-table-FinL_CF-col7 { width: 11% } .srl-table-FinL_CF-col8 { width: 1% } .srl-table-FinL_CF-col9 { width: 11% } .srl-table-FinL_CF-col10 { width: 1% } .srl-table-FinL_CF-col11 { width: 11% } .srl-table-FinL_CF-col12 { width: 1% } .srl-table-FinL_CF-col13 { width: 11% } }
+table {.srl-table-FinL_CF_PY-col1 { width: 28% } .srl-table-FinL_CF_PY-col2 { width: 1% } .srl-table-FinL_CF_PY-col3 { width: 11% } .srl-table-FinL_CF_PY-col4 { width: 1% } .srl-table-FinL_CF_PY-col5 { width: 11% } .srl-table-FinL_CF_PY-col6 { width: 1% } .srl-table-FinL_CF_PY-col7 { width: 11% } .srl-table-FinL_CF_PY-col8 { width: 1% } .srl-table-FinL_CF_PY-col9 { width: 11% } .srl-table-FinL_CF_PY-col10 { width: 1% } .srl-table-FinL_CF_PY-col11 { width: 11% } .srl-table-FinL_CF_PY-col12 { width: 1% } .srl-table-FinL_CF_PY-col13 { width: 11% } }
+table {.srl-table-FinL_Interest-col1 { width: 64% } .srl-table-FinL_Interest-col2 { width: 1% } .srl-table-FinL_Interest-col3 { width: 17% } .srl-table-FinL_Interest-col4 { width: 1% } .srl-table-FinL_Interest-col5 { width: 17% } }
+table {.srl-table-IFRS16-col1 { width: 64% } .srl-table-IFRS16-col2 { width: 1% } .srl-table-IFRS16-col3 { width: 17% } .srl-table-IFRS16-col4 { width: 1% } .srl-table-IFRS16-col5 { width: 17% } }
+table {.srl-table-IFRS16_DEV-col1 { width: 64% } .srl-table-IFRS16_DEV-col2 { width: 1% } .srl-table-IFRS16_DEV-col3 { width: 17% } .srl-table-IFRS16_DEV-col4 { width: 1% } .srl-table-IFRS16_DEV-col5 { width: 17% } }
+table {.srl-table-IFRS16_maturity-col1 { width: 64% } .srl-table-IFRS16_maturity-col2 { width: 1% } .srl-table-IFRS16_maturity-col3 { width: 17% } .srl-table-IFRS16_maturity-col4 { width: 1% } .srl-table-IFRS16_maturity-col5 { width: 17% } }
+table {.srl-table-IFRS16_expenses-col1 { width: 32% } .srl-table-IFRS16_expenses-col2 { width: 1% } .srl-table-IFRS16_expenses-col3 { width: 11% } .srl-table-IFRS16_expenses-col4 { width: 11% } .srl-table-IFRS16_expenses-col5 { width: 11% } .srl-table-IFRS16_expenses-col6 { width: 1% } .srl-table-IFRS16_expenses-col7 { width: 11% } .srl-table-IFRS16_expenses-col8 { width: 11% } .srl-table-IFRS16_expenses-col9 { width: 11% } }
+table {.srl-table-IAS19-col1 { width: 64% } .srl-table-IAS19-col2 { width: 1% } .srl-table-IAS19-col3 { width: 17% } .srl-table-IAS19-col4 { width: 1% } .srl-table-IAS19-col5 { width: 17% } }
+table {.srl-table-ABF-col1 { width: 64% } .srl-table-ABF-col2 { width: 1% } .srl-table-ABF-col3 { width: 17% } .srl-table-ABF-col4 { width: 1% } .srl-table-ABF-col5 { width: 17% } }
+table {.srl-table-ABF_OCI-col1 { width: 64% } .srl-table-ABF_OCI-col2 { width: 1% } .srl-table-ABF_OCI-col3 { width: 17% } .srl-table-ABF_OCI-col4 { width: 1% } .srl-table-ABF_OCI-col5 { width: 17% } }
+table {.srl-table-ABF_Sen-col1 { width: 55% } .srl-table-ABF_Sen-col2 { width: 1% } .srl-table-ABF_Sen-col3 { width: 14% } .srl-table-ABF_Sen-col4 { width: 1% } .srl-table-ABF_Sen-col5 { width: 14% } .srl-table-ABF_Sen-col6 { width: 1% } .srl-table-ABF_Sen-col7 { width: 14% } }
+table {.srl-table-PENS-col1 { width: 64% } .srl-table-PENS-col2 { width: 1% } .srl-table-PENS-col3 { width: 17% } .srl-table-PENS-col4 { width: 1% } .srl-table-PENS-col5 { width: 17% } }
+table {.srl-table-PENS_OCI-col1 { width: 64% } .srl-table-PENS_OCI-col2 { width: 1% } .srl-table-PENS_OCI-col3 { width: 17% } .srl-table-PENS_OCI-col4 { width: 1% } .srl-table-PENS_OCI-col5 { width: 17% } }
+table {.srl-table-PENS_Sen-col1 { width: 55% } .srl-table-PENS_Sen-col2 { width: 1% } .srl-table-PENS_Sen-col3 { width: 14% } .srl-table-PENS_Sen-col4 { width: 1% } .srl-table-PENS_Sen-col5 { width: 14% } .srl-table-PENS_Sen-col6 { width: 1% } .srl-table-PENS_Sen-col7 { width: 14% } }
+table {.srl-table-Jubel-col1 { width: 64% } .srl-table-Jubel-col2 { width: 1% } .srl-table-Jubel-col3 { width: 17% } .srl-table-Jubel-col4 { width: 1% } .srl-table-Jubel-col5 { width: 17% } }
+table {.srl-table-JUB_Sen-col1 { width: 55% } .srl-table-JUB_Sen-col2 { width: 1% } .srl-table-JUB_Sen-col3 { width: 14% } .srl-table-JUB_Sen-col4 { width: 1% } .srl-table-JUB_Sen-col5 { width: 14% } .srl-table-JUB_Sen-col6 { width: 1% } .srl-table-JUB_Sen-col7 { width: 14% } }
+table {.srl-table-IAS19_CF-col1 { width: 30% } .srl-table-IAS19_CF-col2 { width: 1% } .srl-table-IAS19_CF-col3 { width: 9% } .srl-table-IAS19_CF-col4 { width: 1% } .srl-table-IAS19_CF-col5 { width: 9% } .srl-table-IAS19_CF-col6 { width: 1% } .srl-table-IAS19_CF-col7 { width: 9% } .srl-table-IAS19_CF-col8 { width: 1% } .srl-table-IAS19_CF-col9 { width: 9% } .srl-table-IAS19_CF-col10 { width: 1% } .srl-table-IAS19_CF-col11 { width: 9% } .srl-table-IAS19_CF-col12 { width: 1% } .srl-table-IAS19_CF-col13 { width: 9% } .srl-table-IAS19_CF-col14 { width: 1% } .srl-table-IAS19_CF-col15 { width: 9% } }
+table {.srl-table-PROV_OV-col1 { width: 64% } .srl-table-PROV_OV-col2 { width: 1% } .srl-table-PROV_OV-col3 { width: 17% } .srl-table-PROV_OV-col4 { width: 1% } .srl-table-PROV_OV-col5 { width: 17% } }
+table {.srl-table-PROV_DEV-col1 { width: 19% } .srl-table-PROV_DEV-col2 { width: 1% } .srl-table-PROV_DEV-col3 { width: 9% } .srl-table-PROV_DEV-col4 { width: 1% } .srl-table-PROV_DEV-col5 { width: 9% } .srl-table-PROV_DEV-col6 { width: 1% } .srl-table-PROV_DEV-col7 { width: 9% } .srl-table-PROV_DEV-col8 { width: 1% } .srl-table-PROV_DEV-col9 { width: 9% } .srl-table-PROV_DEV-col10 { width: 1% } .srl-table-PROV_DEV-col11 { width: 10% } .srl-table-PROV_DEV-col12 { width: 1% } .srl-table-PROV_DEV-col13 { width: 9% } .srl-table-PROV_DEV-col14 { width: 1% } .srl-table-PROV_DEV-col15 { width: 9% } .srl-table-PROV_DEV-col16 { width: 1% } .srl-table-PROV_DEV-col17 { width: 9% } }
+table {.srl-table-PROV_DEV_PY-col1 { width: 19% } .srl-table-PROV_DEV_PY-col2 { width: 1% } .srl-table-PROV_DEV_PY-col3 { width: 7% } .srl-table-PROV_DEV_PY-col4 { width: 1% } .srl-table-PROV_DEV_PY-col5 { width: 8% } .srl-table-PROV_DEV_PY-col6 { width: 1% } .srl-table-PROV_DEV_PY-col7 { width: 7% } .srl-table-PROV_DEV_PY-col8 { width: 1% } .srl-table-PROV_DEV_PY-col9 { width: 8% } .srl-table-PROV_DEV_PY-col10 { width: 1% } .srl-table-PROV_DEV_PY-col11 { width: 8% } .srl-table-PROV_DEV_PY-col12 { width: 1% } .srl-table-PROV_DEV_PY-col13 { width: 10% } .srl-table-PROV_DEV_PY-col14 { width: 1% } .srl-table-PROV_DEV_PY-col15 { width: 8% } .srl-table-PROV_DEV_PY-col16 { width: 1% } .srl-table-PROV_DEV_PY-col17 { width: 9% } .srl-table-PROV_DEV_PY-col18 { width: 1% } .srl-table-PROV_DEV_PY-col19 { width: 7% } }
+table {.srl-table-Oth_Liab-col1 { width: 64% } .srl-table-Oth_Liab-col2 { width: 1% } .srl-table-Oth_Liab-col3 { width: 17% } .srl-table-Oth_Liab-col4 { width: 1% } .srl-table-Oth_Liab-col5 { width: 17% } }
+table {.srl-table-CONT_LIAB-col1 { width: 64% } .srl-table-CONT_LIAB-col2 { width: 1% } .srl-table-CONT_LIAB-col3 { width: 17% } .srl-table-CONT_LIAB-col4 { width: 1% } .srl-table-CONT_LIAB-col5 { width: 17% } }
+table {.srl-table-KK_OV-col1 { width: 64% } .srl-table-KK_OV-col2 { width: 1% } .srl-table-KK_OV-col3 { width: 17% } .srl-table-KK_OV-col4 { width: 1% } .srl-table-KK_OV-col5 { width: 17% } }
+table {.srl-table-KK_REG-col1 { width: 64% } .srl-table-KK_REG-col2 { width: 1% } .srl-table-KK_REG-col3 { width: 17% } .srl-table-KK_REG-col4 { width: 1% } .srl-table-KK_REG-col5 { width: 17% } }
+table {.srl-table-KK_all-col1 { width: 44% } .srl-table-KK_all-col2 { width: 1% } .srl-table-KK_all-col3 { width: 9% } .srl-table-KK_all-col4 { width: 9% } .srl-table-KK_all-col5 { width: 9% } .srl-table-KK_all-col6 { width: 1% } .srl-table-KK_all-col7 { width: 9% } .srl-table-KK_all-col8 { width: 9% } .srl-table-KK_all-col9 { width: 9% } }
+table {.srl-table-Disposal_4580-col1 { width: 81% } .srl-table-Disposal_4580-col2 { width: 1% } .srl-table-Disposal_4580-col3 { width: 18% } }
+table {.srl-table-Disposal_4670-col1 { width: 81% } .srl-table-Disposal_4670-col2 { width: 1% } .srl-table-Disposal_4670-col3 { width: 18% } }
+table {.srl-table-Fehler_IAS8_4670-col1 { width: 55% } .srl-table-Fehler_IAS8_4670-col2 { width: 1% } .srl-table-Fehler_IAS8_4670-col3 { width: 14% } .srl-table-Fehler_IAS8_4670-col4 { width: 1% } .srl-table-Fehler_IAS8_4670-col5 { width: 14% } .srl-table-Fehler_IAS8_4670-col6 { width: 1% } .srl-table-Fehler_IAS8_4670-col7 { width: 14% } }
+table {.srl-table-NCI_BS-col1 { width: 28% } .srl-table-NCI_BS-col2 { width: 1% } .srl-table-NCI_BS-col3 { width: 11% } .srl-table-NCI_BS-col4 { width: 1% } .srl-table-NCI_BS-col5 { width: 11% } .srl-table-NCI_BS-col6 { width: 1% } .srl-table-NCI_BS-col7 { width: 11% } .srl-table-NCI_BS-col8 { width: 1% } .srl-table-NCI_BS-col9 { width: 11% } .srl-table-NCI_BS-col10 { width: 1% } .srl-table-NCI_BS-col11 { width: 11% } .srl-table-NCI_BS-col12 { width: 1% } .srl-table-NCI_BS-col13 { width: 11% } }
+table {.srl-table-NCI_BS_PY-col1 { width: 28% } .srl-table-NCI_BS_PY-col2 { width: 1% } .srl-table-NCI_BS_PY-col3 { width: 11% } .srl-table-NCI_BS_PY-col4 { width: 1% } .srl-table-NCI_BS_PY-col5 { width: 11% } .srl-table-NCI_BS_PY-col6 { width: 1% } .srl-table-NCI_BS_PY-col7 { width: 11% } .srl-table-NCI_BS_PY-col8 { width: 1% } .srl-table-NCI_BS_PY-col9 { width: 11% } .srl-table-NCI_BS_PY-col10 { width: 1% } .srl-table-NCI_BS_PY-col11 { width: 11% } .srl-table-NCI_BS_PY-col12 { width: 1% } .srl-table-NCI_BS_PY-col13 { width: 11% } }
+table {.srl-table-NCI_PL-col1 { width: 30% } .srl-table-NCI_PL-col2 { width: 1% } .srl-table-NCI_PL-col3 { width: 9% } .srl-table-NCI_PL-col4 { width: 1% } .srl-table-NCI_PL-col5 { width: 9% } .srl-table-NCI_PL-col6 { width: 1% } .srl-table-NCI_PL-col7 { width: 9% } .srl-table-NCI_PL-col8 { width: 1% } .srl-table-NCI_PL-col9 { width: 9% } .srl-table-NCI_PL-col10 { width: 1% } .srl-table-NCI_PL-col11 { width: 9% } .srl-table-NCI_PL-col12 { width: 1% } .srl-table-NCI_PL-col13 { width: 9% } .srl-table-NCI_PL-col14 { width: 1% } .srl-table-NCI_PL-col15 { width: 9% } }
+table {.srl-table-NCI_PL_PY-col1 { width: 30% } .srl-table-NCI_PL_PY-col2 { width: 1% } .srl-table-NCI_PL_PY-col3 { width: 9% } .srl-table-NCI_PL_PY-col4 { width: 1% } .srl-table-NCI_PL_PY-col5 { width: 9% } .srl-table-NCI_PL_PY-col6 { width: 1% } .srl-table-NCI_PL_PY-col7 { width: 9% } .srl-table-NCI_PL_PY-col8 { width: 1% } .srl-table-NCI_PL_PY-col9 { width: 9% } .srl-table-NCI_PL_PY-col10 { width: 1% } .srl-table-NCI_PL_PY-col11 { width: 9% } .srl-table-NCI_PL_PY-col12 { width: 1% } .srl-table-NCI_PL_PY-col13 { width: 9% } .srl-table-NCI_PL_PY-col14 { width: 1% } .srl-table-NCI_PL_PY-col15 { width: 9% } }
+table {.srl-table-NCI_CF-col1 { width: 26% } .srl-table-NCI_CF-col2 { width: 1% } .srl-table-NCI_CF-col3 { width: 13% } .srl-table-NCI_CF-col4 { width: 1% } .srl-table-NCI_CF-col5 { width: 13% } .srl-table-NCI_CF-col6 { width: 1% } .srl-table-NCI_CF-col7 { width: 15% } .srl-table-NCI_CF-col8 { width: 1% } .srl-table-NCI_CF-col9 { width: 13% } .srl-table-NCI_CF-col10 { width: 1% } .srl-table-NCI_CF-col11 { width: 15% } }
+table {.srl-table-NCI_CF_PY-col1 { width: 26% } .srl-table-NCI_CF_PY-col2 { width: 1% } .srl-table-NCI_CF_PY-col3 { width: 13% } .srl-table-NCI_CF_PY-col4 { width: 1% } .srl-table-NCI_CF_PY-col5 { width: 13% } .srl-table-NCI_CF_PY-col6 { width: 1% } .srl-table-NCI_CF_PY-col7 { width: 15% } .srl-table-NCI_CF_PY-col8 { width: 1% } .srl-table-NCI_CF_PY-col9 { width: 13% } .srl-table-NCI_CF_PY-col10 { width: 1% } .srl-table-NCI_CF_PY-col11 { width: 15% } }
+table {.srl-table-REL_P_PL-col1 { width: 64% } .srl-table-REL_P_PL-col2 { width: 1% } .srl-table-REL_P_PL-col3 { width: 17% } .srl-table-REL_P_PL-col4 { width: 1% } .srl-table-REL_P_PL-col5 { width: 17% } }
+table {.srl-table-REL_P_BS-col1 { width: 64% } .srl-table-REL_P_BS-col2 { width: 1% } .srl-table-REL_P_BS-col3 { width: 17% } .srl-table-REL_P_BS-col4 { width: 1% } .srl-table-REL_P_BS-col5 { width: 17% } }
+table {.srl-table-Sens_FX-col1 { width: 30% } .srl-table-Sens_FX-col2 { width: 1% } .srl-table-Sens_FX-col3 { width: 17% } .srl-table-Sens_FX-col4 { width: 17% } .srl-table-Sens_FX-col5 { width: 1% } .srl-table-Sens_FX-col6 { width: 17% } .srl-table-Sens_FX-col7 { width: 17% } }
+table {.srl-table-CreditRisk-col1 { width: 64% } .srl-table-CreditRisk-col2 { width: 1% } .srl-table-CreditRisk-col3 { width: 17% } .srl-table-CreditRisk-col4 { width: 1% } .srl-table-CreditRisk-col5 { width: 17% } }
+table {.srl-table-NetDebt-col1 { width: 64% } .srl-table-NetDebt-col2 { width: 1% } .srl-table-NetDebt-col3 { width: 17% } .srl-table-NetDebt-col4 { width: 1% } .srl-table-NetDebt-col5 { width: 17% } }
+table {.srl-table-Rates-col1 { width: 30% } .srl-table-Rates-col2 { width: 1% } .srl-table-Rates-col3 { width: 17% } .srl-table-Rates-col4 { width: 17% } .srl-table-Rates-col5 { width: 1% } .srl-table-Rates-col6 { width: 17% } .srl-table-Rates-col7 { width: 17% } }
+table {.srl-table-NEW_IFRS-col1 { width: 9% } .srl-table-NEW_IFRS-col2 { width: 31% } .srl-table-NEW_IFRS-col3 { width: 1% } .srl-table-NEW_IFRS-col4 { width: 19% } .srl-table-NEW_IFRS-col5 { width: 1% } .srl-table-NEW_IFRS-col6 { width: 19% } .srl-table-NEW_IFRS-col7 { width: 1% } .srl-table-NEW_IFRS-col8 { width: 19% } }
+table {.srl-table-NEW_IFRS_FL_01-col1 { width: 9% } .srl-table-NEW_IFRS_FL_01-col2 { width: 31% } .srl-table-NEW_IFRS_FL_01-col3 { width: 1% } .srl-table-NEW_IFRS_FL_01-col4 { width: 19% } .srl-table-NEW_IFRS_FL_01-col5 { width: 1% } .srl-table-NEW_IFRS_FL_01-col6 { width: 19% } .srl-table-NEW_IFRS_FL_01-col7 { width: 1% } .srl-table-NEW_IFRS_FL_01-col8 { width: 19% } }
+table {.srl-table-NEW_IFRS_FL_02-col1 { width: 9% } .srl-table-NEW_IFRS_FL_02-col2 { width: 31% } .srl-table-NEW_IFRS_FL_02-col3 { width: 1% } .srl-table-NEW_IFRS_FL_02-col4 { width: 19% } .srl-table-NEW_IFRS_FL_02-col5 { width: 1% } .srl-table-NEW_IFRS_FL_02-col6 { width: 19% } .srl-table-NEW_IFRS_FL_02-col7 { width: 1% } .srl-table-NEW_IFRS_FL_02-col8 { width: 19% } }
+table {.srl-table-EPS-col1 { width: 64% } .srl-table-EPS-col2 { width: 1% } .srl-table-EPS-col3 { width: 17% } .srl-table-EPS-col4 { width: 1% } .srl-table-EPS-col5 { width: 17% } }
+table {.srl-table-AUDIT_EXP-col1 { width: 64% } .srl-table-AUDIT_EXP-col2 { width: 1% } .srl-table-AUDIT_EXP-col3 { width: 17% } .srl-table-AUDIT_EXP-col4 { width: 1% } .srl-table-AUDIT_EXP-col5 { width: 17% } }
+table {.srl-table-EA_BS_Akt-col1 { width: 46% } .srl-table-EA_BS_Akt-col2 { width: 1% } .srl-table-EA_BS_Akt-col3 { width: 13% } .srl-table-EA_BS_Akt-col4 { width: 13% } .srl-table-EA_BS_Akt-col5 { width: 1% } .srl-table-EA_BS_Akt-col6 { width: 13% } .srl-table-EA_BS_Akt-col7 { width: 13% } }
+table {.srl-table-EA_BS_Pass-col1 { width: 46% } .srl-table-EA_BS_Pass-col2 { width: 1% } .srl-table-EA_BS_Pass-col3 { width: 13% } .srl-table-EA_BS_Pass-col4 { width: 13% } .srl-table-EA_BS_Pass-col5 { width: 1% } .srl-table-EA_BS_Pass-col6 { width: 13% } .srl-table-EA_BS_Pass-col7 { width: 13% } }
+table {.srl-table-EA_PL-col1 { width: 46% } .srl-table-EA_PL-col2 { width: 1% } .srl-table-EA_PL-col3 { width: 13% } .srl-table-EA_PL-col4 { width: 13% } .srl-table-EA_PL-col5 { width: 1% } .srl-table-EA_PL-col6 { width: 13% } .srl-table-EA_PL-col7 { width: 13% } }
+table {.srl-table-EA_ND_SAV-col1 { width: 81% } .srl-table-EA_ND_SAV-col2 { width: 1% } .srl-table-EA_ND_SAV-col3 { width: 18% } }
+table {.srl-table-EA_AV1-col1 { width: 35% } .srl-table-EA_AV1-col2 { width: 1% } .srl-table-EA_AV1-col3 { width: 14% } .srl-table-EA_AV1-col4 { width: 1% } .srl-table-EA_AV1-col5 { width: 12% } .srl-table-EA_AV1-col6 { width: 1% } .srl-table-EA_AV1-col7 { width: 12% } .srl-table-EA_AV1-col8 { width: 1% } .srl-table-EA_AV1-col9 { width: 10% } .srl-table-EA_AV1-col10 { width: 2% } .srl-table-EA_AV1-col11 { width: 11% } }
+table {.srl-table-EA_AV2-col1 { width: 28% } .srl-table-EA_AV2-col2 { width: 1% } .srl-table-EA_AV2-col3 { width: 10% } .srl-table-EA_AV2-col4 { width: 1% } .srl-table-EA_AV2-col5 { width: 8% } .srl-table-EA_AV2-col6 { width: 1% } .srl-table-EA_AV2-col7 { width: 8% } .srl-table-EA_AV2-col8 { width: 1% } .srl-table-EA_AV2-col9 { width: 9% } .srl-table-EA_AV2-col10 { width: 1% } .srl-table-EA_AV2-col11 { width: 10% } .srl-table-EA_AV2-col12 { width: 1% } .srl-table-EA_AV2-col13 { width: 10% } .srl-table-EA_AV2-col14 { width: 1% } .srl-table-EA_AV2-col15 { width: 10% } }
+table {.srl-table-EA_Miet-col1 { width: 64% } .srl-table-EA_Miet-col2 { width: 1% } .srl-table-EA_Miet-col3 { width: 17% } .srl-table-EA_Miet-col4 { width: 1% } .srl-table-EA_Miet-col5 { width: 17% } }
+table {.srl-table-EA_SUB-col1 { width: 59% } .srl-table-EA_SUB-col2 { width: 1% } .srl-table-EA_SUB-col3 { width: 10% } .srl-table-EA_SUB-col4 { width: 13% } .srl-table-EA_SUB-col5 { width: 13% } .srl-table-EA_SUB-col6 { width: 4% } }
+table {.srl-table-EA_lat_Steuer-col1 { width: 35% } .srl-table-EA_lat_Steuer-col2 { width: 1% } .srl-table-EA_lat_Steuer-col3 { width: 12% } .srl-table-EA_lat_Steuer-col4 { width: 1% } .srl-table-EA_lat_Steuer-col5 { width: 12% } .srl-table-EA_lat_Steuer-col6 { width: 1% } .srl-table-EA_lat_Steuer-col7 { width: 12% } .srl-table-EA_lat_Steuer-col8 { width: 1% } .srl-table-EA_lat_Steuer-col9 { width: 12% } .srl-table-EA_lat_Steuer-col10 { width: 1% } .srl-table-EA_lat_Steuer-col11 { width: 12% } }
+table {.srl-table-EA_RST-col1 { width: 64% } .srl-table-EA_RST-col2 { width: 1% } .srl-table-EA_RST-col3 { width: 17% } .srl-table-EA_RST-col4 { width: 1% } .srl-table-EA_RST-col5 { width: 17% } }
+table {.srl-table-EA_SSD_Info-col1 { width: 46% } .srl-table-EA_SSD_Info-col2 { width: 1% } .srl-table-EA_SSD_Info-col3 { width: 17% } .srl-table-EA_SSD_Info-col4 { width: 1% } .srl-table-EA_SSD_Info-col5 { width: 17% } .srl-table-EA_SSD_Info-col6 { width: 1% } .srl-table-EA_SSD_Info-col7 { width: 17% } }
+table {.srl-table-EA_EV-col1 { width: 63% } .srl-table-EA_EV-col2 { width: 1% } .srl-table-EA_EV-col3 { width: 18% } .srl-table-EA_EV-col4 { width: 1% } .srl-table-EA_EV-col5 { width: 17% } }
+table {.srl-table-EA_Derivate-col1 { width: 31% } .srl-table-EA_Derivate-col2 { width: 1% } .srl-table-EA_Derivate-col3 { width: 16% } .srl-table-EA_Derivate-col4 { width: 8% } .srl-table-EA_Derivate-col5 { width: 14% } .srl-table-EA_Derivate-col6 { width: 1% } .srl-table-EA_Derivate-col7 { width: 12% } .srl-table-EA_Derivate-col8 { width: 17% } }
+table {.srl-table-EA_Derivate_PY-col1 { width: 31% } .srl-table-EA_Derivate_PY-col2 { width: 1% } .srl-table-EA_Derivate_PY-col3 { width: 16% } .srl-table-EA_Derivate_PY-col4 { width: 8% } .srl-table-EA_Derivate_PY-col5 { width: 14% } .srl-table-EA_Derivate_PY-col6 { width: 1% } .srl-table-EA_Derivate_PY-col7 { width: 12% } .srl-table-EA_Derivate_PY-col8 { width: 17% } }
+table {.srl-table-EA_Ums-col1 { width: 64% } .srl-table-EA_Ums-col2 { width: 1% } .srl-table-EA_Ums-col3 { width: 17% } .srl-table-EA_Ums-col4 { width: 1% } .srl-table-EA_Ums-col5 { width: 17% } }
+table {.srl-table-048328f1-3b47-46c1-9abf-3001ca20c8c4-col1 { width: 38% } .srl-table-048328f1-3b47-46c1-9abf-3001ca20c8c4-col2 { width: 62% } }
+table {.srl-table-51a2bab7-7457-451b-8955-c8186f2c7e6c-col1 { width: 36% } .srl-table-51a2bab7-7457-451b-8955-c8186f2c7e6c-col2 { width: 64% } }
+:root {
+	
+	
+  --h1-color: #000000;
+  --h2-color: #000000;
+  --h3-color: #000000;
+  --h4-color: #000000;
+  --h5-color: #000000;
+  --h6-color: #000000;
+		
+  --h1-font-size: 4rem;
+  --h2-font-size: 3.5rem;
+  --h3-font-size: 1.9rem;
+  --h4-font-size: 1.7rem;
+  --h5-font-size: 1.7rem;
+  --h6-font-size: 1.4rem;
+	
+  --h1-line-height: 5rem;
+  --h2-line-height: 4rem;
+  --h3-line-height: 3.5rem;
+  --h4-line-height: 2.5rem;
+  --h5-line-height: 2.2rem;
+  --h6-line-height: 1.8rem;
+	
+	
+  --color-text-main: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-title-h1: #000000;
+  --color-title-h2: #000000;
+  --color-title-h3: #000000;
+  --color-title-h4: #000000;
+  --color-title-h5: #000000;
+  --color-title-h6: #000000;
+  --color-link: #00a3da;
+  --color-highlights: #cccccc;
+  --color-softbackground: #dddddd;
+  --color-marker: lime;
+  --color-border: #000000;
+  --color-text-different: #bbbbbb; /*  text in notes */
+
+  --fontsize-text-main: 1.4rem;
+  --fontsize-text-small: 1.2rem;
+  --fontsize-title-h1: 4rem;
+  --fontsize-title-h2: 3.5rem;
+  --fontsize-title-h3: 1.9rem;
+  --fontsize-title-h4: 1.7rem;
+  --fontsize-title-h5: 1.7rem;
+  --fontsize-title-h6: 1.4rem;
+  --fontsize-table: 1.2rem;
+  --fontsize-table-head: 1.2rem;
+  --fontsize-footnote: 1.2rem;
+  --fontsize-caption: 1.2rem;
+
+  --lineheight-text-main: 2.2rem;
+  --lineheight-text-small: 1.6rem;
+  --lineheight-title-h1: 5rem;
+  --lineheight-title-h2: 4rem;
+  --lineheight-title-h3: 3.5rem;
+  --lineheight-title-h4: 2.5rem;
+  --lineheight-title-h5: 2.2rem;
+  --lineheight-title-h6: 1.8rem;
+  --lineheight-table: 1.8rem;
+  --lineheight-table-head: 1.4rem;
+  --lineheight-caption: 1.3rem;
+
+  --fontfamily-text: "Helvetica", Arial, Verdana, sans-serif;
+  --fontfamily-text-italic: "Helvetica", Arial, Verdana, sans-serif;
+  --fontfamily-titles: "Helvetica", Arial, Verdana, sans-serif;
+  --fontfamily-titles-h5h6: "Helvetica", Arial, Verdana, sans-serif;
+  
+  --fontfamily-table: "Helvetica", Arial, Verdana, sans-serif;
+  --fontfamily-table-head: "Helvetica", Arial, Verdana, sans-serif;
+
+  --fontweight-regular: 400;
+  --fontweight-light: 200;
+  --fontweight-bold: 600;
+  --fontweight-bolder: 700;
+
+  --space: 25px;
+  --space-small: 15px;
+  --space-large: 45px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  font-weight: var(--fontweight-light);
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+/*
+  Gets rid of the annoying outline for mouse users but preserves it for keyboard users, and is ignored by browsers that don'92t support :focus-visible.
+  @Link: https://twitter.com/LeaVerou/status/1045768279753666562
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*
+  Gets rid of the deleting "x" on chrome
+  @Link: https://stackoverflow.com/questions/11538192/stop-chrome-from-auto-styling-input-type-search
+*/
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.sr {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+*:focus {
+  outline: 0;
+}
+
+* {
+  -webkit-font-variant-ligatures: none !important;
+          font-variant-ligatures: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html.notes-active, html.nav-open,
+body.notes-active,
+body.nav-open {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+html.nav-open-desktop:after,
+body.nav-open-desktop:after {
+  content: "";
+  background: var(--color-white);
+  opacity: 0.4;
+  position: absolute;
+  top: 11.5rem;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+body {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-regular);
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+  color: var(--color-text-main);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  width: 100%;
+  margin: 0;
+}
+
+body.nav-open:after {
+  content: "";
+  background: var(--color-white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.superscript,
+sup,
+sub,
+.subscript,
+td span[class*='superscript'],
+td span[class*='subscript'],
+span[class*='superscript'] {
+  font-size: 60%;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  padding: 0 1px;
+  top: -0.6em;
+}
+
+span[class*='fussnoten'] span[class*='superscript'],
+span[class*='_footnote'] span[class*='superscript'] {
+  font-size: 100%;
+  font-size: 60%;
+  padding: 0;
+}
+
+sub, .subscript,
+td span[class*='subscript'] {
+  top: 0.4em;
+}
+
+b, strong,
+.ns-bold {
+  font-weight: var(--fontweight-bold);
+}
+
+span.ns-highlight {
+  color: var(--color-highlights);
+}
+
+h1,
+h3,
+h4 {
+  font-family: var(--fontfamily-titles);
+  font-weight: var(--fontweight-bold);
+}
+
+h2 {
+  font-family: var(--fontfamily-titles);
+  font-weight: var(--fontweight-light);
+}
+
+h5 {
+  font-family: var(--fontfamily-titles-h5h6);
+  font-weight: var(--fontweight-bold);
+}
+
+h6 {
+  font-family: var(--fontfamily-titles-h5h6);
+  font-weight: var(--fontweight-bold);
+}
+
+h1 {
+  color: var(--color-title-h1);
+  font-size: var(--fontsize-title-h1);
+  line-height: var(--lineheight-title-h1);
+}
+
+h2 {
+  color: var(--color-title-h2);
+  font-size: var(--fontsize-title-h2);
+  line-height: var(--lineheight-title-h2);
+}
+
+h3 {
+  color: var(--color-title-h3);
+  font-size: var(--fontsize-title-h3);
+  line-height: var(--lineheight-title-h3);
+}
+
+h4 {
+  color: var(--color-title-h4);
+  font-size: var(--fontsize-title-h4);
+  line-height: var(--lineheight-title-h4);
+}
+
+h5 {
+  color: var(--color-title-h5);
+  font-size: var(--fontsize-title-h5);
+  line-height: var(--lineheight-title-h5);
+}
+
+h6 {
+  color: var(--color-title-h6);
+  font-size: var(--fontsize-title-h6);
+  line-height: var(--lineheight-title-h6);
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+
+img.lazy {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+img.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
+strong {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-bold);
+}
+
+p {
+  font-family: var(--fontfamily-text);
+  font-weight: var(--fontweight-light);
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+}
+
+img:not([src]) {
+  max-height: 0;
+}
+
+.hyphenate {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.donthyphenate {
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+.responsive-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  display: block;
+}
+
+.responsive-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-embed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ld-control,
+.ld-control * {
+  position: static;
+}
+
+.livingdocs {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body > .content {
+  max-width: 1064px;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 72px;
+}
+
+.home .content {
+  padding-top: 0;
+}
+
+.content > .content {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.livingdocs > .ns-paragraph,
+.livingdocs > .ns-img,
+.livingdocs > .ns-title-h1,
+.livingdocs > .ns-title-h2,
+.livingdocs > .ns-title-h3,
+.livingdocs > .ns-title-h4,
+.livingdocs > .ns-title-h5,
+.livingdocs > .ns-title-h6 {
+  width: 100%;
+}
+
+.ns-paragraph + *,
+.ns-img + *,
+.ns-title-h1 + *,
+.ns-title-h2 + *,
+.ns-title-h3 + *,
+.ns-title-h4 + *,
+.ns-title-h5 + *,
+.ns-title-h6 + *,
+.ns-table-wrap + *,
+.ns-article + .ns-article > *,
+.ns-img + * {
+  margin-top: var(--space);
+}
+
+.ns-paragraph + .ns-title-h2,
+.ns-paragraph + .ns-title-h1,
+.ns-paragraph + h1,
+.ns-paragraph + h2,
+.ns-article + .ns-article > h1 {
+  margin-top: var(--space-large);
+}
+
+h3 + .ns-paragraph,
+.ns-title-h3 + .ns-paragraph,
+h4 + .ns-paragraph,
+.ns-title-h4 + .ns-paragraph,
+h5 + .ns-paragraph,
+.ns-title-h5 + .ns-paragraph,
+h6 + .ns-paragraph,
+.ns-title-h6 + .ns-paragraph {
+  margin-top: 0;
+}
+
+.ns-paragraph + .ns-paragraph,
+h1 + h2,
+.ns-title-h1 + .ns-title-h2,
+h2 + h3,
+.ns-title-h2 + .ns-title-h3,
+h3 + h4,
+.ns-title-h3 + .ns-title-h4,
+h6 + h5,
+.ns-title-h6 + .ns-title-h5,
+h4 + h5,
+.ns-title-h4 + .ns-title-h5,
+.ns-title-h1 + .ns-title-h1,
+.ns-title-h2 + .ns-title-h2,
+.ns-title-h3 + .ns-title-h3,
+.ns-title-h2 + .ns-paragraph {
+  margin-top: var(--space-small);
+}
+
+.ns-article {
+  width: 100%;
+}
+
+.ns-img img {
+  width: 100%;
+}
+
+.ns-img img + * {
+  margin-top: var(--space-small);
+}
+
+.ns-img__img--mobile {
+  display: none;
+}
+
+.ns-img__caption {
+  font-size: var(--fontsize-caption);
+  line-height: var(--lineheight-caption);
+}
+
+.ns-img__caption + * {
+  margin-top: var(--space-small);
+}
+
+.ns-img--mobile .ns-img__img--desktop {
+  display: none;
+}
+
+[class*="ns-title-"] + * {
+  margin-top: 0px;
+}
+
+.ns-title-h1 + * {
+  margin-top: var(--space);
+}
+
+.ns-title-h2 + * {
+  margin-top: var(--space-small);
+}
+
+a {
+  color: var(--color-link);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nosplit {
+  overflow-x: auto;
+}
+
+.nosplit table {
+  min-width: 992px;
+}
+
+table {
+  width: 100%;
+  font-family: var(--fontfamily-table);
+}
+
+.ns-table-wrap,
+ul.ns-list-group {
+  width: 100%;
+}
+
+.ns-table-wrap {
+  overflow-x: auto;
+}
+
+table .subscript,
+table .superscript,
+table td span[class*='superscript'],
+table td span[class*='subscript'] {
+  left: 0;
+}
+
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+
+td[class*='fill-background']  {
+  background-color: var(--color-softbackground);
+} 
+
+td[class*='fill-none']  {
+  background-color: transparent;
+} 
+
+td.ns-vertical-bottom {
+  vertical-align: bottom;
+}
+
+td.ns-vertical-top {
+  vertical-align: top;
+}
+
+td.ns-vertical-center,
+td.ns-vertical-middle {
+  vertical-align: middle;
+}
+
+th, td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 4px 4px;
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-light);
+  font-size: var(--fontsize-table);
+  line-height: var(--lineheight-table);
+  position: relative;
+  width: calc(100% - 10px);
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+th p span, td p span {
+  white-space: normal;
+  display: inline;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+td[class*='line'],
+.line,
+td[class*='line_bold'],
+.line_bold,
+.line_ind
+ {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.line_bold p,
+td[class*='line_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.line_ind p,
+td[class*='line_ind'] {
+  padding-left: 1.5rem;
+}
+
+.bline,
+td[class*='bline'],
+.bline_bold,
+td[class*='bline_bold'],
+td[class*='head'] {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.bline_bold p,
+td[class*='bline_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.head p,
+td[class*='head'] {
+  position: relative;
+  font-family: var(--fontfamily-table-head);
+  font-weight: var(--fontweight-bold);
+  font-size: var(--fontsize-table-head);
+  line-height: var(--lineheight-table-head);
+}
+
+.noline,
+td[class*='noline'] {
+  border-bottom: 0;
+}
+
+.noline_bold,
+td[class*='noline_bold'] {
+  border-bottom: 0;
+}
+
+.noline_bold p,
+td[class*='noline_bold'] {
+  font-family: var(--fontfamily-table);
+  font-weight: var(--fontweight-bold);
+}
+
+.noline_ind,
+td[class*='noline_ind'] {
+  border-bottom: 0;
+}
+
+.noline_ind p,
+td[class*='noline_ind'] {
+  padding-left: 1.5rem;
+}
+
+td span[class*='bold'] {
+  font-weight: var(--fontweight-bold);
+}
+
+.title {
+  border-bottom: 0;
+}
+
+.title p {
+  font-family: var(--fontfamily-table-head);
+  font-weight: var(--fontweight-bold);
+  font-size: var(--fontsize-title-h3);
+  line-height: var(--lineheight-title-h3);
+}
+
+.ns-horizontal-right {
+  text-align: right;
+}
+
+.ns-horizontal-left {
+  text-align: left;
+}
+
+.ns-horizontal-center {
+  text-align: center;
+}
+
+.footnote,
+.ns-paragraphstyle_footnotestyles_footnote,
+span[class^='ns-paragraphstyle_footnotestyles'],
+span[class*='fussnote'],
+span[class*='footnotestyles_footnote'],
+.ns-table-footnote-item {
+  border-bottom: 0;
+  padding: 0;
+  font-size: var(--fontsize-footnote);
+  line-height: var(--lineheight-caption);
+}
+
+.ns-table-footnote-wrap {
+  margin-top: var(--space);
+}
+
+.ns-table-footnote-item + .ns-table-footnote-item {
+  margin-top: 5px;
+  display: flex;
+}
+
+.ns-table-footnote-item .ns-characterstyle_tablestyles_superscript {
+  width: 20px;
+  display: inline-block;
+}
+
+.ns-table-footnote-item span + span {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
+
+.blue {
+  color: var(--color-highlights);
+}
+
+.blue p {
+  color: var(--color-highlights);
+}
+
+.italic {
+  font-family: var(--fontfamily-text-italic);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.italic p {
+  font-family: var(--fontfamily-text-italic);
+  font-style: italic;
+  font-weight: 400;
+}
+
+span[class*='_bold'],
+.bold {
+  font-weight: 700;
+}
+
+.note {
+  font-size: var(--fontsize-text-small);
+  line-height: var(--lineheight-text-small);
+  color: var(--color-text-different);
+  font-weight: var(--fontweight-bold);
+  cursor: pointer;
+}
+
+.ns-paragraph {
+  font-size: var(--fontsize-text-main);
+  line-height: var(--lineheight-text-main);
+}
+
+.ns-paragraph--small {
+  font-size: var(--fontsize-text-small);
+  line-height: var(--lineheight-text-small);
+}
+
+.ns-temp-highlight {
+  background: var(--color-marker);
+}
+
+ul.ns-list-group {
+  display: block;
+  padding-left: var(--space);
+}
+
+@media print {
+  body > .content {
+    display: block;
+  }
+}}
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table id="equity-changes">
+                <colgroup>
+                  <col class="srl-table-EQ-col1"> <col class="srl-table-EQ-col2"> <col class="srl-table-EQ-col3"> <col class="srl-table-EQ-col4"> <col class="srl-table-EQ-col5"> <col class="srl-table-EQ-col6"> <col class="srl-table-EQ-col7"> <col class="srl-table-EQ-col8"> <col class="srl-table-EQ-col9"> <col class="srl-table-EQ-col10"> <col class="srl-table-EQ-col11"> <col class="srl-table-EQ-col12"> <col class="srl-table-EQ-col13"> <col class="srl-table-EQ-col14"> <col class="srl-table-EQ-col15"> </colgroup>
+                <tr>
+                  <td class="srl-head srl-horizontal-left">
+                    <p>
+                      <span><span class="srl-light ns-light">in EUR</span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-horizontal-right">
+                    <p>
+                      <span>Grund-
+kapital</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-horizontal-right">
+                    <p>
+                      <span>Kapital-
+rücklage</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-horizontal-right">
+                    <p>
+                      <span>Sonstige Rücklagen</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-horizontal-right">
+                    <p>
+                      <span>Konzern-
+bilanz-
+gewinn/
+-verlust</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-grey srl-horizontal-right">
+                    <p>
+                      <span>Den Anteils-
+eignern der 
+Gesellschaft
+zurechenbar</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-horizontal-right">
+                    <p>
+                      <span>Nicht be-
+herrschende
+Anteile</span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="srl-head srl-grey srl-horizontal-right">
+                    <p>
+                      <span>Summe
+Eigen-
+kapital</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">
+                    <p>
+                      <span>Stand 31. März 2024</span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-6" id="mms-14020-145">14.300.000</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-7" id="mms-14020-146">127.686.238</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-8" sign="-" id="mms-14020-147">45.926.130</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-9" sign="-" id="mms-14020-148">5.939.433</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-10" id="mms-14020-149">90.120.675</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-11" sign="-" id="mms-14020-150">6.697.811</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2024-03-31-c-12" id="mms-14020-151">83.422.864</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Periodenergebnis (angepasst*)</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-152">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-153">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" id="mms-14020-154">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" sign="-" id="mms-14020-155">12.105.642</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" sign="-" id="mms-14020-156">12.105.642</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" id="mms-14020-157">3.755.194</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" sign="-" id="mms-14020-158">8.350.448</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Sonstiges Ergebnis der Periode (angepasst*):</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-159">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-160">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" id="mms-14020-161">5.848.250</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" id="mms-14020-162">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" id="mms-14020-163">5.848.250</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" sign="-" id="mms-14020-164">1.921.490</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" id="mms-14020-165">3.926.759</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Währungsumrechnungsdifferenzen (angepasst*)</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-166">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-167">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" id="mms-14020-168">6.771.049</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" id="mms-14020-169">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" id="mms-14020-170">6.771.049</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" sign="-" id="mms-14020-171">1.921.490</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" id="mms-14020-172">4.849.559</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Umbewertungen von Verpflichtungen aus Leistungen an Arbeitnehmer nach Beendigung des Dienstverhältnisses</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-173">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-174">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" sign="-" id="mms-14020-175">922.800</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" id="mms-14020-176">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" sign="-" id="mms-14020-177">922.800</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" id="mms-14020-178">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" sign="-" id="mms-14020-179">922.800</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Transaktionen mit den Eigentümern:</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-180">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-181">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" id="mms-14020-182">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" id="mms-14020-183">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" id="mms-14020-184">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" id="mms-14020-185">6.835.040</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" id="mms-14020-186">6.835.040</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Effekte aus der Veränderung des Konsolidierungskreises</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-13" id="mms-14020-187">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-14" id="mms-14020-188">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-15" id="mms-14020-189">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-16" id="mms-14020-190">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-17" id="mms-14020-191">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-18" id="mms-14020-192">6.835.040</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2024-04-01-2025-03-31-c-19" id="mms-14020-193">6.835.040</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">
+                    <p>
+                      <span>Stand 31. März 2025 (angepasst*)</span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-20" id="mms-14020-194">14.300.000</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-21" id="mms-14020-195">127.686.238</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-22" sign="-" id="mms-14020-196">40.077.879</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-23" sign="-" id="mms-14020-197">18.045.077</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-24" id="mms-14020-198">83.863.282</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-25" id="mms-14020-199">1.970.933</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2025-03-31-c-26" id="mms-14020-200">85.834.215</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Periodenergebnis</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-201">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-202">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" id="mms-14020-203">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" sign="-" id="mms-14020-204">18.707.039</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" sign="-" id="mms-14020-205">18.707.039</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" id="mms-14020-206">1.716.129</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:ProfitLoss" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" sign="-" id="mms-14020-207">16.990.910</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Sonstiges Ergebnis der Periode:</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-208">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-209">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" sign="-" id="mms-14020-210">779.662</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" id="mms-14020-211">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" sign="-" id="mms-14020-212">779.662</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" sign="-" id="mms-14020-213">232.048</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" sign="-" id="mms-14020-214">1.011.710</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Währungsumrechnungsdifferenzen</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-215">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-216">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" sign="-" id="mms-14020-217">892.281</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" id="mms-14020-218">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" sign="-" id="mms-14020-219">892.281</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" sign="-" id="mms-14020-220">232.048</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" sign="-" id="mms-14020-221">1.124.329</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Umbewertungen von Verpflichtungen aus Leistungen an Arbeitnehmer nach Beendigung des Dienstverhältnisses</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-222">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-223">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" id="mms-14020-224">112.619</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" id="mms-14020-225">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" id="mms-14020-226">112.619</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" id="mms-14020-227">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" id="mms-14020-228">112.619</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_bold srl-horizontal-left">
+                    <p>
+                      <span>Transaktionen mit den Eigentümern:</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-229">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-230">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" id="mms-14020-231">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" id="mms-14020-232">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" id="mms-14020-233">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" id="mms-14020-234">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" id="mms-14020-235">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-line_ind srl-horizontal-left">
+                    <p>
+                      <span>Effekte aus der Veränderung des Konsolidierungskreises</span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-27" id="mms-14020-236">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-28" id="mms-14020-237">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-29" id="mms-14020-238">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-30" id="mms-14020-239">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-31" id="mms-14020-240">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-32" id="mms-14020-241">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-line_ind srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-line_ind srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransfersAndOtherChangesEquity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="D2025-04-01-2026-03-31-c-33" id="mms-14020-242">0</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="srl-bline_bold srl-horizontal-left">
+                    <p>
+                      <span>Stand 31. März 2026</span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-34" id="mms-14020-243">14.300.000</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-35" id="mms-14020-244">127.686.238</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-36" sign="-" id="mms-14020-245">40.857.542</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span>-<ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-37" sign="-" id="mms-14020-246">36.752.116</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-right">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-38" id="mms-14020-247">64.376.581</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-39" id="mms-14020-248">3.455.013</ix:nonfraction></span>
+                    </p>
+                  </td>
+                  <td class="srl-bline_bold srl-cut srl-horizontal-left">
+                    <p>
+                      <span></span>
+                    </p>
+                  </td>
+                  <td class="xbrl-cell-number srl-bline_bold srl-grey srl-horizontal-right">
+                    <p>
+                      <span><ix:nonfraction name="ifrs-full:Equity" format="ixt:num-comma-decimal" decimals="0" scale="0" unitRef="EUR" contextRef="E2026-03-31-c-40" id="mms-14020-249">67.831.593</ix:nonfraction></span>
+                    </p>
+                  </td>
+                </tr>
+              </table></body></html>

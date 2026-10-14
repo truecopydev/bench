@@ -1,0 +1,83 @@
+{
+	"id": "esef-96950022O6SP7FQONJ77-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/96950022O6SP7FQONJ77/2024-12-31/ESEF/FR/0/axway-2024-12-31-fr/reports/axway-2024-12-31-fr.xhtml",
+		"lei": "96950022O6SP7FQONJ77",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-04-15",
+		"sha256Page": "f427d17825b47289e04bd900221be94e14ec00a845e3b2c26642c8c5d134dad1",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"81",
+				"497356",
+				"302122"
+			],
+			[
+				"83",
+				"192302",
+				"5138"
+			],
+			[
+				"84",
+				"19414",
+				"9289"
+			],
+			[
+				"91",
+				"45856",
+				"17820"
+			],
+			[
+				"71",
+				"16792",
+				"13098"
+			],
+			[
+				"63",
+				"32231",
+				"20104"
+			],
+			[
+				"803951",
+				"367571"
+			],
+			[
+				"4535"
+			],
+			[
+				"72",
+				"293532",
+				"178009"
+			],
+			[
+				"73",
+				"97399",
+				"32331"
+			],
+			[
+				"113",
+				"41437",
+				"16682"
+			],
+			[
+				"436904",
+				"227022"
+			],
+			[
+				"1240855",
+				"594593"
+			]
+		]
+	}
+}

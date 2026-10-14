@@ -1,0 +1,103 @@
+{
+	"id": "esef-2138008SUI4D917FKN20-2026-06-30-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/2138008SUI4D917FKN20/2026-06-30/ESEF/DK/0/2138008SUI4D917FKN20-2026-06-30-en/reports/2138008SUI4D917FKN20-2026-06-30-en.xhtml",
+		"lei": "2138008SUI4D917FKN20",
+		"pays": "DK",
+		"exercice": "2026-06-30",
+		"depose": "2026-10-06",
+		"sha256Page": "7083064550f71d7c3be7a8ebda8118e600b73b5b03c0df025fa60e6b30827621",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"-1785",
+				"-2724",
+				"-5123"
+			],
+			[
+				"-5132",
+				"-5844",
+				"-12051"
+			],
+			[
+				"-6917",
+				"-8568",
+				"-17173"
+			],
+			[
+				"5636",
+				"-8115",
+				"-8115"
+			],
+			[
+				"33",
+				"9",
+				"1528"
+			],
+			[
+				"-1956",
+				"-1438",
+				"-2654"
+			],
+			[
+				"-3204",
+				"-18112",
+				"-26414"
+			],
+			[
+				"525",
+				"501",
+				"1033"
+			],
+			[
+				"-2679",
+				"-17610",
+				"-25382"
+			],
+			[
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"-2679",
+				"-17610",
+				"-25382"
+			],
+			[
+				"0",
+				"-2",
+				"-2"
+			],
+			[
+				"0",
+				"-2",
+				"-2"
+			]
+		]
+	}
+}

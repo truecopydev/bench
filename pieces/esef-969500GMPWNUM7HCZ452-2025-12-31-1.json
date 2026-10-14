@@ -1,0 +1,96 @@
+{
+	"id": "esef-969500GMPWNUM7HCZ452-2025-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500GMPWNUM7HCZ452/2025-12-31/ESEF/FR/0/gaumont-2025-12-31-1/reports/gaumont-2025-12-31-1-fr.html",
+		"lei": "969500GMPWNUM7HCZ452",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "223e1d8f4afea70a70f5a79132d03265c04d2848d0f40e51f01d404a30cd36cc",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"3119923",
+				"24959",
+				"5278",
+				"-257",
+				"147989",
+				"15671",
+				"193640",
+				"248",
+				"193888"
+			],
+			[
+				"-7674",
+				"-7674",
+				"-52",
+				"-7726"
+			],
+			[
+				"-1620",
+				"-1620",
+				"-1620"
+			],
+			[
+				"-7674",
+				"-1620",
+				"-9294",
+				"-52",
+				"-9346"
+			],
+			[
+				"3119923",
+				"24959",
+				"5278",
+				"-257",
+				"140315",
+				"14051",
+				"184346",
+				"196",
+				"184542"
+			],
+			[
+				"-19510",
+				"-19510",
+				"-98",
+				"-19608"
+			],
+			[
+				"241",
+				"241",
+				"241"
+			],
+			[
+				"-19510",
+				"241",
+				"-19269",
+				"-98",
+				"-19367"
+			],
+			[
+				"-30",
+				"-30"
+			],
+			[
+				"3119923",
+				"24959",
+				"5278",
+				"-257",
+				"120805",
+				"14292",
+				"165077",
+				"68",
+				"165145"
+			]
+		]
+	}
+}

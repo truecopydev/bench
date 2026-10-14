@@ -1,0 +1,71 @@
+{
+	"id": "esef-7478000050QHZTAWQI34-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/7478000050QHZTAWQI34/2024-12-31/ESEF/HR/1/CKML-2024-12-31-en/reports/7478000050QHZTAWQI34-2024-12-31-0-en.xhtml",
+		"lei": "7478000050QHZTAWQI34",
+		"pays": "HR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "f5e8779947f0de883df2f9339e21d879be6b30b8d09d12e73a3cdc2af19268bb",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"13657177",
+				"682859",
+				"2448652",
+				"10905887",
+				"27694575"
+			],
+			[
+				"856424",
+				"856424"
+			],
+			[
+				"856424",
+				"856424"
+			],
+			[
+				"13657177",
+				"682859",
+				"2448652",
+				"11762311",
+				"28550999"
+			],
+			[
+				"13657177",
+				"682859",
+				"2448652",
+				"11762311",
+				"28550999"
+			],
+			[
+				"8617075",
+				"8617075"
+			],
+			[
+				"8617075",
+				"8617075"
+			],
+			[
+				"-1029000",
+				"-1029000"
+			],
+			[
+				"13657177",
+				"682859",
+				"2448652",
+				"19350387",
+				"36139075"
+			]
+		]
+	}
+}

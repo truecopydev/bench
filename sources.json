@@ -1,0 +1,41 @@
+{
+	"ouvertes": {
+		"filings.xbrl.org": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"refusees": [
+		{
+			"source": "AEW",
+			"url": "https://www.aewpatrimoine.com/mentions-legales",
+			"lue": "2026-10-14",
+			"raison": "reproduction, diffusion or rediffusion forbidden without prior consent"
+		},
+		{
+			"source": "Amundi Immobilier",
+			"url": "https://www.amundi-immobilier.com/Informations-legales/Mentions-legales",
+			"lue": "2026-10-14",
+			"raison": "reproduction for strictly personal use only, never public"
+		},
+		{
+			"source": "Allianz Immovalor",
+			"url": "https://www.immovalor.fr/conformite/mentions-legales/",
+			"lue": "2026-10-14",
+			"raison": "all rights reserved on downloadable documents, links forbidden without consent"
+		},
+		{
+			"source": "Aestiam",
+			"url": "https://www.aestiam.com/mentions-legales/",
+			"lue": "2026-10-14",
+			"raison": "reproduction, use or adaptation forbidden without prior written consent"
+		},
+		{
+			"source": "Inter Gestion REIM",
+			"url": "https://www.inter-gestion.com/corpo/mentions-legales",
+			"lue": "2026-10-14",
+			"raison": "no written terms of reuse"
+		}
+	]
+}

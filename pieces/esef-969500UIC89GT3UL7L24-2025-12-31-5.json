@@ -1,0 +1,111 @@
+{
+	"id": "esef-969500UIC89GT3UL7L24-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500UIC89GT3UL7L24/2025-12-31/ESEF/FR/0/Safran-2025-12-31-1-FR/reports/Safran-2025-12-31-1-FR.xhtml",
+		"lei": "969500UIC89GT3UL7L24",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "57592df54483687c62e18f49a5f6cd528a23f8f45428d59a9a3cbcd7fa55eaa5",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"4937",
+				"5773"
+			],
+			[
+				"7947",
+				"7485"
+			],
+			[
+				"4629",
+				"5417"
+			],
+			[
+				"653",
+				"838"
+			],
+			[
+				"1073",
+				"1168"
+			],
+			[
+				"1894",
+				"1892"
+			],
+			[
+				"65",
+				"4",
+				"4"
+			],
+			[
+				"54",
+				"2349",
+				"881"
+			],
+			[
+				"3",
+				"1"
+			],
+			[
+				"23489",
+				"23459"
+			],
+			[
+				"243",
+				"249"
+			],
+			[
+				"65",
+				"952",
+				"1965"
+			],
+			[
+				"9491",
+				"10285"
+			],
+			[
+				"884",
+				"984"
+			],
+			[
+				"10572",
+				"14196"
+			],
+			[
+				"2503",
+				"2931"
+			],
+			[
+				"54",
+				"364",
+				"623"
+			],
+			[
+				"6514",
+				"6789"
+			],
+			[
+				"31523",
+				"38022"
+			],
+			[
+				"81",
+				"333"
+			],
+			[
+				"55012",
+				"61814"
+			]
+		]
+	}
+}

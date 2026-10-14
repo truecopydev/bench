@@ -1,0 +1,88 @@
+{
+	"id": "esef-724500JXEXUGEATP5L52-2025-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/724500JXEXUGEATP5L52/2025-12-31/ESEF/NL/1/newamsterdaminvestnv-2025-12-31-1-en/reports/newamsterdaminvestnv-2025-12-31-1-en.xhtml",
+		"lei": "724500JXEXUGEATP5L52",
+		"pays": "NL",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-27",
+		"sha256Page": "b8ffa477fd3eb677d6eb4f524dbf26426bb92b56209f24bc11f54002f353c980",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"247",
+				"49762",
+				"-610",
+				"-5970",
+				"44270",
+				"43430",
+				"840"
+			],
+			[
+				"2344",
+				"4687",
+				"2344",
+				"2343"
+			],
+			[
+				"2256",
+				"2644",
+				"2256",
+				"388"
+			],
+			[
+				"2256",
+				"2344",
+				"7331",
+				"4600",
+				"2731"
+			],
+			[
+				"4015",
+				"4015"
+			],
+			[
+				"868",
+				"-868"
+			],
+			[
+				"-590",
+				"-1769",
+				"-2359",
+				"-2359"
+			],
+			[
+				"1436",
+				"1436"
+			],
+			[
+				"-415",
+				"-415"
+			],
+			[
+				"-30",
+				"-30",
+				"-30"
+			],
+			[
+				"247",
+				"49172",
+				"1646",
+				"868",
+				"-6293",
+				"54247",
+				"45641",
+				"8606"
+			]
+		]
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"id": "esef-969500ZPQQLG72TQND21-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500ZPQQLG72TQND21/2025-12-31/ESEF/FR/0/chargeurs-2025-12-31-1-fr/reports/chargeurs-2025-12-31-1-fr.html",
+		"lei": "969500ZPQQLG72TQND21",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "388b91ac696bffeb8d0919061c2075bbdf25d840e6e5f345d3dce768032bed15",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025"
+			],
+			[
+				"-244",
+				"74"
+			],
+			[
+				"-479",
+				"242"
+			],
+			[
+				"8",
+				"-13"
+			],
+			[
+				"-471",
+				"229"
+			],
+			[
+				"-48",
+				"6"
+			],
+			[
+				"20",
+				"1",
+				"2"
+			],
+			[
+				"-47",
+				"8"
+			],
+			[
+				"-518",
+				"237"
+			],
+			[
+				"49",
+				"-25"
+			],
+			[
+				"3",
+				"4"
+			],
+			[
+				"52",
+				"-21"
+			],
+			[
+				"-1",
+				"-25"
+			],
+			[
+				"20",
+				"3",
+				"2"
+			],
+			[
+				"2",
+				"-23"
+			],
+			[
+				"54",
+				"-44"
+			],
+			[
+				"-708",
+				"267"
+			],
+			[
+				"-821",
+				"267"
+			],
+			[
+				"-4",
+				"1"
+			],
+			[
+				"117",
+				"-1"
+			]
+		]
+	}
+}

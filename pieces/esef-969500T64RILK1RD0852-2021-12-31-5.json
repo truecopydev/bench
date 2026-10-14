@@ -1,0 +1,42 @@
+{
+	"id": "esef-969500T64RILK1RD0852-2021-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500T64RILK1RD0852/2021-12-31/ESEF/FR/0/lysogene-2021-12-31/reports/lysogene-2021-12-31.xhtml",
+		"lei": "969500T64RILK1RD0852",
+		"pays": "FR",
+		"exercice": "2021-12-31",
+		"depose": "2022-04-21",
+		"sha256Page": "630ed219973dbeadf2e00ec6221e0d14f911491d8c0053d022bf7a2f93c75e4b",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-13609",
+				"-5091"
+			],
+			[
+				"312",
+				"-70"
+			],
+			[
+				"169"
+			],
+			[
+				"481",
+				"-70"
+			],
+			[
+				"-13128",
+				"-5161"
+			]
+		]
+	}
+}

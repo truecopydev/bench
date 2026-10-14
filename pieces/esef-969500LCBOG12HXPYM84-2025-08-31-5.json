@@ -1,0 +1,96 @@
+{
+	"id": "esef-969500LCBOG12HXPYM84-2025-08-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500LCBOG12HXPYM84/2025-08-31/ESEF/FR/0/sodexo-2025-08-31-fr/reports/sodexo-2025-08-31-fr.xhtml",
+		"lei": "969500LCBOG12HXPYM84",
+		"pays": "FR",
+		"exercice": "2025-08-31",
+		"depose": "2025-11-18",
+		"sha256Page": "1a62896578f7c0e30ef56841cbc408e770492e0dc0da4ef654f9d38ecc2bd659",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"706",
+				"179"
+			],
+			[
+				"-230",
+				"412"
+			],
+			[
+				"111",
+				"-218",
+				"-121"
+			],
+			[
+				"111",
+				"-12",
+				"533"
+			],
+			[
+				"111"
+			],
+			[
+				"153"
+			],
+			[
+				"2",
+				"-34"
+			],
+			[
+				"186"
+			],
+			[
+				"111",
+				"-2",
+				"1"
+			],
+			[
+				"-230",
+				"565"
+			],
+			[
+				"476",
+				"772"
+			],
+			[
+				"-28"
+			],
+			[
+				"476",
+				"744"
+			],
+			[
+				"466",
+				"733"
+			],
+			[
+				"466",
+				"762"
+			],
+			[
+				"-29"
+			],
+			[
+				"10",
+				"11"
+			],
+			[
+				"10",
+				"9"
+			],
+			[
+				"2"
+			]
+		]
+	}
+}

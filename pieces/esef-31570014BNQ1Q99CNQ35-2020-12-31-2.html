@@ -1,0 +1,670 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style> * {margin:0; padding:0; text-indent:0; }
+ h1 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 28pt; }
+ .s1 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 22pt; }
+ .s2 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .a { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .s3 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ .s4 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ h2 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
+ .s5 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ h4 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+ .s6 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
+ .s7 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s8 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s9 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s10 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 11pt; }
+ .s11 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s12 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: underline; font-size: 11pt; }
+ .s13 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+ .s14 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 9pt; }
+ .s15 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .s16 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .s17 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 9pt; }
+ .s18 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 9pt; vertical-align: 5pt; }
+ .s19 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; vertical-align: -5pt; }
+ .s20 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; vertical-align: 5pt; }
+ .s21 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9pt; vertical-align: -1pt; }
+ .s22 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+ .s23 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: underline; font-size: 10pt; }
+ .s25 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 15pt; }
+ .s26 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+ .s27 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ .p, p { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; margin:0pt; }
+ h3 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
+ .s28 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s29 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
+ .s30 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s31 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 10pt; }
+ .s32 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s33 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8pt; }
+ .s34 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt; }
+ .s35 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 9pt; }
+ .s36 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 6.5pt; vertical-align: 3pt; }
+ .s37 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: underline; font-size: 12pt; }
+ .s38 { color: black; font-family:Garamond, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s39 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .s40 { color: black; font-family:Garamond, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ .s41 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ .s42 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ .s43 { color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ .s44 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ .s45 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ li {display: block; }
+ #l1 {padding-left: 0pt; }
+ #l1> li:before {content: "- "; color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ li {display: block; }
+ #l2 {padding-left: 0pt; }
+ #l2> li:before {content: "- "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l3 {padding-left: 0pt; }
+ #l3> li:before {content: "o "; color: black; font-family:"Courier New", monospace; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ li {display: block; }
+ #l4 {padding-left: 0pt; }
+ #l4> li:before {content: "- "; color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ li {display: block; }
+ #l5 {padding-left: 0pt;counter-reset: f1 2; }
+ #l5> li:before {counter-increment: f1; content: counter(f1, upper-latin)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+ #l5> li:first-child:before {counter-increment: f1 0;  }
+ li {display: block; }
+ #l6 {padding-left: 0pt;counter-reset: g1 1; }
+ #l6> li:before {counter-increment: g1; content: counter(g1, upper-latin)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
+ #l6> li:first-child:before {counter-increment: g1 0;  }
+ #l7 {padding-left: 0pt;counter-reset: g2 1; }
+ #l7> li:before {counter-increment: g2; content: counter(g1, upper-latin)"."counter(g2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l7> li:first-child:before {counter-increment: g2 0;  }
+ #l8 {padding-left: 0pt; }
+ #l8> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l9 {padding-left: 0pt;counter-reset: g2 1; }
+ #l9> li:before {counter-increment: g2; content: counter(g1, upper-latin)"."counter(g2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l9> li:first-child:before {counter-increment: g2 0;  }
+ #l10 {padding-left: 0pt;counter-reset: g3 1; }
+ #l10> li:before {counter-increment: g3; content: counter(g1, upper-latin)"."counter(g2, decimal)"."counter(g3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l10> li:first-child:before {counter-increment: g3 0;  }
+ #l11 {padding-left: 0pt;counter-reset: g2 1; }
+ #l11> li:before {counter-increment: g2; content: counter(g1, upper-latin)"."counter(g2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l11> li:first-child:before {counter-increment: g2 0;  }
+ #l12 {padding-left: 0pt;counter-reset: g3 1; }
+ #l12> li:before {counter-increment: g3; content: counter(g1, upper-latin)"."counter(g2, decimal)"."counter(g3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l12> li:first-child:before {counter-increment: g3 0;  }
+ #l13 {padding-left: 0pt;counter-reset: i1 3; }
+ #l13> li:before {counter-increment: i1; content: counter(i1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l13> li:first-child:before {counter-increment: i1 0;  }
+ #l14 {padding-left: 0pt;counter-reset: i2 2; }
+ #l14> li:before {counter-increment: i2; content: counter(i1, upper-latin)"."counter(i2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l14> li:first-child:before {counter-increment: i2 0;  }
+ #l15 {padding-left: 0pt;counter-reset: i3 1; }
+ #l15> li:before {counter-increment: i3; content: counter(i1, upper-latin)"."counter(i2, decimal)"."counter(i3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l15> li:first-child:before {counter-increment: i3 0;  }
+ #l16 {padding-left: 0pt; }
+ #l16> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l17 {padding-left: 0pt;counter-reset: j1 3; }
+ #l17> li:before {counter-increment: j1; content: counter(j1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l17> li:first-child:before {counter-increment: j1 0;  }
+ #l18 {padding-left: 0pt;counter-reset: j2 3; }
+ #l18> li:before {counter-increment: j2; content: counter(j1, upper-latin)"."counter(j2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l18> li:first-child:before {counter-increment: j2 0;  }
+ #l19 {padding-left: 0pt;counter-reset: j3 1; }
+ #l19> li:before {counter-increment: j3; content: counter(j1, upper-latin)"."counter(j2, decimal)"."counter(j3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l19> li:first-child:before {counter-increment: j3 0;  }
+ #l20 {padding-left: 0pt;counter-reset: j4 1; }
+ #l20> li:before {counter-increment: j4; content: counter(j1, upper-latin)"."counter(j2, decimal)"."counter(j3, decimal)"."counter(j4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l20> li:first-child:before {counter-increment: j4 0;  }
+ #l21 {padding-left: 0pt;counter-reset: k1 3; }
+ #l21> li:before {counter-increment: k1; content: counter(k1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l21> li:first-child:before {counter-increment: k1 0;  }
+ #l22 {padding-left: 0pt;counter-reset: k2 5; }
+ #l22> li:before {counter-increment: k2; content: counter(k1, upper-latin)"."counter(k2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l22> li:first-child:before {counter-increment: k2 0;  }
+ #l23 {padding-left: 0pt; }
+ #l23> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l24 {padding-left: 0pt;counter-reset: g2 1; }
+ #l24> li:before {counter-increment: g2; content: counter(g1, upper-latin)"."counter(g2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l24> li:first-child:before {counter-increment: g2 0;  }
+ #l25 {padding-left: 0pt;counter-reset: g3 1; }
+ #l25> li:before {counter-increment: g3; content: counter(g1, upper-latin)"."counter(g2, decimal)"."counter(g3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l25> li:first-child:before {counter-increment: g3 0;  }
+ #l26 {padding-left: 0pt;counter-reset: l1 5; }
+ #l26> li:before {counter-increment: l1; content: counter(l1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l26> li:first-child:before {counter-increment: l1 0;  }
+ #l27 {padding-left: 0pt;counter-reset: l2 3; }
+ #l27> li:before {counter-increment: l2; content: counter(l1, upper-latin)"."counter(l2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l27> li:first-child:before {counter-increment: l2 0;  }
+ #l28 {padding-left: 0pt;counter-reset: m1 5; }
+ #l28> li:before {counter-increment: m1; content: counter(m1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l28> li:first-child:before {counter-increment: m1 0;  }
+ #l29 {padding-left: 0pt;counter-reset: m2 5; }
+ #l29> li:before {counter-increment: m2; content: counter(m1, upper-latin)"."counter(m2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l29> li:first-child:before {counter-increment: m2 0;  }
+ #l30 {padding-left: 0pt;counter-reset: m3 1; }
+ #l30> li:before {counter-increment: m3; content: counter(m1, upper-latin)"."counter(m2, decimal)"."counter(m3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l30> li:first-child:before {counter-increment: m3 0;  }
+ #l31 {padding-left: 0pt;counter-reset: n1 5; }
+ #l31> li:before {counter-increment: n1; content: counter(n1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l31> li:first-child:before {counter-increment: n1 0;  }
+ #l32 {padding-left: 0pt;counter-reset: n2 20; }
+ #l32> li:before {counter-increment: n2; content: counter(n1, upper-latin)"."counter(n2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l32> li:first-child:before {counter-increment: n2 0;  }
+ #l33 {padding-left: 0pt;counter-reset: n3 1; }
+ #l33> li:before {counter-increment: n3; content: counter(n1, upper-latin)"."counter(n2, decimal)"."counter(n3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l33> li:first-child:before {counter-increment: n3 0;  }
+ #l34 {padding-left: 0pt;counter-reset: o1 5; }
+ #l34> li:before {counter-increment: o1; content: counter(o1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l34> li:first-child:before {counter-increment: o1 0;  }
+ #l35 {padding-left: 0pt;counter-reset: o2 22; }
+ #l35> li:before {counter-increment: o2; content: counter(o1, upper-latin)"."counter(o2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l35> li:first-child:before {counter-increment: o2 0;  }
+ #l36 {padding-left: 0pt;counter-reset: o3 1; }
+ #l36> li:before {counter-increment: o3; content: counter(o1, upper-latin)"."counter(o2, decimal)"."counter(o3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l36> li:first-child:before {counter-increment: o3 0;  }
+ #l37 {padding-left: 0pt;counter-reset: p1 5; }
+ #l37> li:before {counter-increment: p1; content: counter(p1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l37> li:first-child:before {counter-increment: p1 0;  }
+ #l38 {padding-left: 0pt;counter-reset: p2 32; }
+ #l38> li:before {counter-increment: p2; content: counter(p1, upper-latin)"."counter(p2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l38> li:first-child:before {counter-increment: p2 0;  }
+ #l39 {padding-left: 0pt;counter-reset: p3 1; }
+ #l39> li:before {counter-increment: p3; content: counter(p1, upper-latin)"."counter(p2, decimal)"."counter(p3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l39> li:first-child:before {counter-increment: p3 0;  }
+ #l40 {padding-left: 0pt;counter-reset: p4 1; }
+ #l40> li:before {counter-increment: p4; content: counter(p1, upper-latin)"."counter(p2, decimal)"."counter(p3, decimal)"."counter(p4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l40> li:first-child:before {counter-increment: p4 0;  }
+ #l41 {padding-left: 0pt;counter-reset: q1 5; }
+ #l41> li:before {counter-increment: q1; content: counter(q1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l41> li:first-child:before {counter-increment: q1 0;  }
+ #l42 {padding-left: 0pt;counter-reset: q2 33; }
+ #l42> li:before {counter-increment: q2; content: counter(q1, upper-latin)"."counter(q2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l42> li:first-child:before {counter-increment: q2 0;  }
+ #l43 {padding-left: 0pt;counter-reset: q3 1; }
+ #l43> li:before {counter-increment: q3; content: counter(q1, upper-latin)"."counter(q2, decimal)"."counter(q3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l43> li:first-child:before {counter-increment: q3 0;  }
+ #l44 {padding-left: 0pt;counter-reset: g2 1; }
+ #l44> li:before {counter-increment: g2; content: counter(g1, upper-latin)"."counter(g2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l44> li:first-child:before {counter-increment: g2 0;  }
+ #l45 {padding-left: 0pt;counter-reset: g3 1; }
+ #l45> li:before {counter-increment: g3; content: counter(g1, upper-latin)"."counter(g2, decimal)"."counter(g3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l45> li:first-child:before {counter-increment: g3 0;  }
+ #l46 {padding-left: 0pt;counter-reset: g4 1; }
+ #l46> li:before {counter-increment: g4; content: counter(g1, upper-latin)"."counter(g2, decimal)"."counter(g3, decimal)"."counter(g4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l46> li:first-child:before {counter-increment: g4 0;  }
+ #l47 {padding-left: 0pt; }
+ #l47> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l48 {padding-left: 0pt;counter-reset: r1 6; }
+ #l48> li:before {counter-increment: r1; content: counter(r1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l48> li:first-child:before {counter-increment: r1 0;  }
+ #l49 {padding-left: 0pt;counter-reset: r2 1; }
+ #l49> li:before {counter-increment: r2; content: counter(r1, upper-latin)"."counter(r2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l49> li:first-child:before {counter-increment: r2 0;  }
+ #l50 {padding-left: 0pt;counter-reset: r3 2; }
+ #l50> li:before {counter-increment: r3; content: counter(r1, upper-latin)"."counter(r2, decimal)"."counter(r3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l50> li:first-child:before {counter-increment: r3 0;  }
+ #l51 {padding-left: 0pt;counter-reset: r4 1; }
+ #l51> li:before {counter-increment: r4; content: counter(r1, upper-latin)"."counter(r2, decimal)"."counter(r3, decimal)"."counter(r4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l51> li:first-child:before {counter-increment: r4 0;  }
+ #l52 {padding-left: 0pt; }
+ #l52> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l53 {padding-left: 0pt; }
+ #l53> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l54 {padding-left: 0pt; }
+ #l54> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l55 {padding-left: 0pt; }
+ #l55> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l56 {padding-left: 0pt;counter-reset: s1 6; }
+ #l56> li:before {counter-increment: s1; content: counter(s1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l56> li:first-child:before {counter-increment: s1 0;  }
+ #l57 {padding-left: 0pt;counter-reset: s2 1; }
+ #l57> li:before {counter-increment: s2; content: counter(s1, upper-latin)"."counter(s2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l57> li:first-child:before {counter-increment: s2 0;  }
+ #l58 {padding-left: 0pt;counter-reset: s3 3; }
+ #l58> li:before {counter-increment: s3; content: counter(s1, upper-latin)"."counter(s2, decimal)"."counter(s3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l58> li:first-child:before {counter-increment: s3 0;  }
+ #l59 {padding-left: 0pt; }
+ #l59> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l60 {padding-left: 0pt;counter-reset: s4 1; }
+ #l60> li:before {counter-increment: s4; content: counter(s1, upper-latin)"."counter(s2, decimal)"."counter(s3, decimal)"."counter(s4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l60> li:first-child:before {counter-increment: s4 0;  }
+ #l61 {padding-left: 0pt; }
+ #l61> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l62 {padding-left: 0pt;counter-reset: t1 6; }
+ #l62> li:before {counter-increment: t1; content: counter(t1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l62> li:first-child:before {counter-increment: t1 0;  }
+ #l63 {padding-left: 0pt;counter-reset: t2 1; }
+ #l63> li:before {counter-increment: t2; content: counter(t1, upper-latin)"."counter(t2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l63> li:first-child:before {counter-increment: t2 0;  }
+ #l64 {padding-left: 0pt;counter-reset: t3 8; }
+ #l64> li:before {counter-increment: t3; content: counter(t1, upper-latin)"."counter(t2, decimal)"."counter(t3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l64> li:first-child:before {counter-increment: t3 0;  }
+ #l65 {padding-left: 0pt; }
+ #l65> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l66 {padding-left: 0pt; }
+ #l66> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ #l67 {padding-left: 0pt;counter-reset: t4 1; }
+ #l67> li:before {counter-increment: t4; content: counter(t1, upper-latin)"."counter(t2, decimal)"."counter(t3, decimal)"."counter(t4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l67> li:first-child:before {counter-increment: t4 0;  }
+ #l68 {padding-left: 0pt;counter-reset: u1 6; }
+ #l68> li:before {counter-increment: u1; content: counter(u1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l68> li:first-child:before {counter-increment: u1 0;  }
+ #l69 {padding-left: 0pt;counter-reset: u2 1; }
+ #l69> li:before {counter-increment: u2; content: counter(u1, upper-latin)"."counter(u2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l69> li:first-child:before {counter-increment: u2 0;  }
+ #l70 {padding-left: 0pt;counter-reset: u3 13; }
+ #l70> li:before {counter-increment: u3; content: counter(u1, upper-latin)"."counter(u2, decimal)"."counter(u3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l70> li:first-child:before {counter-increment: u3 0;  }
+ #l71 {padding-left: 0pt;counter-reset: u4 1; }
+ #l71> li:before {counter-increment: u4; content: counter(u1, upper-latin)"."counter(u2, decimal)"."counter(u3, decimal)"."counter(u4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l71> li:first-child:before {counter-increment: u4 0;  }
+ #l72 {padding-left: 0pt;counter-reset: v1 6; }
+ #l72> li:before {counter-increment: v1; content: counter(v1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l72> li:first-child:before {counter-increment: v1 0;  }
+ #l73 {padding-left: 0pt;counter-reset: v2 1; }
+ #l73> li:before {counter-increment: v2; content: counter(v1, upper-latin)"."counter(v2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l73> li:first-child:before {counter-increment: v2 0;  }
+ #l74 {padding-left: 0pt;counter-reset: v3 14; }
+ #l74> li:before {counter-increment: v3; content: counter(v1, upper-latin)"."counter(v2, decimal)"."counter(v3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l74> li:first-child:before {counter-increment: v3 0;  }
+ #l75 {padding-left: 0pt;counter-reset: v4 1; }
+ #l75> li:before {counter-increment: v4; content: counter(v1, upper-latin)"."counter(v2, decimal)"."counter(v3, decimal)"."counter(v4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l75> li:first-child:before {counter-increment: v4 0;  }
+ #l76 {padding-left: 0pt;counter-reset: w1 6; }
+ #l76> li:before {counter-increment: w1; content: counter(w1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l76> li:first-child:before {counter-increment: w1 0;  }
+ #l77 {padding-left: 0pt;counter-reset: w2 1; }
+ #l77> li:before {counter-increment: w2; content: counter(w1, upper-latin)"."counter(w2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l77> li:first-child:before {counter-increment: w2 0;  }
+ #l78 {padding-left: 0pt;counter-reset: w3 17; }
+ #l78> li:before {counter-increment: w3; content: counter(w1, upper-latin)"."counter(w2, decimal)"."counter(w3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l78> li:first-child:before {counter-increment: w3 0;  }
+ #l79 {padding-left: 0pt;counter-reset: w4 1; }
+ #l79> li:before {counter-increment: w4; content: counter(w1, upper-latin)"."counter(w2, decimal)"."counter(w3, decimal)"."counter(w4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l79> li:first-child:before {counter-increment: w4 0;  }
+ #l80 {padding-left: 0pt;counter-reset: x1 6; }
+ #l80> li:before {counter-increment: x1; content: counter(x1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l80> li:first-child:before {counter-increment: x1 0;  }
+ #l81 {padding-left: 0pt;counter-reset: x2 1; }
+ #l81> li:before {counter-increment: x2; content: counter(x1, upper-latin)"."counter(x2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l81> li:first-child:before {counter-increment: x2 0;  }
+ #l82 {padding-left: 0pt;counter-reset: x3 18; }
+ #l82> li:before {counter-increment: x3; content: counter(x1, upper-latin)"."counter(x2, decimal)"."counter(x3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l82> li:first-child:before {counter-increment: x3 0;  }
+ #l83 {padding-left: 0pt;counter-reset: x4 1; }
+ #l83> li:before {counter-increment: x4; content: counter(x1, upper-latin)"."counter(x2, decimal)"."counter(x3, decimal)"."counter(x4, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l83> li:first-child:before {counter-increment: x4 0;  }
+ #l84 {padding-left: 0pt;counter-reset: y1 6; }
+ #l84> li:before {counter-increment: y1; content: counter(y1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l84> li:first-child:before {counter-increment: y1 0;  }
+ #l85 {padding-left: 0pt;counter-reset: y2 1; }
+ #l85> li:before {counter-increment: y2; content: counter(y1, upper-latin)"."counter(y2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l85> li:first-child:before {counter-increment: y2 0;  }
+ #l86 {padding-left: 0pt;counter-reset: y3 25; }
+ #l86> li:before {counter-increment: y3; content: counter(y1, upper-latin)"."counter(y2, decimal)"."counter(y3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l86> li:first-child:before {counter-increment: y3 0;  }
+ #l87 {padding-left: 0pt;counter-reset: z1 6; }
+ #l87> li:before {counter-increment: z1; content: counter(z1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l87> li:first-child:before {counter-increment: z1 0;  }
+ #l88 {padding-left: 0pt;counter-reset: z2 2; }
+ #l88> li:before {counter-increment: z2; content: counter(z1, upper-latin)"."counter(z2, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: italic; font-weight: bold; text-decoration: none; font-size: 14pt; }
+ #l88> li:first-child:before {counter-increment: z2 0;  }
+ #l89 {padding-left: 0pt;counter-reset: z3 1; }
+ #l89> li:before {counter-increment: z3; content: counter(z1, upper-latin)"."counter(z2, decimal)"."counter(z3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l89> li:first-child:before {counter-increment: z3 0;  }
+ #l90 {padding-left: 0pt; }
+ #l90> li:before {content: "– "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5pt; }
+ li {display: block; }
+ #l91 {padding-left: 0pt;counter-reset: c1 4; }
+ #l91> li:before {counter-increment: c1; content: counter(c1, upper-latin)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l91> li:first-child:before {counter-increment: c1 0;  }
+ #l92 {padding-left: 0pt;counter-reset: c2 4; }
+ #l92> li:before {counter-increment: c2; content: counter(c1, upper-latin)"."counter(c2, decimal)" "; color: black; font-style: normal; font-weight: normal; text-decoration: none; }
+ #l92> li:first-child:before {counter-increment: c2 0;  }
+ #l93 {padding-left: 0pt;counter-reset: c3 1; }
+ #l93> li:before {counter-increment: c3; content: counter(c1, upper-latin)"."counter(c2, decimal)"."counter(c3, decimal)". "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ #l93> li:first-child:before {counter-increment: c3 0;  }
+ #l94 {padding-left: 0pt;counter-reset: c4 1; }
+ #l94> li:before {counter-increment: c4; content: counter(c4, decimal)" "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l94> li:first-child:before {counter-increment: c4 0;  }
+ li {display: block; }
+ #l95 {padding-left: 0pt; }
+ #l95> li:before {content: "— "; color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ .vertical-align-table > tbody > tr:first-child > td { vertical-align:top; }
+
+@page { size: A4 landscape; margin: 12mm; } body { background: white !important; }</style></head><body><table style="border-collapse:collapse;margin-left:6pt">
+        <tr style="border-top-style:solid">
+            <td></td>
+            <td></td>
+            <td style="padding-left:20px">Issued capital*</td>
+            <td style="padding-left:20px">Share premium</td>
+            <td style="padding-left:20px">Additional paid-in capital</td>
+            <td style="padding-left:20px">Revaluation reserve</td>
+            <td style="padding-left:20px">Legal and statutory reserves</td>
+            <td style="padding-left:20px">Translation reserve</td>
+            <td style="padding-left:20px">Reserve for UCC</td>
+            <td style="padding-left:20px">Hedging reserve</td>
+            <td style="padding-left:20px">Other equity instruments</td>
+            <td style="padding-left:20px">Retained earnings</td>
+            <td style="padding-left:20px">Attributable to owners of the Parent</td>
+            <td style="padding-left:20px">Attributable to NCI</td>
+            <td style="padding-left:20px">Total</td>
+        </tr>
+
+        <tr style="font-weight:bold">
+            <!--Balance as at 1 January 2019-->
+            <!--ifrs-full:Equity-->
+            <td style="border-top-style:solid;border-top-width:1px">Balance as at 1 January 2019</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_IssuedCapitalMember" id="EQ235" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_SharePremiumMember" id="EQ236" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">2,324</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_AdditionalPaidinCapitalMember" id="EQ237" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">80</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_RevaluationSurplusMember" id="EQ238" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">1</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_StatutoryReserveMember" id="EQ239" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">114</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ240" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">491</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_ReserveForUnderCommonControlMember" id="EQ241" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">518</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ242" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_MiscellaneousOtherReservesMember" id="EQ243" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_RetainedEarningsMember" id="EQ244" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">1,221</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_EquityAttributableToOwnersOfParentMember" id="EQ245" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">2,731</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP_NoncontrollingInterestsMember" id="EQ246" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">239</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2018_EOP" id="EQ247" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">2,970</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Profit for the period-->
+            <!--ifrs-full:ProfitLoss-->
+            <td style="border-top-style:solid;border-top-width:1px">Profit for the period</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ248" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ249" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ250" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ251" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ252" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ253" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ254" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ255" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ256" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ257" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">481</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ258" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">481</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ259" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">26</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ProfitLoss" contextRef="ctx_2019_AVG" id="EQ260" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">507</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Currency translation differences-->
+            <!--ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation-->
+            <td>Currency translation differences</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ261" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ262" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ263" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ264" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ265" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ266" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">123</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ267" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ268" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ269" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ270" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ271" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">123</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ272" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">9</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation" contextRef="ctx_2019_AVG" id="EQ273" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">132</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--FVOCI revaluation gains/(losses) taken to equity-->
+            <!--ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax-->
+            <td>FVOCI revaluation gains/(losses) taken to equity</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ274" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ275" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ276" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ277" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">31</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ278" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ279" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ280" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ281" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ282" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ283" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ284" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">31</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ285" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">2</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG" id="EQ286" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">33</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--FVOCI revaluation (gains)/losses transferred to income statement-->
+            <!--ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax-->
+            <td>FVOCI revaluation (gains)/losses transferred to income statement</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ287" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ288" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ289" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ290" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">4</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ291" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ292" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ293" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ294" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ295" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ296" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ297" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">4</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ298" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:ReclassificationAdjustmentsOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax" contextRef="ctx_2019_AVG" id="EQ299" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">4</ix:nonfraction>)</td>
+        </tr>
+        <tr>
+            <!--FVOCI revaluation (gains)/losses transferred directly to retained earnings-->
+            <!--ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings-->
+            <td>FVOCI revaluation (gains)/losses transferred directly to retained earnings</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ300" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ301" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ302" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ303" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">1</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ304" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ305" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ306" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ307" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ308" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ309" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">1</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ310" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ311" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferBetweenRevaluationReserveAndRetainedEarnings" contextRef="ctx_2019_AVG" id="EQ312" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Effect of hedge accounting-->
+            <!--ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax-->
+            <td>Effect of hedge accounting</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ313" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ314" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ315" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ316" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ317" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ318" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ319" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ320" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ321" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ322" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ323" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ324" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:GainsLossesOnCashFlowHedgesBeforeTax" contextRef="ctx_2019_AVG" id="EQ325" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+        </tr>
+        <tr>
+            <!--Tax on items taken directly to or transferred from equity-->
+            <!--ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome-->
+            <td>Tax on items taken directly to or transferred from equity</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ326" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ327" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ328" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ329" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">5</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ330" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ331" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ332" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ333" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ334" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ335" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ336" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">5</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ337" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" contextRef="ctx_2019_AVG" id="EQ338" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">5</ix:nonfraction>)</td>
+        </tr>
+        <tr style="font-weight:bold">
+            <!--Other comprehensive income for the period-->
+            <!--ifrs-full:OtherComprehensiveIncome-->
+            <td style="border-top-style:solid;border-top-width:1px">Other comprehensive income for the period</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ339" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ340" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ341" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ342" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">21</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ343" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ344" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">123</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ345" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ346" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ347" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ348" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">1</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ349" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">143</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ350" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">11</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:OtherComprehensiveIncome" contextRef="ctx_2019_AVG" id="EQ351" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">154</ix:nonfraction></td>
+        </tr>
+        <tr style="font-weight:bold">
+            <!--Total comprehensive income-->
+            <!--ifrs-full:ComprehensiveIncome-->
+            <td style="border-top-style:solid;border-top-width:1px">Total comprehensive income</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ352" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ353" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ354" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ355" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">21</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ356" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ357" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">123</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ358" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ359" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ360" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ361" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">482</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ362" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">624</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ363" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">37</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:ComprehensiveIncome" contextRef="ctx_2019_AVG" id="EQ364" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">661</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Net allocation to legal and statutory reserves-->
+            <!--ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve-->
+            <td style="border-top-style:solid;border-top-width:1px">Net allocation to legal and statutory reserves</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ365" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ366" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ367" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ368" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ369" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">29</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ370" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ371" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ372" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ373" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ374" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">29</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ375" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ376" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransferToStatutoryReserve" contextRef="ctx_2019_AVG" id="EQ377" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Dividends to shareholders-->
+            <!--ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent-->
+            <td>Dividends to shareholders</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ378" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ379" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ380" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ381" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ382" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ383" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ384" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ385" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ386" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ387" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">5</ix:nonfraction>)</td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ388" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">5</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ389" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:DividendsRecognisedAsDistributionsToOwnersOfParent" contextRef="ctx_2019_AVG" id="EQ390" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">5</ix:nonfraction>)</td>
+        </tr>
+        <tr>
+            <!--Contributions by NCI-->
+            <!--ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners-->
+            <td>Contributions by NCI</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ391" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ392" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ393" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ394" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ395" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ396" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ397" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ398" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ399" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ400" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ401" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ402" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">25</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners" contextRef="ctx_2019_AVG" id="EQ403" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">25</ix:nonfraction></td>
+        </tr>
+        <tr>
+            <!--Other changes in NCI -->
+            <!--ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl-->
+            <td>Other changes in NCI </td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ404" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ405" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ406" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ407" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ408" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ409" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ410" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ411" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ412" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ413" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">60</ix:nonfraction>)</td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ414" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">60</ix:nonfraction>)</td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ415" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">5</ix:nonfraction></td>
+            <td style="text-align:right">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" contextRef="ctx_2019_AVG" id="EQ416" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">55</ix:nonfraction>)</td>
+        </tr>
+        <tr>
+            <!--Issue of AT1 subordinated bond-->
+            <!--ifrs-full:IssueOfEquity-->
+            <td>Issue of AT1 subordinated bond</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ417" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ418" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ419" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ420" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ421" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ422" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ423" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ424" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ425" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">181</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ426" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ427" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">181</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ428" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right"><ix:nonfraction name="ifrs-full:IssueOfEquity" contextRef="ctx_2019_AVG" id="EQ429" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">181</ix:nonfraction></td>
+        </tr>
+        <tr style="font-weight:bold">
+            <!--Total transactions with owners of the Company-->
+            <!--ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners-->
+            <td style="border-top-style:solid;border-top-width:1px">Total transactions with owners of the Company</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_IssuedCapitalMember" id="EQ430" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_SharePremiumMember" id="EQ431" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_AdditionalPaidinCapitalMember" id="EQ432" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_RevaluationSurplusMember" id="EQ433" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_StatutoryReserveMember" id="EQ434" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">29</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ435" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_ReserveForUnderCommonControlMember" id="EQ436" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ437" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_MiscellaneousOtherReservesMember" id="EQ438" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">181</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px">(<ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_RetainedEarningsMember" id="EQ439" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">94</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_EquityAttributableToOwnersOfParentMember" id="EQ440" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">116</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG_NoncontrollingInterestsMember" id="EQ441" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">30</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px"><ix:nonfraction name="ifrs-full:IncreaseDecreaseThroughTransactionsWithOwners" contextRef="ctx_2019_AVG" id="EQ442" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">146</ix:nonfraction></td>
+        </tr>
+        <tr style="font-weight:bold">
+            <!--Balance as at 31 December 2019-->
+            <!--ifrs-full:Equity-->
+            <td style="border-top-style:solid;border-top-width:1px;border-bottom-style:solid">Balance as at 31 December 2019</td>
+            <td style="text-align:center;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_IssuedCapitalMember" id="EQ443" format="ixt:fixed-zero" unitRef="ISO4217_EUR" decimals="0" scale="6">-</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_SharePremiumMember" id="EQ444" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">2,324</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_AdditionalPaidinCapitalMember" id="EQ445" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">80</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_RevaluationSurplusMember" id="EQ446" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">22</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_StatutoryReserveMember" id="EQ447" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">143</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid">(<ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_ReserveOfExchangeDifferencesOnTranslationMember" id="EQ448" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">368</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid">(<ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_ReserveForUnderCommonControlMember" id="EQ449" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">518</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid">(<ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_ReserveOfGainsAndLossesOnHedgingInstrumentsThatHedgeInvestmentsInEquityInstrumentsMember" id="EQ450" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6" sign="-">2</ix:nonfraction>)</td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_MiscellaneousOtherReservesMember" id="EQ451" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">181</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_RetainedEarningsMember" id="EQ452" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">1,609</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_EquityAttributableToOwnersOfParentMember" id="EQ453" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">3,471</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP_NoncontrollingInterestsMember" id="EQ454" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">306</ix:nonfraction></td>
+            <td style="text-align:right;border-top-style:solid;border-top-width:1px;border-bottom-style:solid"><ix:nonfraction name="ifrs-full:Equity" contextRef="ctx_2019_EOP" id="EQ455" format="ixt:num-dot-decimal" unitRef="ISO4217_EUR" decimals="0" scale="6">3,777</ix:nonfraction></td>
+        </tr>
+    </table></body></html>

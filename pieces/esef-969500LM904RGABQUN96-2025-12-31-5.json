@@ -1,0 +1,56 @@
+{
+	"id": "esef-969500LM904RGABQUN96-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500LM904RGABQUN96/2025-12-31/ESEF/FR/0/deezer-2025-12-31-1-en/reports/deezer-2025-12-31-1-en.html",
+		"lei": "969500LM904RGABQUN96",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "f45e2c1e9c291bb947bea0c7a2958c698c734977da5eda8b059eb77c8e497db0",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"8492",
+				"-26030"
+			],
+			[
+				"-75",
+				"3500"
+			],
+			[
+				"22",
+				"45",
+				"-59"
+			],
+			[
+				"-30",
+				"3441"
+			],
+			[
+				"8462",
+				"-22589"
+			],
+			[
+				"8462",
+				"-22458"
+			],
+			[
+				"0",
+				"-131"
+			]
+		]
+	}
+}

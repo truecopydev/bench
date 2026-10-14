@@ -1,0 +1,123 @@
+{
+	"id": "esef-549300NFX18SRZHNT751-2024-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300NFX18SRZHNT751/2024-12-31/ESEF/HR/1/adplastik-drustvo-2024-12-31-0-en/reports/adplastik-drustvo-2024-12-31-0-en.xhtml",
+		"lei": "549300NFX18SRZHNT751",
+		"pays": "HR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "97b2be3f23a0d450e6c1a2fe6750844c8cb58f7b62c80e52730b6a83fad95094",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2024",
+				"2023"
+			],
+			[
+				"4",
+				"111152",
+				"89388"
+			],
+			[
+				"5",
+				"4877",
+				"5060"
+			],
+			[
+				"116029",
+				"94448"
+			],
+			[
+				"41",
+				"-85"
+			],
+			[
+				"6",
+				"-45904",
+				"-45059"
+			],
+			[
+				"7",
+				"-27850",
+				"-11922"
+			],
+			[
+				"8",
+				"-8354",
+				"-8900"
+			],
+			[
+				"9",
+				"-24175",
+				"-22708"
+			],
+			[
+				"10",
+				"-8290",
+				"-7293"
+			],
+			[
+				"11",
+				"-4155",
+				"-2278"
+			],
+			[
+				"12",
+				"-1",
+				"136"
+			],
+			[
+				"-240",
+				"-192"
+			],
+			[
+				"-118928",
+				"-98301"
+			],
+			[
+				"-2899",
+				"-3853"
+			],
+			[
+				"13",
+				"4065",
+				"5337"
+			],
+			[
+				"14",
+				"-1323",
+				"-672"
+			],
+			[
+				"2742",
+				"4665"
+			],
+			[
+				"-157",
+				"812"
+			],
+			[
+				"15",
+				"554",
+				"228"
+			],
+			[
+				"397",
+				"1040"
+			],
+			[
+				"397",
+				"1040"
+			]
+		]
+	}
+}

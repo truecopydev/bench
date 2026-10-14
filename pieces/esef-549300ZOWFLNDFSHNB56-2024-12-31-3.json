@@ -1,0 +1,66 @@
+{
+	"id": "esef-549300ZOWFLNDFSHNB56-2024-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300ZOWFLNDFSHNB56/2024-12-31/ESEF/SE/0/midsummerab-2024-12-31-0-sv/reports/midsummerab-2024-12-31-0-sv.xhtml",
+		"lei": "549300ZOWFLNDFSHNB56",
+		"pays": "SE",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "9dae8eaaf91471bf94ab20bb37a7aeb2753ee15fc9f3d31ba0b899f68102ee02",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2710",
+				"530037",
+				"18588",
+				"-367853",
+				"183482"
+			],
+			[
+				"-222214",
+				"-222214"
+			],
+			[
+				"-314",
+				"-314"
+			],
+			[
+				"-314",
+				"-222214",
+				"-222528"
+			],
+			[
+				"2467",
+				"165577",
+				"168044"
+			],
+			[
+				"3106",
+				"59672",
+				"2646",
+				"65424"
+			],
+			[
+				"232",
+				"232"
+			],
+			[
+				"5177",
+				"3106",
+				"755517",
+				"18275",
+				"-587421",
+				"194654"
+			]
+		]
+	}
+}

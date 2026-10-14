@@ -1,0 +1,62 @@
+{
+	"id": "esef-969500I1EJGUAT223F44-2025-06-30-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500I1EJGUAT223F44/2025-06-30/ESEF/FR/0/ramsaysante-2025-06-30-0-fr/reports/ramsaysante-2025-06-30-0-fr.html",
+		"lei": "969500I1EJGUAT223F44",
+		"pays": "FR",
+		"exercice": "2025-06-30",
+		"depose": "2025-11-18",
+		"sha256Page": "282430dc787f4d74baba0c1d1b26deea212cfa7ef74a3dde864687cda6fdc455",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"827",
+				"6112",
+				"6156",
+				"-613",
+				"-539",
+				"11943",
+				"354",
+				"12297"
+			],
+			[
+				"-539",
+				"539"
+			],
+			[
+				"-144",
+				"-144"
+			],
+			[
+				"-4",
+				"-4"
+			],
+			[
+				"50",
+				"-541",
+				"-491",
+				"160",
+				"-331"
+			],
+			[
+				"827",
+				"6112",
+				"5617",
+				"-563",
+				"-541",
+				"11452",
+				"366",
+				"11818"
+			]
+		]
+	}
+}

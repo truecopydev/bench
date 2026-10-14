@@ -1,0 +1,97 @@
+{
+	"id": "esef-5299005U9E85Y55OHK45-2025-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299005U9E85Y55OHK45/2025-12-31/ESEF/LT/0/abzemaitijospienas-2025-12-31-en/reports/abzemaitijospienas-2025-12-31-en.xhtml",
+		"lei": "5299005U9E85Y55OHK45",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "1ffde6ccd4ff20473efa4995bc928725b8a88b58c260d6767b78aa669d868aea",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"12104",
+				"-389",
+				"1403",
+				"10200",
+				"98841",
+				"122159",
+				"1585",
+				"123744"
+			],
+			[
+				"-2076",
+				"-2076",
+				"-2076"
+			],
+			[
+				"26959",
+				"26959",
+				"337",
+				"27296"
+			],
+			[
+				"-3058",
+				"-3058",
+				"-3058"
+			],
+			[
+				"23901",
+				"23901",
+				"337",
+				"24238"
+			],
+			[
+				"12104",
+				"-389",
+				"1403",
+				"10200",
+				"120666",
+				"143984",
+				"1922",
+				"145906"
+			],
+			[
+				"21708",
+				"21708",
+				"-82",
+				"21626"
+			],
+			[
+				"-217",
+				"-217",
+				"-217"
+			],
+			[
+				"21491",
+				"21491",
+				"-82",
+				"21409"
+			],
+			[
+				"-1308",
+				"-1308",
+				"-1308"
+			],
+			[
+				"12104",
+				"-1697",
+				"1403",
+				"10200",
+				"142157",
+				"164167",
+				"1840",
+				"166007"
+			]
+		]
+	}
+}

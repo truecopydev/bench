@@ -1,0 +1,51 @@
+{
+	"id": "esef-48510069AVGK9P61AL54-2024-12-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/48510069AVGK9P61AL54/2024-12-31/ESEF/MT/0/BTP_20241231_CON_AFR_48510069AVGK9P61AL54/reports/48510069AVGK9P61AL54-2024-12-31-0-en.html",
+		"lei": "48510069AVGK9P61AL54",
+		"pays": "MT",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "d3b35e8741cb82916160a8d676187b72fb261893b27d8ea3436aeb9a0d02bbe4",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"20360",
+				"-4097",
+				"-5485",
+				"10778"
+			],
+			[
+				"4168",
+				"4168"
+			],
+			[
+				"13",
+				"800",
+				"2010",
+				"2810"
+			],
+			[
+				"27",
+				"-5000",
+				"-5000"
+			],
+			[
+				"21160",
+				"2010",
+				"-4097",
+				"-6317",
+				"12756"
+			]
+		]
+	}
+}

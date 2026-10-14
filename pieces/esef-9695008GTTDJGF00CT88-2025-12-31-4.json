@@ -1,0 +1,122 @@
+{
+	"id": "esef-9695008GTTDJGF00CT88-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695008GTTDJGF00CT88/2025-12-31/ESEF/FR/0/assystem-2025-12-31-1/reports/assystem-2025-12-31-1-fr.html",
+		"lei": "9695008GTTDJGF00CT88",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "6857c99cc26fdcc4833d32557e66c1ba15ea7fee87d223b265debfe957845c0a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"51",
+				"6566",
+				"6113"
+			],
+			[
+				"-4817",
+				"-4456"
+			],
+			[
+				"54",
+				"-1123",
+				"-1085"
+			],
+			[
+				"-9",
+				"-10"
+			],
+			[
+				"55",
+				"-168",
+				"-168"
+			],
+			[
+				"449",
+				"394"
+			],
+			[
+				"52",
+				"1",
+				"9"
+			],
+			[
+				"450",
+				"403"
+			],
+			[
+				"56",
+				"-119",
+				"17"
+			],
+			[
+				"56",
+				"-277",
+				"-177"
+			],
+			[
+				"54",
+				"243"
+			],
+			[
+				"64",
+				"-237"
+			],
+			[
+				"52",
+				"1",
+				"1"
+			],
+			[
+				"64",
+				"77",
+				"141"
+			],
+			[
+				"85",
+				"-74",
+				"-48"
+			],
+			[
+				"85",
+				"-1",
+				"21"
+			],
+			[
+				"57",
+				"121"
+			],
+			[
+				"111",
+				"8",
+				"-46"
+			],
+			[
+				"65",
+				"75"
+			],
+			[
+				"74",
+				"83"
+			],
+			[
+				"-9",
+				"-8"
+			]
+		]
+	}
+}

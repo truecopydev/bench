@@ -1,0 +1,70 @@
+{
+	"id": "esef-969500DIVIP5VKNW4948-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500DIVIP5VKNW4948/2025-12-31/ESEF/FR/0/valneva-2025-12-31-1-fr/reports/valneva-2025-12-31-1-fr.xhtml",
+		"lei": "969500DIVIP5VKNW4948",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "edddfabc27e51217310e7f77cab34629fb71eceb42d7ec5c581b68c37191fca0",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"24378",
+				"647600",
+				"73203",
+				"-551682",
+				"-12247",
+				"181253"
+			],
+			[
+				"588",
+				"-115192",
+				"-114604"
+			],
+			[
+				"-12247",
+				"12247"
+			],
+			[
+				"23",
+				"9527",
+				"9527"
+			],
+			[
+				"23",
+				"253",
+				"3543",
+				"3796"
+			],
+			[
+				"22",
+				"1400",
+				"26035",
+				"27435"
+			],
+			[
+				"22",
+				"-1239",
+				"-1239"
+			],
+			[
+				"26031",
+				"675940",
+				"83318",
+				"-563928",
+				"-115192",
+				"106168"
+			]
+		]
+	}
+}

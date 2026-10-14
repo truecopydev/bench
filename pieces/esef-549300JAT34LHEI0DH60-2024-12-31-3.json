@@ -1,0 +1,84 @@
+{
+	"id": "esef-549300JAT34LHEI0DH60-2024-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/549300JAT34LHEI0DH60/2024-12-31/ESEF/SE/0/549300JAT34LHEI0DH60-2024-12-31-0-sv/reports/549300JAT34LHEI0DH60-2024-12-31-0-sv.xhtml",
+		"lei": "549300JAT34LHEI0DH60",
+		"pays": "SE",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-08",
+		"sha256Page": "37a287f76355a5a9076c2b2dc137e936262aaffeddc59e6e2bd4e02341ead8c8",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"15",
+				"46862",
+				"46862"
+			],
+			[
+				"46862",
+				"46862"
+			],
+			[
+				"16",
+				"74",
+				"80"
+			],
+			[
+				"17",
+				"2059",
+				"2747"
+			],
+			[
+				"18",
+				"7660",
+				"3845"
+			],
+			[
+				"9793",
+				"6672"
+			],
+			[
+				"56654",
+				"53533"
+			],
+			[
+				"2463",
+				"518"
+			],
+			[
+				"3926",
+				"8649"
+			],
+			[
+				"20",
+				"6252",
+				"3111"
+			],
+			[
+				"12641",
+				"12278"
+			],
+			[
+				"66917",
+				"111309"
+			],
+			[
+				"79558",
+				"123587"
+			],
+			[
+				"136212",
+				"177121"
+			]
+		]
+	}
+}

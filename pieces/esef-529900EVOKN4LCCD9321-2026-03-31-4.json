@@ -1,0 +1,111 @@
+{
+	"id": "esef-529900EVOKN4LCCD9321-2026-03-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900EVOKN4LCCD9321/2026-03-31/ESEF/AT/1/atsag-2026-03-31-1-de/reports/atsag-2026-03-31-1-de.xhtml",
+		"lei": "529900EVOKN4LCCD9321",
+		"pays": "AT",
+		"exercice": "2026-03-31",
+		"depose": "2026-06-25",
+		"sha256Page": "14b95dafe7343a69f8a7fc5428c97cc5e104ee25787c468ab34a9aebcda87bd5",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"1",
+				"1790776",
+				"1589626"
+			],
+			[
+				"2",
+				"-1587298",
+				"-1411731"
+			],
+			[
+				"203478",
+				"177895"
+			],
+			[
+				"2",
+				"-52814",
+				"-55239"
+			],
+			[
+				"2",
+				"-104561",
+				"-90879"
+			],
+			[
+				"4",
+				"58088",
+				"397683"
+			],
+			[
+				"4",
+				"-38550",
+				"-152056"
+			],
+			[
+				"19538",
+				"245627"
+			],
+			[
+				"65641",
+				"277404"
+			],
+			[
+				"5",
+				"25348",
+				"44860"
+			],
+			[
+				"5",
+				"-125316",
+				"-128337"
+			],
+			[
+				"-99968",
+				"-83477"
+			],
+			[
+				"-34327",
+				"193927"
+			],
+			[
+				"6",
+				"8737",
+				"-104232"
+			],
+			[
+				"-25590",
+				"89695"
+			],
+			[
+				"17500",
+				"17500"
+			],
+			[
+				"-43090",
+				"72195"
+			],
+			[
+				"26"
+			],
+			[
+				"-111",
+				"186"
+			],
+			[
+				"-111",
+				"186"
+			]
+		]
+	}
+}

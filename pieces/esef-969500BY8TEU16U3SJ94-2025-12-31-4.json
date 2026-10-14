@@ -1,0 +1,106 @@
+{
+	"id": "esef-969500BY8TEU16U3SJ94-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500BY8TEU16U3SJ94/2025-12-31/ESEF/FR/0/tikehau-2025-12-31-1/reports/tikehau-2025-12-31-1-fr.html",
+		"lei": "969500BY8TEU16U3SJ94",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-24",
+		"sha256Page": "cec3dbe1d075218a64779f26f5a72d9fe5699d3cb107659e697a63d4cde508dd",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"13",
+				"2102974",
+				"2102974"
+			],
+			[
+				"1454589",
+				"1482003"
+			],
+			[
+				"-452725",
+				"-519420"
+			],
+			[
+				"42727",
+				"179355"
+			],
+			[
+				"3147565",
+				"3244912"
+			],
+			[
+				"18",
+				"6476",
+				"4464"
+			],
+			[
+				"3154041",
+				"3249376"
+			],
+			[
+				"6513",
+				"5276"
+			],
+			[
+				"14",
+				"1887057",
+				"1616865"
+			],
+			[
+				"15",
+				"88251",
+				"69599"
+			],
+			[
+				"16"
+			],
+			[
+				"26",
+				"55566",
+				"53118"
+			],
+			[
+				"2037387",
+				"1744858"
+			],
+			[
+				"14",
+				"36491",
+				"24535"
+			],
+			[
+				"10",
+				"66479",
+				"35130"
+			],
+			[
+				"10",
+				"71570",
+				"97449"
+			],
+			[
+				"22563",
+				"21770"
+			],
+			[
+				"197103",
+				"178884"
+			],
+			[
+				"5388531",
+				"5173118"
+			]
+		]
+	}
+}

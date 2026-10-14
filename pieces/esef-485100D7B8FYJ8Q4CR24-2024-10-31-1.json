@@ -1,0 +1,48 @@
+{
+	"id": "esef-485100D7B8FYJ8Q4CR24-2024-10-31-1",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/485100D7B8FYJ8Q4CR24/2024-10-31/ESEF/MT/0/485100D7B8FYJ8Q4CR24-2024-10-31-0-en/reports/485100D7B8FYJ8Q4CR24-2024-10-31-0-en.html",
+		"lei": "485100D7B8FYJ8Q4CR24",
+		"pays": "MT",
+		"exercice": "2024-10-31",
+		"depose": "2025-05-21",
+		"sha256Page": "1f4bd72b8c8cde252df0aabc1621113511218554ea37cdb879e6a725f7abd5bb",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"7599509",
+				"7599509"
+			],
+			[
+				"7599509",
+				"7599509"
+			],
+			[
+				"20",
+				"-5996728",
+				"-5996728"
+			],
+			[
+				"-434059",
+				"434059"
+			],
+			[
+				"34292088",
+				"41374079",
+				"38375301",
+				"330752",
+				"22816172",
+				"137188392"
+			]
+		]
+	}
+}

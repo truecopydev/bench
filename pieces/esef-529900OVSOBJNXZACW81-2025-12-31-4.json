@@ -1,0 +1,107 @@
+{
+	"id": "esef-529900OVSOBJNXZACW81-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900OVSOBJNXZACW81/2025-12-31/ESEF/AT/0/polytecholdingag-2025-12-31-1-de/reports/polytecholdingag-2025-12-31-1-de.xhtml",
+		"lei": "529900OVSOBJNXZACW81",
+		"pays": "AT",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "bc7b3ada6303ac79749920082c14733e1f9784a75134f130e327141ff4c779d3",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"22330",
+				"22330"
+			],
+			[
+				"37563",
+				"37563"
+			],
+			[
+				"-1855",
+				"-1855"
+			],
+			[
+				"167512",
+				"157466"
+			],
+			[
+				"-8392",
+				"-6519"
+			],
+			[
+				"217157",
+				"208986"
+			],
+			[
+				"2625",
+				"2756"
+			],
+			[
+				"219783",
+				"211742"
+			],
+			[
+				"65826",
+				"91265"
+			],
+			[
+				"2502",
+				"952"
+			],
+			[
+				"16962",
+				"21554"
+			],
+			[
+				"85290",
+				"113771"
+			],
+			[
+				"51937",
+				"55351"
+			],
+			[
+				"561",
+				"517"
+			],
+			[
+				"659",
+				"179"
+			],
+			[
+				"59457",
+				"63389"
+			],
+			[
+				"97",
+				"1669"
+			],
+			[
+				"45386",
+				"48335"
+			],
+			[
+				"12852",
+				"12536"
+			],
+			[
+				"170949",
+				"181975"
+			],
+			[
+				"476022",
+				"507488"
+			]
+		]
+	}
+}

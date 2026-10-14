@@ -1,0 +1,123 @@
+{
+	"id": "esef-96950032TUYMW11FB530-2026-03-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/96950032TUYMW11FB530/2026-03-31/ESEF/FR/0/Alstom-2026-03-31-1-fr/reports/Alstom-2026-03-31-1-fr.xhtml",
+		"lei": "96950032TUYMW11FB530",
+		"pays": "FR",
+		"exercice": "2026-03-31",
+		"depose": "2026-06-02",
+		"sha256Page": "62226b904393961eddca3976a7cfc731fd774bf7a5453a45be4b2327b258fb6f",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-3",
+				"19171",
+				"18489"
+			],
+			[
+				"-16819",
+				"-16185"
+			],
+			[
+				"-4",
+				"-623",
+				"-581"
+			],
+			[
+				"-5",
+				"-359",
+				"-363"
+			],
+			[
+				"-5",
+				"-671",
+				"-699"
+			],
+			[
+				"-6",
+				"-155",
+				"-198"
+			],
+			[
+				"544",
+				"463"
+			],
+			[
+				"-7",
+				"39",
+				"38"
+			],
+			[
+				"-7",
+				"-204",
+				"-252"
+			],
+			[
+				"379",
+				"249"
+			],
+			[
+				"-8",
+				"-199",
+				"-182"
+			],
+			[
+				"-13",
+				"183",
+				"116"
+			],
+			[
+				"364",
+				"183"
+			],
+			[
+				"-9",
+				"1",
+				"-4"
+			],
+			[
+				"365",
+				"179"
+			],
+			[
+				"324",
+				"149"
+			],
+			[
+				"41",
+				"30"
+			],
+			[
+				"323",
+				"153"
+			],
+			[
+				"41",
+				"30"
+			],
+			[
+				"1",
+				"-4"
+			],
+			[
+				"-10",
+				"61",
+				"31"
+			],
+			[
+				"-10",
+				"60",
+				"31"
+			]
+		]
+	}
+}

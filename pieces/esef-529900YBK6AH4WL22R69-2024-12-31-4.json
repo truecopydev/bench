@@ -1,0 +1,58 @@
+{
+	"id": "esef-529900YBK6AH4WL22R69-2024-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900YBK6AH4WL22R69/2024-12-31/ESEF/HU/0/529900YBK6AH4WL22R69-2024-12-31-0-en/reports/529900YBK6AH4WL22R69-2024-12-31-0-en.xhtml",
+		"lei": "529900YBK6AH4WL22R69",
+		"pays": "HU",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "a0b165ff48afdca7333ce2e0d9a7cee151037765d9c655fd3a31f31fcaaee71a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"13473446",
+				"-108952",
+				"9447999",
+				"0",
+				"22812493"
+			],
+			[
+				"0",
+				"0",
+				"1183767",
+				"0",
+				"1183767"
+			],
+			[
+				"13473446",
+				"-108952",
+				"10631766",
+				"0",
+				"23996260"
+			],
+			[
+				"0",
+				"0",
+				"42978",
+				"0",
+				"42978"
+			],
+			[
+				"13473446",
+				"-108952",
+				"10674744",
+				"0",
+				"24039238"
+			]
+		]
+	}
+}

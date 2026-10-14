@@ -1,0 +1,123 @@
+{
+	"id": "esef-969500I1EJGUAT223F44-2025-06-30-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500I1EJGUAT223F44/2025-06-30/ESEF/FR/0/ramsaysante-2025-06-30-0-fr/reports/ramsaysante-2025-06-30-0-fr.html",
+		"lei": "969500I1EJGUAT223F44",
+		"pays": "FR",
+		"exercice": "2025-06-30",
+		"depose": "2025-11-18",
+		"sha256Page": "28e99318037f2e14a1abac2efb1e6a3d8494d137a19403c20a1b3d3f00d69934",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"52420",
+				"50065"
+			],
+			[
+				"-26559",
+				"-25708"
+			],
+			[
+				"-11581",
+				"-10639"
+			],
+			[
+				"-5707",
+				"-5347"
+			],
+			[
+				"-1485",
+				"-1442"
+			],
+			[
+				"-874",
+				"-820"
+			],
+			[
+				"6214",
+				"6109"
+			],
+			[
+				"-4340",
+				"-4267"
+			],
+			[
+				"1874",
+				"1842"
+			],
+			[
+				"-142",
+				"-236"
+			],
+			[
+				"1732",
+				"1606"
+			],
+			[
+				"-1190",
+				"-968"
+			],
+			[
+				"47",
+				"29"
+			],
+			[
+				"-801",
+				"-802"
+			],
+			[
+				"-1944",
+				"-1741"
+			],
+			[
+				"35",
+				"23"
+			],
+			[
+				"-157",
+				"-296"
+			],
+			[
+				"-122",
+				"-273"
+			],
+			[
+				"11",
+				"-16",
+				"41"
+			],
+			[
+				"-31"
+			],
+			[
+				"-381",
+				"-367"
+			],
+			[
+				"-541",
+				"-539"
+			],
+			[
+				"160",
+				"172"
+			],
+			[
+				"-49",
+				"-49"
+			],
+			[
+				"-49",
+				"-49"
+			]
+		]
+	}
+}

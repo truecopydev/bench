@@ -1,0 +1,66 @@
+{
+	"id": "esef-213800W1S7SVQLFV4X66-2024-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/213800W1S7SVQLFV4X66/2024-12-31/ESEF/MT/0/213800W1S7SVQLFV4X66-2024-12-31-0-en/reports/213800W1S7SVQLFV4X66-2024-12-31-0-en.html",
+		"lei": "213800W1S7SVQLFV4X66",
+		"pays": "MT",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "18faf54c5b92783b91178832c021566119f898ed002f7a3a5f81d8b33e0869c5",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"42831984",
+				"15878784",
+				"1211132",
+				"15142",
+				"1228277",
+				"40109439",
+				"101274758"
+			],
+			[
+				"-1518358",
+				"-1518358"
+			],
+			[
+				"917",
+				"-442548",
+				"-442548"
+			],
+			[
+				"16",
+				"5950",
+				"5950"
+			],
+			[
+				"5950",
+				"-442548",
+				"-436598"
+			],
+			[
+				"5950",
+				"-442548",
+				"-1518358",
+				"-1954956"
+			],
+			[
+				"42831984",
+				"15878784",
+				"1211132",
+				"21092",
+				"785729",
+				"38591081",
+				"99319802"
+			]
+		]
+	}
+}

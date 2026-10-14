@@ -1,0 +1,103 @@
+{
+	"id": "esef-5299006C0EVA5LAYOR30-2026-02-28-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/5299006C0EVA5LAYOR30/2026-02-28/ESEF/AT/0/agranabeteiligungsag-2026-02-28-1-de/reports/agranabeteiligungsag-2026-02-28-1-de.xhtml",
+		"lei": "5299006C0EVA5LAYOR30",
+		"pays": "AT",
+		"exercice": "2026-02-28",
+		"depose": "2026-06-02",
+		"sha256Page": "73978efeee8a3b92ea3a7406e552ebc29bd7dbaa635a256ea5437fca6ee21822",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"690945",
+				"-111163",
+				"-4253",
+				"1163495",
+				"66208",
+				"1229703"
+			],
+			[
+				"0",
+				"0",
+				"-40057",
+				"-40057",
+				"4475",
+				"-35582"
+			],
+			[
+				"0",
+				"-18728",
+				"0",
+				"-32954",
+				"3833",
+				"-29121"
+			],
+			[
+				"0",
+				"-18728",
+				"-40057",
+				"-73011",
+				"8308",
+				"-64703"
+			],
+			[
+				"0",
+				"0",
+				"-43742",
+				"-43742",
+				"-395",
+				"-44137"
+			],
+			[
+				"-47995",
+				"0",
+				"47995",
+				"0",
+				"0",
+				"0"
+			],
+			[
+				"4097",
+				"0",
+				"0",
+				"4097",
+				"-58193",
+				"-54096"
+			],
+			[
+				"0",
+				"0",
+				"0",
+				"8111",
+				"1",
+				"8112"
+			],
+			[
+				"-383",
+				"0",
+				"0",
+				"-383",
+				"6",
+				"-377"
+			],
+			[
+				"646664",
+				"-129891",
+				"-40057",
+				"1058567",
+				"15935",
+				"1074502"
+			]
+		]
+	}
+}

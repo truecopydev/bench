@@ -1,0 +1,106 @@
+{
+	"id": "esef-969500C656AA39O94N60-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500C656AA39O94N60/2025-12-31/ESEF/FR/0/eurazeo-2025-12-31-1-fr/reports/eurazeo-2021-12-31-1-fr.html",
+		"lei": "969500C656AA39O94N60",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "5bfc1bab3181197b66d44d2bc2dff93bbbfd153c61cb61a19db62a1e03d44cc4",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"71",
+				"255451",
+				"280574"
+			],
+			[
+				"72",
+				"23264",
+				"43449"
+			],
+			[
+				"73",
+				"18610",
+				"23869"
+			],
+			[
+				"74",
+				"64424",
+				"75992"
+			],
+			[
+				"8",
+				"6821248",
+				"7876176"
+			],
+			[
+				"10",
+				"633289",
+				"708569"
+			],
+			[
+				"2861",
+				"2898"
+			],
+			[
+				"133",
+				"17736",
+				"7790"
+			],
+			[
+				"7836884",
+				"9019318"
+			],
+			[
+				"55",
+				"191637",
+				"242176"
+			],
+			[
+				"8178",
+				"11124"
+			],
+			[
+				"24979",
+				"19584"
+			],
+			[
+				"10",
+				"5021",
+				"33373"
+			],
+			[
+				"11682",
+				"930"
+			],
+			[
+				"111",
+				"5",
+				"9"
+			],
+			[
+				"111",
+				"109772",
+				"90393"
+			],
+			[
+				"351274",
+				"397588"
+			],
+			[
+				"8188158",
+				"9416906"
+			]
+		]
+	}
+}

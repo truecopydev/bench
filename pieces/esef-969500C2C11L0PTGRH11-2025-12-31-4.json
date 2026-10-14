@@ -1,0 +1,72 @@
+{
+	"id": "esef-969500C2C11L0PTGRH11-2025-12-31-4",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500C2C11L0PTGRH11/2025-12-31/ESEF/FR/0/patrimoineetcommerce-2025-12-31-1-fr/reports/patrimoineetcommerce-2025-12-31-fr.xhtml",
+		"lei": "969500C2C11L0PTGRH11",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-24",
+		"sha256Page": "7d0760e98f699fbc21121160dbeec854d37ecd941756ca27dcdd791daf7042e8",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"151028",
+				"34541",
+				"3972",
+				"220676",
+				"29029",
+				"439246",
+				"11467",
+				"450713"
+			],
+			[
+				"40965",
+				"40965",
+				"-198",
+				"40767"
+			],
+			[
+				"380",
+				"28649",
+				"-29029"
+			],
+			[
+				"-8349",
+				"-12342",
+				"-20691",
+				"-226",
+				"-20917"
+			],
+			[
+				"8696",
+				"11304",
+				"20000",
+				"20000"
+			],
+			[
+				"-1032",
+				"-1032",
+				"-1032"
+			],
+			[
+				"159724",
+				"37496",
+				"4352",
+				"235951",
+				"40965",
+				"478488",
+				"11043",
+				"489531"
+			]
+		]
+	}
+}

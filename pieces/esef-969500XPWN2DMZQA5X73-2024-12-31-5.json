@@ -1,0 +1,75 @@
+{
+	"id": "esef-969500XPWN2DMZQA5X73-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/969500XPWN2DMZQA5X73/2024-12-31/ESEF/FR/0/gnft-2024-12-31-fr/reports/gnft-2024-12-31-fr.xhtml",
+		"lei": "969500XPWN2DMZQA5X73",
+		"pays": "FR",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-07",
+		"sha256Page": "9d86d16d00412d62b20e79785f57c8c6ad98d79999c49a9b3061a53b18aca5c3",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"13",
+				"77789",
+				"81788"
+			],
+			[
+				"16",
+				"32707",
+				"7564"
+			],
+			[
+				"19",
+				"2615",
+				"3409"
+			],
+			[
+				"17",
+				"4",
+				"4"
+			],
+			[
+				"113115",
+				"92766"
+			],
+			[
+				"14",
+				"48761",
+				"47998"
+			],
+			[
+				"15",
+				"7872",
+				"7595"
+			],
+			[
+				"18",
+				"4125",
+				"3065"
+			],
+			[
+				"11",
+				"0",
+				"0"
+			],
+			[
+				"60758",
+				"58659"
+			],
+			[
+				"173872",
+				"151424"
+			]
+		]
+	}
+}

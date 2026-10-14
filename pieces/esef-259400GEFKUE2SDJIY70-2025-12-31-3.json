@@ -1,0 +1,77 @@
+{
+	"id": "esef-259400GEFKUE2SDJIY70-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/259400GEFKUE2SDJIY70/2025-12-31/ESEF/LT/0/abutenostrikotazas-2025-12-31-en/reports/abutenostrikotazas-2025-12-31-en.xhtml",
+		"lei": "259400GEFKUE2SDJIY70",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-09",
+		"sha256Page": "e36f54549e1a73297a644442510ab469ca81d2b9c028d15b2acac0200368bf5c",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024",
+				"2025",
+				"2024"
+			],
+			[
+				"18",
+				"-53",
+				"-53"
+			],
+			[
+				"-70",
+				"-70"
+			],
+			[
+				"-52",
+				"-52"
+			],
+			[
+				"-175",
+				"-175"
+			],
+			[
+				"-175",
+				"169",
+				"-175"
+			],
+			[
+				"-696",
+				"-1696",
+				"-160",
+				"-3437"
+			],
+			[
+				"-649",
+				"-1624",
+				"-160",
+				"-3437"
+			],
+			[
+				"-47",
+				"-72"
+			],
+			[
+				"-696",
+				"-1696",
+				"-160",
+				"-3437"
+			],
+			[
+				"-77",
+				"-17"
+			]
+		]
+	}
+}

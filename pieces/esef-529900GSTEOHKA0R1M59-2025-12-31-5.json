@@ -1,0 +1,100 @@
+{
+	"id": "esef-529900GSTEOHKA0R1M59-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900GSTEOHKA0R1M59/2025-12-31/ESEF/LT/0/invlbalticrealestate-2025-12-31-1-en/reports/invlbalticrealestate-2025-12-31-1-en.xhtml",
+		"lei": "529900GSTEOHKA0R1M59",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-03-18",
+		"sha256Page": "9d9e2779991f5b5a0ee1cc7b863c378f61ca8cd116941e3697b833277cbac9af",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024",
+				"2025",
+				"2024"
+			],
+			[
+				"377",
+				"167",
+				"316",
+				"33"
+			],
+			[
+				"11",
+				"47768",
+				"42567",
+				"42701",
+				"37905"
+			],
+			[
+				"1",
+				"4"
+			],
+			[
+				"5",
+				"2586",
+				"5268"
+			],
+			[
+				"12",
+				"16"
+			],
+			[
+				"48158",
+				"42754",
+				"45603",
+				"43206"
+			],
+			[
+				"47",
+				"435",
+				"32",
+				"427"
+			],
+			[
+				"13",
+				"171",
+				"117",
+				"194",
+				"29"
+			],
+			[
+				"3"
+			],
+			[
+				"200",
+				"200"
+			],
+			[
+				"31",
+				"801",
+				"1841",
+				"484",
+				"273"
+			],
+			[
+				"1022",
+				"2593",
+				"710",
+				"929"
+			],
+			[
+				"49180",
+				"45347",
+				"46313",
+				"44135"
+			]
+		]
+	}
+}

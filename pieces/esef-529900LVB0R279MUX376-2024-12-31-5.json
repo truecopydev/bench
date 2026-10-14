@@ -1,0 +1,81 @@
+{
+	"id": "esef-529900LVB0R279MUX376-2024-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/529900LVB0R279MUX376/2024-12-31/ESEF/MT/0/IHIP_20241231_CON_AFR_529900LVB0R279MUX376/reports/ihi-2024-12-31.xhtml",
+		"lei": "529900LVB0R279MUX376",
+		"pays": "MT",
+		"exercice": "2024-12-31",
+		"depose": "2025-05-21",
+		"sha256Page": "c6d399d9c7e1a0e35885f1d15e71106bda665157afb6597ec7de55ff9c02d71a",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2024",
+				"2023"
+			],
+			[
+				"-1246",
+				"-11303"
+			],
+			[
+				"75894",
+				"62495"
+			],
+			[
+				"102",
+				"-17697",
+				"-15462"
+			],
+			[
+				"-148"
+			],
+			[
+				"33"
+			],
+			[
+				"102",
+				"15051",
+				"-20842"
+			],
+			[
+				"102",
+				"1953",
+				"3707"
+			],
+			[
+				"181",
+				"188",
+				"-139"
+			],
+			[
+				"75274",
+				"29759"
+			],
+			[
+				"74028",
+				"18456"
+			],
+			[
+				"61056",
+				"6375"
+			],
+			[
+				"12972",
+				"12081"
+			],
+			[
+				"74028",
+				"18456"
+			]
+		]
+	}
+}

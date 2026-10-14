@@ -1,0 +1,96 @@
+{
+	"id": "esef-52990038OKF8UAD5LA12-2025-12-31-5",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/52990038OKF8UAD5LA12/2025-12-31/ESEF/AT/0/frauenthalholdingag-2025-12-31-1-de/reports/frauenthalholdingag-2025-12-31-1-de.xhtml",
+		"lei": "52990038OKF8UAD5LA12",
+		"pays": "AT",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "4752aa3a66c17d5ad1738cce6e4d790c370db836e7a578572de6606b9c8c2c11",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"5265",
+				"-2089"
+			],
+			[
+				"-40",
+				"2442",
+				"-607"
+			],
+			[
+				"2442",
+				"-607"
+			],
+			[
+				"2442",
+				"-607"
+			],
+			[
+				"7707",
+				"-2696"
+			],
+			[
+				"7707",
+				"-2696"
+			],
+			[
+				"-41445",
+				"-3020"
+			],
+			[
+				"1250",
+				"-916"
+			],
+			[
+				"5810",
+				"0"
+			],
+			[
+				"7060",
+				"-916"
+			],
+			[
+				"170",
+				"-151"
+			],
+			[
+				"170",
+				"-151"
+			],
+			[
+				"7230",
+				"-1067"
+			],
+			[
+				"-34215",
+				"-4087"
+			],
+			[
+				"-34215",
+				"-4087"
+			],
+			[
+				"-26508",
+				"-6782"
+			],
+			[
+				"-26508",
+				"-6782"
+			]
+		]
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"id": "esef-259400BRMBG9E27RG043-2024-03-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/259400BRMBG9E27RG043/2024-03-31/ESEF/PL/0/bcm-2024-03-31-pl/reports/bcm-2024-03-31-pl.xhtml",
+		"lei": "259400BRMBG9E27RG043",
+		"pays": "PL",
+		"exercice": "2024-03-31",
+		"depose": "2024-07-04",
+		"sha256Page": "db0a8322e94e76c82798785ad67aaa4163832bdb72709bf8cae6ff180f30d05c",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"2020",
+				"12755",
+				"4510",
+				"19285",
+				"2228",
+				"21513"
+			],
+			[
+				"2020",
+				"12755",
+				"4510",
+				"19285",
+				"2228",
+				"21513"
+			],
+			[
+				"-727",
+				"-727",
+				"-727"
+			],
+			[
+				"64",
+				"64",
+				"-946",
+				"-882"
+			],
+			[
+				"64",
+				"64",
+				"-946",
+				"-882"
+			],
+			[
+				"-663",
+				"-663",
+				"-946",
+				"-1609"
+			],
+			[
+				"2020",
+				"12755",
+				"3847",
+				"18622",
+				"1282",
+				"19904"
+			]
+		]
+	}
+}

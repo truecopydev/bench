@@ -1,0 +1,79 @@
+{
+	"id": "esef-984500E0A1C4DLBA3878-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+		"lei": "984500E0A1C4DLBA3878",
+		"pays": "NL",
+		"exercice": "2025-12-31",
+		"depose": "2026-05-12",
+		"sha256Page": "21639e93d70f7de7ca921c55cd9e5a894bbe7aa0e7355cf764222afc510e6744",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 35,
+		"lignes": [
+			[
+				"2025",
+				"2024"
+			],
+			[
+				"9"
+			],
+			[
+				"10"
+			],
+			[
+				"10"
+			],
+			[
+				"10"
+			],
+			[
+				"10"
+			],
+			[
+				"10",
+				"-187"
+			],
+			[
+				"10",
+				"662"
+			],
+			[
+				"10"
+			],
+			[
+				"10"
+			],
+			[
+				"11"
+			],
+			[
+				"11",
+				"6",
+				"222"
+			],
+			[
+				"12",
+				"4"
+			],
+			[
+				"20",
+				"92"
+			],
+			[
+				"26",
+				"19"
+			],
+			[
+				"24"
+			]
+		]
+	}
+}

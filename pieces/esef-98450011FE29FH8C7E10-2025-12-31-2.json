@@ -1,0 +1,75 @@
+{
+	"id": "esef-98450011FE29FH8C7E10-2025-12-31-2",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/98450011FE29FH8C7E10/2025-12-31/ESEF/LT/0/UABAEI-2025-12-31-en/reports/UABAEI-2025-12-31-en.xhtml",
+		"lei": "98450011FE29FH8C7E10",
+		"pays": "LT",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-15",
+		"sha256Page": "ea249bf596e798e50acb890f178f7ff9cffde9d4ba62b475ff7f71da6669a578",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"58656",
+				"24119",
+				"1325",
+				"16450",
+				"100550"
+			],
+			[
+				"-11749",
+				"-11749"
+			],
+			[
+				"-11749",
+				"-11749"
+			],
+			[
+				"8"
+			],
+			[
+				"58656",
+				"24119",
+				"1325",
+				"4701",
+				"88801"
+			],
+			[
+				"58656",
+				"24119",
+				"1075",
+				"31477",
+				"115327"
+			],
+			[
+				"-14777",
+				"-14777"
+			],
+			[
+				"-14777",
+				"-14777"
+			],
+			[
+				"8",
+				"250",
+				"-250"
+			],
+			[
+				"58656",
+				"24119",
+				"1325",
+				"16450",
+				"100550"
+			]
+		]
+	}
+}

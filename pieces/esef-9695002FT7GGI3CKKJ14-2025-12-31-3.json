@@ -1,0 +1,121 @@
+{
+	"id": "esef-9695002FT7GGI3CKKJ14-2025-12-31-3",
+	"source": {
+		"registre": "filings.xbrl.org",
+		"rapport": "https://filings.xbrl.org/9695002FT7GGI3CKKJ14/2025-12-31/ESEF/FR/0/euroapi-2025-12-31-en/reports/euroapi-2025-12-31-en.xhtml",
+		"lei": "9695002FT7GGI3CKKJ14",
+		"pays": "FR",
+		"exercice": "2025-12-31",
+		"depose": "2026-04-07",
+		"sha256Page": "0740cf5cb0e5e966fb21fd1bc8dd792fa756f7e89c98129dceb8fb4697795fce",
+		"termes": {
+			"url": "https://filings.xbrl.org/about.html",
+			"termes": "Terms of use: \"At present, there are no restrictions on the ways that the data can be used.\"",
+			"lue": "2026-10-14"
+		}
+	},
+	"verite": {
+		"origine": "grille <table> du XHTML iXBRL publie par l emetteur",
+		"eclates": 0,
+		"lignes": [
+			[
+				"-2112",
+				"-1306"
+			],
+			[
+				"1405",
+				"768"
+			],
+			[
+				"-44"
+			],
+			[
+				"729",
+				"-90"
+			],
+			[
+				"105",
+				"258"
+			],
+			[
+				"84",
+				"-369"
+			],
+			[
+				"389",
+				"940"
+			],
+			[
+				"454",
+				"522"
+			],
+			[
+				"16",
+				"-468"
+			],
+			[
+				"343",
+				"604"
+			],
+			[
+				"1285",
+				"1229"
+			],
+			[
+				"-785",
+				"-1080"
+			],
+			[
+				"15"
+			],
+			[
+				"-770",
+				"-1080"
+			],
+			[
+				"1973"
+			],
+			[
+				"512",
+				"-54",
+				"-55"
+			],
+			[
+				"517",
+				"-50",
+				"-1550"
+			],
+			[
+				"-30",
+				"-109"
+			],
+			[
+				"-1"
+			],
+			[
+				"2",
+				"7"
+			],
+			[
+				"-133",
+				"265"
+			],
+			[
+				"3",
+				"-6"
+			],
+			[
+				"386",
+				"408"
+			],
+			[
+				"752",
+				"345"
+			],
+			[
+				"1138",
+				"752"
+			]
+		]
+	}
+}
