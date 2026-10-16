@@ -80,7 +80,10 @@ their reason.
 
 No piece names a person: every table and every truth went through a check for
 civilities and common first names in the languages of the reports, and a table
-that failed it stayed out.
+that failed it stayed out. The same check ships with the bench
+(`src/personnes.mjs`) and `npm test` replays it on every piece, so you can
+verify this rather than take it on trust. It is a list of titles and first
+names, so it is incomplete: a rare first name with no title would pass.
 
 ## Licence
 
