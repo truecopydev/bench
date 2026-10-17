@@ -88,11 +88,20 @@ function lirePdftotext(pieces) {
 	});
 }
 
+/** A fresh process every LOT_PYTHON pieces: docling grows by the document and a long run dies of memory. */
+const LOT_PYTHON = 100;
+
 function lirePython(outil, pieces) {
-	const liste = join(CACHE, `liste-${outil}.txt`);
-	writeFileSync(liste, pieces.map((p) => `${p.id}\t${pdfDe(p.id)}`).join('\n') + '\n');
-	const sortie = execFileSync(pythonDe(outil), [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 });
-	return sortie.trim().split('\n').map((l) => JSON.parse(l));
+	const lectures = [];
+	for (let debut = 0; debut < pieces.length; debut += LOT_PYTHON) {
+		const lot = pieces.slice(debut, debut + LOT_PYTHON);
+		const liste = join(CACHE, `liste-${outil}.txt`);
+		writeFileSync(liste, lot.map((p) => `${p.id}\t${pdfDe(p.id)}`).join('\n') + '\n');
+		const sortie = execFileSync(pythonDe(outil), [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 });
+		lectures.push(...sortie.trim().split('\n').map((l) => JSON.parse(l)));
+		console.log(`  ${outil} ${Math.min(debut + LOT_PYTHON, pieces.length)}/${pieces.length}`);
+	}
+	return lectures;
 }
 
 const VERSIONS = {
