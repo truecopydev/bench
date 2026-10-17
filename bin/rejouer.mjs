@@ -4,12 +4,14 @@
  *
  *     npm run rejouer -- --chrome /usr/bin/chromium
  *     npm run rejouer -- --outils truecopy,pdftotext --limite 50
+ *     npm run rejouer -- --python .venv/bin/python --python-docling .venv-docling/bin/python
  *
  * 1. prints each published table (pieces/<id>.html) to PDF with ONE headless
  *    Chrome driven over DevTools, into cache/pdf (not versioned);
  * 2. reads each PDF with every arm: truecopy (readTable, default options),
- *    pdftotext -layout (poppler, resolved by its banner), pdfplumber and camelot
- *    (temoins/temoins.py, settings fixed there);
+ *    pdftotext -layout (poppler, resolved by its banner), pdfplumber, camelot
+ *    and docling (temoins/temoins.py, settings fixed there; docling lives in its
+ *    own environment, temoins/requirements-docling.txt);
  * 3. scores every reading with src/juge.mjs against the truth of the piece;
  * 4. writes lectures/<arm>.jsonl (the rows read) and resultats/<day>.json
  *    (versions, banners, per-piece verdicts, per-arm summary).
@@ -29,10 +31,12 @@ const opt = (nom, defaut) => {
 	const i = process.argv.indexOf(`--${nom}`);
 	return i === -1 ? defaut : process.argv[i + 1];
 };
-const OUTILS = opt('outils', 'truecopy,pdftotext,pdfplumber,camelot').split(',');
+const OUTILS = opt('outils', 'truecopy,pdftotext,pdfplumber,camelot,docling').split(',');
 const CHROME = opt('chrome', process.env.CHROME ?? 'chromium');
 const CACHE = opt('cache', join(RACINE, 'cache'));
 const PYTHON = opt('python', process.env.PYTHON ?? 'python3');
+const PYTHON_DOCLING = opt('python-docling', process.env.PYTHON_DOCLING ?? PYTHON);
+const pythonDe = (outil) => (outil === 'docling' ? PYTHON_DOCLING : PYTHON);
 const LIMITE = Number(opt('limite', 1e9));
 
 const pdfDe = (id) => join(CACHE, 'pdf', `${id}.pdf`);
@@ -87,7 +91,7 @@ function lirePdftotext(pieces) {
 function lirePython(outil, pieces) {
 	const liste = join(CACHE, `liste-${outil}.txt`);
 	writeFileSync(liste, pieces.map((p) => `${p.id}\t${pdfDe(p.id)}`).join('\n') + '\n');
-	const sortie = execFileSync(PYTHON, [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 });
+	const sortie = execFileSync(pythonDe(outil), [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 });
 	return sortie.trim().split('\n').map((l) => JSON.parse(l));
 }
 
@@ -95,9 +99,10 @@ const VERSIONS = {
 	truecopy: () => JSON.parse(readFileSync(join(RACINE, 'node_modules', 'truecopy', 'package.json'), 'utf8')).version,
 	pdftotext: () => versionPdftotext(),
 	pdfplumber: () => banniere(PYTHON, [join(RACINE, 'temoins', 'temoins.py'), 'pdfplumber', '--version']),
-	camelot: () => banniere(PYTHON, [join(RACINE, 'temoins', 'temoins.py'), 'camelot', '--version'])
+	camelot: () => banniere(PYTHON, [join(RACINE, 'temoins', 'temoins.py'), 'camelot', '--version']),
+	docling: () => banniere(PYTHON_DOCLING, [join(RACINE, 'temoins', 'temoins.py'), 'docling', '--version'])
 };
-const LECTEURS = { truecopy: lireTruecopy, pdftotext: lirePdftotext, pdfplumber: (p) => lirePython('pdfplumber', p), camelot: (p) => lirePython('camelot', p) };
+const LECTEURS = { truecopy: lireTruecopy, pdftotext: lirePdftotext, pdfplumber: (p) => lirePython('pdfplumber', p), camelot: (p) => lirePython('camelot', p), docling: (p) => lirePython('docling', p) };
 
 async function main() {
 	const pieces = lirePieces();
