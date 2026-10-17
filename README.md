@@ -47,7 +47,8 @@ The pieces come from 332 reports of 23 countries of the European Economic Area,
 ```sh
 npm ci
 python3 -m venv .venv && .venv/bin/pip install -r temoins/requirements.txt
-npm run rejouer -- --chrome "$(command -v chromium)" --python .venv/bin/python
+python3 -m venv .venv-docling && .venv-docling/bin/pip install -r temoins/requirements-docling.txt
+npm run rejouer -- --chrome "$(command -v chromium)" --python .venv/bin/python --python-docling .venv-docling/bin/python
 ```
 
 The replay prints each table to PDF with one headless Chromium (A4 landscape,
@@ -56,8 +57,9 @@ reading with `src/juge.mjs`. Settings are fixed in the code and never tuned per
 document: truecopy `readTable` with its default options; `pdftotext -layout`
 (poppler, resolved by its banner), a row per line, cells split on two spaces or
 more; pdfplumber with the text strategy both ways; camelot with the stream
-flavor. `npm run rejouer -- --outils truecopy,pdftotext --limite 50` replays a
-part.
+flavor; docling without OCR, its table-structure model in accurate mode, each
+table as its header row then its body rows.
+`npm run rejouer -- --outils truecopy,pdftotext --limite 50` replays a part.
 
 ## What it does not prove
 
