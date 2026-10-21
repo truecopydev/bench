@@ -6,6 +6,7 @@
  *     npm run rejouer -- --outils truecopy,pdftotext --limite 50
  *     npm run rejouer -- --python .venv/bin/python --python-docling .venv-docling/bin/python
  *     npm run rejouer -- --reprendre   (after a death: the Python witnesses skip what lectures/ already holds)
+ *     npm run rejouer -- --juger       (judge again what lectures/ holds, from the last replay: no printing, no reading)
  *
  * 1. prints each published table (pieces/<id>.html) to PDF with ONE headless
  *    Chrome driven over DevTools, into cache/pdf (not versioned);
@@ -26,7 +27,7 @@ import { noter } from '../src/juge.mjs';
 import { imprimerParLots, ouvrirImprimante } from '../src/imprimer.mjs';
 import { poppler, versionPdftotext } from '../src/poppler.mjs';
 import { remplacerResultats, resumer, tableauMarkdown } from '../src/resume.mjs';
-import { lignesLues, lireParLots } from '../src/temoins.mjs';
+import { lecturesGardees, lignesLues, lireParLots } from '../src/temoins.mjs';
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const opt = (nom, defaut) => {
@@ -41,6 +42,7 @@ const PYTHON_DOCLING = opt('python-docling', process.env.PYTHON_DOCLING ?? PYTHO
 const pythonDe = (outil) => (outil === 'docling' ? PYTHON_DOCLING : PYTHON);
 const LIMITE = Number(opt('limite', 1e9));
 const REPRENDRE = process.argv.includes('--reprendre');
+const JUGER = process.argv.includes('--juger');
 
 const pdfDe = (id) => join(CACHE, 'pdf', `${id}.pdf`);
 const fichierLectures = (outil) => join(RACINE, 'lectures', `${outil}.jsonl`);
@@ -113,28 +115,58 @@ const VERSIONS = {
 };
 const LECTEURS = { truecopy: lireTruecopy, pdftotext: lirePdftotext, pdfplumber: (p) => lirePython('pdfplumber', p), camelot: (p) => lirePython('camelot', p), docling: (p) => lirePython('docling', p) };
 
-async function main() {
-	const pieces = lirePieces();
+/** Score one reading: rows right, and what the reader said of it (nothing at all, its own doubt, a failure). */
+function verdict(verite, lecture) {
+	const n = noter(verite, lecture.rows);
+	return {
+		juste: n.juste,
+		lignes: n.lignes,
+		justes: n.justes,
+		...(lecture.rows.length === 0 ? { vide: true } : {}),
+		...(lecture.findings ? { fiable: lecture.findings.length === 0 } : {}),
+		...(lecture.error ? { erreur: true } : {})
+	};
+}
+
+/** Print and read everything: the replay proper. */
+async function rejouer(pieces) {
 	const imprimes = await imprimer(pieces.map((p) => p.id));
 	console.log(`${pieces.length} pieces, ${imprimes} printed`);
-	const jour = new Date().toISOString().slice(0, 10);
 	mkdirSync(join(RACINE, 'lectures'), { recursive: true });
-	mkdirSync(join(RACINE, 'resultats'), { recursive: true });
-	const verites = new Map(pieces.map((p) => [p.id, p.verite.lignes]));
-	const verdicts = {};
 	const versions = {};
+	const lectures = {};
 	for (const outil of OUTILS) {
 		versions[outil] = VERSIONS[outil]();
-		const lectures = await LECTEURS[outil](pieces);
-		writeFileSync(fichierLectures(outil), lectures.map((l) => JSON.stringify(l)).join('\n') + '\n');
-		for (const l of lectures) {
-			const n = noter(verites.get(l.id), l.rows);
-			verdicts[l.id] ??= {};
-			verdicts[l.id][outil] = { juste: n.juste, lignes: n.lignes, justes: n.justes, ...(l.findings ? { fiable: l.findings.length === 0 } : {}), ...(l.error ? { erreur: true } : {}) };
-		}
+		lectures[outil] = await LECTEURS[outil](pieces);
+		writeFileSync(fichierLectures(outil), lectures[outil].map((l) => JSON.stringify(l)).join('\n') + '\n');
 		console.log(`${outil} ${versions[outil]} read`);
 	}
 	const banc = { chrome: banniere(CHROME, ['--version']), node: process.version, plateforme: `${process.platform} ${process.arch}` };
+	return { jour: new Date().toISOString().slice(0, 10), versions, banc, lectures };
+}
+
+/** Judge again what the last replay read, as lectures/ holds it: its day, versions and banners are kept. */
+function dernierRejeu() {
+	const dossier = join(RACINE, 'resultats');
+	const dernier = readdirSync(dossier).filter((f) => f.endsWith('.json')).sort().at(-1);
+	if (!dernier) throw new Error('nothing to judge again: resultats/ is empty');
+	const { jour, versions, banc } = JSON.parse(readFileSync(join(dossier, dernier), 'utf8'));
+	const lectures = Object.fromEntries(OUTILS.map((outil) => [outil, lecturesGardees(fichierLectures(outil))]));
+	return { jour, versions, banc, lectures };
+}
+
+async function main() {
+	const pieces = lirePieces();
+	const verites = new Map(pieces.map((p) => [p.id, p.verite.lignes]));
+	const { jour, versions, banc, lectures } = JUGER ? dernierRejeu() : await rejouer(pieces);
+	const verdicts = {};
+	for (const outil of OUTILS) {
+		for (const l of lectures[outil].filter((l) => verites.has(l.id))) {
+			verdicts[l.id] ??= {};
+			verdicts[l.id][outil] = verdict(verites.get(l.id), l);
+		}
+	}
+	mkdirSync(join(RACINE, 'resultats'), { recursive: true });
 	const resume = resumer(verdicts, OUTILS);
 	const fichier = join(RACINE, 'resultats', `${jour}.json`);
 	writeFileSync(fichier, JSON.stringify({ jour, pieces: pieces.length, versions, banc, resume, verdicts }, null, '\t') + '\n');
