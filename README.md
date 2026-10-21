@@ -11,18 +11,23 @@ it, no person typed it.
 ## Results
 
 <!-- results:start -->
-Replay of 2026-10-14, Chromium 141.0.7390.37, linux x64.
+Replay of 2026-10-21, Chromium 155.0.8059.79 built on Debian GNU/Linux 12 (bookworm), linux x64.
 
-| reader | version | tables right | rows right | given reliable | wrong among reliable |
-| --- | --- | --- | --- | --- | --- |
-| truecopy | 2.0.14 | 655 / 1560 (42 %) | 79.9 % | 503 | 40.8 % |
-| pdftotext | pdftotext version 24.02.0 | 815 / 1560 (52.2 %) | 84.3 % | - | - |
-| pdfplumber | 0.11.4 | 244 / 1560 (15.6 %) | 55.6 % | - | - |
-| camelot | 0.11.0 | 717 / 1560 (46 %) | 81.3 % | - | - |
+| reader | version | tables right | rows right | nothing read | given reliable | wrong among reliable |
+| --- | --- | --- | --- | --- | --- | --- |
+| truecopy | 2.0.14 | 656 / 1560 (42.1 %) | 79.9 % | 0 | 504 | 40.5 % |
+| pdftotext | pdftotext version 22.12.0 | 817 / 1560 (52.4 %) | 84.3 % | 0 | - | - |
+| pdfplumber | 0.11.4 | 245 / 1560 (15.7 %) | 55.6 % | 0 | - | - |
+| camelot | 0.11.0 | 718 / 1560 (46 %) | 81.3 % | 3 | - | - |
+| docling | 2.140.0 | 367 / 1560 (23.5 %) | 46.4 % | 642 | - | - |
 <!-- results:end -->
 
 **right**: every row of the truth is found, in order, as a read row carrying
 exactly the same numbers. **rows right**: share of truth rows found.
+**nothing read**: pages on which the reader returned no row at all - it found
+no table where there is one. Such a page counts as wrong, for every reader:
+docling's layout model misses the table on a large share of these prints, and
+the tables it does see it reads about as often right as truecopy.
 **given reliable**: readings that truecopy returned without any finding.
 **wrong among reliable**: of those, how many were wrong - the number a reader
 that claims to know when it is wrong must keep low. The other readers make no
@@ -59,7 +64,9 @@ document: truecopy `readTable` with its default options; `pdftotext -layout`
 more; pdfplumber with the text strategy both ways; camelot with the stream
 flavor; docling without OCR, its table-structure model in accurate mode, each
 table as its header row then its body rows.
-`npm run rejouer -- --outils truecopy,pdftotext --limite 50` replays a part.
+`npm run rejouer -- --outils truecopy,pdftotext --limite 50` replays a part;
+`npm run rejouer -- --juger` scores again what `lectures/` holds, without
+printing or reading, when the judge changes.
 
 ## What it does not prove
 
