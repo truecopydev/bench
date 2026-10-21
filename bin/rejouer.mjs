@@ -5,6 +5,7 @@
  *     npm run rejouer -- --chrome /usr/bin/chromium
  *     npm run rejouer -- --outils truecopy,pdftotext --limite 50
  *     npm run rejouer -- --python .venv/bin/python --python-docling .venv-docling/bin/python
+ *     npm run rejouer -- --reprendre   (after a death: the Python witnesses skip what lectures/ already holds)
  *
  * 1. prints each published table (pieces/<id>.html) to PDF with ONE headless
  *    Chrome driven over DevTools, into cache/pdf (not versioned);
@@ -25,6 +26,7 @@ import { noter } from '../src/juge.mjs';
 import { imprimerParLots, ouvrirImprimante } from '../src/imprimer.mjs';
 import { poppler, versionPdftotext } from '../src/poppler.mjs';
 import { remplacerResultats, resumer, tableauMarkdown } from '../src/resume.mjs';
+import { lignesLues, lireParLots } from '../src/temoins.mjs';
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const opt = (nom, defaut) => {
@@ -38,8 +40,10 @@ const PYTHON = opt('python', process.env.PYTHON ?? 'python3');
 const PYTHON_DOCLING = opt('python-docling', process.env.PYTHON_DOCLING ?? PYTHON);
 const pythonDe = (outil) => (outil === 'docling' ? PYTHON_DOCLING : PYTHON);
 const LIMITE = Number(opt('limite', 1e9));
+const REPRENDRE = process.argv.includes('--reprendre');
 
 const pdfDe = (id) => join(CACHE, 'pdf', `${id}.pdf`);
+const fichierLectures = (outil) => join(RACINE, 'lectures', `${outil}.jsonl`);
 const banniere = (cmd, args) => {
 	try {
 		return execFileSync(cmd, args, { encoding: 'utf8', timeout: 60_000 }).trim().split(/\r?\n/)[0];
@@ -88,21 +92,16 @@ function lirePdftotext(pieces) {
 	});
 }
 
-/** A fresh process every LOT_PYTHON pieces: docling grows by the document and a long run dies of memory. */
-const LOT_PYTHON = 100;
+/** A fresh process every LOT_PYTHON pieces, each lot kept on disk as soon as it is read (src/temoins.mjs). */
+const LOT_PYTHON = Number(process.env.LOT_PYTHON) || 100;
 
 function lirePython(outil, pieces) {
-	const lectures = [];
-	for (let debut = 0; debut < pieces.length; debut += LOT_PYTHON) {
-		const lot = pieces.slice(debut, debut + LOT_PYTHON);
-		const liste = join(CACHE, `liste-${outil}.txt`);
+	const liste = join(CACHE, `liste-${outil}.txt`);
+	const lire = (lot) => {
 		writeFileSync(liste, lot.map((p) => `${p.id}\t${pdfDe(p.id)}`).join('\n') + '\n');
-		const sortie = execFileSync(pythonDe(outil), [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 });
-		// docling prints its own lines on stdout too: only ours, one JSON object per piece, count.
-		lectures.push(...sortie.split('\n').filter((l) => l.startsWith('{"id"')).map((l) => JSON.parse(l)));
-		console.log(`  ${outil} ${Math.min(debut + LOT_PYTHON, pieces.length)}/${pieces.length}`);
-	}
-	return lectures;
+		return lignesLues(execFileSync(pythonDe(outil), [join(RACINE, 'temoins', 'temoins.py'), outil, liste], { encoding: 'utf8', maxBuffer: 1 << 30, timeout: 4 * 3600_000 }));
+	};
+	return lireParLots(pieces, { taille: LOT_PYTHON, lire, fichier: fichierLectures(outil), reprendre: REPRENDRE, surLot: (n, total) => console.log(`  ${outil} ${n}/${total}`) });
 }
 
 const VERSIONS = {
@@ -127,7 +126,7 @@ async function main() {
 	for (const outil of OUTILS) {
 		versions[outil] = VERSIONS[outil]();
 		const lectures = await LECTEURS[outil](pieces);
-		writeFileSync(join(RACINE, 'lectures', `${outil}.jsonl`), lectures.map((l) => JSON.stringify(l)).join('\n') + '\n');
+		writeFileSync(fichierLectures(outil), lectures.map((l) => JSON.stringify(l)).join('\n') + '\n');
 		for (const l of lectures) {
 			const n = noter(verites.get(l.id), l.rows);
 			verdicts[l.id] ??= {};
