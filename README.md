@@ -33,6 +33,33 @@ the tables it does see it reads about as often right as truecopy.
 that claims to know when it is wrong must keep low. The other readers make no
 such claim.
 
+## AI readers
+
+Three vision models read a fixed sample of the bench: the 300 pieces whose
+sha256 of the id sorts first. Each model is shown the PNG render (110 dpi) of
+the same printed PDF, through the Claude Code CLI, with one instruction and one
+schema (`src/ia.mjs`), and its rows go to the same judge.
+
+<!-- ai:start -->
+The 300 pieces of the sample, every reader judged on the same ones.
+
+| reader | version | read on | tables right | rows right | nothing read | given reliable | wrong among reliable |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| claude-opus | claude-opus-5-5 | 2026-11-27 | 291 / 300 (97 %) | 99.4 % | 0 | - | - |
+| claude-haiku | claude-haiku-5-5 | 2026-11-27 | 289 / 300 (96.3 %) | 99.7 % | 0 | - | - |
+| claude-sonnet | claude-sonnet-5-5 | 2026-11-27 | 288 / 300 (96 %) | 99.3 % | 0 | - | - |
+| pdftotext | pdftotext version 22.12.0 | 2026-10-21 | 158 / 300 (52.7 %) | 83.6 % | 0 | - | - |
+| camelot | 0.11.0 | 2026-10-21 | 133 / 300 (44.3 %) | 79.8 % | 0 | - | - |
+| truecopy | 2.0.14 | 2026-10-21 | 124 / 300 (41.3 %) | 78.1 % | 0 | 98 | 41.8 % |
+| docling | 2.140.0 | 2026-10-21 | 67 / 300 (22.3 %) | 44.5 % | 129 | - | - |
+| pdfplumber | 0.11.4 | 2026-10-21 | 42 / 300 (14 %) | 51.5 % | 0 | - | - |
+<!-- ai:end -->
+
+**version** of an AI reader: the model identifier that answered. **read on**:
+the day it did. A model answers differently from one call to the next, so its
+readings are kept as read (`lectures/claude-<model>.jsonl`) and never read
+again.
+
 ## What is in it
 
 | Path | What |
@@ -41,6 +68,8 @@ such claim.
 | `pieces/<id>.json` | the report's address, the issuer's LEI, country, period, the sha256 of the table page, the terms of the source, and the truth (`verite.lignes`: the numbers of each row, canonical form) |
 | `sources.json` | the terms of each source as read, with their address and date, and the sources read and refused |
 | `lectures/<reader>.jsonl` | the rows each reader returned, one line per piece |
+| `lectures/claude-<model>.jsonl` | the rows each AI reader returned on the sample, with the model identifier, the day and the confidence it gave itself |
+| `resultats/ia/<day>.json` | the sample: per-piece verdicts and per-reader summary, every reader on the same pieces |
 | `resultats/<day>.json` | versions, banners of the bench, per-piece verdicts, per-reader summary |
 | `src/juge.mjs` | the judge: what a table number is, and when a row reads right |
 
@@ -68,7 +97,22 @@ table as its header row then its body rows.
 `npm run rejouer -- --juger` scores again what `lectures/` holds, without
 printing or reading, when the judge changes.
 
+The AI readers need the Claude Code CLI signed in to an account, and each
+reading is a paid model call:
+
+```sh
+npm run lire-ia -- --modeles haiku,sonnet,opus --echantillon 300 --chrome "$(command -v chromium)"
+```
+
+It reads only the pieces of the sample a model has not read yet;
+`npm run lire-ia -- --juger` scores again what `lectures/` holds, with no model
+call. A larger `--echantillon` keeps every piece of a smaller one.
+
 ## What it does not prove
+
+- The AI readers are judged on 300 pieces, not 1 560, each read once: a second
+  call may read a table differently.
+- An AI reader sees an image of the page, the other readers the PDF itself.
 
 - The PDF read is Chromium's print of the published table, not a PDF laid out by
   the issuer: a different renderer moves some readings.
