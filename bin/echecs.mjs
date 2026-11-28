@@ -13,7 +13,6 @@ import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { numericRow } from '../src/juge.mjs';
-import { MODELES, brasDe } from '../src/ia.mjs';
 import { CLASSES, compter, lecturesFausses, lignesManquees } from '../src/echecs.mjs';
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -21,8 +20,7 @@ const LISTE = join(RACINE, 'echecs-ia.json');
 const json = (chemin) => JSON.parse(readFileSync(chemin, 'utf8'));
 
 const dernier = readdirSync(join(RACINE, 'resultats', 'ia')).filter((f) => f.endsWith('.json')).sort().pop();
-const { jour, echantillon, verdicts } = json(join(RACINE, 'resultats', 'ia', dernier));
-const bras = MODELES.map(brasDe);
+const { jour, echantillon, verdicts, ia: bras } = json(join(RACINE, 'resultats', 'ia', dernier));
 
 const lectures = Object.fromEntries(
 	bras.map((b) => [b, new Map(readFileSync(join(RACINE, 'lectures', `${b}.jsonl`), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)).map((l) => [l.id, l]))])
