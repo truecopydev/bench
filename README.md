@@ -60,6 +60,31 @@ the day it did. A model answers differently from one call to the next, so its
 readings are kept as read (`lectures/claude-<model>.jsonl`) and never read
 again.
 
+### What the failures are
+
+A table is wrong as soon as one row is not read as the same sequence of
+numbers, so a wrong digit and a row cut differently count the same. The 23
+failed readings of the three models were each compared with the print, by hand,
+on 2026-11-28:
+
+| reader | failed | wrong number | row cut | note reference | outside the table |
+| --- | --- | --- | --- | --- | --- |
+| claude-opus | 5 | 0 | 3 | 1 | 1 |
+| claude-sonnet | 8 | 0 | 4 | 3 | 1 |
+| claude-haiku | 10 | 2 | 4 | 3 | 1 |
+
+**wrong number**: a printed number read as another, or a number written that is
+not printed. **row cut**: every number right, an entry printed on two or three
+lines written as one row. **note reference**: every table number right, a note
+number or a footnote call fused to its label or split from it. **outside the
+table**: the truth carries the page number and the reader left it out.
+
+`echecs-ia.json` names each failed reading with its report, the rows of the
+truth it misses, its class and one sentence on what the print shows. The class
+is a judgement: open the report and contest it. `npm run echecs` lists the
+failures again after a new reading and `npm test` refuses one without a class.
+The other readers' failures were not classed.
+
 ## What is in it
 
 | Path | What |
@@ -72,6 +97,7 @@ again.
 | `resultats/ia/<day>.json` | the sample: per-piece verdicts and per-reader summary, every reader on the same pieces |
 | `resultats/<day>.json` | versions, banners of the bench, per-piece verdicts, per-reader summary |
 | `src/juge.mjs` | the judge: what a table number is, and when a row reads right |
+| `echecs-ia.json` | the failed readings of the AI readers, each with the rows it misses and its class (`src/echecs.mjs`) |
 | `ecartees.json` | the 46 pieces set aside, each with its report and the split numbers found (`src/morcele.mjs`) |
 
 The pieces come from 327 reports of 23 countries of the European Economic Area,
