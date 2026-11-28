@@ -1,0 +1,487 @@
+{
+	"reason": "The published table writes numbers split by spaces (6 4 5 ,13 7 for 645,137). The print shows the number whole, the machine-readable layer does not carry it, so the truth misses it and a right reading is judged wrong.",
+	"rule": "src/morcele.mjs",
+	"pieces": [
+		{
+			"id": "esef-213800A1O379I6DMCU10-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/213800A1O379I6DMCU10/2024-12-31/ESEF/MT/0/213800A1O379I6DMCU10-2024-12-31-en/reports/213800A1O379I6DMCU10-2024-12-31-en.xhtml",
+			"sha256Page": "72b4a498aed5444b1a826e9065a1bc5c861833eaf940dc2ad8f102507d9e6fcc",
+			"splitNumbers": 21,
+			"examples": [
+				"1 07 ,6 82",
+				"7 ,0 52",
+				"7 ,0 2 0"
+			]
+		},
+		{
+			"id": "esef-213800HKRFK8PNUNV581-2026-03-31-1",
+			"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+			"sha256Page": "5f9251db78cede3ecd5d3a7e12314d4305412e2df0d904f849a86f6d3b2fe07f",
+			"splitNumbers": 55,
+			"examples": [
+				"13 8 ,947",
+				"138 ,947",
+				"124,0 47"
+			]
+		},
+		{
+			"id": "esef-213800HKRFK8PNUNV581-2026-03-31-2",
+			"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+			"sha256Page": "7e829f2d153d7e785c521fa78504c2aea54347b855eae8b7e60c4b9eb892e296",
+			"splitNumbers": 19,
+			"examples": [
+				"11 ,9 76",
+				"262, 394",
+				"13 1"
+			]
+		},
+		{
+			"id": "esef-213800HKRFK8PNUNV581-2026-03-31-3",
+			"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+			"sha256Page": "8b965bb74cf0bcfc5a768185ee5da79b4db9b53890c1e6392af0203df93cd606",
+			"splitNumbers": 22,
+			"examples": [
+				"6 ,4 3 5",
+				"6 ,15 8",
+				"33 ,8 5 4"
+			]
+		},
+		{
+			"id": "esef-213800HKRFK8PNUNV581-2026-03-31-4",
+			"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+			"sha256Page": "c63ea3409381d5e700312a30e458a336912e71929248b02e9409c25573f624fe",
+			"splitNumbers": 19,
+			"examples": [
+				"(20,80 6)",
+				"8 ,1 31",
+				"8 ,1 7 1"
+			]
+		},
+		{
+			"id": "esef-213800HKRFK8PNUNV581-2026-03-31-5",
+			"rapport": "https://filings.xbrl.org/213800HKRFK8PNUNV581/2026-03-31/ESEF/NL/0/213800HKRFK8PNUNV581-2026-03-31-1-en/reports/213800HKRFK8PNUNV581-2026-03-31-1-en.xhtml",
+			"sha256Page": "79bcfda4adadf44ef20ca3390154393f491e7051128a3c65108cdf3be65b733e",
+			"splitNumbers": 6,
+			"examples": [
+				"12 ,169",
+				"26 4, 782",
+				"262 ,938"
+			]
+		},
+		{
+			"id": "esef-222100VXGA8L6J4ZWG61-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2024-12-31/ESEF/LU/0/222100VXGA8L6J4ZWG61-2024-12-31-0-en/reports/222100VXGA8L6J4ZWG61-2024-12-31-0-en.xhtml",
+			"sha256Page": "6e1970e02cb21afd48cf1966981b3278ee3ebd054035fdf115625e19a3ac1968",
+			"splitNumbers": 33,
+			"examples": [
+				"111 , 0 4 8",
+				"532, 86 7",
+				"(2, 573)"
+			]
+		},
+		{
+			"id": "esef-222100VXGA8L6J4ZWG61-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2024-12-31/ESEF/LU/0/222100VXGA8L6J4ZWG61-2024-12-31-0-en/reports/222100VXGA8L6J4ZWG61-2024-12-31-0-en.xhtml",
+			"sha256Page": "79786fe219f626bfe4b3241a4c3d6add026763792c10f63a13a9469c62109800",
+			"splitNumbers": 11,
+			"examples": [
+				"532, 86 7",
+				"96 ,49 0",
+				"53, 829"
+			]
+		},
+		{
+			"id": "esef-222100VXGA8L6J4ZWG61-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2024-12-31/ESEF/LU/0/222100VXGA8L6J4ZWG61-2024-12-31-0-en/reports/222100VXGA8L6J4ZWG61-2024-12-31-0-en.xhtml",
+			"sha256Page": "f8830b0433e7ebf15fefb7b8c9dd63f4ece8419bd327d73554d36d49c9c07248",
+			"splitNumbers": 10,
+			"examples": [
+				"1 ,18 0 , 6 0 0",
+				"15 0",
+				"(5 78 ,2 73)"
+			]
+		},
+		{
+			"id": "esef-222100VXGA8L6J4ZWG61-2024-12-31-4",
+			"rapport": "https://filings.xbrl.org/222100VXGA8L6J4ZWG61/2024-12-31/ESEF/LU/0/222100VXGA8L6J4ZWG61-2024-12-31-0-en/reports/222100VXGA8L6J4ZWG61-2024-12-31-0-en.xhtml",
+			"sha256Page": "251b056ab2e7b3a0669829b8d2951b456a6e1c1499ec88c1409d4c9910ce9bc3",
+			"splitNumbers": 18,
+			"examples": [
+				"6 4 5 ,13 7",
+				"629, 643",
+				"1 09,5 03"
+			]
+		},
+		{
+			"id": "esef-529900MTLT34HRR1LT15-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/529900MTLT34HRR1LT15/2025-12-31/ESEF/LT/0/abknenergies-2025-12-31-en/reports/abknenergies-2025-12-31-en.xhtml",
+			"sha256Page": "8a9864f787458b09c2e2d43cc04385b6ff83534f097d09f7837c3a39c7d624e6",
+			"splitNumbers": 1,
+			"examples": [
+				"140,70 9"
+			]
+		},
+		{
+			"id": "esef-529900NRAH6YWL3TLD24-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/529900NRAH6YWL3TLD24/2024-12-31/ESEF/HR/0/JGL-2024-12-31-0-en/reports/529900NRAH6YWL3TLD24-2024-12-31-en.xhtml",
+			"sha256Page": "79228662f1266c6003b8827acb3551590bb11a3436312b53f8c44c5b0cb6213b",
+			"splitNumbers": 6,
+			"examples": [
+				"3,81 1,123",
+				"(1 1,554,384)",
+				"(14,21 1,631)"
+			]
+		},
+		{
+			"id": "esef-529900NRAH6YWL3TLD24-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/529900NRAH6YWL3TLD24/2024-12-31/ESEF/HR/0/JGL-2024-12-31-0-en/reports/529900NRAH6YWL3TLD24-2024-12-31-en.xhtml",
+			"sha256Page": "41341af79624f09f3dbfb0228bff78b685cb47b7abad42f723deab9f1dafa7ad",
+			"splitNumbers": 2,
+			"examples": [
+				"1 19,681,948",
+				"1 15,023,213"
+			]
+		},
+		{
+			"id": "esef-529900NRAH6YWL3TLD24-2024-12-31-5",
+			"rapport": "https://filings.xbrl.org/529900NRAH6YWL3TLD24/2024-12-31/ESEF/HR/0/JGL-2024-12-31-0-en/reports/529900NRAH6YWL3TLD24-2024-12-31-en.xhtml",
+			"sha256Page": "7c3e84ad3f08c97277f0c531ad3030aa78f2bcd3789592c43692f09d99934c79",
+			"splitNumbers": 3,
+			"examples": [
+				"1 1 1,869,540",
+				"1 16,295,976",
+				"282,1 14"
+			]
+		},
+		{
+			"id": "esef-549300GHKJCEZOAEUU82-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/549300GHKJCEZOAEUU82/2024-12-31/ESEF/SE/0/bald-2024-12-31-0-sv/reports/bald-2024-12-31-0-sv.xhtml",
+			"sha256Page": "cfa40f92b8a431fe35baa53d131e7e837c7eec660b421271d58afc1ebaa292c1",
+			"splitNumbers": 29,
+			"examples": [
+				"12 5 01",
+				"76 6 57",
+				"12 71 5"
+			]
+		},
+		{
+			"id": "esef-549300GHKJCEZOAEUU82-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300GHKJCEZOAEUU82/2024-12-31/ESEF/SE/0/bald-2024-12-31-0-sv/reports/bald-2024-12-31-0-sv.xhtml",
+			"sha256Page": "8a57a572e57d8ef3101d1d89282370a905757236f02da29451704b4ede3605c3",
+			"splitNumbers": 23,
+			"examples": [
+				"11 94 4",
+				"–2 2 36",
+				"2 01 5"
+			]
+		},
+		{
+			"id": "esef-549300GHKJCEZOAEUU82-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/549300GHKJCEZOAEUU82/2024-12-31/ESEF/SE/0/bald-2024-12-31-0-sv/reports/bald-2024-12-31-0-sv.xhtml",
+			"sha256Page": "46bfa0287989c1b086b9f23aa4874be12f149f8418150e4c799995169cc5d500",
+			"splitNumbers": 25,
+			"examples": [
+				"15 14 6",
+				"12 5 01",
+				"–41 5"
+			]
+		},
+		{
+			"id": "esef-549300GHKJCEZOAEUU82-2024-12-31-4",
+			"rapport": "https://filings.xbrl.org/549300GHKJCEZOAEUU82/2024-12-31/ESEF/SE/0/bald-2024-12-31-0-sv/reports/bald-2024-12-31-0-sv.xhtml",
+			"sha256Page": "9fca30b4335501057be0ca072571c9887695a740b483dd51ca5287c8da6a9510",
+			"splitNumbers": 14,
+			"examples": [
+				"9 61 3",
+				"4 2 21",
+				"4 85 7"
+			]
+		},
+		{
+			"id": "esef-549300GHKJCEZOAEUU82-2024-12-31-5",
+			"rapport": "https://filings.xbrl.org/549300GHKJCEZOAEUU82/2024-12-31/ESEF/SE/0/bald-2024-12-31-0-sv/reports/bald-2024-12-31-0-sv.xhtml",
+			"sha256Page": "5fdc27e365358e20b310b934682bfa31abc2f072830e9df84429f092a8074b9a",
+			"splitNumbers": 17,
+			"examples": [
+				"–2 1",
+				"25 0 06",
+				"–17 27 9"
+			]
+		},
+		{
+			"id": "esef-549300KEJDL2FNITUW65-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/549300KEJDL2FNITUW65/2024-12-31/ESEF/SE/0/atte-2024-12-31-0-sv/reports/atte-2024-12-31-0-sv.xhtml",
+			"sha256Page": "4ef413ec41a0595a98da6d05aa0b554bf310ba5dce8ea5579231cce63f34e12a",
+			"splitNumbers": 4,
+			"examples": [
+				"−1 8",
+				"−1 8",
+				"−1 8"
+			]
+		},
+		{
+			"id": "esef-549300KEJDL2FNITUW65-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300KEJDL2FNITUW65/2024-12-31/ESEF/SE/0/atte-2024-12-31-0-sv/reports/atte-2024-12-31-0-sv.xhtml",
+			"sha256Page": "b0d352ed8fe9f4f91db45b468afde97abf26aba3d3b9ee6ced46cbcc3a2e6292",
+			"splitNumbers": 2,
+			"examples": [
+				"43 1",
+				"47 9"
+			]
+		},
+		{
+			"id": "esef-549300KEJDL2FNITUW65-2024-12-31-4",
+			"rapport": "https://filings.xbrl.org/549300KEJDL2FNITUW65/2024-12-31/ESEF/SE/0/atte-2024-12-31-0-sv/reports/atte-2024-12-31-0-sv.xhtml",
+			"sha256Page": "d137e6f8900bf8b773a10a61545338762a25894c52eb4fd359f9f74cfb8e2819",
+			"splitNumbers": 1,
+			"examples": [
+				"2,3 3"
+			]
+		},
+		{
+			"id": "esef-549300OZ3GTYOIZ25011-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/549300OZ3GTYOIZ25011/2024-12-31/ESEF/NO/0/549300OZ3GTYOIZ25011-2024-12-31-0-en/reports/549300OZ3GTYOIZ25011-2024-12-31-0-en.xhtml",
+			"sha256Page": "1ac7734520fc0e61067dc61afe0914ded71da73125e7a7c0999099fdaa94c0ff",
+			"splitNumbers": 24,
+			"examples": [
+				"3,960, 000",
+				"287,865, 361",
+				"(29, 147,766)"
+			]
+		},
+		{
+			"id": "esef-549300OZ3GTYOIZ25011-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300OZ3GTYOIZ25011/2024-12-31/ESEF/NO/0/549300OZ3GTYOIZ25011-2024-12-31-0-en/reports/549300OZ3GTYOIZ25011-2024-12-31-0-en.xhtml",
+			"sha256Page": "d41503fa73dc690915bcb025bcc430336162db8f21e88e84bbe2b2b0009312e2",
+			"splitNumbers": 15,
+			"examples": [
+				"6,399, 714",
+				"(18, 922,945)",
+				"(35, 259,223)"
+			]
+		},
+		{
+			"id": "esef-549300OZ3GTYOIZ25011-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/549300OZ3GTYOIZ25011/2024-12-31/ESEF/NO/0/549300OZ3GTYOIZ25011-2024-12-31-0-en/reports/549300OZ3GTYOIZ25011-2024-12-31-0-en.xhtml",
+			"sha256Page": "8122e275df64b1efdf2ff8eb62506275ee3be473ba5cf2d1aa41520617906356",
+			"splitNumbers": 20,
+			"examples": [
+				"11,308, 803",
+				"8, 513,728",
+				"16, 388, 181"
+			]
+		},
+		{
+			"id": "esef-549300OZ3GTYOIZ25011-2024-12-31-4",
+			"rapport": "https://filings.xbrl.org/549300OZ3GTYOIZ25011/2024-12-31/ESEF/NO/0/549300OZ3GTYOIZ25011-2024-12-31-0-en/reports/549300OZ3GTYOIZ25011-2024-12-31-0-en.xhtml",
+			"sha256Page": "3e5204c9abd5f62039801a868807ae49941efb3a85ff6ee7f055ec77228281bb",
+			"splitNumbers": 22,
+			"examples": [
+				"70,893, 180",
+				"65,360, 381",
+				"41, 501,689"
+			]
+		},
+		{
+			"id": "esef-549300OZ3GTYOIZ25011-2024-12-31-5",
+			"rapport": "https://filings.xbrl.org/549300OZ3GTYOIZ25011/2024-12-31/ESEF/NO/0/549300OZ3GTYOIZ25011-2024-12-31-0-en/reports/549300OZ3GTYOIZ25011-2024-12-31-0-en.xhtml",
+			"sha256Page": "5f1a9a23654ee0cbac079e9952d096e243a40737db07e9f51fbbdfde6acd422e",
+			"splitNumbers": 21,
+			"examples": [
+				"51,882, 202",
+				"10,064, 262",
+				"2,387, 240"
+			]
+		},
+		{
+			"id": "esef-743700Z9Z54VGHZA0028-2025-12-31-1",
+			"rapport": "https://filings.xbrl.org/743700Z9Z54VGHZA0028/2025-12-31/ESEF/FI/0/743700Z9Z54VGHZA0028-2025-12-31-0-fi/reports/743700Z9Z54VGHZA0028-2025-12-31-0-fi.xhtml",
+			"sha256Page": "46cd810cde1e5825bbd1fdb174c1f3fe83e06cd56d54f32592dd4dfde8bcd7d1",
+			"splitNumbers": 1,
+			"examples": [
+				"4 1,1"
+			]
+		},
+		{
+			"id": "esef-743700Z9Z54VGHZA0028-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/743700Z9Z54VGHZA0028/2025-12-31/ESEF/FI/0/743700Z9Z54VGHZA0028-2025-12-31-0-fi/reports/743700Z9Z54VGHZA0028-2025-12-31-0-fi.xhtml",
+			"sha256Page": "ed8a4cd03ac2dda9d879a3aa08e872ca710f67d3f6c940c145a52fc619c9eba6",
+			"splitNumbers": 1,
+			"examples": [
+				"7 4,9"
+			]
+		},
+		{
+			"id": "esef-743700Z9Z54VGHZA0028-2025-12-31-3",
+			"rapport": "https://filings.xbrl.org/743700Z9Z54VGHZA0028/2025-12-31/ESEF/FI/0/743700Z9Z54VGHZA0028-2025-12-31-0-fi/reports/743700Z9Z54VGHZA0028-2025-12-31-0-fi.xhtml",
+			"sha256Page": "407002363e98c6ea7c32e41e87cc4e657004610286a189e0c5e4fd4b46a88189",
+			"splitNumbers": 1,
+			"examples": [
+				"4 1,1"
+			]
+		},
+		{
+			"id": "esef-747800L0D5F39CX8NA43-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/747800L0D5F39CX8NA43/2024-12-31/ESEF/HR/0/747800L0D5F39CX8NA43-2024-12-31-en/reports/747800L0D5F39CX8NA43-2024-12-31-en.xhtml",
+			"sha256Page": "f1ac5b2a33a1527fdf1a7c843795b173793559d73204e621a4c553a17ad0738b",
+			"splitNumbers": 26,
+			"examples": [
+				"8, 905",
+				"3 ,902",
+				"6 ,072"
+			]
+		},
+		{
+			"id": "esef-747800L0D5F39CX8NA43-2024-12-31-4",
+			"rapport": "https://filings.xbrl.org/747800L0D5F39CX8NA43/2024-12-31/ESEF/HR/0/747800L0D5F39CX8NA43-2024-12-31-en/reports/747800L0D5F39CX8NA43-2024-12-31-en.xhtml",
+			"sha256Page": "3a432be05959fb71df6be4d844846e36739ea0b244e8dd9891607a33241502d1",
+			"splitNumbers": 1,
+			"examples": [
+				"3 ,233"
+			]
+		},
+		{
+			"id": "esef-95980020140005772356-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/95980020140005772356/2024-12-31/ESEF/ES/0/95980020140005772356-2024-12-31-es/reports/95980020140005772356-2024-12-31-es.xhtml",
+			"sha256Page": "1194972a2e3f29daf84983a683f65258513cf10ffef94b8d132df71301c7f516",
+			"splitNumbers": 1,
+			"examples": [
+				"(112.4 98)"
+			]
+		},
+		{
+			"id": "esef-95980020140005772356-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/95980020140005772356/2024-12-31/ESEF/ES/0/95980020140005772356-2024-12-31-es/reports/95980020140005772356-2024-12-31-es.xhtml",
+			"sha256Page": "dbf0e98fe1a2816154d3f7063f543b6f96442e796a87c67190603a049bf699ca",
+			"splitNumbers": 1,
+			"examples": [
+				"154.73 0"
+			]
+		},
+		{
+			"id": "esef-9695002OY2X35E9X8W87-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/9695002OY2X35E9X8W87/2025-12-31/ESEF/FR/0/ipsos-2025-12-31-fr/reports/ipsos-2025-12-31-fr.xhtml",
+			"sha256Page": "a3b5c7d50140313a9975aa7498afe36a7ae7de278afea5fa7deec2a77d6b933d",
+			"splitNumbers": 6,
+			"examples": [
+				"1253 089",
+				"1577 522",
+				"1577 765"
+			]
+		},
+		{
+			"id": "esef-9695002Y8420ZB8HJE29-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/9695002Y8420ZB8HJE29/2024-12-31/ESEF/FR/0/inph-2024-12-31-fr/reports/inph-2024-12-31-fr.xhtml",
+			"sha256Page": "1585f8114249c421122321c8585a2d922b8da5b4a1aa3616a1f58882cc65c3ab",
+			"splitNumbers": 1,
+			"examples": [
+				"5,6 8"
+			]
+		},
+		{
+			"id": "esef-969500356FAUM2X41Q59-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/969500356FAUM2X41Q59/2025-12-31/ESEF/FR/0/planisware-2025-12-31-1-fr/reports/planisware-2025-12-31-1-fr.xhtml",
+			"sha256Page": "2c8af4710c2285428cffa620a7e83000bde24cc5ab42c5fb3b55dc5616b8eedd",
+			"splitNumbers": 1,
+			"examples": [
+				"(61 6)"
+			]
+		},
+		{
+			"id": "esef-969500356FAUM2X41Q59-2025-12-31-3",
+			"rapport": "https://filings.xbrl.org/969500356FAUM2X41Q59/2025-12-31/ESEF/FR/0/planisware-2025-12-31-1-fr/reports/planisware-2025-12-31-1-fr.xhtml",
+			"sha256Page": "06564e94f3de4a51bdcb313d83da271e7315b7bd3aa308093a77f56bbbea7d26",
+			"splitNumbers": 3,
+			"examples": [
+				"(9 98)",
+				"(44 4)",
+				"(3 8)"
+			]
+		},
+		{
+			"id": "esef-969500356FAUM2X41Q59-2025-12-31-4",
+			"rapport": "https://filings.xbrl.org/969500356FAUM2X41Q59/2025-12-31/ESEF/FR/0/planisware-2025-12-31-1-fr/reports/planisware-2025-12-31-1-fr.xhtml",
+			"sha256Page": "ab3394330306f58d45d58279efaa41583d9078b7a3f5cc4ab051c0b2a7237570",
+			"splitNumbers": 2,
+			"examples": [
+				"(4 44)",
+				"(31 8)"
+			]
+		},
+		{
+			"id": "esef-969500356FAUM2X41Q59-2025-12-31-5",
+			"rapport": "https://filings.xbrl.org/969500356FAUM2X41Q59/2025-12-31/ESEF/FR/0/planisware-2025-12-31-1-fr/reports/planisware-2025-12-31-1-fr.xhtml",
+			"sha256Page": "6d239306a8b70b0e9917a8b061dadb4a1d3d9890c8aa1e58a38875d2a7749751",
+			"splitNumbers": 4,
+			"examples": [
+				"(4 7)",
+				"(1 19)",
+				"(3 5)"
+			]
+		},
+		{
+			"id": "esef-969500MGFIKUGLTC9742-2026-12-31-2",
+			"rapport": "https://filings.xbrl.org/969500MGFIKUGLTC9742/2026-12-31/ESEF/FR/0/rubis-2025-12-31-1-fr/reports/rubis-2025-12-31-1-fr.xhtml",
+			"sha256Page": "baa6f4940004436f028ecc74fc45ef3e09b282028b9e72c3a88301a3fb1ee490",
+			"splitNumbers": 1,
+			"examples": [
+				"2,9 8"
+			]
+		},
+		{
+			"id": "esef-984500E0A1C4DLBA3878-2025-12-31-1",
+			"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+			"sha256Page": "22311d970b6e1c40c7af87541c215238ce2c3708b9a8007ee200daf75ccabc1b",
+			"splitNumbers": 14,
+			"examples": [
+				"3, 627",
+				"(4 5 ,161)",
+				"26 ,9 6 6"
+			]
+		},
+		{
+			"id": "esef-984500E0A1C4DLBA3878-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+			"sha256Page": "da07cdfab37562f4e93a81c9c0d620fa7d9271b4b64fd4fb10d477bf5373d935",
+			"splitNumbers": 21,
+			"examples": [
+				"4 6 , 335",
+				"3, 379",
+				"4 6, 597"
+			]
+		},
+		{
+			"id": "esef-984500E0A1C4DLBA3878-2025-12-31-3",
+			"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+			"sha256Page": "21639e93d70f7de7ca921c55cd9e5a894bbe7aa0e7355cf764222afc510e6744",
+			"splitNumbers": 14,
+			"examples": [
+				"4 0 ,9 4 4",
+				"40 ,333",
+				"7 ,858"
+			]
+		},
+		{
+			"id": "esef-984500E0A1C4DLBA3878-2025-12-31-4",
+			"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+			"sha256Page": "29446f1218b6c31717922427b9b1c64486d0182787b5af3d65f9e16f7f985935",
+			"splitNumbers": 12,
+			"examples": [
+				"(1 3,053)",
+				"1 ,373",
+				"9 ,296"
+			]
+		},
+		{
+			"id": "esef-984500E0A1C4DLBA3878-2025-12-31-5",
+			"rapport": "https://filings.xbrl.org/984500E0A1C4DLBA3878/2025-12-31/ESEF/NL/0/984500E0A1C4DLBA3878-2025-12-31-en/reports/984500E0A1C4DLBA3878-2025-12-31-en.xhtml",
+			"sha256Page": "ca25d79d039fb9cdf4e5e7696653e528f307426fc7b536fa1c54b8efc8fdacb9",
+			"splitNumbers": 10,
+			"examples": [
+				"(16 3)",
+				"5,67 8",
+				"1 4 ,1 5 6"
+			]
+		}
+	]
+}
