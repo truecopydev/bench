@@ -1,0 +1,439 @@
+{
+	"day": "2026-11-28",
+	"sample": 300,
+	"classes": {
+		"wrong-number": "A printed number is read as another one, or a number that is not printed is written.",
+		"row-cut": "Every number is right. The report prints one entry on two or three lines (a wrapped label, two staggered lines) and the reader wrote it as one row.",
+		"note-reference": "Every table number is right. A note number or a footnote call is fused to its label, or split from it, unlike the published table.",
+		"outside-table": "Every table number is right. The truth carries a number that is not in the table (a page number) and the reader left it out."
+	},
+	"counts": {
+		"claude-haiku": {
+			"wrong-number": 2,
+			"row-cut": 4,
+			"note-reference": 3,
+			"outside-table": 1
+		},
+		"claude-sonnet": {
+			"wrong-number": 0,
+			"row-cut": 4,
+			"note-reference": 3,
+			"outside-table": 1
+		},
+		"claude-opus": {
+			"wrong-number": 0,
+			"row-cut": 3,
+			"note-reference": 1,
+			"outside-table": 1
+		}
+	},
+	"failures": [
+		{
+			"id": "esef-213800413RZM6IS8GM09-2025-12-31-1",
+			"rapport": "https://filings.xbrl.org/213800413RZM6IS8GM09/2025-12-31/ESEF/BE/0/213800413RZM6IS8GM09-2025-12-31-1-fr/reports/213800413RZM6IS8GM09-2025-12-31-1-fr.xhtml",
+			"reader": "claude-haiku",
+			"class": "wrong-number",
+			"what": "The print shows -34.362 and the reader wrote -34.342.",
+			"missed": [
+				{
+					"row": 21,
+					"numbers": "-34362 -23698"
+				}
+			]
+		},
+		{
+			"id": "esef-2138008FABJXP4HUOK53-2025-12-31-2",
+			"rapport": "https://filings.xbrl.org/2138008FABJXP4HUOK53/2025-12-31/ESEF/FR/0/2138008FABJXP4HUOK53-2025-12-31-1-EN/reports/2138008FABJXP4HUOK53-2025-12-31-1-EN.xhtml",
+			"reader": "claude-haiku",
+			"class": "wrong-number",
+			"what": "\"Other reserves\" has no note number. The reader wrote 19 in the notes column, the amount of the next column a second time.",
+			"missed": [
+				{
+					"row": 19,
+					"numbers": "19 -855"
+				}
+			]
+		},
+		{
+			"id": "esef-25940046BHY41BKNKJ92-2023-12-31-1",
+			"rapport": "https://filings.xbrl.org/25940046BHY41BKNKJ92/2023-12-31/ESEF/EE/0/cityservicese-2023-12-31-en/reports/cityservicese-2023-12-31-en.xhtml",
+			"reader": "claude-haiku",
+			"class": "row-cut",
+			"what": "\"Transfers to (from) reserves\" is printed on two lines, the amounts on the first and the note number 14 on the second. The reader wrote one row with the note and the amounts.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "-12577 -948 13525"
+				},
+				{
+					"row": 9,
+					"numbers": "14"
+				}
+			]
+		},
+		{
+			"id": "esef-25940046BHY41BKNKJ92-2023-12-31-1",
+			"rapport": "https://filings.xbrl.org/25940046BHY41BKNKJ92/2023-12-31/ESEF/EE/0/cityservicese-2023-12-31-en/reports/cityservicese-2023-12-31-en.xhtml",
+			"reader": "claude-sonnet",
+			"class": "row-cut",
+			"what": "\"Transfers to (from) reserves\" is printed on two lines, the amounts on the first and the note number 14 on the second. The reader wrote one row with the note and the amounts.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "-12577 -948 13525"
+				},
+				{
+					"row": 9,
+					"numbers": "14"
+				}
+			]
+		},
+		{
+			"id": "esef-25940046BHY41BKNKJ92-2023-12-31-1",
+			"rapport": "https://filings.xbrl.org/25940046BHY41BKNKJ92/2023-12-31/ESEF/EE/0/cityservicese-2023-12-31-en/reports/cityservicese-2023-12-31-en.xhtml",
+			"reader": "claude-opus",
+			"class": "row-cut",
+			"what": "\"Transfers to (from) reserves\" is printed on two lines, the amounts on the first and the note number 14 on the second. The reader wrote one row with the note and the amounts.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "-12577 -948 13525"
+				},
+				{
+					"row": 9,
+					"numbers": "14"
+				}
+			]
+		},
+		{
+			"id": "esef-485100D7B8FYJ8Q4CR24-2024-10-31-1",
+			"rapport": "https://filings.xbrl.org/485100D7B8FYJ8Q4CR24/2024-10-31/ESEF/MT/0/485100D7B8FYJ8Q4CR24-2024-10-31-0-en/reports/485100D7B8FYJ8Q4CR24-2024-10-31-0-en.html",
+			"reader": "claude-sonnet",
+			"class": "note-reference",
+			"what": "The note number 20 of \"Dividends\" sits in the notes column. The reader wrote \"Dividends 20\" in the label cell.",
+			"missed": [
+				{
+					"row": 2,
+					"numbers": "20 -5996728 -5996728"
+				}
+			]
+		},
+		{
+			"id": "esef-52990038OKF8UAD5LA12-2025-12-31-4",
+			"rapport": "https://filings.xbrl.org/52990038OKF8UAD5LA12/2025-12-31/ESEF/AT/0/frauenthalholdingag-2025-12-31-1-de/reports/frauenthalholdingag-2025-12-31-1-de.xhtml",
+			"reader": "claude-haiku",
+			"class": "note-reference",
+			"what": "Note numbers are printed in parentheses above their label, in the same cell: \"(33) UMSATZERLÖSE\". The reader gave them a cell of their own, which the judge reads as the number -33.",
+			"missed": [
+				{
+					"row": 1,
+					"numbers": "790393 806991"
+				},
+				{
+					"row": 3,
+					"numbers": "6918 13247"
+				},
+				{
+					"row": 5,
+					"numbers": "-111517 -114039"
+				},
+				{
+					"row": 9,
+					"numbers": "0 -1800"
+				},
+				{
+					"row": 17,
+					"numbers": "-1571 81"
+				},
+				{
+					"row": 23,
+					"numbers": "68 -26"
+				},
+				{
+					"row": 25,
+					"numbers": "-532 -37"
+				},
+				{
+					"row": 27,
+					"numbers": "-465 -63"
+				}
+			]
+		},
+		{
+			"id": "esef-52990038OKF8UAD5LA12-2025-12-31-4",
+			"rapport": "https://filings.xbrl.org/52990038OKF8UAD5LA12/2025-12-31/ESEF/AT/0/frauenthalholdingag-2025-12-31-1-de/reports/frauenthalholdingag-2025-12-31-1-de.xhtml",
+			"reader": "claude-sonnet",
+			"class": "note-reference",
+			"what": "Note numbers are printed in parentheses above their label, in the same cell: \"(33) UMSATZERLÖSE\". The reader gave them a cell of their own, which the judge reads as the number -33.",
+			"missed": [
+				{
+					"row": 1,
+					"numbers": "790393 806991"
+				},
+				{
+					"row": 3,
+					"numbers": "6918 13247"
+				},
+				{
+					"row": 5,
+					"numbers": "-111517 -114039"
+				},
+				{
+					"row": 9,
+					"numbers": "0 -1800"
+				},
+				{
+					"row": 17,
+					"numbers": "-1571 81"
+				},
+				{
+					"row": 23,
+					"numbers": "68 -26"
+				},
+				{
+					"row": 25,
+					"numbers": "-532 -37"
+				},
+				{
+					"row": 27,
+					"numbers": "-465 -63"
+				}
+			]
+		},
+		{
+			"id": "esef-549300Q62J8QZJ5TGJ71-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300Q62J8QZJ5TGJ71/2024-12-31/ESEF/SE/0/K2A-2024-12-31-0-sv/reports/K2A-2024-12-31-0-sv.xhtml",
+			"reader": "claude-haiku",
+			"class": "outside-table",
+			"what": "The last row of the published table is the page number, 95. The reader left it out.",
+			"missed": [
+				{
+					"row": 41,
+					"numbers": "95"
+				}
+			]
+		},
+		{
+			"id": "esef-549300Q62J8QZJ5TGJ71-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300Q62J8QZJ5TGJ71/2024-12-31/ESEF/SE/0/K2A-2024-12-31-0-sv/reports/K2A-2024-12-31-0-sv.xhtml",
+			"reader": "claude-sonnet",
+			"class": "outside-table",
+			"what": "The last row of the published table is the page number, 95. The reader left it out.",
+			"missed": [
+				{
+					"row": 41,
+					"numbers": "95"
+				}
+			]
+		},
+		{
+			"id": "esef-549300Q62J8QZJ5TGJ71-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/549300Q62J8QZJ5TGJ71/2024-12-31/ESEF/SE/0/K2A-2024-12-31-0-sv/reports/K2A-2024-12-31-0-sv.xhtml",
+			"reader": "claude-opus",
+			"class": "outside-table",
+			"what": "The last row of the published table is the page number, 95. The reader left it out.",
+			"missed": [
+				{
+					"row": 41,
+					"numbers": "95"
+				}
+			]
+		},
+		{
+			"id": "esef-747800L0D5F39CX8NA43-2024-12-31-5",
+			"rapport": "https://filings.xbrl.org/747800L0D5F39CX8NA43/2024-12-31/ESEF/HR/0/747800L0D5F39CX8NA43-2024-12-31-en/reports/747800L0D5F39CX8NA43-2024-12-31-en.xhtml",
+			"reader": "claude-haiku",
+			"class": "row-cut",
+			"what": "\"Tax on profit from revaluation of land and buildings\" is printed on two lines, amounts on both. The reader wrote one row.",
+			"missed": [
+				{
+					"row": 21,
+					"numbers": "-301"
+				},
+				{
+					"row": 22,
+					"numbers": "15 -301"
+				}
+			]
+		},
+		{
+			"id": "esef-747800L0D5F39CX8NA43-2024-12-31-5",
+			"rapport": "https://filings.xbrl.org/747800L0D5F39CX8NA43/2024-12-31/ESEF/HR/0/747800L0D5F39CX8NA43-2024-12-31-en/reports/747800L0D5F39CX8NA43-2024-12-31-en.xhtml",
+			"reader": "claude-sonnet",
+			"class": "row-cut",
+			"what": "Two entries are printed on two staggered lines each (the revaluation tax, and \"Owners of the Company\" with 809 and 461 on the line below). The reader wrote each as one row.",
+			"missed": [
+				{
+					"row": 21,
+					"numbers": "-301"
+				},
+				{
+					"row": 22,
+					"numbers": "15 -301"
+				},
+				{
+					"row": 25,
+					"numbers": "4789 4130"
+				},
+				{
+					"row": 26,
+					"numbers": "809 461"
+				}
+			]
+		},
+		{
+			"id": "esef-95980020140005772356-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/95980020140005772356/2024-12-31/ESEF/ES/0/95980020140005772356-2024-12-31-es/reports/95980020140005772356-2024-12-31-es.xhtml",
+			"reader": "claude-haiku",
+			"class": "row-cut",
+			"what": "\"Resultado por bajas y enajenaciones instrumentos financieros\" is printed on two lines, the note number 9 on the first and the amounts on the second. The reader wrote one row.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "9"
+				},
+				{
+					"row": 9,
+					"numbers": "28"
+				}
+			]
+		},
+		{
+			"id": "esef-95980020140005772356-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/95980020140005772356/2024-12-31/ESEF/ES/0/95980020140005772356-2024-12-31-es/reports/95980020140005772356-2024-12-31-es.xhtml",
+			"reader": "claude-sonnet",
+			"class": "row-cut",
+			"what": "\"Resultado por bajas y enajenaciones instrumentos financieros\" is printed on two lines, the note number 9 on the first and the amounts on the second. The reader wrote one row.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "9"
+				},
+				{
+					"row": 9,
+					"numbers": "28"
+				}
+			]
+		},
+		{
+			"id": "esef-95980020140005772356-2024-12-31-3",
+			"rapport": "https://filings.xbrl.org/95980020140005772356/2024-12-31/ESEF/ES/0/95980020140005772356-2024-12-31-es/reports/95980020140005772356-2024-12-31-es.xhtml",
+			"reader": "claude-opus",
+			"class": "row-cut",
+			"what": "\"Resultado por bajas y enajenaciones instrumentos financieros\" is printed on two lines, the note number 9 on the first and the amounts on the second. The reader wrote one row.",
+			"missed": [
+				{
+					"row": 8,
+					"numbers": "9"
+				},
+				{
+					"row": 9,
+					"numbers": "28"
+				}
+			]
+		},
+		{
+			"id": "esef-969500SHQITWXSIS7N89-2025-12-31-5",
+			"rapport": "https://filings.xbrl.org/969500SHQITWXSIS7N89/2025-12-31/ESEF/FR/0/969500SHQITWXSIS7N89-2025-12-31-1-en/reports/969500SHQITWXSIS7N89-2025-12-31-1-en.xhtml",
+			"reader": "claude-haiku",
+			"class": "note-reference",
+			"what": "The footnote call \"(3)\" is printed under the label \"OTHER COMPREHENSIVE INCOME\", in the same cell. The reader gave it a cell of its own, which the judge reads as the number -3.",
+			"missed": [
+				{
+					"row": 7,
+					"numbers": "-5530 2739"
+				}
+			]
+		},
+		{
+			"id": "esef-E58DKGMJYYYJLN8C3868-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/E58DKGMJYYYJLN8C3868/2024-12-31/ESEF/LU/0/csinternational-2024-12-31-0-en/reports/csinternational-2024-12-31-0-en.xhtml",
+			"reader": "claude-haiku",
+			"class": "note-reference",
+			"what": "The heading \"AOCI\" carries a footnote call, \"1\", in a cell of its own. The reader wrote \"AOCI 1\" in one cell.",
+			"missed": [
+				{
+					"row": 0,
+					"numbers": "1"
+				}
+			]
+		},
+		{
+			"id": "esef-E58DKGMJYYYJLN8C3868-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/E58DKGMJYYYJLN8C3868/2024-12-31/ESEF/LU/0/csinternational-2024-12-31-0-en/reports/csinternational-2024-12-31-0-en.xhtml",
+			"reader": "claude-sonnet",
+			"class": "note-reference",
+			"what": "The heading \"AOCI\" carries a footnote call, \"1\", in a cell of its own. The reader wrote \"AOCI 1\" in one cell.",
+			"missed": [
+				{
+					"row": 0,
+					"numbers": "1"
+				}
+			]
+		},
+		{
+			"id": "esef-E58DKGMJYYYJLN8C3868-2024-12-31-1",
+			"rapport": "https://filings.xbrl.org/E58DKGMJYYYJLN8C3868/2024-12-31/ESEF/LU/0/csinternational-2024-12-31-0-en/reports/csinternational-2024-12-31-0-en.xhtml",
+			"reader": "claude-opus",
+			"class": "note-reference",
+			"what": "The heading \"AOCI\" carries a footnote call, \"1\", in a cell of its own. The reader wrote \"AOCI 1\" in one cell.",
+			"missed": [
+				{
+					"row": 0,
+					"numbers": "1"
+				}
+			]
+		},
+		{
+			"id": "esef-KGCEPHLVVKVRZYO1T647-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/KGCEPHLVVKVRZYO1T647/2024-12-31/ESEF/LU/3/bnpparibasfortissanv-2024-12-31-0-en/reports/bnpparibasfortissanv-2024-12-31-0-en.xhtml",
+			"reader": "claude-haiku",
+			"class": "row-cut",
+			"what": "\"Capital and retained earnings at 31 December 2022\" is printed on three lines, the year alone on the last. The reader wrote one row, the year in its label.",
+			"missed": [
+				{
+					"row": 1,
+					"numbers": "2022"
+				},
+				{
+					"row": 8,
+					"numbers": "2023"
+				}
+			]
+		},
+		{
+			"id": "esef-KGCEPHLVVKVRZYO1T647-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/KGCEPHLVVKVRZYO1T647/2024-12-31/ESEF/LU/3/bnpparibasfortissanv-2024-12-31-0-en/reports/bnpparibasfortissanv-2024-12-31-0-en.xhtml",
+			"reader": "claude-sonnet",
+			"class": "row-cut",
+			"what": "\"Capital and retained earnings at 31 December 2022\" is printed on three lines, the year alone on the last. The reader wrote one row, the year in its label.",
+			"missed": [
+				{
+					"row": 1,
+					"numbers": "2022"
+				},
+				{
+					"row": 8,
+					"numbers": "2023"
+				}
+			]
+		},
+		{
+			"id": "esef-KGCEPHLVVKVRZYO1T647-2024-12-31-2",
+			"rapport": "https://filings.xbrl.org/KGCEPHLVVKVRZYO1T647/2024-12-31/ESEF/LU/3/bnpparibasfortissanv-2024-12-31-0-en/reports/bnpparibasfortissanv-2024-12-31-0-en.xhtml",
+			"reader": "claude-opus",
+			"class": "row-cut",
+			"what": "\"Capital and retained earnings at 31 December 2022\" is printed on three lines, the year alone on the last. The reader wrote one row, the year in its label.",
+			"missed": [
+				{
+					"row": 1,
+					"numbers": "2022"
+				},
+				{
+					"row": 8,
+					"numbers": "2023"
+				}
+			]
+		}
+	]
+}
