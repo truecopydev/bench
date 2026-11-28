@@ -2,6 +2,12 @@
 	"jour": "2026-11-28",
 	"echantillon": 300,
 	"pieces": 300,
+	"ia": [
+		"claude-haiku",
+		"claude-sonnet",
+		"claude-opus",
+		"gpt-6.2-sol"
+	],
 	"versions": {
 		"truecopy": {
 			"version": "2.0.14",
@@ -34,6 +40,10 @@
 		"claude-opus": {
 			"version": "claude-opus-5-5",
 			"readOn": "2026-11-27, 2026-11-28"
+		},
+		"gpt-6.2-sol": {
+			"version": "gpt-6.2-sol",
+			"readOn": "2026-11-28"
 		}
 	},
 	"resume": {
@@ -94,6 +104,13 @@
 			"rightPct": 98.3,
 			"rowsRightPct": 99.9,
 			"nothingRead": 0
+		},
+		"gpt-6.2-sol": {
+			"tables": 300,
+			"right": 291,
+			"rightPct": 97,
+			"rowsRightPct": 99.8,
+			"nothingRead": 0
 		}
 	},
 	"verdicts": {
@@ -135,6 +152,11 @@
 				"justes": 13
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
@@ -182,6 +204,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-969500M98ZMIZYJD5O34-2025-12-31-5": {
@@ -223,6 +250,11 @@
 				"justes": 21
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
@@ -269,6 +301,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-9695002Y8420ZB8HJE29-2024-12-31-5": {
@@ -312,6 +349,11 @@
 				"juste": true,
 				"lignes": 7,
 				"justes": 7
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 7,
+				"justes": 7
 			}
 		},
 		"esef-969500KE938Z79ZH1N44-2025-12-31-4": {
@@ -352,6 +394,11 @@
 				"justes": 18
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
@@ -399,6 +446,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
 			}
 		},
 		"esef-96950020QIOHAAK9V551-2025-12-31-2": {
@@ -439,6 +491,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -485,6 +542,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-9695003QNWHLC60H9E89-2022-03-31-3": {
@@ -528,6 +590,11 @@
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
 			}
 		},
 		"esef-52990071WX2UW1WNHC16-2025-12-31-5": {
@@ -568,6 +635,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -615,6 +687,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-8156009F95C37526C483-2025-12-31-3": {
@@ -655,6 +732,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -701,6 +783,11 @@
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
 			}
 		},
 		"esef-9695002FT7GGI3CKKJ14-2025-12-31-5": {
@@ -744,6 +831,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-96950025N07LTJYFSN57-2025-12-31-5": {
@@ -784,6 +876,11 @@
 				"justes": 22
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
@@ -831,6 +928,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-5493008T4YG3AQUI7P67-2024-12-31-5": {
@@ -874,6 +976,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-959800L8KD863DP30X04-2024-12-31-3": {
@@ -914,6 +1021,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -961,6 +1073,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-9695009DV2698O4ZBU71-2025-12-31-3": {
@@ -1005,6 +1122,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-549300LUH78PG2MP6N64-2025-12-31-2": {
@@ -1045,6 +1167,11 @@
 				"justes": 30
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
@@ -1092,6 +1219,11 @@
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
 			}
 		},
 		"esef-969500ZR92SQCU9TST26-2026-03-31-3": {
@@ -1132,6 +1264,11 @@
 				"justes": 22
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
@@ -1179,6 +1316,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-894500N222D2O9WACX12-2023-12-31-2": {
@@ -1220,6 +1362,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -1266,6 +1413,11 @@
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
 			}
 		},
 		"esef-96950018NOMJX5XRH047-2024-12-31-5": {
@@ -1306,6 +1458,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -1352,6 +1509,11 @@
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
 			}
 		},
 		"esef-9695002XQWX9TKCOZT86-2023-12-31-5": {
@@ -1392,6 +1554,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -1439,6 +1606,11 @@
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
 			}
 		},
 		"esef-96950022J37K8UHSJH76-2025-12-31-5": {
@@ -1483,6 +1655,11 @@
 				"juste": true,
 				"lignes": 5,
 				"justes": 5
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 5,
+				"justes": 5
 			}
 		},
 		"esef-96950077L0TN7BAROX36-2024-12-31-2": {
@@ -1523,6 +1700,11 @@
 				"justes": 11
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
@@ -1570,6 +1752,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-5299006C0EVA5LAYOR30-2026-02-28-1": {
@@ -1614,6 +1801,11 @@
 				"juste": true,
 				"lignes": 43,
 				"justes": 43
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 43,
+				"justes": 43
 			}
 		},
 		"esef-E58DKGMJYYYJLN8C3868-2024-12-31-1": {
@@ -1654,6 +1846,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": false,
+				"lignes": 26,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": false,
 				"lignes": 26,
 				"justes": 25
@@ -1701,6 +1898,11 @@
 				"juste": true,
 				"lignes": 5,
 				"justes": 5
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 5,
+				"justes": 5
 			}
 		},
 		"esef-9695008K5N8MKIT4XJ91-2025-12-31-3": {
@@ -1745,6 +1947,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-2138004KW8BV57III342-2024-12-31-5": {
@@ -1785,6 +1992,11 @@
 				"justes": 11
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
@@ -1832,6 +2044,11 @@
 				"juste": true,
 				"lignes": 39,
 				"justes": 39
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 39,
+				"justes": 39
 			}
 		},
 		"esef-5493001EZOOA66PTBR68-2025-12-31-3": {
@@ -1873,6 +2090,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -1920,6 +2142,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-549300APU14LQKTYCH34-2024-12-31-3": {
@@ -1961,6 +2188,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -2008,6 +2240,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-969500GFIL2Z81YKUM35-2025-12-31-5": {
@@ -2048,6 +2285,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -2094,6 +2336,11 @@
 				"juste": true,
 				"lignes": 8,
 				"justes": 8
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 8,
+				"justes": 8
 			}
 		},
 		"esef-254900LH0G1ZIZ78Y462-2025-12-31-1": {
@@ -2134,6 +2381,11 @@
 				"justes": 55
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 55,
+				"justes": 55
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 55,
 				"justes": 55
@@ -2181,6 +2433,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
 			}
 		},
 		"esef-969500RTYSRSTZAJCG72-2024-12-31-4": {
@@ -2222,6 +2479,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -2268,6 +2530,11 @@
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
 			}
 		},
 		"esef-969500UX71LCE8MAY492-2025-12-31-4": {
@@ -2308,6 +2575,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -2355,6 +2627,11 @@
 				"juste": true,
 				"lignes": 27,
 				"justes": 27
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 27,
+				"justes": 27
 			}
 		},
 		"esef-969500KE938Z79ZH1N44-2025-12-31-3": {
@@ -2395,6 +2672,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -2442,6 +2724,11 @@
 				"juste": true,
 				"lignes": 35,
 				"justes": 35
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 35,
+				"justes": 35
 			}
 		},
 		"esef-96950032TUYMW11FB530-2026-03-31-1": {
@@ -2482,6 +2769,11 @@
 				"justes": 21
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
@@ -2529,6 +2821,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 14,
+				"justes": 12
 			}
 		},
 		"esef-549300AK8Y0LBIQ4T071-2025-12-31-3": {
@@ -2569,6 +2866,11 @@
 				"justes": 22
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
@@ -2615,6 +2917,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-969500785J7VIC5YPC96-2025-12-31-3": {
@@ -2655,6 +2962,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -2701,6 +3013,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-O2RNE8IBXP4R0TD8PU41-2025-12-31-4": {
@@ -2741,6 +3058,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -2788,6 +3110,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-NFONVGN05Z0FMN5PEC35-2025-12-31-1": {
@@ -2831,6 +3158,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-969500F9H7I22AX1D138-2025-12-31-5": {
@@ -2871,6 +3203,11 @@
 				"justes": 16
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
@@ -2918,6 +3255,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-529900CLC3WDMGI9VH80-2024-12-31-4": {
@@ -2958,6 +3300,11 @@
 				"justes": 18
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
@@ -3005,6 +3352,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-96950025N07LTJYFSN57-2025-12-31-1": {
@@ -3045,6 +3397,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -3092,6 +3449,11 @@
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 28,
+				"justes": 28
 			}
 		},
 		"esef-969500UDH342QLTE1M42-2025-12-31-2": {
@@ -3132,6 +3494,11 @@
 				"justes": 46
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 46,
+				"justes": 46
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 46,
 				"justes": 46
@@ -3178,6 +3545,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-969500DCGMF1DNOXFH76-2024-12-31-4": {
@@ -3218,6 +3590,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -3264,6 +3641,11 @@
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
 			}
 		},
 		"esef-BSYCX13Y0NOTV14V9N85-2024-12-31-3": {
@@ -3304,6 +3686,11 @@
 				"justes": 30
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
@@ -3351,6 +3738,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-54930036WK3GMCN17Z57-2025-12-31-5": {
@@ -3391,6 +3783,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -3438,6 +3835,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-969500WV1U1WQ059L135-2025-12-31-5": {
@@ -3478,6 +3880,11 @@
 				"justes": 12
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 12,
+				"justes": 12
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 12,
 				"justes": 12
@@ -3525,6 +3932,11 @@
 				"juste": true,
 				"lignes": 43,
 				"justes": 43
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 43,
+				"justes": 43
 			}
 		},
 		"esef-969500T64RILK1RD0852-2021-12-31-2": {
@@ -3565,6 +3977,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -3612,6 +4029,11 @@
 				"juste": true,
 				"lignes": 38,
 				"justes": 38
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 38,
+				"justes": 38
 			}
 		},
 		"esef-969500M98ZMIZYJD5O34-2025-12-31-2": {
@@ -3656,6 +4078,11 @@
 				"juste": true,
 				"lignes": 40,
 				"justes": 40
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 40,
+				"justes": 40
 			}
 		},
 		"esef-96950010FL2T1TJKR531-2025-12-31-1": {
@@ -3696,6 +4123,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -3743,6 +4175,11 @@
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 28,
+				"justes": 28
 			}
 		},
 		"esef-2138008SUI4D917FKN20-2026-06-30-3": {
@@ -3787,6 +4224,11 @@
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
 			}
 		},
 		"esef-969500WEPS61H6TJM037-2025-12-31-3": {
@@ -3827,6 +4269,11 @@
 				"justes": 34
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
@@ -3874,6 +4321,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-969500SARWF33OPQED48-2025-12-31-5": {
@@ -3914,6 +4366,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -3961,6 +4418,11 @@
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 28,
+				"justes": 28
 			}
 		},
 		"esef-529900EVOKN4LCCD9321-2026-03-31-4": {
@@ -4005,6 +4467,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-9695004ANBJMIMZEYY03-2025-10-31-5": {
@@ -4045,6 +4512,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -4092,6 +4564,11 @@
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
 			}
 		},
 		"esef-54930075MZSSIB2TGC64-2025-12-31-5": {
@@ -4132,6 +4609,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -4179,6 +4661,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-969500JTN8BU5BW6UW36-2025-12-31-4": {
@@ -4219,6 +4706,11 @@
 				"justes": 18
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
@@ -4265,6 +4757,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-969500Y7G9TY7Y24GN07-2025-12-31-3": {
@@ -4305,6 +4802,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -4352,6 +4854,11 @@
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
 			}
 		},
 		"esef-969500Y7G9TY7Y24GN07-2025-12-31-4": {
@@ -4392,6 +4899,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -4438,6 +4950,11 @@
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
 			}
 		},
 		"esef-9695002Y8420ZB8HJE29-2024-12-31-1": {
@@ -4481,6 +4998,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-549300M6SGDPB4Z94P11-2024-12-31-3": {
@@ -4521,6 +5043,11 @@
 				"justes": 11
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
@@ -4568,6 +5095,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 30,
+				"justes": 26
 			}
 		},
 		"esef-969500P8M3W2XX376054-2025-12-31-3": {
@@ -4609,6 +5141,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -4655,6 +5192,11 @@
 				"juste": true,
 				"lignes": 39,
 				"justes": 39
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 39,
+				"justes": 39
 			}
 		},
 		"esef-969500PJMBSFHYC37989-2024-12-31-2": {
@@ -4695,6 +5237,11 @@
 				"justes": 34
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
@@ -4742,6 +5289,11 @@
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
 			}
 		},
 		"esef-96950022J37K8UHSJH76-2025-12-31-2": {
@@ -4783,6 +5335,11 @@
 				"justes": 31
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
@@ -4830,6 +5387,11 @@
 				"juste": false,
 				"lignes": 12,
 				"justes": 10
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 12,
+				"justes": 10
 			}
 		},
 		"esef-549300ZSZ6VJXXCVUM49-2022-12-31-3": {
@@ -4870,6 +5432,11 @@
 				"justes": 33
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 33,
+				"justes": 33
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 33,
 				"justes": 33
@@ -4917,6 +5484,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
 			}
 		},
 		"esef-259400OI92UBLS9RJK55-2023-12-31-4": {
@@ -4958,6 +5530,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -5005,6 +5582,11 @@
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
 			}
 		},
 		"esef-529900EVOKN4LCCD9321-2026-03-31-2": {
@@ -5046,6 +5628,11 @@
 				"justes": 33
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 33,
+				"justes": 33
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 33,
 				"justes": 33
@@ -5093,6 +5680,11 @@
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
 			}
 		},
 		"esef-969500KMUQ2B6CBAF162-2024-12-31-2": {
@@ -5133,6 +5725,11 @@
 				"justes": 12
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 12,
+				"justes": 12
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 12,
 				"justes": 12
@@ -5179,6 +5776,11 @@
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 16,
+				"justes": 15
 			}
 		},
 		"esef-549300UKYDM6L8HEPU79-2022-12-31-3": {
@@ -5219,6 +5821,11 @@
 				"justes": 8
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 8,
+				"justes": 8
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 8,
 				"justes": 8
@@ -5265,6 +5872,11 @@
 				"juste": true,
 				"lignes": 46,
 				"justes": 46
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 46,
+				"justes": 46
 			}
 		},
 		"esef-969500CE0X343D8ALO86-2025-11-30-1": {
@@ -5305,6 +5917,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -5352,6 +5969,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-549300M6SGDPB4Z94P11-2024-12-31-1": {
@@ -5392,6 +6014,11 @@
 				"justes": 41
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 41,
+				"justes": 41
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 41,
 				"justes": 41
@@ -5438,6 +6065,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-969500G83IPSX1HQL497-2024-12-31-3": {
@@ -5478,6 +6110,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -5525,6 +6162,11 @@
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
 			}
 		},
 		"esef-254900LH0G1ZIZ78Y462-2025-12-31-4": {
@@ -5566,6 +6208,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -5612,6 +6259,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-969500GFIL2Z81YKUM35-2025-12-31-1": {
@@ -5652,6 +6304,11 @@
 				"justes": 8
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 8,
+				"justes": 8
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 8,
 				"justes": 8
@@ -5699,6 +6356,11 @@
 				"juste": true,
 				"lignes": 8,
 				"justes": 8
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 8,
+				"justes": 8
 			}
 		},
 		"esef-96950020QIOHAAK9V551-2025-12-31-1": {
@@ -5739,6 +6401,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -5785,6 +6452,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-969500PB4U31KEFHZ621-2025-12-31-2": {
@@ -5825,6 +6497,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -5871,6 +6548,11 @@
 				"juste": true,
 				"lignes": 15,
 				"justes": 15
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 15,
+				"justes": 15
 			}
 		},
 		"esef-549300HGBVWX4FC44K67-2025-12-31-2": {
@@ -5911,6 +6593,11 @@
 				"justes": 38
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 38,
+				"justes": 38
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 38,
 				"justes": 38
@@ -5958,6 +6645,11 @@
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 28,
+				"justes": 28
 			}
 		},
 		"esef-96950077L0TN7BAROX36-2024-12-31-1": {
@@ -6001,6 +6693,11 @@
 				"juste": true,
 				"lignes": 38,
 				"justes": 38
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 38,
+				"justes": 38
 			}
 		},
 		"esef-2138008FABJXP4HUOK53-2025-12-31-2": {
@@ -6041,6 +6738,11 @@
 				"justes": 38
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 38,
+				"justes": 38
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 38,
 				"justes": 38
@@ -6088,6 +6790,11 @@
 				"juste": true,
 				"lignes": 44,
 				"justes": 44
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 44,
+				"justes": 44
 			}
 		},
 		"esef-254900LH0G1ZIZ78Y462-2025-12-31-2": {
@@ -6128,6 +6835,11 @@
 				"justes": 32
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
@@ -6174,6 +6886,11 @@
 				"juste": true,
 				"lignes": 5,
 				"justes": 5
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 5,
+				"justes": 5
 			}
 		},
 		"esef-969500Y7G9TY7Y24GN07-2025-12-31-2": {
@@ -6214,6 +6931,11 @@
 				"justes": 31
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
@@ -6261,6 +6983,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-95980020140005491250-2024-12-31-2": {
@@ -6304,6 +7031,11 @@
 				"juste": true,
 				"lignes": 47,
 				"justes": 47
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 47,
+				"justes": 47
 			}
 		},
 		"esef-969500R3AKTPEDO9EG76-2025-12-31-3": {
@@ -6344,6 +7076,11 @@
 				"justes": 32
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
@@ -6391,6 +7128,11 @@
 				"juste": true,
 				"lignes": 50,
 				"justes": 50
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 50,
+				"justes": 50
 			}
 		},
 		"esef-95980020140005772356-2024-12-31-4": {
@@ -6431,6 +7173,11 @@
 				"justes": 16
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
@@ -6478,6 +7225,11 @@
 				"juste": false,
 				"lignes": 15,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 15,
+				"justes": 13
 			}
 		},
 		"esef-969500U4BPYFRAOQ3Z75-2021-12-31-1": {
@@ -6519,6 +7271,11 @@
 				"justes": 31
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
@@ -6565,6 +7322,11 @@
 				"juste": true,
 				"lignes": 15,
 				"justes": 15
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 15,
+				"justes": 15
 			}
 		},
 		"esef-9695000EHMS84KKP2785-2025-12-31-2": {
@@ -6608,6 +7370,11 @@
 				"juste": true,
 				"lignes": 35,
 				"justes": 35
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 35,
+				"justes": 35
 			}
 		},
 		"esef-9695005MSX1OYEMGDF46-2025-12-31-1": {
@@ -6648,6 +7415,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -6695,6 +7467,11 @@
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
 			}
 		},
 		"esef-9695001J8OSOVX4TP939-2025-08-31-1": {
@@ -6735,6 +7512,11 @@
 				"justes": 10
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 10,
+				"justes": 10
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 10,
 				"justes": 10
@@ -6782,6 +7564,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-969500IWD41VNMP1NT87-2025-12-31-4": {
@@ -6822,6 +7609,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -6868,6 +7660,11 @@
 				"juste": true,
 				"lignes": 27,
 				"justes": 27
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 27,
+				"justes": 27
 			}
 		},
 		"esef-969500AQW31GYO8JZD66-2024-12-31-4": {
@@ -6908,6 +7705,11 @@
 				"justes": 9
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
@@ -6954,6 +7756,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-74780000M0GHQ1VXJU20-2024-12-31-2": {
@@ -6997,6 +7804,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-969500P3RUS57W9Z9Z70-2025-06-30-5": {
@@ -7037,6 +7849,11 @@
 				"justes": 16
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
@@ -7084,6 +7901,11 @@
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
 			}
 		},
 		"esef-969500GMPWNUM7HCZ452-2025-12-31-4": {
@@ -7125,6 +7947,11 @@
 				"justes": 14
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
@@ -7171,6 +7998,11 @@
 				"juste": true,
 				"lignes": 47,
 				"justes": 47
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 47,
+				"justes": 47
 			}
 		},
 		"esef-969500Y8FMHV2BHC0C87-2025-12-31-5": {
@@ -7211,6 +8043,11 @@
 				"justes": 14
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
@@ -7257,6 +8094,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
 			}
 		},
 		"esef-96950022O6SP7FQONJ77-2024-12-31-2": {
@@ -7297,6 +8139,11 @@
 				"justes": 32
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
@@ -7343,6 +8190,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-549300X3UK4GG3FNMO06-2023-12-31-1": {
@@ -7383,6 +8235,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -7430,6 +8287,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-984500D9LC6F3BB9F323-2023-12-31-2": {
@@ -7471,6 +8333,11 @@
 				"justes": 10
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 10,
+				"justes": 10
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 10,
 				"justes": 10
@@ -7518,6 +8385,11 @@
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
 			}
 		},
 		"esef-5493000O0NZ1BCXO8K39-2026-03-31-1": {
@@ -7562,6 +8434,11 @@
 				"juste": true,
 				"lignes": 39,
 				"justes": 39
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 39,
+				"justes": 39
 			}
 		},
 		"esef-969500KGFSDP6UUKIA67-2025-12-31-4": {
@@ -7602,6 +8479,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -7649,6 +8531,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-213800DJRB539Q1EMW75-2023-12-31-4": {
@@ -7690,6 +8577,11 @@
 				"justes": 21
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
@@ -7737,6 +8629,11 @@
 				"juste": true,
 				"lignes": 8,
 				"justes": 8
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 8,
+				"justes": 8
 			}
 		},
 		"esef-969500WGEAZ8YE4UAI86-2024-12-31-4": {
@@ -7777,6 +8674,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -7823,6 +8725,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-969500SJCEYK6O6RXV95-2022-12-31-4": {
@@ -7863,6 +8770,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -7910,6 +8822,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-529900YXT3CDTZGS0R43-2025-12-31-2": {
@@ -7951,6 +8868,11 @@
 				"justes": 37
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 37,
+				"justes": 37
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 37,
 				"justes": 37
@@ -7997,6 +8919,11 @@
 				"juste": true,
 				"lignes": 15,
 				"justes": 15
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 15,
+				"justes": 15
 			}
 		},
 		"esef-9695002XQWX9TKCOZT86-2023-12-31-1": {
@@ -8037,6 +8964,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -8084,6 +9016,11 @@
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
 			}
 		},
 		"esef-969500IQLBCOOICLAB88-2023-12-31-4": {
@@ -8127,6 +9064,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-6488569V3J6X16IIEJ40-2025-12-31-4": {
@@ -8167,6 +9109,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -8214,6 +9161,11 @@
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
 			}
 		},
 		"esef-969500N2QX5LGFFZ0I67-2025-12-31-5": {
@@ -8255,6 +9207,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -8301,6 +9258,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-969500P2Q1B47H4MCJ34-2024-12-31-3": {
@@ -8341,6 +9303,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -8387,6 +9354,11 @@
 				"juste": true,
 				"lignes": 32,
 				"justes": 32
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 32,
+				"justes": 32
 			}
 		},
 		"esef-529900FNDVTQJOVVPZ19-2025-12-31-3": {
@@ -8427,6 +9399,11 @@
 				"justes": 15
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 15,
+				"justes": 15
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 15,
 				"justes": 15
@@ -8473,6 +9450,11 @@
 				"juste": true,
 				"lignes": 41,
 				"justes": 41
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 41,
+				"justes": 41
 			}
 		},
 		"esef-969500LYSYS0E800SQ95-2025-09-30-2": {
@@ -8513,6 +9495,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -8560,6 +9547,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-969500R9ENNIN33POO20-2025-12-31-5": {
@@ -8603,6 +9595,11 @@
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
 			}
 		},
 		"esef-549300UKYDM6L8HEPU79-2022-12-31-5": {
@@ -8643,6 +9640,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -8690,6 +9692,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-5493001EZOOA66PTBR68-2025-12-31-4": {
@@ -8731,6 +9738,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -8778,6 +9790,11 @@
 				"juste": true,
 				"lignes": 50,
 				"justes": 50
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 50,
+				"justes": 50
 			}
 		},
 		"esef-259400J8JJKET03PCT44-2023-12-31-1": {
@@ -8822,6 +9839,11 @@
 				"juste": true,
 				"lignes": 43,
 				"justes": 43
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 43,
+				"justes": 43
 			}
 		},
 		"esef-9695004ANBJMIMZEYY03-2025-10-31-4": {
@@ -8862,6 +9884,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -8909,6 +9936,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-2138003TO2MTRHWVP686-2024-12-31-2": {
@@ -8952,6 +9984,11 @@
 				"juste": true,
 				"lignes": 12,
 				"justes": 12
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 12,
+				"justes": 12
 			}
 		},
 		"esef-969500P2Q1B47H4MCJ34-2024-12-31-5": {
@@ -8992,6 +10029,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -9039,6 +10081,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-54930030A8V6LH0G1Z92-2024-12-31-3": {
@@ -9080,6 +10127,11 @@
 				"justes": 31
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
@@ -9126,6 +10178,11 @@
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
 			}
 		},
 		"esef-969500F9H7I22AX1D138-2025-12-31-2": {
@@ -9166,6 +10223,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -9212,6 +10274,11 @@
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
 			}
 		},
 		"esef-969500R3AKTPEDO9EG76-2025-12-31-2": {
@@ -9252,6 +10319,11 @@
 				"justes": 38
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 38,
+				"justes": 38
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 38,
 				"justes": 38
@@ -9299,6 +10371,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-969500ZR92SQCU9TST26-2026-03-31-1": {
@@ -9342,6 +10419,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-969500FULTKJYIRIAT87-2025-12-31-2": {
@@ -9382,6 +10464,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -9429,6 +10516,11 @@
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
 			}
 		},
 		"esef-969500SHQITWXSIS7N89-2025-12-31-5": {
@@ -9470,6 +10562,11 @@
 				"justes": 11
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
@@ -9516,6 +10613,11 @@
 				"juste": true,
 				"lignes": 27,
 				"justes": 27
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 27,
+				"justes": 27
 			}
 		},
 		"esef-969500N6AVPA51648T62-2023-12-31-3": {
@@ -9556,6 +10658,11 @@
 				"justes": 34
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 34,
+				"justes": 34
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 34,
 				"justes": 34
@@ -9603,6 +10710,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-969500IWD41VNMP1NT87-2025-12-31-3": {
@@ -9643,6 +10755,11 @@
 				"justes": 14
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
@@ -9690,6 +10807,11 @@
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
 			}
 		},
 		"esef-549300NK4AB8OUEX1F54-2024-12-31-3": {
@@ -9733,6 +10855,11 @@
 				"juste": true,
 				"lignes": 31,
 				"justes": 31
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 31,
+				"justes": 31
 			}
 		},
 		"esef-N4JDFKKH2FTD8RKFXO39-2024-12-31-1": {
@@ -9773,6 +10900,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -9820,6 +10952,11 @@
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
 			}
 		},
 		"esef-969500URB8KRQ9IDBK68-2024-12-31-2": {
@@ -9861,6 +10998,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -9908,6 +11050,11 @@
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
 			}
 		},
 		"esef-984500C784DD41E4AC47-2025-12-31-1": {
@@ -9952,6 +11099,11 @@
 				"juste": true,
 				"lignes": 10,
 				"justes": 10
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 10,
+				"justes": 10
 			}
 		},
 		"esef-529900FNDVTQJOVVPZ19-2025-12-31-4": {
@@ -9992,6 +11144,11 @@
 				"justes": 28
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 28,
+				"justes": 28
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
@@ -10039,6 +11196,11 @@
 				"juste": false,
 				"lignes": 40,
 				"justes": 38
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 40,
+				"justes": 38
 			}
 		},
 		"esef-8156004110BB8D445B46-2025-12-31-5": {
@@ -10082,6 +11244,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-549300LUH78PG2MP6N64-2025-12-31-5": {
@@ -10122,6 +11289,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -10169,6 +11341,11 @@
 				"juste": true,
 				"lignes": 7,
 				"justes": 7
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 7,
+				"justes": 7
 			}
 		},
 		"esef-259400HHZM8OZO5SYV90-2023-12-31-1": {
@@ -10210,6 +11387,11 @@
 				"justes": 11
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
@@ -10257,6 +11439,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-969500G83IPSX1HQL497-2024-12-31-5": {
@@ -10297,6 +11484,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -10343,6 +11535,11 @@
 				"juste": true,
 				"lignes": 12,
 				"justes": 12
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 12,
+				"justes": 12
 			}
 		},
 		"esef-529900CLC3WDMGI9VH80-2024-12-31-3": {
@@ -10386,6 +11583,11 @@
 				"juste": true,
 				"lignes": 50,
 				"justes": 50
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 50,
+				"justes": 50
 			}
 		},
 		"esef-969500Y8FMHV2BHC0C87-2025-12-31-3": {
@@ -10426,6 +11628,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -10473,6 +11680,11 @@
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
 			}
 		},
 		"esef-9598005HY5DEFPU2SM35-2024-12-31-3": {
@@ -10513,6 +11725,11 @@
 				"justes": 40
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 40,
+				"justes": 40
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 40,
 				"justes": 40
@@ -10560,6 +11777,11 @@
 				"juste": true,
 				"lignes": 7,
 				"justes": 7
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 7,
+				"justes": 7
 			}
 		},
 		"esef-52990038OKF8UAD5LA12-2025-12-31-4": {
@@ -10604,6 +11826,11 @@
 				"juste": true,
 				"lignes": 28,
 				"justes": 28
+			},
+			"gpt-6.2-sol": {
+				"juste": false,
+				"lignes": 28,
+				"justes": 27
 			}
 		},
 		"esef-529900IIODYNYAZ2ID26-2026-04-30-3": {
@@ -10648,6 +11875,11 @@
 				"juste": true,
 				"lignes": 7,
 				"justes": 7
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 7,
+				"justes": 7
 			}
 		},
 		"esef-969500PB4U31KEFHZ621-2025-12-31-1": {
@@ -10688,6 +11920,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -10735,6 +11972,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-JU1U6S0DG9YLT7N8ZV32-2024-12-31-2": {
@@ -10775,6 +12017,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -10822,6 +12069,11 @@
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
 			}
 		},
 		"esef-969500LENY69X51OOT31-2024-12-31-4": {
@@ -10862,6 +12114,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -10908,6 +12165,11 @@
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
 			}
 		},
 		"esef-7478000050A040C0D041-2024-12-31-3": {
@@ -10948,6 +12210,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -10995,6 +12262,11 @@
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
 			}
 		},
 		"esef-N4JDFKKH2FTD8RKFXO39-2024-12-31-3": {
@@ -11038,6 +12310,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-894500N14T2GUDX0FL66-2024-12-31-3": {
@@ -11078,6 +12355,11 @@
 				"justes": 40
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 40,
+				"justes": 40
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 40,
 				"justes": 40
@@ -11125,6 +12407,11 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 30,
+				"justes": 30
 			}
 		},
 		"esef-969500UPP3G1EYL1UI19-2021-12-31-1": {
@@ -11168,6 +12455,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-549300Q62J8QZJ5TGJ71-2024-12-31-2": {
@@ -11208,6 +12500,11 @@
 				"justes": 41
 			},
 			"claude-opus": {
+				"juste": false,
+				"lignes": 42,
+				"justes": 41
+			},
+			"gpt-6.2-sol": {
 				"juste": false,
 				"lignes": 42,
 				"justes": 41
@@ -11255,6 +12552,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-81560009D520343E0A68-2025-12-31-3": {
@@ -11295,6 +12597,11 @@
 				"justes": 35
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 35,
+				"justes": 35
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 35,
 				"justes": 35
@@ -11341,6 +12648,11 @@
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
 			}
 		},
 		"esef-969500KI179R130T7Q32-2025-12-31-4": {
@@ -11381,6 +12693,11 @@
 				"justes": 24
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 24,
+				"justes": 24
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 24,
 				"justes": 24
@@ -11427,6 +12744,11 @@
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
 			}
 		},
 		"esef-969500DCGMF1DNOXFH76-2024-12-31-3": {
@@ -11467,6 +12789,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -11513,6 +12840,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-9695000YG7TR7PAP0L59-2025-12-31-1": {
@@ -11553,6 +12885,11 @@
 				"justes": 36
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 36,
+				"justes": 36
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 36,
 				"justes": 36
@@ -11600,6 +12937,11 @@
 				"juste": true,
 				"lignes": 27,
 				"justes": 27
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 27,
+				"justes": 27
 			}
 		},
 		"esef-54930075MZSSIB2TGC64-2025-12-31-1": {
@@ -11640,6 +12982,11 @@
 				"justes": 17
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
@@ -11686,6 +13033,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-N4JDFKKH2FTD8RKFXO39-2024-12-31-5": {
@@ -11729,6 +13081,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-969500F7JLTX36OUI695-2025-12-31-5": {
@@ -11769,6 +13126,11 @@
 				"justes": 26
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 26,
+				"justes": 26
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 26,
 				"justes": 26
@@ -11816,6 +13178,11 @@
 				"juste": true,
 				"lignes": 17,
 				"justes": 17
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 17,
+				"justes": 17
 			}
 		},
 		"esef-743700KMZL7E8PLI5X73-2025-12-31-2": {
@@ -11857,6 +13224,11 @@
 				"justes": 23
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 23,
+				"justes": 23
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 23,
 				"justes": 23
@@ -11904,6 +13276,11 @@
 				"juste": true,
 				"lignes": 41,
 				"justes": 41
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 41,
+				"justes": 41
 			}
 		},
 		"esef-969500XXRPGD7HCAFA90-2025-12-31-2": {
@@ -11944,6 +13321,11 @@
 				"justes": 40
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 40,
+				"justes": 40
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 40,
 				"justes": 40
@@ -11990,6 +13372,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-7478000050A040C0D041-2024-12-31-2": {
@@ -12030,6 +13417,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
@@ -12077,6 +13469,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-KGCEPHLVVKVRZYO1T647-2024-12-31-3": {
@@ -12121,6 +13518,11 @@
 				"juste": true,
 				"lignes": 50,
 				"justes": 50
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 50,
+				"justes": 50
 			}
 		},
 		"esef-969500WGEAZ8YE4UAI86-2024-12-31-2": {
@@ -12161,6 +13563,11 @@
 				"justes": 37
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 37,
+				"justes": 37
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 37,
 				"justes": 37
@@ -12208,6 +13615,11 @@
 				"juste": true,
 				"lignes": 9,
 				"justes": 9
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 9,
+				"justes": 9
 			}
 		},
 		"esef-724500JXEXUGEATP5L52-2025-12-31-5": {
@@ -12249,6 +13661,11 @@
 				"justes": 22
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 22,
+				"justes": 22
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
@@ -12295,6 +13712,11 @@
 				"juste": true,
 				"lignes": 13,
 				"justes": 13
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 13,
+				"justes": 13
 			}
 		},
 		"esef-KX1WK48MPD4Y2NCUIZ63-2025-12-31-5": {
@@ -12335,6 +13757,11 @@
 				"justes": 29
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 29,
+				"justes": 29
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 29,
 				"justes": 29
@@ -12381,6 +13808,11 @@
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
 			}
 		},
 		"esef-E58DKGMJYYYJLN8C3868-2024-12-31-3": {
@@ -12424,6 +13856,11 @@
 				"juste": true,
 				"lignes": 33,
 				"justes": 33
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 33,
+				"justes": 33
 			}
 		},
 		"esef-969500MLJC3ZSZP4L019-2025-12-31-1": {
@@ -12464,6 +13901,11 @@
 				"justes": 16
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 16,
+				"justes": 16
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 16,
 				"justes": 16
@@ -12511,6 +13953,11 @@
 				"juste": true,
 				"lignes": 12,
 				"justes": 12
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 12,
+				"justes": 12
 			}
 		},
 		"esef-259400981621M85NA449-2024-03-31-1": {
@@ -12552,6 +13999,11 @@
 				"justes": 10
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 10,
+				"justes": 10
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 10,
 				"justes": 10
@@ -12599,6 +14051,11 @@
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
 			}
 		},
 		"esef-743700TSB08BO83SJR33-2025-12-31-4": {
@@ -12640,6 +14097,11 @@
 				"justes": 20
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
@@ -12687,6 +14149,11 @@
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 11,
+				"justes": 11
 			}
 		},
 		"esef-969500785J7VIC5YPC96-2025-12-31-1": {
@@ -12730,6 +14197,11 @@
 				"juste": true,
 				"lignes": 18,
 				"justes": 18
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 18,
+				"justes": 18
 			}
 		},
 		"esef-969500OP0AFORNKIGP59-2024-12-31-3": {
@@ -12770,6 +14242,11 @@
 				"justes": 37
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 37,
+				"justes": 37
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 37,
 				"justes": 37
@@ -12817,6 +14294,11 @@
 				"juste": true,
 				"lignes": 21,
 				"justes": 21
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 21,
+				"justes": 21
 			}
 		},
 		"esef-96950034TTGHHKKEN547-2025-12-31-5": {
@@ -12860,6 +14342,11 @@
 				"juste": true,
 				"lignes": 19,
 				"justes": 19
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
 			}
 		},
 		"esef-549300U0BOLVY36TGJ31-2024-12-31-1": {
@@ -12900,6 +14387,11 @@
 				"justes": 25
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 25,
+				"justes": 25
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 25,
 				"justes": 25
@@ -12947,6 +14439,11 @@
 				"juste": true,
 				"lignes": 35,
 				"justes": 35
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 35,
+				"justes": 35
 			}
 		},
 		"esef-529900IIODYNYAZ2ID26-2026-04-30-1": {
@@ -12988,6 +14485,11 @@
 				"justes": 39
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 39,
+				"justes": 39
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 39,
 				"justes": 39
@@ -13034,6 +14536,11 @@
 				"juste": true,
 				"lignes": 14,
 				"justes": 14
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 14,
+				"justes": 14
 			}
 		},
 		"esef-969500LHIH3NT7PK1V89-2025-12-31-4": {
@@ -13077,6 +14584,11 @@
 				"juste": true,
 				"lignes": 20,
 				"justes": 20
+			},
+			"gpt-6.2-sol": {
+				"juste": true,
+				"lignes": 20,
+				"justes": 20
 			}
 		},
 		"esef-529900FNDVTQJOVVPZ19-2025-12-31-5": {
@@ -13117,6 +14629,11 @@
 				"justes": 19
 			},
 			"claude-opus": {
+				"juste": true,
+				"lignes": 19,
+				"justes": 19
+			},
+			"gpt-6.2-sol": {
 				"juste": true,
 				"lignes": 19,
 				"justes": 19

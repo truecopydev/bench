@@ -36,10 +36,14 @@ claim.
 
 ## AI readers
 
-Three vision models read a fixed sample of the bench, made of the 300 pieces
+Four vision models read a fixed sample of the bench, made of the 300 pieces
 whose sha256 of the id sorts first. Each model is shown the PNG render (110 dpi) of
-the same printed PDF, through the Claude Code CLI, with one instruction and one
-schema (`src/ia.mjs`), and its rows go to the same judge.
+the same printed PDF, with one instruction and one schema (`src/ia.mjs`), and
+its rows go to the same judge. The Claude models read through the Claude Code
+CLI, which opens the pages with its Read tool. A model named `gpt-...` reads
+through the Codex CLI, which takes the pages as attached images. Only the first
+sentence of the instruction differs between the two, the one that says where
+the pages are.
 
 <!-- ai:start -->
 The 300 pieces of the sample, every reader judged on the same ones.
@@ -48,6 +52,7 @@ The 300 pieces of the sample, every reader judged on the same ones.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-opus | claude-opus-5-5 | 2026-11-27, 2026-11-28 | 295 / 300 (98.3 %) | 99.9 % | 0 | - | - |
 | claude-sonnet | claude-sonnet-5-5 | 2026-11-27, 2026-11-28 | 292 / 300 (97.3 %) | 99.7 % | 0 | - | - |
+| gpt-6.2-sol | gpt-6.2-sol | 2026-11-28 | 291 / 300 (97 %) | 99.8 % | 0 | - | - |
 | claude-haiku | claude-haiku-5-5 | 2026-11-27, 2026-11-28 | 290 / 300 (96.7 %) | 99.7 % | 0 | - | - |
 | pdftotext | pdftotext version 22.12.0 | 2026-10-21 | 159 / 300 (53 %) | 84 % | 0 | - | - |
 | camelot | 0.11.0 | 2026-10-21 | 137 / 300 (45.7 %) | 80 % | 0 | - | - |
@@ -58,19 +63,21 @@ The 300 pieces of the sample, every reader judged on the same ones.
 
 The version of an AI reader is the model identifier that answered, and read on
 is the day it did. A model answers differently from one call to the next, so its
-readings are kept as read (`lectures/claude-<model>.jsonl`) and never read
-again.
+readings are kept as read (`lectures/claude-<model>.jsonl`,
+`lectures/gpt-<model>.jsonl`) and never read again. The Codex CLI answers with
+the model the run names, so that name is the identifier kept.
 
 ### What the failures are
 
 A table is wrong as soon as one row is not read as the same sequence of
-numbers, so a wrong digit and a row cut differently count the same. The 23
-failed readings of the three models were each compared with the print, by hand,
+numbers, so a wrong digit and a row cut differently count the same. The 32
+failed readings of the four models were each compared with the print, by hand,
 on 2026-11-28:
 
 | reader | failed | wrong number | row cut | note reference | outside the table |
 | --- | --- | --- | --- | --- | --- |
 | claude-opus | 5 | 0 | 3 | 1 | 1 |
+| gpt-6.2-sol | 9 | 1 | 5 | 2 | 1 |
 | claude-sonnet | 8 | 0 | 4 | 3 | 1 |
 | claude-haiku | 10 | 2 | 4 | 3 | 1 |
 
@@ -95,7 +102,7 @@ The other readers' failures were not classed.
 | `pieces/<id>.json` | the report's address, the issuer's LEI, country, period, the sha256 of the table page, the terms of the source, and the truth (`verite.lignes`: the numbers of each row, canonical form) |
 | `sources.json` | the terms of each source as read, with their address and date, and the sources read and refused |
 | `lectures/<reader>.jsonl` | the rows each reader returned, one line per piece |
-| `lectures/claude-<model>.jsonl` | the rows each AI reader returned on the sample, with the model identifier, the day and the confidence it gave itself |
+| `lectures/claude-<model>.jsonl`, `lectures/gpt-<model>.jsonl` | the rows each AI reader returned on the sample, with the model identifier, the day and the confidence it gave itself |
 | `resultats/ia/<day>.json` | the sample: per-piece verdicts and per-reader summary, every reader on the same pieces |
 | `resultats/<day>.json` | versions, banners of the bench, per-piece verdicts, per-reader summary |
 | `src/juge.mjs` | the judge: what a table number is, and when a row reads right |
@@ -139,11 +146,11 @@ accurate mode, and gives each table as its header row then its body rows.
 When the judge changes, `npm run rejouer -- --juger` scores again what
 `lectures/` holds, without printing or reading.
 
-The AI readers need the Claude Code CLI signed in to an account, and each
-reading is a paid model call:
+The AI readers need the Claude Code CLI signed in to an account, and the Codex
+CLI for a model named `gpt-...`. Each reading is a paid model call:
 
 ```sh
-npm run lire-ia -- --modeles haiku,sonnet,opus --echantillon 300 --chrome "$(command -v chromium)"
+npm run lire-ia -- --modeles haiku,sonnet,opus,gpt-6.2-sol --echantillon 300 --chrome "$(command -v chromium)"
 ```
 
 It reads only the pieces of the sample a model has not read yet.

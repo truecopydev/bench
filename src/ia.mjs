@@ -11,10 +11,13 @@
 
 import { createHash } from 'node:crypto';
 
-/** The aliases a run may name, as the Claude Code CLI knows them. */
+/** The aliases a run reads by default, as the Claude Code CLI knows them. */
 export const MODELES = ['haiku', 'sonnet', 'opus'];
 
-export const brasDe = (modele) => `claude-${modele}`;
+/** A model named `gpt-...` is read through the Codex CLI, any other through the Claude Code CLI. */
+export const parCodex = (modele) => modele.startsWith('gpt-');
+
+export const brasDe = (modele) => (parCodex(modele) ? modele : `claude-${modele}`);
 
 export const SCHEMA = {
 	type: 'object',
@@ -26,10 +29,15 @@ export const SCHEMA = {
 	additionalProperties: false
 };
 
-export const consigne = (fichiers) => `Read these page images with the Read tool, in order: ${fichiers.join(', ')}.
-They are the pages of ONE financial table. Transcribe the table: one array per printed row, top to bottom, each cell as a string exactly as printed (keep the number formatting, parentheses and signs; an empty cell is ""). Include header rows.
+const TRANSCRIRE = `Transcribe the table: one array per printed row, top to bottom, each cell as a string exactly as printed (keep the number formatting, parentheses and signs; an empty cell is ""). Include header rows.
 Then give "confidence": your probability, from 0 to 1, that EVERY number in your transcription is exactly right and sits in the right row.
 Answer with the JSON object only.`;
+
+export const consigne = (fichiers) => `Read these page images with the Read tool, in order: ${fichiers.join(', ')}.
+They are the pages of ONE financial table. ${TRANSCRIRE}`;
+
+/** The same instruction for a CLI that takes the pages as attached images: only the first sentence differs. */
+export const consigneJointe = (pages) => `The ${pages} attached image${pages > 1 ? 's are, in order, the pages' : ' is the page'} of ONE financial table. ${TRANSCRIRE}`;
 
 /**
  * The sample the AI readers read: the `n` pieces whose sha256 of the id sorts
@@ -74,13 +82,35 @@ export function lectureDeLaCli(stdout) {
 	}
 	if (enveloppe.is_error) throw new Panne(String(enveloppe.result).slice(0, 200));
 	const model = modeleQuiARepondu(enveloppe);
-	const reponse = enveloppe.structured_output ?? jsonDe(enveloppe.result);
+	return lectureDe(enveloppe.structured_output ?? jsonDe(enveloppe.result), model);
+}
+
+function lectureDe(reponse, model) {
 	if (!Array.isArray(reponse?.rows)) return { rows: [], error: 'answer without rows', model };
 	return {
 		rows: reponse.rows.map((r) => (Array.isArray(r) ? r.map(String) : [String(r)])),
 		confidence: Math.max(0, Math.min(1, Number(reponse.confidence) || 0)),
 		model
 	};
+}
+
+/**
+ * The reading carried by the events of `codex exec --json`. The model is the
+ * one the run named: the CLI answers with the model it is given. A run whose
+ * turn did not complete is a `Panne`; a completed turn without rows is a
+ * reading failure, as above.
+ */
+export function lectureDeCodex(stdout, model) {
+	const evenements = String(stdout)
+		.split('\n')
+		.map((l) => jsonDe(l))
+		.filter(Boolean);
+	if (!evenements.some((e) => e.type === 'turn.completed')) {
+		const erreur = evenements.find((e) => e.type === 'error' || e.type === 'turn.failed');
+		throw new Panne(String(erreur?.message ?? erreur?.error?.message ?? 'the turn did not complete').slice(0, 200));
+	}
+	const message = evenements.filter((e) => e.type === 'item.completed' && e.item?.type === 'agent_message').at(-1);
+	return lectureDe(jsonDe(message?.item.text), model);
 }
 
 /** Run `f` over `elements`, `n` at a time. */

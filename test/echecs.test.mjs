@@ -3,12 +3,12 @@ import { test } from 'node:test';
 import { readdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { MODELES, brasDe } from '../src/ia.mjs';
 import { CLASSES, compter, lecturesFausses, lignesManquees } from '../src/echecs.mjs';
 
 const racine = join(dirname(fileURLToPath(import.meta.url)), '..');
 const json = (...chemin) => JSON.parse(readFileSync(join(racine, ...chemin), 'utf8'));
-const bras = MODELES.map(brasDe);
+const dernierResultat = () => json('resultats', 'ia', readdirSync(join(racine, 'resultats', 'ia')).filter((f) => f.endsWith('.json')).sort().pop());
+const bras = dernierResultat().ia;
 
 test('a missed row is one the judge does not find, in order', () => {
 	const verite = [['1', '2'], ['3'], ['1', '2']];
@@ -23,8 +23,7 @@ test('the failed readings are those of the arms asked, piece by piece', () => {
 });
 
 test('every failed reading of the last AI result has a class and a sentence, and no other reading has one', () => {
-	const dernier = readdirSync(join(racine, 'resultats', 'ia')).filter((f) => f.endsWith('.json')).sort().pop();
-	const { jour, verdicts } = json('resultats', 'ia', dernier);
+	const { jour, verdicts } = dernierResultat();
 	const liste = json('echecs-ia.json');
 	assert.equal(liste.day, jour);
 	assert.deepEqual(liste.failures.map((e) => [e.id, e.reader]), lecturesFausses(verdicts, bras));
