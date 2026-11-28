@@ -11,6 +11,7 @@
 	"scripts": {
 		"rejouer": "node bin/rejouer.mjs",
 		"lire-ia": "node bin/lire-ia.mjs",
+		"ecarter": "node bin/ecarter.mjs",
 		"test": "node --test test/*.test.mjs",
 		"gate": "npm test"
 	},

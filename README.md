@@ -1,6 +1,6 @@
 # truecopy bench
 
-A public table-extraction bench: **1 560 financial tables** published by listed
+A public table-extraction bench: **1 514 financial tables** published by listed
 companies in their ESEF annual reports, the **truth** of each one taken from the
 report's own machine-readable layer, and what each reader makes of them.
 
@@ -15,11 +15,11 @@ Replay of 2026-10-21, Chromium 155.0.8059.79 built on Debian GNU/Linux 12 (bookw
 
 | reader | version | tables right | rows right | nothing read | given reliable | wrong among reliable |
 | --- | --- | --- | --- | --- | --- | --- |
-| truecopy | 2.0.14 | 656 / 1560 (42.1 %) | 79.9 % | 0 | 504 | 40.5 % |
-| pdftotext | pdftotext version 22.12.0 | 817 / 1560 (52.4 %) | 84.3 % | 0 | - | - |
-| pdfplumber | 0.11.4 | 245 / 1560 (15.7 %) | 55.6 % | 0 | - | - |
-| camelot | 0.11.0 | 718 / 1560 (46 %) | 81.3 % | 3 | - | - |
-| docling | 2.140.0 | 367 / 1560 (23.5 %) | 46.4 % | 642 | - | - |
+| truecopy | 2.0.14 | 646 / 1514 (42.7 %) | 80.3 % | 0 | 482 | 38.8 % |
+| pdftotext | pdftotext version 22.12.0 | 812 / 1514 (53.6 %) | 85.1 % | 0 | - | - |
+| pdfplumber | 0.11.4 | 234 / 1514 (15.5 %) | 55.6 % | 0 | - | - |
+| camelot | 0.11.0 | 710 / 1514 (46.9 %) | 81.8 % | 3 | - | - |
+| docling | 2.140.0 | 366 / 1514 (24.2 %) | 47.2 % | 604 | - | - |
 <!-- results:end -->
 
 **right**: every row of the truth is found, in order, as a read row carrying
@@ -45,14 +45,14 @@ The 300 pieces of the sample, every reader judged on the same ones.
 
 | reader | version | read on | tables right | rows right | nothing read | given reliable | wrong among reliable |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| claude-opus | claude-opus-5-5 | 2026-11-27 | 291 / 300 (97 %) | 99.4 % | 0 | - | - |
-| claude-haiku | claude-haiku-5-5 | 2026-11-27 | 289 / 300 (96.3 %) | 99.7 % | 0 | - | - |
-| claude-sonnet | claude-sonnet-5-5 | 2026-11-27 | 288 / 300 (96 %) | 99.3 % | 0 | - | - |
-| pdftotext | pdftotext version 22.12.0 | 2026-10-21 | 158 / 300 (52.7 %) | 83.6 % | 0 | - | - |
-| camelot | 0.11.0 | 2026-10-21 | 133 / 300 (44.3 %) | 79.8 % | 0 | - | - |
-| truecopy | 2.0.14 | 2026-10-21 | 124 / 300 (41.3 %) | 78.1 % | 0 | 98 | 41.8 % |
-| docling | 2.140.0 | 2026-10-21 | 67 / 300 (22.3 %) | 44.5 % | 129 | - | - |
-| pdfplumber | 0.11.4 | 2026-10-21 | 42 / 300 (14 %) | 51.5 % | 0 | - | - |
+| claude-opus | claude-opus-5-5 | 2026-11-27, 2026-11-28 | 295 / 300 (98.3 %) | 99.9 % | 0 | - | - |
+| claude-sonnet | claude-sonnet-5-5 | 2026-11-27, 2026-11-28 | 292 / 300 (97.3 %) | 99.7 % | 0 | - | - |
+| claude-haiku | claude-haiku-5-5 | 2026-11-27, 2026-11-28 | 290 / 300 (96.7 %) | 99.7 % | 0 | - | - |
+| pdftotext | pdftotext version 22.12.0 | 2026-10-21 | 159 / 300 (53 %) | 84 % | 0 | - | - |
+| camelot | 0.11.0 | 2026-10-21 | 137 / 300 (45.7 %) | 80 % | 0 | - | - |
+| truecopy | 2.0.14 | 2026-10-21 | 126 / 300 (42 %) | 78.3 % | 0 | 95 | 37.9 % |
+| docling | 2.140.0 | 2026-10-21 | 68 / 300 (22.7 %) | 45 % | 125 | - | - |
+| pdfplumber | 0.11.4 | 2026-10-21 | 39 / 300 (13 %) | 51 % | 0 | - | - |
 <!-- ai:end -->
 
 **version** of an AI reader: the model identifier that answered. **read on**:
@@ -72,9 +72,22 @@ again.
 | `resultats/ia/<day>.json` | the sample: per-piece verdicts and per-reader summary, every reader on the same pieces |
 | `resultats/<day>.json` | versions, banners of the bench, per-piece verdicts, per-reader summary |
 | `src/juge.mjs` | the judge: what a table number is, and when a row reads right |
+| `ecartees.json` | the 46 pieces set aside, each with its report and the split numbers found (`src/morcele.mjs`) |
 
-The pieces come from 332 reports of 23 countries of the European Economic Area,
-926 of them French.
+The pieces come from 327 reports of 23 countries of the European Economic Area,
+919 of them French.
+
+## Pieces set aside
+
+Some reports are HTML converted from a PDF and write a number with spaces
+inside it: `6 4 5 ,13 7` where the page shows 645,137. The machine-readable
+layer of such a table does not carry that number, so its truth misses it, and a
+reader that reads the page right was judged wrong. 46 pieces of 16 issuers were
+in that case on 2026-11-28. They left `pieces/`, `ecartees.json` names each one
+with its report, and every reader was judged again on the 1 514 that remain.
+`npm run ecarter` applies the rule (`src/morcele.mjs`) and `npm test` refuses a
+piece that breaks it. What the local readers read of those pieces stays in
+`lectures/`.
 
 ## Replay it
 
@@ -110,7 +123,7 @@ call. A larger `--echantillon` keeps every piece of a smaller one.
 
 ## What it does not prove
 
-- The AI readers are judged on 300 pieces, not 1 560, each read once: a second
+- The AI readers are judged on 300 pieces, not 1 514, each read once: a second
   call may read a table differently.
 - An AI reader sees an image of the page, the other readers the PDF itself.
 

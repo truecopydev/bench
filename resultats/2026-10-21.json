@@ -1,6 +1,6 @@
 {
 	"jour": "2026-10-21",
-	"pieces": 1560,
+	"pieces": 1514,
 	"versions": {
 		"truecopy": "2.0.14",
 		"pdftotext": "pdftotext version 22.12.0",
@@ -15,41 +15,41 @@
 	},
 	"resume": {
 		"truecopy": {
-			"tables": 1560,
-			"right": 656,
-			"rightPct": 42.1,
-			"rowsRightPct": 79.9,
+			"tables": 1514,
+			"right": 646,
+			"rightPct": 42.7,
+			"rowsRightPct": 80.3,
 			"nothingRead": 0,
-			"givenReliable": 504,
-			"wrongAmongReliablePct": 40.5
+			"givenReliable": 482,
+			"wrongAmongReliablePct": 38.8
 		},
 		"pdftotext": {
-			"tables": 1560,
-			"right": 817,
-			"rightPct": 52.4,
-			"rowsRightPct": 84.3,
+			"tables": 1514,
+			"right": 812,
+			"rightPct": 53.6,
+			"rowsRightPct": 85.1,
 			"nothingRead": 0
 		},
 		"pdfplumber": {
-			"tables": 1560,
-			"right": 245,
-			"rightPct": 15.7,
+			"tables": 1514,
+			"right": 234,
+			"rightPct": 15.5,
 			"rowsRightPct": 55.6,
 			"nothingRead": 0
 		},
 		"camelot": {
-			"tables": 1560,
-			"right": 718,
-			"rightPct": 46,
-			"rowsRightPct": 81.3,
+			"tables": 1514,
+			"right": 710,
+			"rightPct": 46.9,
+			"rowsRightPct": 81.8,
 			"nothingRead": 3
 		},
 		"docling": {
-			"tables": 1560,
-			"right": 367,
-			"rightPct": 23.5,
-			"rowsRightPct": 46.4,
-			"nothingRead": 642
+			"tables": 1514,
+			"right": 366,
+			"rightPct": 24.2,
+			"rowsRightPct": 47.2,
+			"nothingRead": 604
 		}
 	},
 	"verdicts": {
@@ -1107,35 +1107,6 @@
 				"justes": 37
 			}
 		},
-		"esef-213800A1O379I6DMCU10-2024-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 30,
-				"justes": 1,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 30,
-				"justes": 1
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 30,
-				"justes": 15
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 30,
-				"justes": 23
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 30,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-213800DJRB539Q1EMW75-2023-12-31-1": {
 			"truecopy": {
 				"juste": false,
@@ -1276,149 +1247,6 @@
 			"docling": {
 				"juste": false,
 				"lignes": 20,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-213800HKRFK8PNUNV581-2026-03-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 7,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 12
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 16,
-				"justes": 16
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 16,
-				"justes": 16
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 15
-			}
-		},
-		"esef-213800HKRFK8PNUNV581-2026-03-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 12,
-				"justes": 3,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 12,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 12,
-				"justes": 7
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 12,
-				"justes": 11
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 12,
-				"justes": 10
-			}
-		},
-		"esef-213800HKRFK8PNUNV581-2026-03-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 15,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 16
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 8
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 17
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-213800HKRFK8PNUNV581-2026-03-31-4": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 8,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 19
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-213800HKRFK8PNUNV581-2026-03-31-5": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 6,
-				"justes": 5,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 6,
-				"justes": 3
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 6,
-				"justes": 6
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 6,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 6,
 				"justes": 0,
 				"vide": true
 			}
@@ -1966,122 +1794,6 @@
 				"juste": false,
 				"lignes": 13,
 				"justes": 12
-			}
-		},
-		"esef-222100VXGA8L6J4ZWG61-2024-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 5,
-				"justes": 0,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 5,
-				"justes": 4
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 5,
-				"justes": 4
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 5,
-				"justes": 4
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 5,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-222100VXGA8L6J4ZWG61-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 27,
-				"justes": 24,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 27,
-				"justes": 2
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 27,
-				"justes": 1
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 27,
-				"justes": 13
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 27,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-222100VXGA8L6J4ZWG61-2024-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 6,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 3
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 0
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 18
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-222100VXGA8L6J4ZWG61-2024-12-31-4": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 13,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 12
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 3
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 13
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 0,
-				"vide": true
 			}
 		},
 		"esef-2549001TDHDVU72MQS59-2022-12-31-1": {
@@ -9237,92 +8949,6 @@
 				"vide": true
 			}
 		},
-		"esef-529900MTLT34HRR1LT15-2025-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 14,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 14
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 0
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 9
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 14
-			}
-		},
-		"esef-529900NRAH6YWL3TLD24-2024-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 23,
-				"justes": 4,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 23,
-				"justes": 7
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 23,
-				"justes": 8
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 23,
-				"justes": 8
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 23,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-529900NRAH6YWL3TLD24-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 21,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 12
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 18
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-529900NRAH6YWL3TLD24-2024-12-31-3": {
 			"truecopy": {
 				"juste": false,
@@ -9377,35 +9003,6 @@
 				"juste": true,
 				"lignes": 11,
 				"justes": 11
-			}
-		},
-		"esef-529900NRAH6YWL3TLD24-2024-12-31-5": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 4,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 0
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 5
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 4
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 0,
-				"vide": true
 			}
 		},
 		"esef-529900OVSOBJNXZACW81-2025-12-31-1": {
@@ -12931,151 +12528,6 @@
 				"vide": true
 			}
 		},
-		"esef-549300GHKJCEZOAEUU82-2024-12-31-1": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 20,
-				"justes": 20,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 15
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 18
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 5
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 20,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300GHKJCEZOAEUU82-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 24,
-				"justes": 23,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 24,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 24,
-				"justes": 11
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 24,
-				"justes": 2
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 24,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300GHKJCEZOAEUU82-2024-12-31-3": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 17,
-				"justes": 17,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 7
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 17,
-				"justes": 17
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300GHKJCEZOAEUU82-2024-12-31-4": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 21,
-				"justes": 21,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 21,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 21,
-				"justes": 15
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 21,
-				"justes": 17
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 21,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300GHKJCEZOAEUU82-2024-12-31-5": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 17,
-				"justes": 17,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 8
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 9
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 12
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-549300GJVY6K3NC8MA89-2024-12-31-1": {
 			"truecopy": {
 				"juste": false,
@@ -13785,64 +13237,6 @@
 				"vide": true
 			}
 		},
-		"esef-549300KEJDL2FNITUW65-2024-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 21,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": true,
-				"lignes": 22,
-				"justes": 22
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 19
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 22,
-				"justes": 22
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300KEJDL2FNITUW65-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 12,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 2
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 15
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-549300KEJDL2FNITUW65-2024-12-31-3": {
 			"truecopy": {
 				"juste": false,
@@ -13868,35 +13262,6 @@
 			"docling": {
 				"juste": false,
 				"lignes": 25,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300KEJDL2FNITUW65-2024-12-31-4": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 22,
-				"justes": 22,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 9
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 15
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
 				"justes": 0,
 				"vide": true
 			}
@@ -14633,151 +13998,6 @@
 				"juste": false,
 				"lignes": 5,
 				"justes": 4
-			}
-		},
-		"esef-549300OZ3GTYOIZ25011-2024-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 13,
-				"justes": 10,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 13,
-				"justes": 3
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 13,
-				"justes": 11
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 13,
-				"justes": 2
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 13,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300OZ3GTYOIZ25011-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 11,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 12
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 18,
-				"justes": 18
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 18,
-				"justes": 18
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300OZ3GTYOIZ25011-2024-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 17,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 13
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 18,
-				"justes": 18
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 17
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300OZ3GTYOIZ25011-2024-12-31-4": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 14,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 9
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 15,
-				"justes": 15
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 15,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-549300OZ3GTYOIZ25011-2024-12-31-5": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 14,
-				"justes": 14,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 9
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 14,
-				"justes": 14
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 13
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 14,
-				"justes": 0,
-				"vide": true
 			}
 		},
 		"esef-549300Q62J8QZJ5TGJ71-2024-12-31-1": {
@@ -17951,93 +17171,6 @@
 				"vide": true
 			}
 		},
-		"esef-743700Z9Z54VGHZA0028-2025-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 23,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": true,
-				"lignes": 25,
-				"justes": 25
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 23
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-743700Z9Z54VGHZA0028-2025-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 9,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 1
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 1
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 17
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-743700Z9Z54VGHZA0028-2025-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 10,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 1
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 1
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 16
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-743700Z9Z54VGHZA0028-2025-12-31-4": {
 			"truecopy": {
 				"juste": false,
@@ -18808,34 +17941,6 @@
 				"justes": 12
 			}
 		},
-		"esef-747800L0D5F39CX8NA43-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 40,
-				"justes": 39,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 40,
-				"justes": 37
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 40,
-				"justes": 40
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 40,
-				"justes": 40
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 40,
-				"justes": 1
-			}
-		},
 		"esef-747800L0D5F39CX8NA43-2024-12-31-3": {
 			"truecopy": {
 				"juste": true,
@@ -18862,34 +17967,6 @@
 				"juste": false,
 				"lignes": 19,
 				"justes": 16
-			}
-		},
-		"esef-747800L0D5F39CX8NA43-2024-12-31-4": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 37,
-				"justes": 37,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 37,
-				"justes": 35
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 37,
-				"justes": 37
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 37,
-				"justes": 33
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 37,
-				"justes": 19
 			}
 		},
 		"esef-747800L0D5F39CX8NA43-2024-12-31-5": {
@@ -20933,64 +20010,6 @@
 				"juste": false,
 				"lignes": 26,
 				"justes": 25
-			}
-		},
-		"esef-95980020140005772356-2024-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 2,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 5
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 16
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 15
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 17,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-95980020140005772356-2024-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 3,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 21
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 14
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 16
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 0,
-				"vide": true
 			}
 		},
 		"esef-95980020140005772356-2024-12-31-3": {
@@ -23791,34 +22810,6 @@
 				"justes": 16
 			}
 		},
-		"esef-9695002OY2X35E9X8W87-2025-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 6,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 4
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 4
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 18,
-				"justes": 13
-			}
-		},
 		"esef-9695002OY2X35E9X8W87-2025-12-31-3": {
 			"truecopy": {
 				"juste": false,
@@ -24098,34 +23089,6 @@
 				"juste": true,
 				"lignes": 30,
 				"justes": 30
-			}
-		},
-		"esef-9695002Y8420ZB8HJE29-2024-12-31-3": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 29,
-				"justes": 29,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": true,
-				"lignes": 29,
-				"justes": 29
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 3
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 29,
-				"justes": 29
-			},
-			"docling": {
-				"juste": true,
-				"lignes": 29,
-				"justes": 29
 			}
 		},
 		"esef-9695002Y8420ZB8HJE29-2024-12-31-4": {
@@ -24493,122 +23456,6 @@
 				"juste": true,
 				"lignes": 22,
 				"justes": 22
-			}
-		},
-		"esef-969500356FAUM2X41Q59-2025-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 32,
-				"justes": 14,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 32,
-				"justes": 29
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 32,
-				"justes": 2
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 32,
-				"justes": 29
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 32,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-969500356FAUM2X41Q59-2025-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 17,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 4
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 13
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 29,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-969500356FAUM2X41Q59-2025-12-31-4": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 9,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 7
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 6
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 25,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-969500356FAUM2X41Q59-2025-12-31-5": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 9,
-				"justes": 1,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 9,
-				"justes": 2
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 9,
-				"justes": 6
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 9,
-				"justes": 1
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 9,
-				"justes": 0,
-				"vide": true
 			}
 		},
 		"esef-9695003E4MMA10IBTR26-2025-12-31-1": {
@@ -34061,35 +32908,6 @@
 				"vide": true
 			}
 		},
-		"esef-969500MGFIKUGLTC9742-2026-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 4,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 10
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 3
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 25
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 26,
-				"justes": 0,
-				"vide": true
-			}
-		},
 		"esef-969500MGFIKUGLTC9742-2026-12-31-3": {
 			"truecopy": {
 				"juste": false,
@@ -42114,150 +40932,6 @@
 			"docling": {
 				"juste": false,
 				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-984500E0A1C4DLBA3878-2025-12-31-1": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 7,
-				"justes": 3,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 7,
-				"justes": 4
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 7,
-				"justes": 7
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 7,
-				"justes": 6
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 7,
-				"justes": 5
-			}
-		},
-		"esef-984500E0A1C4DLBA3878-2025-12-31-2": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 21,
-				"fiable": false
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 2
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 9
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 20
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 22,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-984500E0A1C4DLBA3878-2025-12-31-3": {
-			"truecopy": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 9,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 4
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 16,
-				"justes": 16
-			},
-			"camelot": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 15
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 16,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-984500E0A1C4DLBA3878-2025-12-31-4": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 10,
-				"justes": 10,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": true,
-				"lignes": 10,
-				"justes": 10
-			},
-			"pdfplumber": {
-				"juste": false,
-				"lignes": 10,
-				"justes": 8
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 10,
-				"justes": 10
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 10,
-				"justes": 0,
-				"vide": true
-			}
-		},
-		"esef-984500E0A1C4DLBA3878-2025-12-31-5": {
-			"truecopy": {
-				"juste": true,
-				"lignes": 6,
-				"justes": 6,
-				"fiable": true
-			},
-			"pdftotext": {
-				"juste": true,
-				"lignes": 6,
-				"justes": 6
-			},
-			"pdfplumber": {
-				"juste": true,
-				"lignes": 6,
-				"justes": 6
-			},
-			"camelot": {
-				"juste": true,
-				"lignes": 6,
-				"justes": 6
-			},
-			"docling": {
-				"juste": false,
-				"lignes": 6,
 				"justes": 0,
 				"vide": true
 			}
